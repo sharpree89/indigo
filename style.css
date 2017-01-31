@@ -1,275 +1,183 @@
 
+/*GENERAL PAGE STYLING*/
+
 * {
   font-family: 'Muli', sans-serif;
-  color: rgba(119,136,153, 0.8);
-  letter-spacing: 1px;
-}
-
-body {
-  margin-top: 5%;
-  width: 100%;
-  background-color: white;
+  color: rgba(119,136,153,1);
 }
 
 hr {
   border: 1px solid rgba(119,136,153, 0.15);
-  width: 30%;
 }
 
-#ghost {
-  background-color: black;
-  padding: 2.5%;
-  height: 120px;
-}
-
-
-/*LABELS*/
-
-/*label #1*/
-.label1 {
+h1 {
   letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  background-color: rgba(0,191,165, 0.8);
-  color: white;
-  border: 1px solid rgba(0,191,165, 0.1);
 }
 
-.label1:focus {
+/*-------------- DEFAULT BUTTON STYLING --------------*/
+
+button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(83,109,254,1);
+  border: 2px solid rgba(83,109,254,1);
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
   outline: none;
 }
 
-/*label #2*/
-.label2 {
+/*-------------- DEFAULT BUTTON COLORS --------------*/
+
+.blue, .blue:hover {
+  border: 2px solid rgba(0,176,255,1);
+  background-color: rgba(0,176,255,1);
+}
+
+.grey, .grey:hover {
+  border: 2px solid rgba(119,136,153,1);
+  background-color: rgba(119,136,153,1);
+}
+
+.green, .green:hover {
+  border: 2px solid rgba(2,184,117,1);
+  background-color: rgba(2,184,117,1);
+}
+
+.gold, .gold:hover {
+  border: 2px solid rgba(255,160,0,1);
+  background-color: rgba(255,160,0,1);
+}
+
+.red, .red:hover {
+  border: 2px solid rgba(255,23,68,1);
+  background-color: rgba(255,23,68,1);
+}
+
+/*-------------- LIGHT BUTTON COLORS --------------*/
+
+.indigo-light, .indigo-light:hover {
+  border: 2px solid rgba(83,109,254,1);
+  background-color: white;
+  color: rgba(83,109,254,1);
+}
+
+.blue-light, .blue-light:hover {
+  border: 2px solid rgba(0,176,255,1);
+  background-color: white;
+  color: rgba(0,176,255,1);
+}
+
+.grey-light, .grey-light:hover {
+  border: 2px solid rgba(119,136,153,1);
+  background-color: white;
+  color: rgba(119,136,153,1);
+}
+
+.green-light, .green-light:hover {
+  border: 2px solid rgba(2,184,117,1);
+  background-color: white;
+  color: rgba(2,184,117,1);
+}
+
+.gold-light, .gold-light:hover {
+  border: 2px solid rgba(255,160,0,1);
+  background-color: white;
+  color: rgba(255,160,0,1);
+}
+
+.red-light, .red-light:hover {
+  border: 2px solid rgba(255,23,68,1);
+  background-color: white;
+  color: rgba(255,23,68,1);
+}
+
+.ghost, .ghost-hover {
+  border: 2px solid white;
+  background-color: rgba(255,255,255,0);
+  color: white;
+}
+
+/*-------------- ADDITIONAL BUTTON STYLING --------------*/
+
+.disabled {
+  opacity: 0.5;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  font-weight: 600;
+}
+
+.round {
+  border-radius: 18px;
+}
+
+
+
+/*-------------- STICKIES, TAGS, BADGES --------------*/
+
+
+
+/*-------------- DEFAULT STICKY STYLING --------------*/
+
+sticky {
+  display: inline;
+  text-align: center;
   letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 4px 10px;
-  border: 1px solid rgba(0,191,165, 0.75);
-  background-color: white;
-  color: rgba(0,191,165, 0.75);
-}
-
-.label2:focus {
-  outline: none;
-}
-
-/*label #3*/
-.label3 {
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  background-color: rgba(119,136,153, 0.8);
+  background-color: rgba(83,109,254,1);
+  border: 2px solid rgba(83,109,254,1);
   color: white;
-  border: 1px solid rgba(119,136,153, 0.1);
+  cursor: default;
 }
 
-.label3:focus {
-  outline: none;
-}
+/*-------------- DEFAULT TAG STYLING --------------*/
 
-/*label #4*/
-.label4 {
+tag {
+  display: inline;
+  text-align: center;
   letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  border: 1px solid rgba(119,136,153, 0.75);
-  background-color: white;
-  color: rgba(119,136,153, 0.75);
-}
-
-.label4:focus {
-  outline: none;
-}
-
-/*TAGS*/
-
-/*tag #1*/
-.tag1 {
-  letter-spacing: 1px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: lowercase;
   padding: 3px 9px;
-  background-color: rgba(0,191,165, 0.8);
+  background-color: rgba(83,109,254,1);
   color: white;
-  border: 1px solid rgba(0,191,165, 0.1);
-  border-radius: 12px;
+  border: 2px solid rgba(83,109,254,1);
 }
 
-.tag1:hover {
+tag:hover {
   cursor: pointer;
-  background-color: rgba(0,191,165, 1);
+  background-color: rgba(83,109,254,1);
 }
 
-.tag1:focus {
+tag:focus {
   outline: none;
 }
 
-/*tag #2*/
-.tag2 {
-  letter-spacing: 1px;
-  font-size: 11px;
+/*-------------- DEFAULT BADGE STYLING --------------*/
+
+badge {
+  display: inline;
+  text-align: center;
+  font-size: 13px;
   font-weight: 600;
-  text-transform: lowercase;
-  padding: 3px 9px;
-  border-radius: 12px;
-  border: 1px solid rgba(0,191,165, 0.75);
-  background-color: white;
-  color: rgba(0,191,165, 0.75);
-}
-
-.tag2:hover {
-  cursor: pointer;
-  border: 1px solid rgba(0,191,165, 1);
-  color: rgba(0,191,165, 1);
-}
-
-.tag2:focus {
-  outline: none;
-}
-
-/*tag #3*/
-.tag3 {
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: lowercase;
-  padding: 3px 9px;
-  border-radius: 12px;
-  border: 1px solid rgba(119,136,153, 0.75);
-  background-color: white;
-  color: rgba(119,136,153, 0.75);
-}
-
-.tag3:hover {
-  cursor: pointer;
-  border: 1px solid rgba(119,136,153, 1);
-  background-color: white;
-  color: rgba(119,136,153, 1);
-}
-
-.tag3:focus {
-  outline: none;
-}
-
-/*tag #4*/
-.tag4 {
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: lowercase;
-  padding: 3px 9px;
-  border-radius: 12px;
-  border: 1px solid rgba(119,136,153, 0.1);
-  background-color: rgba(119,136,153, 0.8);
+  padding: 4px 9px;
+  border: 2px solid rgba(83,109,254,1);
+  background-color: rgba(83,109,254,1);
   color: white;
-}
-
-.tag4:hover {
-  cursor: pointer;
-  border: 1px solid rgba(119,136,153, 1);
-  background-color: rgba(119,136,153, 1);
-}
-
-.tag4:focus {
-  outline: none;
-}
-
-/*BADGES*/
-
-/*badge #1*/
-.badge1 {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: lowercase;
-  padding: 3px 6px;
-  border-radius: 20px;
-  border: 1px solid rgba(0,191,165, 0.75);
-  background-color: white;
-  color: rgba(0,191,165, 0.75);
-}
-
-.badge1:focus {
-  outline: none;
-}
-
-/*badge #2*/
-.badge2 {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: lowercase;
-  padding: 3px 6px;
-  background-color: rgba(0,191,165, 0.8);
-  color: white;
-  border: 1px solid rgba(0,191,165, 0.1);
-  border-radius: 20px;
-
-}
-
-.badge2:focus {
-  outline: none;
-}
-
-/*badge #3*/
-.badge3 {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: lowercase;
-  padding: 3px 6px;
-  border-radius: 20px;
-  border: 1px solid rgba(119,136,153, 0.75);
-  background-color: white;
-  color: rgba(119,136,153, 0.75);
-}
-
-.badge3:focus {
-  outline: none;
-}
-
-/*badge #4*/
-.badge4 {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: lowercase;
-  padding: 3px 6px;
-  background-color: rgba(119,136,153, 0.8);
-  color: white;
-  border: 1px solid rgba(119,136,153, 0.1);
-  border-radius: 20px;
-
-}
-
-.badge4:focus {
-  outline: none;
-}
-
-#col1 {
-  display: inline-block;
-  border: 10px solid rgba(0,191,165, 0.25);
-  padding: 5% 6%;
-  vertical-align: top;
-  margin-top: 2.5%;
-  margin-right: 2.5%;
-}
-
-#col2 {
-  display: inline-block;
-  border: 10px solid rgba(0,191,165, 0.25);
-  padding: 5%;
-  vertical-align: top;
-  margin-top: 2.5%;
-  height: 241px;
-  width: 307px;
+  cursor: default;
 }
