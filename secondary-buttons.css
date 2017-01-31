@@ -1,0 +1,85 @@
+.btn-sec-1 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: white;
+  color: rgba(	0, 176, 255, 1);
+}
+
+.btn-sec-1:hover {
+  cursor: pointer;
+  border: 3px solid rgba(	0, 176, 255, 1);
+  font-weight: 700;
+}
+
+.btn-sec-1:focus {
+  outline: none;
+}
+
+.btn-sec-2 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: rgba(	0, 176, 255, 1);;
+  color: white;
+}
+
+.btn-sec-2:hover {
+  cursor: pointer;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: rgba(	0, 176, 255, 1);
+}
+
+.btn-sec-2:focus {
+  outline: none;
+}
+
+.btn-sec-3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: white;
+  color: rgba(	0, 176, 255, 1);
+  border-radius: 18px;
+}
+
+.btn-sec-3:hover {
+  cursor: pointer;
+  border: 3px solid rgba(	0, 176, 255, 1);
+  font-weight: 700;
+}
+
+.btn-sec-3:focus {
+  outline: none;
+}
+
+.btn-sec-4 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: rgba(	0, 176, 255, 1);;
+  color: white;
+  border-radius: 18px;
+}
+
+.btn-sec-4:hover {
+  cursor: pointer;
+  border: 2px solid rgba(	0, 176, 255, 1);
+  background-color: rgba(	0, 176, 255, 1);
+}
+
+.btn-sec-4:focus {
+  outline: none;
+}

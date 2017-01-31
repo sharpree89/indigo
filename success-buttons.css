@@ -1,0 +1,86 @@
+.btn-suc-1 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(2,184,117,1);
+  background-color: white;
+  color: rgba(2,184,117,1);
+}
+
+.btn-suc-1:hover {
+  cursor: pointer;
+  border: 3px solid rgba(2,184,117,1);
+  font-weight: 700;
+}
+
+.btn-suc-1:focus {
+  outline: none;
+}
+
+/*button #6*/
+.btn-suc-2 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(2,184,117,1);
+  color: white;
+  border: 2px solid rgba(2,184,117,1);
+}
+
+.btn-suc-2:hover {
+  cursor: pointer;
+  background-color: rgba(2,184,117,1);
+}
+
+.btn-suc-2:focus {
+  outline: none;
+}
+
+/*button #7*/
+.btn-suc-3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(2,184,117,1);
+  background-color: white;
+  color: rgba(2,184,117,1);
+  border-radius: 18px;
+}
+
+.btn-suc-3:hover {
+  cursor: pointer;
+  border: 3px solid rgba(2,184,117,1);
+  font-weight: 700;
+}
+
+.btn-suc-3:focus {
+  outline: none;
+}
+
+/*button #8*/
+.btn-suc-4 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(2,184,117,1);
+  color: white;
+  border: 2px solid rgba(2,184,117,1);
+  border-radius: 18px;
+}
+
+.btn-suc-4:hover {
+  cursor: pointer;
+  background-color: rgba(2,184,117,1);
+}
+
+.btn-suc-4:focus {
+  outline: none;
+}

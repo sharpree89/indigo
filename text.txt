@@ -1,0 +1,21 @@
+Call To Action Buttons:
+
+Filled with strong color
+May have box shadowing for emphasis
+
+Ghost Buttons
+
+Transparent with simple border and text
+Used for secondary or tertiary content
+Allow CTA buttons to stand out more
+
+Floating Action button
+
+Used for a promoted action
+Circled icon floating above the UI with box shadow for emphasis
+
+Inactive buttons
+
+Show the button in a disabled state
+Only show what is needed for the task at hand
+Is more transparent than a normal button
