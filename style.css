@@ -1,0 +1,449 @@
+
+* {
+  font-family: 'Muli', sans-serif;
+  color: rgba(119,136,153, 0.8);
+  letter-spacing: 1px;
+}
+
+body {
+  margin-top: 5%;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid rgba(119,136,153, 0.15);
+  width: 30%;
+}
+
+/*BUTTONS*/
+
+/*button #1*/
+.btn1 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(119,136,153, 0.75);
+  background-color: white;
+  color: rgba(119,136,153, 0.75);
+}
+
+.btn1:hover {
+  cursor: pointer;
+  border: 2px solid rgba(119,136,153, 1);
+  background-color: white;
+  color: rgba(119,136,153, 1);
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+/*button #2*/
+.btn2 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(119,136,153, 0.8);
+  color: white;
+  border: 2px solid rgba(119,136,153, 0.1);
+}
+
+.btn2:hover {
+  cursor: pointer;
+  background-color: rgba(119,136,153, 1);
+}
+
+.btn2:focus {
+  outline: none;
+}
+
+/*button #3*/
+.btn3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(119,136,153, 0.75);
+  background-color: white;
+  color: rgba(119,136,153, 0.75);
+  border-radius: 18px;
+}
+
+.btn3:hover {
+  cursor: pointer;
+  border: 2px solid rgba(119,136,153, 1);
+  background-color: white;
+  color: rgba(119,136,153, 1);
+}
+
+.btn3:focus {
+  outline: none;
+}
+
+/*button #4*/
+.btn4 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(119,136,153, 0.8);
+  color: white;
+  border: 2px solid rgba(119,136,153, 0.1);
+  border-radius: 18px;
+}
+
+.btn4:hover {
+  cursor: pointer;
+  background-color: rgba(119,136,153, 1);
+}
+
+.btn4:focus {
+  outline: none;
+}
+
+/*button #5*/
+.btn5 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(0,191,165, 0.75);
+  background-color: white;
+  color: rgba(0,191,165, 0.75);
+}
+
+.btn5:hover {
+  cursor: pointer;
+  border: 2px solid rgba(0,191,165, 1);
+  background-color: white;
+  color: rgba(0,191,165, 1);
+}
+
+.btn5:focus {
+  outline: none;
+}
+
+/*button #6*/
+.btn6 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(0,191,165, 0.8);
+  color: white;
+  border: 2px solid rgba(0,191,165, 0.1);
+}
+
+.btn6:hover {
+  cursor: pointer;
+  background-color: rgba(0,191,165, 1);
+}
+
+.btn6:focus {
+  outline: none;
+}
+
+/*button #7*/
+.btn7 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  border: 2px solid rgba(0,191,165, 0.75);
+  background-color: white;
+  color: rgba(0,191,165, 0.75);
+  border-radius: 18px;
+}
+
+.btn7:hover {
+  cursor: pointer;
+  border: 2px solid rgba(0,191,165, 1);
+  background-color: white;
+  color: rgba(0,191,165, 1);
+}
+
+.btn7:focus {
+  outline: none;
+}
+
+/*button #8*/
+.btn8 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: rgba(0,191,165, 0.8);
+  color: white;
+  border: 2px solid rgba(0,191,165, 0.1);
+  border-radius: 18px;
+}
+
+.btn8:hover {
+  cursor: pointer;
+  background-color: rgba(0,191,165, 1);
+}
+
+.btn8:focus {
+  outline: none;
+}
+
+/*LABELS*/
+
+/*label #1*/
+.label1 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background-color: rgba(0,191,165, 0.8);
+  color: white;
+  border: 1px solid rgba(0,191,165, 0.1);
+}
+
+.label1:focus {
+  outline: none;
+}
+
+/*label #2*/
+.label2 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid rgba(0,191,165, 0.75);
+  background-color: white;
+  color: rgba(0,191,165, 0.75);
+}
+
+.label2:focus {
+  outline: none;
+}
+
+/*label #3*/
+.label3 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background-color: rgba(119,136,153, 0.8);
+  color: white;
+  border: 1px solid rgba(119,136,153, 0.1);
+}
+
+.label3:focus {
+  outline: none;
+}
+
+/*label #4*/
+.label4 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid rgba(119,136,153, 0.75);
+  background-color: white;
+  color: rgba(119,136,153, 0.75);
+}
+
+.label4:focus {
+  outline: none;
+}
+
+/*TAGS*/
+
+/*tag #1*/
+.tag1 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 3px 9px;
+  background-color: rgba(0,191,165, 0.8);
+  color: white;
+  border: 1px solid rgba(0,191,165, 0.1);
+  border-radius: 12px;
+}
+
+.tag1:hover {
+  cursor: pointer;
+  background-color: rgba(0,191,165, 1);
+}
+
+.tag1:focus {
+  outline: none;
+}
+
+/*tag #2*/
+.tag2 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,191,165, 0.75);
+  background-color: white;
+  color: rgba(0,191,165, 0.75);
+}
+
+.tag2:hover {
+  cursor: pointer;
+  border: 1px solid rgba(0,191,165, 1);
+  color: rgba(0,191,165, 1);
+}
+
+.tag2:focus {
+  outline: none;
+}
+
+/*tag #3*/
+.tag3 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(119,136,153, 0.75);
+  background-color: white;
+  color: rgba(119,136,153, 0.75);
+}
+
+.tag3:hover {
+  cursor: pointer;
+  border: 1px solid rgba(119,136,153, 1);
+  background-color: white;
+  color: rgba(119,136,153, 1);
+}
+
+.tag3:focus {
+  outline: none;
+}
+
+/*tag #4*/
+.tag4 {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(119,136,153, 0.1);
+  background-color: rgba(119,136,153, 0.8);
+  color: white;
+}
+
+.tag4:hover {
+  cursor: pointer;
+  border: 1px solid rgba(119,136,153, 1);
+  background-color: rgba(119,136,153, 1);
+}
+
+.tag4:focus {
+  outline: none;
+}
+
+/*BADGES*/
+
+/*badge #1*/
+.badge1 {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 3px 6px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,191,165, 0.75);
+  background-color: white;
+  color: rgba(0,191,165, 0.75);
+}
+
+.badge1:focus {
+  outline: none;
+}
+
+/*badge #2*/
+.badge2 {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 3px 6px;
+  background-color: rgba(0,191,165, 0.8);
+  color: white;
+  border: 1px solid rgba(0,191,165, 0.1);
+  border-radius: 20px;
+
+}
+
+.badge2:focus {
+  outline: none;
+}
+
+/*badge #3*/
+.badge3 {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 3px 6px;
+  border-radius: 20px;
+  border: 1px solid rgba(119,136,153, 0.75);
+  background-color: white;
+  color: rgba(119,136,153, 0.75);
+}
+
+.badge3:focus {
+  outline: none;
+}
+
+/*badge #4*/
+.badge4 {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 3px 6px;
+  background-color: rgba(119,136,153, 0.8);
+  color: white;
+  border: 1px solid rgba(119,136,153, 0.1);
+  border-radius: 20px;
+
+}
+
+.badge4:focus {
+  outline: none;
+}
+
+#col1 {
+  display: inline-block;
+  border: 10px solid rgba(0,191,165, 0.25);
+  padding: 5% 6%;
+  vertical-align: top;
+  margin-top: 2.5%;
+  margin-right: 2.5%;
+}
+
+#col2 {
+  display: inline-block;
+  border: 10px solid rgba(0,191,165, 0.25);
+  padding: 5%;
+  vertical-align: top;
+  margin-top: 2.5%;
+  height: 241px;
+  width: 307px;
+}
