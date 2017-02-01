@@ -3,29 +3,74 @@
 
 * {
   font-family: 'Muli', sans-serif;
-  color: rgba(119,136,153,1);
+  font-size: 1em;
 }
 
 hr {
   border: 1px solid rgba(119,136,153, 0.15);
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
 }
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+h6 {
+  font-size: 1.25em;
+}
+
+/*a {
+  color: rgba(83,109,254,1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dashed rgba(83,109,254,1);
+  cursor: pointer;
+}
+
+a:focus {
+  border: 1px dashed rgba(83,109,254,1);
+  padding: 2px 4px;
+}*/
 
 /*-------------- DEFAULT BUTTON STYLING --------------*/
 
 button {
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 8px 24px;
+  padding: 12px 20px;
   background-color: rgba(83,109,254,1);
   border: 2px solid rgba(83,109,254,1);
   color: white;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -58,9 +103,29 @@ button:focus {
   background-color: rgba(255,160,0,1);
 }
 
+.orange, .orange:hover {
+  border: 2px solid rgba(255,109,0,1);
+  background-color: rgba(255,109,0,1);
+}
+
 .red, .red:hover {
   border: 2px solid rgba(255,23,68,1);
   background-color: rgba(255,23,68,1);
+}
+
+.black, .black:hover {
+  border: 2px solid rgba(38,50,56,1);
+  background-color: rgba(38,50,56,1);
+}
+
+.purple, .purple:hover {
+  border: 2px solid rgba(170,0,255,1);
+  background-color: rgba(170,0,255,1);
+}
+
+.pink, .pink:hover {
+  border: 2px solid rgba(240,98,146,1);
+  background-color: rgba(240,98,146,1);
 }
 
 /*-------------- LIGHT BUTTON COLORS --------------*/
@@ -101,10 +166,28 @@ button:focus {
   color: rgba(255,23,68,1);
 }
 
-.ghost, .ghost-hover {
-  border: 2px solid white;
-  background-color: rgba(255,255,255,0);
-  color: white;
+.orange-light, .orange-light:hover {
+  border: 2px solid rgba(255,109,0,1);
+  background-color: white;
+  color: rgba(255,109,0,1);
+}
+
+.black-light, .black-light:hover {
+  border: 2px solid rgba(38,50,56,1);
+  background-color: white;
+  color: rgba(38,50,56,1);
+}
+
+.purple-light, .purple-light:hover {
+  border: 2px solid rgba(170,0,255,1);
+  background-color: white;
+  color: rgba(170,0,255,1);
+}
+
+.pink-light, .pink-light:hover {
+  border: 2px solid rgba(240,98,146,1);
+  background-color: white;
+  color: rgba(240,98,146,1);
 }
 
 /*-------------- ADDITIONAL BUTTON STYLING --------------*/
@@ -114,15 +197,42 @@ button:focus {
 }
 
 .disabled:hover {
-  cursor: not-allowed;
+  cursor: default;
   font-weight: 600;
 }
 
-.round {
-  border-radius: 18px;
+.raised, .raised:hover {
+  box-shadow: 3px 3px 5px rgba(119,136,153,1);
+  margin: 3px;
 }
 
+.pill {
+  border-radius: 60px !important;
+}
 
+.square {
+  border-radius: 0 !important;
+}
+
+.big-btn, .big-btn:hover {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 18px 30px;
+  border-radius: 12px;
+}
+
+.huge-btn, .huge-btn:hover {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 24px 40px;
+  border-radius: 16px;
+}
+
+.ghost, .ghost-hover {
+  border: 2px solid white;
+  background-color: rgba(255,255,255,0);
+  color: white;
+}
 
 /*-------------- STICKIES, TAGS, BADGES --------------*/
 
@@ -134,14 +244,32 @@ sticky {
   display: inline;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 6px 10px;
   background-color: rgba(83,109,254,1);
   border: 2px solid rgba(83,109,254,1);
   color: white;
   cursor: default;
+  border-radius: 6px;
+}
+
+/*-------------- ADDITIONAL STICKY STYLING --------------*/
+
+
+.big-sti, .big-sti:hover {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 13px;
+  border-radius: 8px;
+}
+
+.huge-sti, .huge-sti:hover {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
 }
 
 /*-------------- DEFAULT TAG STYLING --------------*/
@@ -150,22 +278,38 @@ tag {
   display: inline;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: lowercase;
-  padding: 3px 9px;
+  font-size: 0.75em;
+  font-weight: 400;
+  padding: 3px 6px;
   background-color: rgba(83,109,254,1);
   color: white;
   border: 2px solid rgba(83,109,254,1);
+  border-radius: 4px;
 }
 
 tag:hover {
   cursor: pointer;
-  background-color: rgba(83,109,254,1);
 }
 
 tag:focus {
   outline: none;
+}
+
+/*-------------- ADDITIONAL TAG STYLING --------------*/
+
+
+.big-tag, .big-tag:hover {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.huge-tag, .huge-tag:hover {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 6px;
 }
 
 /*-------------- DEFAULT BADGE STYLING --------------*/
@@ -173,10 +317,11 @@ tag:focus {
 badge {
   display: inline;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.8em;
   font-weight: 600;
   padding: 4px 9px;
   border: 2px solid rgba(83,109,254,1);
+  border-radius: 24px;
   background-color: rgba(83,109,254,1);
   color: white;
   cursor: default;
