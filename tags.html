@@ -15,8 +15,6 @@
 
       #backdrop {
         background-color: rgba(83,109,254,1);
-        padding: 2%;
-        width: 28%;
       }
 
       pre {
@@ -55,7 +53,7 @@
 
       <p>The default <code2>&lt;tag&gt;</code2> is indigo with white text and slightly rounded edges.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag>default tag</tag>
       </div>
 
@@ -69,7 +67,7 @@
 
       <p>Use tags to style and emphasize keywords that enable searching or navigating.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="black">html5</tag>
         <tag class="black">css3</tag>
         <tag class="black">javascript</tag>
@@ -95,7 +93,7 @@
 
       <p>Tags also work well as miniature buttons for tiny user interfaces.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <b>Get Started Today!</b>
         <tag>Sign Me Up</tag>
         <tag class="grey">No Thanks</tag>
@@ -119,7 +117,7 @@
 
       <p>Use the <code2>color</code2> class to change the background color of the tag.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 55%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="red">red</tag>
         <tag class="orange">orange</tag>
         <tag class="gold">gold</tag>
@@ -151,7 +149,7 @@
 
       <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 55%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="red-light">red</tag>
         <tag class="orange-light">orange</tag>
         <tag class="gold-light">gold</tag>
@@ -183,7 +181,7 @@
 
       <p>Tags have two additional size classes: <code2>big-tag</code2> and <code2>huge-tag</code2>.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="purple">default</tag>
         <tag class="purple big-tag">large</tag>
         <tag class="purple huge-tag">jumbo</tag>
@@ -201,9 +199,9 @@
 
       <p>Use the <code2>square</code2> class to give the tag squared, sharp edges.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="green-light square">squared</tag>
-        <tag class="blue-light square big-tag">squared</tag>
+        <tag class="blue square big-tag">squared</tag>
         <tag class="indigo-light square huge-tag">squared</tag>
       </div>
 
@@ -211,7 +209,7 @@
         <code>
           &lt;div&gt;
             &lt;tag class="green-light square"&gt;squared&lt;/tag&gt;
-            &lt;tag class="blue-light square big-tag"&gt;squared&lt;/tag&gt;
+            &lt;tag class="blue square big-tag"&gt;squared&lt;/tag&gt;
             &lt;tag class="indigo-light square huge-tag"&gt;squared&lt;/tag&gt;
           &lt;/div&gt;
         </code>
@@ -219,9 +217,9 @@
 
       <p>Use the <code2>pill</code2> class to give the tag a pill shape with rounded edges.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="red-light pill">rounded</tag>
-        <tag class="orange-light pill big-tag">rounded</tag>
+        <tag class="orange pill big-tag">rounded</tag>
         <tag class="gold-light pill huge-tag">rounded</tag>
       </div>
 
@@ -229,7 +227,7 @@
         <code>
           &lt;div&gt;
             &lt;tag class="red-light pill"&gt;rounded&lt;/tag&gt;
-            &lt;tag class="orange-light pill big-tag"&gt;rounded&lt;/tag&gt;
+            &lt;tag class="orange pill big-tag"&gt;rounded&lt;/tag&gt;
             &lt;tag class="gold-light pill huge-tag"&gt;rounded&lt;/tag&gt;
           &lt;/div&gt;
         </code>
@@ -237,7 +235,7 @@
 
       <p>Use the <code2>raised</code2> class to give the tag shadows and a raised effect.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="pink raised square">raised</tag>
         <tag class="pink raised square big-tag">raised</tag>
         <tag class="pink raised square huge-tag">raised</tag>
@@ -255,32 +253,34 @@
 
       <p>Use the <code2>disabled</code2> class to indicate the tag is inactive...</p>
 
-      <div>
-        <tag class="blue pill huge-tag disabled">disabled</tag>
-        <tag class="blue pill huge-tag">enabled</tag>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <tag class="blue pill huge-tag disabled">yesterday</tag>
+        <tag class="blue pill huge-tag">today</tag>
+        <tag class="blue pill huge-tag disabled">tomorrow</tag>
       </div>
 
       <pre>
         <code>
           &lt;div&gt;
-            &lt;tag class="blue pill huge-tag disabled"&gt;disabled&lt;/tag&gt;
-            &lt;tag class="blue pill huge-tag"&gt;enabled&lt;/tag&gt;
+            &lt;tag class="blue pill huge-tag disabled"&gt;yesterday&lt;/tag&gt;
+            &lt;tag class="blue pill huge-tag"&gt;today&lt;/tag&gt;
+            &lt;tag class="blue pill huge-tag disabled"&gt;tomorrow&lt;/tag&gt;
           &lt;/div&gt;
         </code>
       </pre>
 
       <p>... or to put emphasis on a more preferred element.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="grey big-tag disabled">Go Back</tag>
-        <tag class="green big-tag">Check Out</tag>
+        <tag class="green big-tag raised">Check Out</tag>
       </div>
 
       <pre>
         <code>
           &lt;div&gt;
             &lt;tag class="grey big-tag disabled"&gt;Go Back&lt;/tag&gt;
-            &lt;tag class="green big-tag"&gt;Check Out&lt;/tag&gt;
+            &lt;tag class="green big-tag raised"&gt;Check Out&lt;/tag&gt;
           &lt;/div&gt;
         </code>
       </pre>
@@ -289,7 +289,7 @@
 
       <p>These are most effective when paired with high-contrast background colors or images that won't clash with the tag's text.</p>
 
-      <div id="backdrop">
+      <div id="backdrop" style="border: 1px solid #8698f9; padding: 1.5%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <tag class="ghost">ghost tag</tag>
         <tag class="ghost big-tag">ghost tag</tag>
         <tag class="ghost huge-tag">ghost tag</tag>
@@ -311,19 +311,22 @@
       <h4>More CSS Components</h4>
       <br>
       <br>
-      <a href="/buttons"><button class="square green">Buttons</button></a>
+      <a href="/buttons"><button class="square">Buttons</button></a>
       <br>
       <br>
-      <a href="/stickies"><button class="square green">Stickies</button></a>
+      <a href="/badges"><button class="square">Badges</button></a>
       <br>
       <br>
-      <a href="/forms"><button class="square green">Forms</button></a>
+      <a href="/stickys"><button class="square">Stickys</button></a>
       <br>
       <br>
-      <a href="/type"><button class="square green">Typography</button></a>
+      <a href="/forms"><button class="square">Forms</button></a>
       <br>
       <br>
-      <a href="/"><button class="square green-light">Home</button></a>
+      <a href="/type"><button class="square">Typography</button></a>
+      <br>
+      <br>
+      <a href="/"><button class="square indigo-light">Home</button></a>
       <br>
       <br>
     </div>

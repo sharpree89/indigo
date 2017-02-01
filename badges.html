@@ -56,7 +56,7 @@
 
       <p>The default <code2>&lt;badge&gt;</code2> is indigo with white text and rounded edges.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 30%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge>default badge</badge>
       </div>
 
@@ -100,45 +100,47 @@
         </code>
       </pre>
 
-      <p>Badges can be placed inside of buttons and stickys.</p>
+      <p>Badges can be placed inside of <a href="/buttons">buttons</a>, <a href="/stickys">stickys</a>, tables, lists, or wherever you might use a <code2>span</code2> element.</p>
 
-      <div>
-        Button: <button class="big-btn">
-          <badge class="indigo-light big-bdg">11</badge> E-mails
+      <div style="border: 1px solid #8698f9; padding: 2%; width: 450px; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <button class="pill big-btn">
+          Messages <badge class="indigo-light big-bdg">11</badge>
         </button>
-        <br>
-        <br>
-        Sticky: <sticky class="black square huge-sti">
-          <badge class="pink">New</badge> Arrivals
-        </sticky>
-        <br>
-        <br>
-        Button: <button class="green-light pill">
-          Comments <badge class="green">6</badge>
-        </button>
-        <br>
-        <br>
-        Sticky: <sticky class="grey huge-sti">
-          <badge class="red big-bdg">5</badge> Days Left!
-        </sticky>
-        <br>
-        <br>
       </div>
+      <br>
+      <div style="border: 1px solid #8698f9; padding: 2%; width: 450px; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <sticky class="black huge-sti">
+          <badge class="indigo">New</badge> Arrivals
+        </sticky>
+      </div>
+      <br>
+      <div style="border: 1px solid #8698f9; padding: 2%; width: 450px; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <button class="indigo-light pill">
+          Comments <badge class="indigo">6</badge>
+        </button>
+      </div>
+      <br>
+      <div style="border: 1px solid #8698f9; padding: 2%; width: 450px; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <sticky class="grey huge-sti">
+          <badge class="big-bdg">5</badge> Days Left!
+        </sticky>
+      </div>
+      <br>
 
       <pre>
         <code>
           &lt;div&gt;
-            &lt;button class="big-btn"&gt;
-              &lt;badge class="indigo-light big-bdg"&gt;11&lt;/badge&gt; E-mails
+            &lt;button class="pill big-btn"&gt;
+              Messages &lt;badge class="indigo-light big-bdg"&gt;11&lt;/badge&gt;
             &lt;/button&gt;
-            &lt;sticky class="black square huge-sti"&gt;
-              &lt;badge class="pink"&gt;New&lt;/badge&gt; Arrivals
+            &lt;sticky class="black huge-sti"&gt;
+              &lt;badge class="indigo"&gt;New&lt;/badge&gt; Arrivals
             &lt;/sticky&gt;
-            &lt;button class="green-light pill"&gt;
-              Comments &lt;badge class="green"&gt;6&lt;/badge&gt;
+            &lt;button class="indigo-light pill"&gt;
+              Comments &lt;badge class="indigo"&gt;6&lt;/badge&gt;
             &lt;/button&gt;
             &lt;sticky class="grey huge-sti"&gt;
-              &lt;badge class="red big-bdg"&gt;5&lt;/badge&gt; Days Left!
+              &lt;badge class="big-bdg"&gt;5&lt;/badge&gt; Days Left!
             &lt;/sticky&gt;
           &lt;/div&gt;
         </code>
@@ -152,7 +154,7 @@
 
       <p>Use the <code2>color</code2> class to change the background color of the badge.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge class="red">1</badge>
         <badge class="orange">2</badge>
         <badge class="gold">3</badge>
@@ -184,7 +186,7 @@
 
       <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge class="red-light">1</badge>
         <badge class="orange-light">2</badge>
         <badge class="gold-light">3</badge>
@@ -216,7 +218,7 @@
 
       <p>Badges have two additional size classes: <code2>big-bdg</code2> and <code2>huge-bdg</code2>.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge class="purple">1</badge>
         <badge class="purple big-bdg">2</badge>
         <badge class="purple huge-bdg">3</badge>
@@ -234,27 +236,27 @@
 
       <p>Use the <code2>square</code2> class to give the badge squared, sharp edges.</p>
 
-      <div>
-        <badge class="black square">1</badge>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <badge class="black-light square">1</badge>
         <badge class="black square big-bdg">2</badge>
-        <badge class="black square huge-bdg">3</badge>
+        <badge class="black-light square huge-bdg">3</badge>
       </div>
 
       <pre>
         <code>
           &lt;div&gt;
-            &lt;badge class="black square"&gt;1&lt;/badge&gt;
+            &lt;badge class="black-light square"&gt;1&lt;/badge&gt;
             &lt;badge class="black square big-bdg"&gt;2&lt;/badge&gt;
-            &lt;badge class="black square huge-bdg"&gt;3&lt;/badge&gt;
+            &lt;badge class="black-light square huge-bdg"&gt;3&lt;/badge&gt;
           &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>raised</code2> class to give the badge shadows and a raised effect.</p>
 
-      <div>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge class="indigo-light raised">7</badge>
-        <badge class="indigo-light raised big-bdg">8</badge>
+        <badge class="raised big-bdg">8</badge>
         <badge class="indigo-light raised huge-bdg">9</badge>
       </div>
 
@@ -262,7 +264,7 @@
         <code>
           &lt;div&gt;
             &lt;badge class="indigo-light raised"&gt;7&lt;/badge&gt;
-            &lt;badge class="indigo-light raised big-bdg"&gt;8&lt;/badge&gt;
+            &lt;badge class="raised big-bdg"&gt;8&lt;/badge&gt;
             &lt;badge class="indigo-light raised huge-bdg"&gt;9&lt;/badge&gt;
           &lt;/div&gt;
         </code>
@@ -270,9 +272,10 @@
 
       <p>Use the <code2>disabled</code2> class to indicate the badge is inactive.</p>
 
-      <div>
-        <badge class="blue big-bdg disabled">disabled</badge>
-        <badge class="blue big-bdg">enabled</badge>
+      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+        <badge class="blue big-bdg disabled">Yesterday</badge>
+        <badge class="blue big-bdg">Today</badge>
+        <badge class="blue big-bdg disabled">Tomorrow</badge>
       </div>
 
       <pre>
@@ -288,7 +291,7 @@
 
       <p>These are most effective when paired with high-contrast background colors or images that won't clash with the badge's text.</p>
 
-      <div id="backdrop">
+      <div id="backdrop" style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
         <badge class="ghost">ghost badge</badge>
         <badge class="ghost big-bdg">ghost badge</badge>
         <badge class="ghost huge-bdg">ghost badge</badge>
@@ -310,19 +313,22 @@
       <h4>More CSS Components</h4>
       <br>
       <br>
-      <a href="/buttons"><button class="square green">Buttons</button></a>
+      <a href="/buttons"><button class="square">Buttons</button></a>
       <br>
       <br>
-      <a href="/tags"><button class="square green">Tags</button></a>
+      <a href="/tags"><button class="square">Tags</button></a>
       <br>
       <br>
-      <a href="/forms"><button class="square green">Forms</button></a>
+      <a href="/stickys"><button class="square">Stickys</button></a>
       <br>
       <br>
-      <a href="/type"><button class="square green">Typography</button></a>
+      <a href="/forms"><button class="square">Forms</button></a>
       <br>
       <br>
-      <a href="/"><button class="square green-light">Home</button></a>
+      <a href="/type"><button class="square">Typography</button></a>
+      <br>
+      <br>
+      <a href="/"><button class="square indigo-light">Home</button></a>
       <br>
       <br>
     </div>

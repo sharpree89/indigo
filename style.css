@@ -71,6 +71,7 @@ button {
   border: 2px solid rgba(83,109,254,1);
   color: white;
   border-radius: 8px;
+  margin: 0;
 }
 
 button:hover {
@@ -229,7 +230,7 @@ button:focus {
 }
 
 .ghost, .ghost-hover {
-  border: 2px solid white;
+  border: 3px solid white;
   background-color: rgba(255,255,255,0);
   color: white;
 }
@@ -253,6 +254,7 @@ sticky {
   color: white;
   cursor: default;
   border-radius: 6px;
+  margin: 0;
 }
 
 /*-------------- ADDITIONAL STICKY STYLING --------------*/
@@ -285,6 +287,7 @@ tag {
   color: white;
   border: 2px solid rgba(83,109,254,1);
   border-radius: 4px;
+  margin: 0;
 }
 
 tag:hover {
@@ -325,13 +328,14 @@ badge {
   background-color: rgba(83,109,254,1);
   color: white;
   cursor: default;
+  margin: 0;
 }
 
 /*-------------- DEFAULT BADGE STYLING --------------*/
 
 .big-bdg, .big-bdg:hover {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   padding: 4px 10px;
   border-radius: 24px;
 }
