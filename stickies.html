@@ -5,61 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stickys</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="markup.css">
+    <script type="text/javascript" src="app.js"></script>
     <style>
 
-      body {
-        padding: 0;
-        margin: 0;
-
-      }
-
-      #container {
-        padding-top: 5%;
-        margin: auto;
-        width: 80%;
-      }
-
-      #example {
-        border: 1px solid #8698f9;
-        padding: 3% 0;
-        box-shadow: 2px 2px 5px slategrey;
-        text-align: center;
-        overflow: scroll;
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        margin-bottom: 1%;
-      }
-
-      .backdrop {
-        background-color: rgba(83,109,254,1);
-      }
-
-      pre {
-        background-color: #dbe0fc;
-        border: 1px solid #8698f9;
-        display: inline-block;
-        width: 100%;
-        overflow: scroll;
-      }
-
-      code {
-        background-color: #dbe0fc;
-        display: inline-block;
-        font-family: "Courier", monospace;
-        font-size: 1em;
-        float: left;
-      }
-
-      code2 {
-        background-color: #dbe0fc;
-        border: 1px solid #8698f9;
-        display: inline-block;
-        font-family: "Courier", monospace;
-        padding: 0.5%;
-        margin: 0.5%;
-      }
+      /*STICKYS-PAGE-ONLY STYLING*/
 
       @media only screen
         and (min-device-width: 320px)
@@ -95,10 +47,40 @@
     </style>
   </head>
   <body>
+
+    <!--- Animated Side Nav Styling --->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#usage">Usage</a>
+      <a href="#color">Colors</a>
+      <a href="#size">Sizing</a>
+      <a href="#style">Styles</a>
+    </div>
+
+    <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+    <!--- TOP NAVBAR --->
+
+    <ul class="topnav" id="myTopnav">
+      <li onclick="openNav()"><a style="cursor: pointer;">&#9776;</a></li>
+      <li class="brand"><a href="/">indigo.css</a></li>
+      <li><a href="/buttons">Buttons</a></li>
+      <li><a href="/stickys">Stickys</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/badges">Badges</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+
     <div id="container">
+
+      <a name="usage">Anchor: Usage</a>
+
       <h1>Stickys</h1>
       <hr>
-      <br>
 
       <p>The default <code2>&lt;sticky&gt;</code2> is indigo with white text and slightly rounded edges.</p>
 
@@ -150,11 +132,9 @@
         </code>
       </pre>
 
-      <br>
-      <br>
       <h4>Customizing Stickys</h4>
       <hr>
-      <br>
+      <a name="color">Anchor: Colors</a>
 
       <p>Use the <code2>color</code2> class to change the background color of the sticky.</p>
 
@@ -220,6 +200,8 @@
         </code>
       </pre>
 
+      <a name="size">Anchor: Sizes</a>
+
       <p>Stickys have two additional size classes: <code2>big-sti</code2> and <code2>huge-sti</code2>.</p>
 
       <div id="example">
@@ -237,6 +219,8 @@
     &lt;/div&gt;
         </code>
       </pre>
+
+      <a name="style">Anchor: Styles</a>
 
       <p>Use the <code2>square</code2> class to give the sticky squared, sharp edges.</p>
 
@@ -330,31 +314,6 @@
         </code>
       </pre>
 
-      <br>
-      <hr>
-      <br>
-      <h4>More CSS Components</h4>
-      <br>
-      <br>
-      <a href="/buttons"><button>Buttons</button></a>
-      <br>
-      <br>
-      <a href="/tags"><button>Tags</button></a>
-      <br>
-      <br>
-      <a href="/badges"><button>Badges</button></a>
-      <br>
-      <br>
-      <a href="/forms"><button>Forms</button></a>
-      <br>
-      <br>
-      <a href="/type"><button>Typography</button></a>
-      <br>
-      <br>
-      <a href="/"><button class="indigo-light">Home</button></a>
-      <br>
-      <br>
     </div>
-
   </body>
 </html>

@@ -2,31 +2,203 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Components</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="markup.css">
+    <script type="text/javascript" src="app.js"></script>
     <style>
 
-      * {
-        margin-top: 5%;
+      body {
+        margin: 0;
+        padding: 0;
       }
+
+      i.fa-star, i.fa-github, i.fa-twitter {
+        font-size: 17px;
+        vertical-align: bottom;
+      }
+
+      i.fa-heart, i.fa-check-square-o {
+        font-size: 20px;
+        color: rgba(83,109,254,1);
+      }
+
+      div#buttongroup {
+        padding: 2.5% 0;
+        width: 100%;
+        display: inline-block;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+      div#buttongroup sticky {
+        margin: 2%;
+      }
+
+      button.dl {
+        margin: 2.5% 0;
+      }
+
+      h1.homesubheader {
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+
+      span {
+        color: rgba(83,109,254,1);
+        font-weight: 700;
+      }
+
+      ul#why li {
+        font-size: 1.1em;
+        list-style-type: none;
+      }
+
+      ul#why li:before {
+        font-family: 'FontAwesome';
+        content: "\f00c";
+        margin: 0 5px 0 -15px;
+        color: rgba(83,109,254,1);
+      }
+
+      div#social tag {
+        margin: 5% 1%;
+      }
+
+      @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px) {
+          container {
+            width: 100%;
+            padding-bottom: 25%;
+          }
+          ul.topnav {
+            margin-bottom: 15%;
+          }
+          h1.homesubheader {
+            font-size: 2em;
+            font-weight: 400;
+            text-transform: lowercase;
+          }
+          div#buttongroup {
+            padding: 2.5%;
+            width: 100%;
+            display: block;
+          }
+          div#buttongroup sticky {
+            margin: 5%;
+            display: block;
+          }
+          button.dl {
+            margin: 2.5% 0;
+            font-size: 1.5em;
+          }
+          div#social {
+            width: 100%;
+            height: auto;
+
+          }
+          div#social tag {
+            margin: 5% 0;
+            display: block;
+            width: 50%;
+
+          }
+          i.fa {
+            margin: 0 2% 0 1%;
+          }
+
+        }
+
+      @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px) {
+          container {
+            width: 100%;
+          }
+          div#buttongroup {
+            width: 100%;
+            display: block;
+          }
+          div#buttongroup sticky {
+            margin: 5%;
+            display: block;
+            width: 50%;
+          }
+          div#social tag {
+            margin: 5% 1%;
+          }
+        }
 
     </style>
   </head>
-  <body style="border: 1px solid black; padding: 2.5%; width: 75%; margin: auto;">
-    <center>
-      <h1>Web Components</h1>
-      <br>
-      <h3>Created By Preeya Sharma</h3>
+  <body>
+
+    <!--- Top Navbar --->
+
+    <ul class="topnav" id="myTopnav">
+      <li class="brand"><a href="/">indigo.css</a></li>
+      <li><a href="/buttons">Buttons</a></li>
+      <li><a href="/stickys">Stickys</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/badges">Badges</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+
+    <div id="container">
+
+      <center><h1 class="homesubheader"><span>Indigo.css</span> is a collection of custom UI components created for developers and designers.</h1></center>
+
+      <center><div id="buttongroup">
+       <sticky class="black-light huge-sti">streamlined</sticky>
+       <sticky class="black-light huge-sti">versatile</sticky>
+       <sticky class="black-light huge-sti">modern</sticky>
+       <sticky class="black-light huge-sti">100% free</sticky>
+     </div></center>
+
+      <p><badge class="indigo-light">indigo.css</badge> offers simple yet elegant styling of some of the most frequently used HTML elements so you can get your project up off of the ground quickly and easily.</p>
+
+      <p>While our eventual goal is to build a fully-responsive, robust UI framework, <badge class="indigo-light">indigo.css</badge> is not quite there yet.</p>
+
+      <p>If you're interested in our development progress, feel free to take a look at the <a class="link" href="">repository</a>.</p>
+
+      <p>Better yet, <a class="link" href="">contribute to our open-source project!</a></p>
+
+      <center><button class="green huge-btn pill dl">get started</button></center>
+
       <hr>
-      <br>
-      <h5>Documentation</h5>
-      <a href="/buttons"><button>Buttons</button></a>
-      <a href="/stickies"><button>Stickies</button></a>
-      <a href="/tags"><button>Tags</button></a>
-      <a href="/forms"><button>Forms</button></a>
-      <a href="/type"><button>Typography</button></a>
+
+      <h1 class="homesubheader">why you should try <span> Indigo.css</span></h1>
+
+      <ul id="why">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+      </ul>
+
       <hr>
-    </center>
+
+      <center><div id="social">
+
+        <p>Share your <i class="fa fa-heart"></i> for indigo.css</p>
+
+        <tag class="black-light"><i class="fa fa-star"></i> Star</tag>
+        <tag class="black-light"><i class="fa fa-github"></i> Fork</tag>
+
+        <tag class="blue-light"><i class="fa fa-twitter"></i> Follow @indigo_css</tag>
+        <tag class="blue-light"><i class="fa fa-twitter"></i> Tweet</tag>
+      </div></center>
+
+    </div>
   </body>
 </html>
