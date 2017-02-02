@@ -2,18 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stickys</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
 
       body {
-        margin-top: 5%;
-        margin-left: 5%;
+        padding: 0;
+        margin: 0;
+
+      }
+
+      #container {
+        padding-top: 5%;
+        margin: auto;
         width: 80%;
       }
 
-      #backdrop {
+      #example {
+        border: 1px solid #8698f9;
+        padding: 3% 0;
+        box-shadow: 2px 2px 5px slategrey;
+        text-align: center;
+        overflow: scroll;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1%;
+      }
+
+      .backdrop {
         background-color: rgba(83,109,254,1);
       }
 
@@ -21,17 +40,15 @@
         background-color: #dbe0fc;
         border: 1px solid #8698f9;
         display: inline-block;
-        font-family: "Courier", monospace;
         width: 100%;
-        padding: 2% 0;
         overflow: scroll;
-        margin-top: 2%;
       }
 
       code {
         background-color: #dbe0fc;
         display: inline-block;
         font-family: "Courier", monospace;
+        font-size: 1em;
         float: left;
       }
 
@@ -44,25 +61,56 @@
         margin: 0.5%;
       }
 
+      @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px) {
+          container {
+            width: 100%;
+          }
+          sticky {
+            display: inline-block;
+            margin: 1%;
+
+          }
+          #example {
+            font-size: 0.8em;
+          }
+        }
+
+      @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px) {
+          container {
+            width: 100%;
+          }
+          sticky {
+            display: inline-block;
+            margin-top: 2%;
+          }
+          #example {
+            padding: 0 0 2% 0;
+          }
+        }
+
     </style>
   </head>
   <body>
-    <div id="info">
+    <div id="container">
       <h1>Stickys</h1>
       <hr>
       <br>
 
       <p>The default <code2>&lt;sticky&gt;</code2> is indigo with white text and slightly rounded edges.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky>default sticky</sticky>
       </div>
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky&gt;default sticky&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky&gt;default sticky&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
@@ -70,24 +118,35 @@
 
       <p>Stickys are not recommended for call-to-action items or for navigating a site or app. Instead, use <a href="/buttons">buttons</a> or <a href="/tags">tags</a>.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 60%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
-        <sticky class="black">3 days left</sticky>
-        <sticky class="red">warning</sticky>
-        <sticky class="black">1 new e-mail</sticky>
-        <sticky class="green">success</sticky>
-        <sticky class="black">clearance sale</sticky>
-
+      <div id="example">
+        <b>You Have 3 <sticky class="black">new</sticky> Notifications
+      </div>
+      <div id="example">
+        <sticky class="red">warning</sticky> Your Account Is Expiring
+      </div>
+      <div id="example">
+        Sign Up For Your <sticky class="black">Free</sticky> Trial Today <sticky class="gold">3 days left!</sticky>
+      </div>
+      <div id="example">
+        Download Status: <sticky class="green">done</sticky>
+      </div>
+      <div id="example">
+        <sticky class="purple">happy birthday!</sticky> Enjoy A Free Meal</b>
       </div>
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="black"&gt;3 days left&lt;/sticky&gt;
-            &lt;sticky class="red"&gt;warning&lt;/sticky&gt;
-            &lt;sticky class="black"&gt;1 new e-mail&lt;/sticky&gt;
-            &lt;sticky class="green"&gt;success&lt;/sticky&gt;
-            &lt;sticky class="black"&gt;clearance sale&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      You Have 3 &lt;sticky class="black">new&lt;/sticky&gt; Notifications
+
+      &lt;sticky class="red"&gt;warning&lt;/sticky&gt; Your Account Is Expiring
+
+      Sign Up For Your &lt;sticky class="black"&gt;Free&lt;/sticky&gt; Trial Today &lt;sticky class="gold"&gt;3 days left!&lt;/sticky&gt;
+
+      Download Status: &lt;sticky class="green"&gt;done&lt;/sticky&gt;
+
+      &lt;sticky class="purple"&gt;happy birthday!&lt;/sticky&gt; Enjoy A Free Meal
+    &lt;/div&gt;
         </code>
       </pre>
 
@@ -99,7 +158,7 @@
 
       <p>Use the <code2>color</code2> class to change the background color of the sticky.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 70%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="red">red</sticky>
         <sticky class="orange">orange</sticky>
         <sticky class="gold">gold</sticky>
@@ -114,24 +173,24 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="red"&gt;red&lt;/sticky&gt;
-            &lt;sticky class="orange"&gt;orange&lt;/sticky&gt;
-            &lt;sticky class="gold"&gt;gold&lt;/sticky&gt;
-            &lt;sticky class="green"&gt;green&lt;/sticky&gt;
-            &lt;sticky class="blue"&gt;blue&lt;/sticky&gt;
-            &lt;sticky&gt;indigo&lt;/sticky&gt;
-            &lt;sticky class="purple"&gt;purple&lt;/sticky&gt;
-            &lt;sticky class="pink"&gt;pink&lt;/sticky&gt;
-            &lt;sticky class="grey"&gt;grey&lt;/sticky&gt;
-            &lt;sticky class="black"&gt;black&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="red"&gt;red&lt;/sticky&gt;
+      &lt;sticky class="orange"&gt;orange&lt;/sticky&gt;
+      &lt;sticky class="gold"&gt;gold&lt;/sticky&gt;
+      &lt;sticky class="green"&gt;green&lt;/sticky&gt;
+      &lt;sticky class="blue"&gt;blue&lt;/sticky&gt;
+      &lt;sticky&gt;indigo&lt;/sticky&gt;
+      &lt;sticky class="purple"&gt;purple&lt;/sticky&gt;
+      &lt;sticky class="pink"&gt;pink&lt;/sticky&gt;
+      &lt;sticky class="grey"&gt;grey&lt;/sticky&gt;
+      &lt;sticky class="black"&gt;black&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 70%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="red-light">red</sticky>
         <sticky class="orange-light">orange</sticky>
         <sticky class="gold-light">gold</sticky>
@@ -146,24 +205,24 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="red-light"&gt;red&lt;/sticky&gt;
-            &lt;sticky class="orange-light"&gt;orange&lt;/sticky&gt;
-            &lt;sticky class="gold-light"&gt;gold&lt;/sticky&gt;
-            &lt;sticky class="green-light"&gt;green&lt;/sticky&gt;
-            &lt;sticky class="blue-light"&gt;blue&lt;/sticky&gt;
-            &lt;sticky class="indigo-light"&gt;indigo&lt;/sticky&gt;
-            &lt;sticky class="purple-light"&gt;purple&lt;/sticky&gt;
-            &lt;sticky class="pink-light"&gt;pink&lt;/sticky&gt;
-            &lt;sticky class="grey-light"&gt;grey&lt;/sticky&gt;
-            &lt;sticky class="black-light"&gt;black&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="red-light"&gt;red&lt;/sticky&gt;
+      &lt;sticky class="orange-light"&gt;orange&lt;/sticky&gt;
+      &lt;sticky class="gold-light"&gt;gold&lt;/sticky&gt;
+      &lt;sticky class="green-light"&gt;green&lt;/sticky&gt;
+      &lt;sticky class="blue-light"&gt;blue&lt;/sticky&gt;
+      &lt;sticky class="indigo-light"&gt;indigo&lt;/sticky&gt;
+      &lt;sticky class="purple-light"&gt;purple&lt;/sticky&gt;
+      &lt;sticky class="pink-light"&gt;pink&lt;/sticky&gt;
+      &lt;sticky class="grey-light"&gt;grey&lt;/sticky&gt;
+      &lt;sticky class="black-light"&gt;black&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Stickys have two additional size classes: <code2>big-sti</code2> and <code2>huge-sti</code2>.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 2%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="purple">default</sticky>
         <sticky class="purple big-sti">large</sticky>
         <sticky class="purple huge-sti">jumbo</sticky>
@@ -171,17 +230,17 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="purple"&gt;default&lt;/sticky&gt;
-            &lt;sticky class="purple big-sti"&gt;large&lt;/sticky&gt;
-            &lt;sticky class="purple huge-sti"&gt;jumbo&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="purple"&gt;default&lt;/sticky&gt;
+      &lt;sticky class="purple big-sti"&gt;large&lt;/sticky&gt;
+      &lt;sticky class="purple huge-sti"&gt;jumbo&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>square</code2> class to give the sticky squared, sharp edges.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 2%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="green-light square">squared</sticky>
         <sticky class="blue square big-sti">squared</sticky>
         <sticky class="indigo-light square huge-sti">squared</sticky>
@@ -189,17 +248,17 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="green-light square"&gt;squared&lt;/sticky&gt;
-            &lt;sticky class="blue square big-sti"&gt;squared&lt;/sticky&gt;
-            &lt;sticky class="indigo-light square huge-sti"&gt;squared&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="green-light square"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="blue square big-sti"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="indigo-light square huge-sti"&gt;squared&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>pill</code2> class to give the sticky a pill shape with rounded edges.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 2%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="red-light pill">rounded</sticky>
         <sticky class="orange pill big-sti">rounded</sticky>
         <sticky class="gold-light pill huge-sti">rounded</sticky>
@@ -207,17 +266,17 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="red-light pill"&gt;rounded&lt;/sticky&gt;
-            &lt;sticky class="orange pill big-sti"&gt;rounded&lt;/sticky&gt;
-            &lt;sticky class="gold-light pill huge-sti"&gt;rounded&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="red-light pill"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="orange pill big-sti"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="gold-light pill huge-sti"&gt;rounded&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>raised</code2> class to give the sticky shadows and a raised effect.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 2%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="pink raised square">raised</sticky>
         <sticky class="pink raised square big-sti">raised</sticky>
         <sticky class="pink raised square huge-sti">raised</sticky>
@@ -225,17 +284,17 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="pink raised square"&gt;raised&lt;/sticky&gt;
-            &lt;sticky class="pink raised square big-sti"&gt;raised&lt;/sticky&gt;
-            &lt;sticky class="pink raised square huge-sti"&gt;raised&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="pink raised square"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square big-sti"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square huge-sti"&gt;raised&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
       <p>Use the <code2>disabled</code2> class to indicate the sticky is inactive.</p>
 
-      <div style="border: 1px solid #8698f9; padding: 1.5%; width: 40%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div id="example">
         <sticky class="blue pill disabled">yesterday</sticky>
         <sticky class="blue pill">today</sticky>
         <sticky class="blue pill disabled">tommorrow</sticky>
@@ -243,11 +302,11 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="blue pill disabled"&gt;yesterday&lt;/sticky&gt;
-            &lt;sticky class="blue pill"&gt;today&lt;/sticky&gt;
-            &lt;sticky class="blue pill disabled"&gt;tomorrow&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="blue pill disabled"&gt;yesterday&lt;/sticky&gt;
+      &lt;sticky class="blue pill"&gt;today&lt;/sticky&gt;
+      &lt;sticky class="blue pill disabled"&gt;tomorrow&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
@@ -255,7 +314,7 @@
 
       <p>These are most effective when paired with high-contrast background colors or images that won't clash with the sticky's text.</p>
 
-      <div id="backdrop" style="border: 1px solid #8698f9; padding: 2%; width: 50%; box-shadow: 2px 2px 5px slategrey; text-align: center;">
+      <div class="backdrop" id="example">
         <sticky class="ghost">ghost sticky</sticky>
         <sticky class="ghost big-sti">ghost sticky</sticky>
         <sticky class="ghost huge-sti">ghost sticky</sticky>
@@ -263,11 +322,11 @@
 
       <pre>
         <code>
-          &lt;div&gt;
-            &lt;sticky class="ghost"&gt;ghost sticky&lt;/sticky&gt;
-            &lt;sticky class="ghost big-sti"&gt;ghost sticky&lt;/sticky&gt;
-            &lt;sticky class="ghost huge-sti"&gt;ghost sticky&lt;/sticky&gt;
-          &lt;/div&gt;
+    &lt;div&gt;
+      &lt;sticky class="ghost"&gt;ghost sticky&lt;/sticky&gt;
+      &lt;sticky class="ghost big-sti"&gt;ghost sticky&lt;/sticky&gt;
+      &lt;sticky class="ghost huge-sti"&gt;ghost sticky&lt;/sticky&gt;
+    &lt;/div&gt;
         </code>
       </pre>
 
@@ -277,22 +336,22 @@
       <h4>More CSS Components</h4>
       <br>
       <br>
-      <a href="/buttons"><button class="square">Buttons</button></a>
+      <a href="/buttons"><button>Buttons</button></a>
       <br>
       <br>
-      <a href="/tags"><button class="square">Tags</button></a>
+      <a href="/tags"><button>Tags</button></a>
       <br>
       <br>
-      <a href="/badges"><button class="square">Badges</button></a>
+      <a href="/badges"><button>Badges</button></a>
       <br>
       <br>
-      <a href="/forms"><button class="square">Forms</button></a>
+      <a href="/forms"><button>Forms</button></a>
       <br>
       <br>
-      <a href="/type"><button class="square">Typography</button></a>
+      <a href="/type"><button>Typography</button></a>
       <br>
       <br>
-      <a href="/"><button class="square indigo-light">Home</button></a>
+      <a href="/"><button class="indigo-light">Home</button></a>
       <br>
       <br>
     </div>
