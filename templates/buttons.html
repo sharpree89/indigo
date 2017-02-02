@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indigo.css - buttons</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/markup.css">
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    <style>
+
+      /*BUTTONS-PAGE-ONLY STYLING*/
+
+      @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px) {
+          container {
+            width: 100%;
+          }
+          button {
+            display: inline-block;
+            margin: 1%;
+
+          }
+          #example {
+            font-size: 0.8em;
+          }
+          .raise {
+            margin-top: 2.5%;
+            margin-bottom: 1.5%;
+          }
+        }
+
+      @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px) {
+          container {
+            width: 100%;
+          }
+          button {
+            display: inline-block;
+            margin: 2.5% 1% 1% 1%;
+          }
+          #example {
+            padding: 0 0 2% 0;
+          }
+          .raise {
+            margin-top: 1.5%;
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <!--- Animated Side Nav Styling --->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#usage">Usage</a>
+      <a href="#color">Colors</a>
+      <a href="#size">Sizing</a>
+      <a href="#style">Styles</a>
+    </div>
+
+    <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+    <!--- Top Navbar --->
+
+      <ul class="topnav" id="myTopnav">
+        <li onclick="openNav()"><a style="cursor: pointer;">&#9776;</a></li>
+        <li class="brand"><a href="/">indigo.css</a></li>
+        <li><a href="/buttons">Buttons</a></li>
+        <li><a href="/labels">Labels</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+
+      <div id="container">
+
+        <a name="usage">Anchor: Usage</a>
+
+        <h1>Buttons</h1>
+        <hr>
+
+        <p>The default primary <code2>&lt;button&gt;</code2> is indigo with white text and slightly rounded edges.</p>
+
+        <div id="example">
+          <button>default button</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button&gt;default button&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use primary buttons to indicate a call-to-action.</p>
+
+        <div id="example">
+          <button class="orange">buy now</button>
+          <button class="black">submit</button>
+          <button class="blue">register</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="orange"&gt;buy now&lt;/button&gt;
+        &lt;button class="black"&gt;submit&lt;/button&gt;
+        &lt;button class="blue"&gt;register&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Buttons also help users navigate through a site or app.</p>
+
+        <div id="example">
+          <button class="black">back</button>
+          <button class="pink">home</button>
+          <button class="black">next</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="black"&gt;back&lt;/button&gt;
+        &lt;button class="pink"&gt;home&lt;/button&gt;
+        &lt;button class="black"&gt;next&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <h4>Customizing Buttons</h4>
+        <hr>
+        <a name="color">Anchor: Colors</a>
+
+        <p>Use the <code2>color</code2> class to change the background color of the button.</p>
+
+        <div id="example">
+          <button class="red">red</button>
+          <button class="orange">orange</button>
+          <button class="gold">gold</button>
+          <button class="green">green</button>
+          <button class="blue">blue</button>
+          <button>indigo</button>
+          <button class="purple">purple</button>
+          <button class="pink">pink</button>
+          <button class="grey">grey</button>
+          <button class="black">black</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="red"&gt;red&lt;/button&gt;
+        &lt;button class="orange"&gt;orange&lt;/button&gt;
+        &lt;button class="gold"&gt;gold&lt;/button&gt;
+        &lt;button class="green"&gt;green&lt;/button&gt;
+        &lt;button class="blue"&gt;blue&lt;/button&gt;
+        &lt;button&gt;indigo&lt;/button&gt;
+        &lt;button class="purple"&gt;purple&lt;/button&gt;
+        &lt;button class="pink"&gt;pink&lt;/button&gt;
+        &lt;button class="grey"&gt;grey&lt;/button&gt;
+        &lt;button class="black"&gt;black&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use the <code2>color-light</code2> class for an inverted color scheme (secondary buttons).</p>
+
+        <div id="example">
+          <button class="red-light">red</button>
+          <button class="orange-light">orange</button>
+          <button class="gold-light">gold</button>
+          <button class="green-light">green</button>
+          <button class="blue-light">blue</button>
+          <button class="indigo-light">indigo</button>
+          <button class="purple-light">purple</button>
+          <button class="pink-light">pink</button>
+          <button class="grey-light">grey</button>
+          <button class="black-light">black</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="red-light"&gt;red&lt;/button&gt;
+        &lt;button class="orange-light"&gt;orange&lt;/button&gt;
+        &lt;button class="gold-light"&gt;gold&lt;/button&gt;
+        &lt;button class="green-light"&gt;green&lt;/button&gt;
+        &lt;button class="blue-light"&gt;blue&lt;/button&gt;
+        &lt;button class="indigo-light"&gt;indigo&lt;/button&gt;
+        &lt;button class="purple-light"&gt;purple&lt;/button&gt;
+        &lt;button class="pink-light"&gt;pink&lt;/button&gt;
+        &lt;button class="grey-light"&gt;grey&lt;/button&gt;
+        &lt;button class="black-light"&gt;black&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use secondary buttons alongside primary buttons to help emphasize a preferred action.</p>
+
+        <div id="example">
+          <button class="orange-light">go back</button>
+          <button class="orange">check out</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="orange-light"&gt;go back&lt;/button&gt;
+        &lt;button class="orange"&gt;check out&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <div id="example">
+          <button>sign up today</button>
+          <button class="indigo-light">no thanks</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button&gt;sign up today&lt;/button&gt;
+        &lt;button class="indigo-light"&gt;no thanks&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="size">Anchor: Sizes</a>
+
+        <p>Buttons have two additional size classes: <code2>big-btn</code2> and <code2>huge-btn</code2>.</p>
+
+        <div id="example">
+          <button class="purple">default</button>
+          <button class="purple big-btn">large</button>
+          <button class="purple huge-btn">jumbo</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="purple"&gt;default&lt;/button&gt;
+        &lt;button class="purple big-btn"&gt;large&lt;/button&gt;
+        &lt;button class="purple huge-btn"&gt;jumbo&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="style">Anchor: Styles</a>
+
+        <p>Use the <code2>square</code2> class to give the button squared, sharp edges.</p>
+
+        <div id="example">
+          <button class="green-light square">squared</button>
+          <button class="blue square big-btn">squared</button>
+          <button class="indigo-light square huge-btn">squared</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="green-light square"&gt;squared&lt;/button&gt;
+        &lt;button class="blue square big-btn"&gt;squared&lt;/button&gt;
+        &lt;button class="indigo-light square huge-btn"&gt;squared&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use the <code2>pill</code2> class to give the button a pill shape with rounded edges.</p>
+
+        <div id="example">
+          <button class="red-light pill">rounded</button>
+          <button class="orange pill big-btn">rounded</button>
+          <button class="gold-light pill huge-btn">rounded</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="red-light pill"&gt;rounded&lt;/button&gt;
+        &lt;button class="orange pill big-btn"&gt;rounded&lt;/button&gt;
+        &lt;button class="gold-light pill huge-btn"&gt;rounded&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use the <code2>raised</code2> class to give the button shadows and a raised effect.</p>
+
+        <div id="example">
+          <button class="pink raised square">raised</button>
+          <button class="pink raised square big-btn">raised</button>
+          <button class="pink raised square huge-btn raise">raised</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="pink raised square"&gt;raised&lt;/button&gt;
+        &lt;button class="pink raised square big-btn"&gt;raised&lt;/button&gt;
+        &lt;button class="pink raised square huge-btn"&gt;raised&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use the <code2>disabled</code2> class to indicate the button is inactive...</p>
+
+        <div id="example">
+          <button class="blue pill disabled">yesterday</button>
+          <button class="blue pill">today</button>
+          <button class="blue pill disabled">tomorrow</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="blue pill disabled"&gt;yesterday&lt;/button&gt;
+        &lt;button class="blue pill"&gt;today&lt;/button&gt;
+        &lt;button class="blue pill disabled"&gt;tomorrow&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>... or to put emphasis on a more preferred element.</p>
+
+        <div id="example">
+          <button class="grey disabled">Go Back</button>
+          <button class="green raised">Check Out</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="grey disabled"&gt;Go Back&lt;/button&gt;
+        &lt;button class="green raised"&gt;Check Out&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Use the <code2>ghost</code2> class to give the button a transparent look.</p>
+
+        <p>Ghost buttons are most effective when paired with high-contrast background colors or images that won't clash with the button's text.</p>
+
+        <div class="backdrop" id="example">
+          <button class="ghost">ghost</button>
+          <button class="ghost big-btn">ghost</button>
+          <button class="ghost huge-btn">ghost</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="ghost"&gt;ghost&lt;/button&gt;
+        &lt;button class="ghost big-btn"&gt;ghost&lt;/button&gt;
+        &lt;button class="ghost huge-btn"&gt;ghost&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+      </div>
+
+    </div>
+  </body>
+</html>

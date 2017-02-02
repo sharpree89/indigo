@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indigo.css - stickys</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/markup.css">
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    <style>
+
+      /*STICKYS-PAGE-ONLY STYLING*/
+
+      @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px) {
+          container {
+            width: 100%;
+          }
+          sticky {
+            display: inline-block;
+            margin: 1%;
+
+          }
+          #example {
+            font-size: 0.8em;
+          }
+        }
+
+      @media only screen
+        and (min-device-width: 768px)
+        and (max-device-width: 1024px) {
+          container {
+            width: 100%;
+          }
+          sticky {
+            display: inline-block;
+            margin-top: 2%;
+          }
+          #example {
+            padding: 0 0 2% 0;
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <!--- Animated Side Nav Styling --->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#usage">Usage</a>
+      <a href="#color">Colors</a>
+      <a href="#size">Sizing</a>
+      <a href="#style">Styles</a>
+    </div>
+
+    <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+    <!--- TOP NAVBAR --->
+
+    <ul class="topnav" id="myTopnav">
+      <li onclick="openNav()"><a style="cursor: pointer;">&#9776;</a></li>
+      <li class="brand"><a href="/">indigo.css</a></li>
+      <li><a href="/buttons">Buttons</a></li>
+      <li><a href="/labels">Labels</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+
+    <div id="container">
+
+      <a name="usage">Anchor: Usage</a>
+
+      <h1>Stickys</h1>
+      <hr>
+
+      <p>The default <code2>&lt;sticky&gt;</code2> is indigo with white text and slightly rounded edges.</p>
+
+      <div id="example">
+        <sticky>default sticky</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky&gt;default sticky&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use stickys to alert users with a message, to display new information, or to emphasize a specific block of text.</p>
+
+      <p>Stickys are not recommended for call-to-action items or for navigating a site or app. Instead, use <a href="/buttons">buttons</a> or <a href="/tags">tags</a>.</p>
+
+      <div id="example">
+        <b>You Have 3 <sticky class="black">new</sticky> Notifications
+      </div>
+      <div id="example">
+        <sticky class="red">warning</sticky> Your Account Is Expiring
+      </div>
+      <div id="example">
+        Sign Up For Your <sticky class="black">Free</sticky> Trial Today <sticky class="gold">3 days left!</sticky>
+      </div>
+      <div id="example">
+        Download Status: <sticky class="green">done</sticky>
+      </div>
+      <div id="example">
+        <sticky class="purple">happy birthday!</sticky> Enjoy A Free Meal</b>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      You Have 3 &lt;sticky class="black">new&lt;/sticky&gt; Notifications
+
+      &lt;sticky class="red"&gt;warning&lt;/sticky&gt; Your Account Is Expiring
+
+      Sign Up For Your &lt;sticky class="black"&gt;Free&lt;/sticky&gt; Trial Today &lt;sticky class="gold"&gt;3 days left!&lt;/sticky&gt;
+
+      Download Status: &lt;sticky class="green"&gt;done&lt;/sticky&gt;
+
+      &lt;sticky class="purple"&gt;happy birthday!&lt;/sticky&gt; Enjoy A Free Meal
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <h4>Customizing Stickys</h4>
+      <hr>
+      <a name="color">Anchor: Colors</a>
+
+      <p>Use the <code2>color</code2> class to change the background color of the sticky.</p>
+
+      <div id="example">
+        <sticky class="red">red</sticky>
+        <sticky class="orange">orange</sticky>
+        <sticky class="gold">gold</sticky>
+        <sticky class="green">green</sticky>
+        <sticky class="blue">blue</sticky>
+        <sticky>indigo</sticky>
+        <sticky class="purple">purple</sticky>
+        <sticky class="pink">pink</sticky>
+        <sticky class="grey">grey</sticky>
+        <sticky class="black">black</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="red"&gt;red&lt;/sticky&gt;
+      &lt;sticky class="orange"&gt;orange&lt;/sticky&gt;
+      &lt;sticky class="gold"&gt;gold&lt;/sticky&gt;
+      &lt;sticky class="green"&gt;green&lt;/sticky&gt;
+      &lt;sticky class="blue"&gt;blue&lt;/sticky&gt;
+      &lt;sticky&gt;indigo&lt;/sticky&gt;
+      &lt;sticky class="purple"&gt;purple&lt;/sticky&gt;
+      &lt;sticky class="pink"&gt;pink&lt;/sticky&gt;
+      &lt;sticky class="grey"&gt;grey&lt;/sticky&gt;
+      &lt;sticky class="black"&gt;black&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
+
+      <div id="example">
+        <sticky class="red-light">red</sticky>
+        <sticky class="orange-light">orange</sticky>
+        <sticky class="gold-light">gold</sticky>
+        <sticky class="green-light">green</sticky>
+        <sticky class="blue-light">blue</sticky>
+        <sticky class="indigo-light">indigo</sticky>
+        <sticky class="purple-light">purple</sticky>
+        <sticky class="pink-light">pink</sticky>
+        <sticky class="grey-light">grey</sticky>
+        <sticky class="black-light">black</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="red-light"&gt;red&lt;/sticky&gt;
+      &lt;sticky class="orange-light"&gt;orange&lt;/sticky&gt;
+      &lt;sticky class="gold-light"&gt;gold&lt;/sticky&gt;
+      &lt;sticky class="green-light"&gt;green&lt;/sticky&gt;
+      &lt;sticky class="blue-light"&gt;blue&lt;/sticky&gt;
+      &lt;sticky class="indigo-light"&gt;indigo&lt;/sticky&gt;
+      &lt;sticky class="purple-light"&gt;purple&lt;/sticky&gt;
+      &lt;sticky class="pink-light"&gt;pink&lt;/sticky&gt;
+      &lt;sticky class="grey-light"&gt;grey&lt;/sticky&gt;
+      &lt;sticky class="black-light"&gt;black&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <a name="size">Anchor: Sizes</a>
+
+      <p>Stickys have two additional size classes: <code2>big-sti</code2> and <code2>huge-sti</code2>.</p>
+
+      <div id="example">
+        <sticky class="purple">default</sticky>
+        <sticky class="purple big-sti">large</sticky>
+        <sticky class="purple huge-sti">jumbo</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="purple"&gt;default&lt;/sticky&gt;
+      &lt;sticky class="purple big-sti"&gt;large&lt;/sticky&gt;
+      &lt;sticky class="purple huge-sti"&gt;jumbo&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <a name="style">Anchor: Styles</a>
+
+      <p>Use the <code2>square</code2> class to give the sticky squared, sharp edges.</p>
+
+      <div id="example">
+        <sticky class="green-light square">squared</sticky>
+        <sticky class="blue square big-sti">squared</sticky>
+        <sticky class="indigo-light square huge-sti">squared</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="green-light square"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="blue square big-sti"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="indigo-light square huge-sti"&gt;squared&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use the <code2>pill</code2> class to give the sticky a pill shape with rounded edges.</p>
+
+      <div id="example">
+        <sticky class="red-light pill">rounded</sticky>
+        <sticky class="orange pill big-sti">rounded</sticky>
+        <sticky class="gold-light pill huge-sti">rounded</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="red-light pill"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="orange pill big-sti"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="gold-light pill huge-sti"&gt;rounded&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use the <code2>raised</code2> class to give the sticky shadows and a raised effect.</p>
+
+      <div id="example">
+        <sticky class="pink raised square">raised</sticky>
+        <sticky class="pink raised square big-sti">raised</sticky>
+        <sticky class="pink raised square huge-sti">raised</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="pink raised square"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square big-sti"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square huge-sti"&gt;raised&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use the <code2>disabled</code2> class to indicate the sticky is inactive.</p>
+
+      <div id="example">
+        <sticky class="blue pill disabled">yesterday</sticky>
+        <sticky class="blue pill">today</sticky>
+        <sticky class="blue pill disabled">tommorrow</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="blue pill disabled"&gt;yesterday&lt;/sticky&gt;
+      &lt;sticky class="blue pill"&gt;today&lt;/sticky&gt;
+      &lt;sticky class="blue pill disabled"&gt;tomorrow&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+      <p>Use the <code2>ghost</code2> class to give the sticky a transparent look.</p>
+
+      <p>These are most effective when paired with high-contrast background colors or images that won't clash with the sticky's text.</p>
+
+      <div class="backdrop" id="example">
+        <sticky class="ghost">ghost sticky</sticky>
+        <sticky class="ghost big-sti">ghost sticky</sticky>
+        <sticky class="ghost huge-sti">ghost sticky</sticky>
+      </div>
+
+      <pre>
+        <code>
+    &lt;div&gt;
+      &lt;sticky class="ghost"&gt;ghost sticky&lt;/sticky&gt;
+      &lt;sticky class="ghost big-sti"&gt;ghost sticky&lt;/sticky&gt;
+      &lt;sticky class="ghost huge-sti"&gt;ghost sticky&lt;/sticky&gt;
+    &lt;/div&gt;
+        </code>
+      </pre>
+
+    </div>
+  </body>
+</html>
