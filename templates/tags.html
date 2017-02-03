@@ -13,30 +13,38 @@
 
       /*TAGS-PAGE-ONLY STYLING*/
 
+      h4 {color: rgba(83,109,254,1);}
+
+      #container {margin-bottom: 5%;}
+
+      .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+
+      /*PHONES*/
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
-          container {
-            width: 100%;
-          }
-          tag {
-            display: inline-block;
-            margin: 1% 0;
-          }
-          #example {
-            font-size: 0.8em;
-          }
+          tag {display: inline-block; margin: 1.5% 1%;}
+          h1 {font-size: 1.6em;}
+          h3 {font-size: 1.45em;}
+          h4 {font-size: 1.3em;}
+          h5 {font-size: 1.125em;}
+          button {display: inline-block; margin: 1%;}
+          .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+          .raised {margin: 2% 1%;}
+          #example {padding: 2.5% 0;}
         }
 
+      /*TABLETS*/
       @media only screen
         and (min-device-width: 768px)
         and (max-device-width: 1024px) {
-          container {
-            width: 100%;
-          }
-          #example {
-            padding: 2% 0;
-          }
+          tag {display: inline-block; margin: 1.5% 0.5%;}
+          .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+          #example {padding: 1% 0;}
+          .raised {margin: 2% 1%;}
+        }
+
+
         }
 
     </style>
@@ -47,9 +55,10 @@
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#top">Top</a>
       <a href="#usage">Usage</a>
       <a href="#color">Colors</a>
-      <a href="#size">Sizing</a>
+      <a href="#size">Sizes</a>
       <a href="#style">Styles</a>
     </div>
 
@@ -68,12 +77,18 @@
         </li>
       </ul>
 
+      <a name="top"></a>
+
       <div id="container">
 
-        <a name="usage">Anchor: Usage</a>
+        <a class="btn-link-light" href="/buttons"><span>Back To All Buttons </span></a>
 
-        <h1>Tags</h1>
-        <hr>
+        <h1>Tag Buttons</h1>
+
+        <p>This page contains all the information you need about <badge>indigo's</badge> tag button styling options. Use the side navigation to jump to different sections throughout the page.</p>
+
+        <a name="usage"></a>
+        <h4>Usage</h4>
 
         <p>The default <code2>&lt;tag&gt;</code2> is indigo with white text and slightly rounded edges.</p>
 
@@ -89,9 +104,13 @@
           </code>
         </pre>
 
-        <p>Use tags to style and emphasize keywords that enable searching or navigating.</p>
+        <p>Use tags to style and emphasize keywords related to an item, such as an article or a recipe, that enable searching or navigating your site or app.</p>
 
         <div id="example">
+          <p><b>Why Buttons Are The Coolest</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
           <tag class="black">html5</tag>
           <tag class="black">css3</tag>
           <tag class="black">javascript</tag>
@@ -101,26 +120,42 @@
           <tag class="black">web design</tag>
         </div>
 
+        <div id="example">
+          <p><b>Strawberry Cupcakes Recipe</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio similique, fugit excepturi.</p>
+          <tag class="pink">baking</tag>
+          <tag class="pink">recipe</tag>
+          <tag class="pink">cupcakes</tag>
+          <tag class="pink">frosting</tag>
+          <tag class="pink">strawberry</tag>
+          <tag class="pink">vegan</tag>
+          <tag class="pink">dessert</tag>
+        </div>
+
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag class="black"&gt;html5&lt;/tag&gt;
-        &lt;tag class="black"&gt;css3&lt;/tag&gt;
-        &lt;tag class="black"&gt;javascript&lt;/tag&gt;
-        &lt;tag class="black"&gt;ui / ux&lt;/tag&gt;
-        &lt;tag class="black"&gt;front-end&lt;/tag&gt;
-        &lt;tag class="black"&gt;web dev&lt;/tag&gt;
-        &lt;tag class="black"&gt;web design&lt;/tag&gt;
+        &lt;p&gt;Strawberry Cupcakes Recipe&lt;/p&gt;
+        &lt;tag class="pink"&gt;baking&lt;/tag&gt;
+        &lt;tag class="pink"&gt;recipe&lt;/tag&gt;
+        &lt;tag class="pink"&gt;cupcakes&lt;/tag&gt;
+        &lt;tag class="pink"&gt;frosting&lt;/tag&gt;
+        &lt;tag class="pink"&gt;strawberry&lt;/tag&gt;
+        &lt;tag class="pink"&gt;vegan&lt;/tag&gt;
+        &lt;tag class="pink"&gt;dessert&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Tags also work well as miniature buttons for tiny user interfaces.</p>
+        <p>Tags also work well as miniature buttons for tiny user interfaces...</p>
 
         <div id="example">
           <b>Get Started Today!</b>
+          <br>
           <tag>Sign Me Up</tag>
-          <tag class="grey">No Thanks</tag>
+          <tag class="grey">Read Reviews</tag>
         </div>
 
         <pre>
@@ -128,32 +163,42 @@
       &lt;div&gt;
         Get Started Today!
         &lt;tag&gt;Sign Me Up&lt;/tag&gt;
-        &lt;tag class="grey"&gt;No Thanks&lt;/tag&gt;
+        &lt;tag class="grey"&gt;Read Reviews&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
+        <p>...and their small size is well-suited for subtle social media buttons.</p>
+
+        <p><a href="http://fontawesome.io/" class="text-link">Font Awesome Icons</a> work beautifully with <badge>indigo's</badge> CSS components.</p>
+
         <div id="example">
-          <b>Follow Me:</b>
-          <tag class="red">Pinterest</tag>
-          <tag class="blue">Twitter</tag>
-          <tag class="black">GitHub</tag>
+          <b>Follow Me!</b>
+          <br>
+          <tag class="red"><i class="fa fa-pinterest"></i> Pinterest</tag>
+          <tag class="blue"><i class="fa fa-twitter"></i> Twitter</tag>
+          <tag class="black"><i class="fa fa-github"></i> GitHub</tag>
+          <tag><i class="fa fa-facebook"></i> Facebook</tag>
+          <tag class="orange"><i class="fa fa-reddit"></i> Reddit</tag>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         Follow Me
-        &lt;tag class="red">Pinterest&lt;/tag>
-        &lt;tag class="blue">Twitter&lt;/tag>
-        &lt;tag class="black">GitHub&lt;/tag>
+        &lt;tag class="red"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt; Pinterest&lt;/tag&gt;
+        &lt;tag class="blue"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt; Twitter&lt;/tag&gt;
+        &lt;tag class="black"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt; GitHub&lt;/tag&gt;
+        &lt;tag&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt; Facebook&lt;/tag&gt;
+        &lt;tag class="orange"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt; Reddit&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <h4>Customizing Tags</h4>
-        <hr>
-        <a name="color">Anchor: Colors</a>
+        <h3>Customizing Tags</h3>
+
+        <a name="color"></a>
+        <h4>Colors</h4>
 
         <p>Use the <code2>.color</code2> class to change the background color of the tag.</p>
 
@@ -187,7 +232,7 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.color-light</code2> class for an inverted color scheme.</p>
+        <p>Use the <code2>.color-light</code2> class for an inverted color scheme that is consistent with the style of <a href="/buttons/buttons#secondary">Secondary Buttons</a>.</p>
 
         <div id="example">
           <tag class="red-light">red</tag>
@@ -219,9 +264,16 @@
           </code>
         </pre>
 
-        <a name="size">Anchor: Sizes</a>
+        <a name="size"></a>
+        <h4>Sizes</h4>
 
-        <p>Tags have two additional size classes: <code2>.med-tag</code2> and <code2>.lrg-tag</code2>.</p>
+        <p>Tags come in three sizes: default, medium, and large.</p>
+
+        <p>Default - <code2>&lt;tag&gt;</code2> - no additional class necessary.</p>
+
+        <p>Medium - <code2>.med-tag</code2></p>
+
+        <p>Large - <code2>.lrg-tag</code2></p>
 
         <div id="example">
           <tag class="purple">default</tag>
@@ -239,9 +291,12 @@
           </code>
         </pre>
 
-        <a name="style">Anchor: Styles</a>
+        <a name="style"></a>
+        <h4>Styles</h4>
 
-        <p>Use the <code2>.square</code2> class to give the tag squared, sharp edges.</p>
+        <h5>Square Tags</h5>
+
+        <p>Use the <code2>.square</code2> class to give tags squared, sharp edges.</p>
 
         <div id="example">
           <tag class="green-light square">square</tag>
@@ -259,7 +314,9 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.pill</code2> class to give the tag a pill shape with rounded edges.</p>
+        <h5>Pill Tags</h5>
+
+        <p>Use the <code2>.pill</code2> class for a pill-shaped tag with rounded edges.</p>
 
         <div id="example">
           <tag class="red-light pill">rounded</tag>
@@ -277,7 +334,7 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.raised</code2> class to give the tag shadows and a raised effect.</p>
+        <p>Use the <code2>.raised</code2> class to give tags shadows and a raised, 3-dimensional effect.</p>
 
         <div id="example">
           <tag class="pink raised square">raised</tag>
@@ -295,27 +352,34 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.ghost</code2> class to give the tag a transparent look.</p>
+        <h5>Ghost Buttons</h5>
+
+        <p>Use the <code2>.ghost</code2> class to give tags a transparent background with a white border and white text.</p>
 
         <p>These are most effective when paired with high-contrast background colors or images that won't clash with the tag's text.</p>
 
         <div class="backdrop" id="example">
-          <tag class="ghost">ghost tag</tag>
-          <tag class="ghost med-tag">ghost tag</tag>
-          <tag class="ghost lrg-tag">ghost tag</tag>
+          <tag class="ghost">ghost</tag>
+          <tag class="ghost med-tag">ghost</tag>
+          <tag class="ghost lrg-tag">ghost</tag>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag class="ghost"&gt;ghost tag&lt;/tag&gt;
-        &lt;tag class="ghost med-tag"&gt;ghost tag&lt;/tag&gt;
-        &lt;tag class="ghost lrg-tag"&gt;ghost tag&lt;/tag&gt;
+        &lt;tag class="ghost"&gt;ghost&lt;/tag&gt;
+        &lt;tag class="ghost med-tag"&gt;ghost&lt;/tag&gt;
+        &lt;tag class="ghost lrg-tag"&gt;ghost&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
+        <a href="#top" class="btn-link-light"><span>Back To Top </span></a>
+
       </div>
+
+
+
     </div>
   </body>
 </html>

@@ -80,7 +80,6 @@ input[type=submit]:focus {outline: none;}
 
 a.text-link {
   font-weight: 700;
-  letter-spacing: 1px;
   text-decoration: none;
   color: rgba(83,109,254,1);
 }

@@ -13,82 +13,71 @@
 
       /*BUTTONS-PAGE-ONLY STYLING*/
 
+      h4 {color: rgba(83,109,254,1);}
+
+      /*PHONE*/
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
-          container {
-            width: 100%;
-          }
-          button {
-            display: inline-block;
-            margin: 1%;
 
-          }
-          #example {
-            font-size: 0.8em;
-          }
-          .raise {
-            margin-top: 2.5%;
-            margin-bottom: 1.5%;
+          h1 {font-size: 1.6em;}
+          h3 {font-size: 1.45em;}
+          h4 {font-size: 1.3em;}
+          h5 {font-size: 1.125em;}
+
+          button {display: inline-block; margin: 1%;}
+
+          .btn-link {display: inline-block; margin: 2%;}
+
           }
         }
 
+      /*TABLET*/
       @media only screen
         and (min-device-width: 768px)
         and (max-device-width: 1024px) {
-          container {
-            width: 100%;
-          }
-          button {
-            display: inline-block;
-            margin: 2.5% 1% 1% 1%;
-          }
-          #example {
-            padding: 0 0 2% 0;
-          }
-          .raise {
-            margin-top: 1.5%;
-          }
+
+          button {display: inline-block; margin: 1%;}
+
+          .btn-link {display: inline-block !important;}
+
         }
 
     </style>
   </head>
   <body>
 
-    <!--- Top Navbar --->
+  <!--- Top Navbar --->
 
-      <ul class="topnav" id="myTopnav">
-        <li class="brand"><a href="/">indigo.css</a></li>
-        <li><a href="/buttons">Buttons</a></li>
-        <li><a href="/labels">Labels</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-      </ul>
+    <ul class="topnav" id="myTopnav">
+      <li class="brand"><a href="/">indigo.css</a></li>
+      <li><a href="/buttons">Buttons</a></li>
+      <li><a href="/labels">Labels</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
 
-      <div id="container">
+    <div id="container">
 
-        <h1>Buttons</h1>
-        <hr>
-        <p>Use indigo buttons in form submissions, dialogs, navigation, toolbars, and to make your project more interactive.</p>
+      <h1>Buttons</h1>
 
-        <p>Buttons come in two main styles - <a class="text-link" href="/buttons/buttons">Standard Buttons</a> and <a class="text-link" href="/buttons/tags">Tags</a>.</p>
+      <p>Use <badge>indigo</badge> buttons in form submissions, dialogs, navigation, toolbars, and to make your project more interactive.</p>
 
-        <hr>
+      <p>Buttons come in two main styles - <a class="text-link" href="/buttons/buttons">Standard Buttons</a> and <a class="text-link" href="/buttons/tags">Tag Buttons</a>.</p>
 
-        <p>Check out the documentation and examples for each:</p>
+      <h4>documentation and examples</h4>
 
-        <p>
-          <a href="/buttons/buttons" class="btn-link"><span>Buttons </span></a>
-          <a href="/buttons/tags" class="btn-link"><span>Tags </span></a>
-        </p>
+      <a href="/buttons/buttons" class="btn-link"><span>Buttons </span></a>
 
-        <p>Not quite what you're looking for?</p>
+      <a href="/buttons/tags" class="btn-link"><span>Tags </span></a>
 
-        <p>
-          <a href="/labels" class="btn-link"><span>Labels </span></a>
-          <a href="/buttons/tags" class="btn-link-light"><span>Home </span></a>
-        </p>
+      <div style="margin-top: 10%;">
+        <h4>Not quite what you need?</h4>
+        <a href="/labels" class="btn-link"><span>Labels </span></a>
+        <a href="/buttons/tags" class="btn-link"><span>Home </span></a>
+      </div>
+
 
     </div>
 
