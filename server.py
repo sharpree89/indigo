@@ -10,29 +10,25 @@ def index():
 
 # BUTTONS
 
-@app.route('/buttons')
+@app.route('/components')
 def buttons_home():
-    return render_template('buttonshome.html')
+    return render_template('components.html')
 
-@app.route('/buttons/buttons')
+@app.route('/components/buttons')
 def buttons():
     return render_template('buttons.html')
 
-@app.route('/buttons/tags')
+@app.route('/components/tags')
 def tags():
     return render_template('tags.html')
 
 # LABELS
 
-@app.route('/labels')
-def labels_home():
-    return render_template('labelshome.html')
-
-@app.route('/labels/stickys')
+@app.route('/components/stickys')
 def stickys():
     return render_template('stickys.html')
 
-@app.route('/labels/badges')
+@app.route('/components/badges')
 def badges():
     return render_template('badges.html')
 

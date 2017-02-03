@@ -525,7 +525,6 @@ tag:active {opacity: 0.3;}
 badge {
   display: inline;
   text-align: center;
-  margin: 0 0.5%;
   font-size: 0.75em;
   font-weight: 600;
   padding: 1px 6px;

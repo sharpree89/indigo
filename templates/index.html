@@ -11,54 +11,33 @@
     <script type="text/javascript" src="/static/js/app.js"></script>
     <style>
 
-      body {
-        margin: 0;
-        padding: 0;
-      }
+      body {margin: 0; padding: 0;}
 
-      i.fa-star, i.fa-github, i.fa-twitter {
-        font-size: 15px;
-        vertical-align: middle;
-      }
+      i.fa-star, i.fa-github, i.fa-twitter {font-size: 15px; vertical-align: middle;}
 
-      i.fa-heart, i.fa-check-square-o {
-        font-size: 20px;
-        color: rgba(83,109,254,1);
-      }
+      i.fa-heart, i.fa-check-square-o {font-size: 20px;color: rgba(83,109,254,1);}
 
-      div#buttongroup {
-        padding: 2.5% 0;
+      div#content {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        padding: 5% 0;
         width: 100%;
-        display: inline-block;
-        display: -webkit-flex; /* Safari */
-        -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-        display: flex;
-        flex-wrap: wrap;
-
+        margin-bottom: 2.5%;
       }
 
-      div#buttongroup sticky {
-        margin: 2%;
-      }
+      div#content p {margin: 1% 5%;}
 
-      button.dl {
-        margin: 2.5% 0;
-      }
+      div#buttongroup {padding: 1% 0;}
 
-      h1.homesubheader {
-        font-weight: 400;
-        text-transform: lowercase;
-      }
+      div#buttongroup sticky {margin: 2%; display: inline-block;}
 
-      span {
-        color: rgba(83,109,254,1);
-        font-weight: 700;
-      }
+      button.dl {margin: 2.5% 0;}
 
-      ul#why li {
-        font-size: 1.1em;
-        list-style-type: none;
-      }
+      h1.homesubheader {font-weight: 400; text-transform: lowercase;}
+
+      span#indigo {color: rgba(83,109,254,1); font-weight: 700;}
+
+      ul#why li {font-size: 1.1em; list-style-type: none;}
 
       ul#why li:before {
         font-family: 'FontAwesome';
@@ -67,73 +46,46 @@
         color: rgba(83,109,254,1);
       }
 
-      div#social tag {
-        margin: 5% 1%;
-      }
+      div#social tag {margin: 5% 0.5%;}
 
+      /*PHONE*/
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
-          container {
-            width: 100%;
-            padding-bottom: 25%;
-          }
-          ul.topnav {
-            margin-bottom: 15%;
-          }
-          h1.homesubheader {
-            font-size: 2em;
-            font-weight: 400;
-            text-transform: lowercase;
-          }
-          div#buttongroup {
-            padding: 2.5%;
-            width: 100%;
-            display: block;
-          }
-          div#buttongroup sticky {
-            margin: 5%;
-            display: block;
-          }
-          button.dl {
-            margin: 2.5% 0;
-            font-size: 1.5em;
-          }
-          div#social {
-            width: 100%;
-            height: auto;
 
-          }
-          div#social tag {
-            margin: 5% 0;
-            display: block;
-            width: 50%;
+          ul.topnav {margin-bottom: 5%;}
 
-          }
-          i.fa {
-            margin: 0 2% 0 1%;
-          }
+          div#container {width: 90%;}
+
+          h1.homesubheader {font-size: 1.75em; font-weight: 400; text-transform: lowercase;}
+          div#buttongroup {padding: 2.5%;}
+
+          div#buttongroup sticky {margin: 1.5%; display: block; width: 80%;}
+
+          div#content {padding: 2.5% 0; margin: 5% 0;}
+
+          div#content p {margin: 3.5%;}
+
+          div#social {width: 100%;height: auto;}
+
+          div#social tag {margin: 5% 0; display: block; width: 40%;}
+
+          i.fa {margin: 0 2% 0 1%;}
 
         }
 
+      /*TABLETS*/
       @media only screen
         and (min-device-width: 768px)
         and (max-device-width: 1024px) {
-          container {
-            width: 100%;
-          }
-          div#buttongroup {
-            width: 100%;
-            display: block;
-          }
-          div#buttongroup sticky {
-            margin: 5%;
-            display: block;
-            width: 50%;
-          }
-          div#social tag {
-            margin: 5% 1%;
-          }
+
+          div#buttongroup sticky {margin: 2% 1.5%; display: block; width: 60%;}
+
+          div#content {padding: 2.5% 0; margin: 3.5% 0;}
+
+          div#content p {margin: 5%;}
+
+          div#social tag {margin: 5% 1%;}
         }
 
     </style>
@@ -144,63 +96,59 @@
 
     <ul class="topnav" id="myTopnav">
       <li class="brand"><a href="/">indigo.css</a></li>
-      <li><a href="/buttons">Buttons</a></li>
-      <li><a href="/labels">Labels</a></li>
+      <li><a href="/components">components</a></li>
+      <li><a href="/about">about</a></li>
       <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
       </li>
     </ul>
 
     <div id="container">
+      <center>
+        <h1 class="homesubheader">
+          <span id="indigo">Indigo.css</span> is a collection of custom UI components created for developers and designers.
+        </h1>
+        <div id="content">
+          <div id="buttongroup">
+            <sticky class="ghost lrg-sti">streamlined</sticky>
+            <sticky class="ghost lrg-sti">versatile</sticky>
+            <sticky class="ghost lrg-sti">modern</sticky>
+            <sticky class="ghost lrg-sti">100% free</sticky>
+          </div>
+          <p>
+            <badge>indigo.css</badge> offers simple yet elegant styling of some of the most frequently used HTML elements so you can get your project up off of the ground quickly and easily.
+          </p>
+          <p>
+            We love being able to customize and know you do too! With multiple options of colors, shapes and styles for our CSS components, <badge>indigo.css</badge> gives you hundreds of unique possibilities so you can create the perfect look for your project.
+          </p>
+        </div>
 
-      <center><h1 class="homesubheader"><span>Indigo.css</span> is a collection of custom UI components created for developers and designers.</h1></center>
+        <a href="/components" class="btn-link green"><span>get started </span></a>
 
-      <center><div id="buttongroup">
-       <sticky class="black-light lrg-sti">streamlined</sticky>
-       <sticky class="black-light lrg-sti">versatile</sticky>
-       <sticky class="black-light lrg-sti">modern</sticky>
-       <sticky class="black-light lrg-sti">100% free</sticky>
-     </div></center>
-
-      <p><badge>indigo.css</badge> offers simple yet elegant styling of some of the most frequently used HTML elements so you can get your project up off of the ground quickly and easily.</p>
-
-      <p>We love being able to customize and know you do too! With multiple options of colors, shapes and styles for our CSS components, <badge>indigo.css</badge> gives you hundreds of unique possibilities so you can create the perfect look for your project.</p>
-
-      <center><button class="green lrg-btn pill dl">get started</button></center>
-
-      <hr>
-
-      <h1 class="homesubheader">why you should try <span> Indigo.css</span></h1>
-
-      <ul id="why">
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-      </ul>
-
-      <hr>
-
-      <p>While our eventual goal is to build a fully-responsive, robust UI framework, <badge>indigo.css</badge> is not quite there yet.</p>
-
-      <p>If you're interested in our development progress, feel free to take a look at the <a class="link" href="">repository</a>.</p>
-
-      <p>Better yet, <a class="link" href="">contribute to our open-source project!</a></p>
-
-      <hr>
-
-      <center><div id="social">
-
-        <p>Share your <i class="fa fa-heart"></i> for indigo.css</p>
-
-        <tag class="black-light"><i class="fa fa-star"></i> Star</tag>
-        <tag class="black-light"><i class="fa fa-github"></i> Fork</tag>
-
-        <tag class="blue-light"><i class="fa fa-twitter"></i> Follow @indigo_css</tag>
-        <tag class="blue-light"><i class="fa fa-twitter"></i> Tweet</tag>
-      </div></center>
-
+        <h1 class="homesubheader">why you should try <span id="indigo"> Indigo.css</span></h1>
+        <ul id="why">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        </ul>
+        <hr>
+        <p>
+          While our eventual goal is to build a fully-responsive, robust UI framework, <badge>indigo.css</badge> is not quite there yet.
+        </p>
+        <p>
+          If you're interested in our development progress, feel free to take a look at the <a class="text-link" href="">repository</a>. Better yet, <a class="text-link" href="">contribute to our open-source project!</a>
+        </p>
+        <hr>
+        <div id="social">
+          <p>
+            Share your <i class="fa fa-heart"></i> for indigo.css
+          </p>
+          <tag class="black-light"><i class="fa fa-star"></i> Star</tag>
+          <tag class="black-light"><i class="fa fa-github"></i> Fork</tag>
+          <tag class="blue-light"><i class="fa fa-twitter"></i> Follow @indigo_css</tag>
+          <tag class="blue-light"><i class="fa fa-twitter"></i> Tweet</tag>
+        </div>
+      </center>
     </div>
   </body>
 </html>
