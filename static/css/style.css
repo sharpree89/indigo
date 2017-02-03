@@ -3,6 +3,7 @@
 
 * {
   font-family: 'Muli', sans-serif;
+  line-height: 150%;
 }
 
 body {
@@ -16,9 +17,8 @@ ul {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 200%;
 }
 
 hr {
@@ -78,175 +78,194 @@ a.link:focus {
 /*-------------- DEFAULT BUTTON STYLING --------------*/
 
 button {
-  text-align: center;
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 12px 20px;
+  padding: 10px 16px;
+  text-align: center;
+  /*padding: 1% 2%;*/
   background-color: rgba(83,109,254,1);
-  border: 2px solid rgba(83,109,254,1);
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
   color: white;
   border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-  cursor: pointer;
+button:hover {opacity: 0.75;}
+button:active {opacity: 0.3; outline: none;}
+button:focus {outline: none;}
+
+/*---------- ADDITIONAL BUTTON SIZING ----------*/
+
+.med-btn, .med-btn:hover {
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 15px 24px;
+  /*padding: 1.25% 2.25%;*/
+  border-radius: 10px;
+  border-width: 3px;
 }
 
-button:focus {
-  outline: none;
+.lrg-btn, .lrg-btn:hover {
+  letter-spacing: 2px !important;
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 20px 32px;
+  /*padding: 1.5% 2.5%;*/
+  border-radius: 12px;
+  border-width: 4px;
 }
 
 /*-------------- DEFAULT BUTTON COLORS --------------*/
 
 .blue, .blue:hover {
-  border: 2px solid rgba(0,176,255,1);
+  border-color: rgba(0,176,255,1);
+  border-style: solid;
   background-color: rgba(0,176,255,1);
 }
 
 .grey, .grey:hover {
-  border: 2px solid rgba(119,136,153,1);
+  border-color: rgba(119,136,153,1);
+  border-style: solid;
   background-color: rgba(119,136,153,1);
 }
 
 .green, .green:hover {
-  border: 2px solid rgba(2,184,117,1);
+  border-color: rgba(2,184,117,1);
+  border-style: solid;
   background-color: rgba(2,184,117,1);
 }
 
 .gold, .gold:hover {
-  border: 2px solid rgba(255,160,0,1);
+  border-color: rgba(255,160,0,1);
+  border-style: solid;
   background-color: rgba(255,160,0,1);
 }
 
 .orange, .orange:hover {
-  border: 2px solid rgba(255,109,0,1);
+  border-color: rgba(255,109,0,1);
+  border-style: solid;
   background-color: rgba(255,109,0,1);
 }
 
 .red, .red:hover {
-  border: 2px solid rgba(255,23,68,1);
+  border-color: rgba(255,23,68,1);
+  border-style: solid;
   background-color: rgba(255,23,68,1);
 }
 
 .black, .black:hover {
-  border: 2px solid rgba(38,50,56,1);
+  border-color: rgba(38,50,56,1);
+  border-style: solid;
   background-color: rgba(38,50,56,1);
 }
 
 .purple, .purple:hover {
-  border: 2px solid rgba(170,0,255,1);
+  border-color: rgba(170,0,255,1);
+  border-style: solid;
   background-color: rgba(170,0,255,1);
 }
 
 .pink, .pink:hover {
-  border: 2px solid rgba(240,98,146,1);
+  border-color: rgba(240,98,146,1);
+  border-style: solid;
   background-color: rgba(240,98,146,1);
 }
 
 /*-------------- LIGHT BUTTON COLORS --------------*/
 
 .indigo-light, .indigo-light:hover {
-  border: 2px solid rgba(83,109,254,1);
+  border-color: rgba(83,109,254,1);
+  border-style: solid;
   background-color: white;
   color: rgba(83,109,254,1);
 }
 
 .blue-light, .blue-light:hover {
-  border: 2px solid rgba(0,176,255,1);
+  border-color: rgba(0,176,255,1);
+  border-style: solid;
   background-color: white;
   color: rgba(0,176,255,1);
 }
 
 .grey-light, .grey-light:hover {
-  border: 2px solid rgba(119,136,153,1);
+  border-color: rgba(119,136,153,1);
+  border-style: solid;
   background-color: white;
   color: rgba(119,136,153,1);
 }
 
 .green-light, .green-light:hover {
-  border: 2px solid rgba(2,184,117,1);
+  border-color: rgba(2,184,117,1);
+  border-style: solid;
   background-color: white;
   color: rgba(2,184,117,1);
 }
 
 .gold-light, .gold-light:hover {
-  border: 2px solid rgba(255,160,0,1);
+  border-color: rgba(255,160,0,1);
+  border-style: solid;
   background-color: white;
   color: rgba(255,160,0,1);
 }
 
 .red-light, .red-light:hover {
-  border: 2px solid rgba(255,23,68,1);
+  border-color: rgba(255,23,68,1);
+  border-style: solid;
   background-color: white;
   color: rgba(255,23,68,1);
 }
 
 .orange-light, .orange-light:hover {
-  border: 2px solid rgba(255,109,0,1);
+  border-color: rgba(255,109,0,1);
+  border-style: solid;
   background-color: white;
   color: rgba(255,109,0,1);
 }
 
 .black-light, .black-light:hover {
-  border: 2px solid rgba(38,50,56,1);
+  border-color: rgba(38,50,56,1);
+  border-style: solid;
   background-color: white;
   color: rgba(38,50,56,1);
 }
 
 .purple-light, .purple-light:hover {
-  border: 2px solid rgba(170,0,255,1);
+  border-color: rgba(170,0,255,1);
+  border-style: solid;
   background-color: white;
   color: rgba(170,0,255,1);
 }
 
 .pink-light, .pink-light:hover {
-  border: 2px solid rgba(240,98,146,1);
+  border-color: rgba(240,98,146,1);
+  border-style: solid;
   background-color: white;
   color: rgba(240,98,146,1);
 }
 
 /*-------------- ADDITIONAL BUTTON STYLING --------------*/
 
-.disabled {
-  opacity: 0.5;
-}
-
-.disabled:hover {
-  cursor: default;
-  font-weight: 600;
-}
-
 .raised, .raised:hover {
   box-shadow: 3px 3px 3px rgba(119,136,153,1);
   margin: 0 2px;
 }
 
-.pill {
-  border-radius: 60px !important;
-}
+.pill {border-radius: 60px !important;}
 
-.square {
-  border-radius: 0 !important;
-}
-
-.big-btn, .big-btn:hover {
-  font-size: 1.5em;
-  font-weight: 600;
-  padding: 18px 30px;
-  border-radius: 12px;
-}
-
-.huge-btn, .huge-btn:hover {
-  font-size: 2em;
-  font-weight: 600;
-  padding: 24px 40px;
-  border-radius: 16px;
-}
+.square {border-radius: 0 !important;}
 
 .ghost, .ghost-hover {
-  border: 3px solid white;
+  border-color: white;
+  border-style: solid;
   background-color: rgba(255,255,255,0);
   color: white;
 }
@@ -259,12 +278,12 @@ button:focus {
 
 sticky {
   display: inline;
-  text-align: center;
   letter-spacing: 1px;
+  text-align: center;
   font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 6px 10px;
+  padding: 5px 8px;
   background-color: rgba(83,109,254,1);
   border: 2px solid rgba(83,109,254,1);
   color: white;
@@ -275,17 +294,17 @@ sticky {
 /*-------------- ADDITIONAL STICKY STYLING --------------*/
 
 
-.big-sti, .big-sti:hover {
-  font-size: 1em;
+.med-sti, .med-sti:hover {
+  font-size: 1.1em;
   font-weight: 600;
-  padding: 8px 13px;
+  padding: 8px 11px;
   border-radius: 8px;
 }
 
-.huge-sti, .huge-sti:hover {
-  font-size: 1.2em;
+.lrg-sti, .lrg-sti:hover {
+  font-size: 1.4em;
   font-weight: 600;
-  padding: 10px 16px;
+  padding: 10px 14px;
   border-radius: 10px;
 }
 
@@ -293,39 +312,43 @@ sticky {
 
 tag {
   display: inline;
+  letter-spacing: 1px;
   text-align: center;
-  font-size: 0.8em;
-  font-weight: 600;
-  padding: 3px 6px;
+  font-size: 0.65em;
+  font-weight: 400;
+  padding: 2px 6px;
   background-color: rgba(83,109,254,1);
   color: white;
-  border: 2px solid rgba(83,109,254,1);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
   border-radius: 4px;
-}
-
-tag:hover {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
-
-tag:focus {
-  outline: none;
-}
+tag:hover {opacity: 0.75;}
+tag:active {opacity: 0.3;}
 
 /*-------------- ADDITIONAL TAG STYLING --------------*/
 
 
-.big-tag, .big-tag:hover {
-  font-size: 1em;
-  font-weight: 600;
-  padding: 4px 8px;
+.med-tag, .med-tag:hover {
+  font-size: 0.85em;
+  font-weight: 400;
+  padding: 3px 8px;
   border-radius: 5px;
+  border-width: 2px;
 }
 
-.huge-tag, .huge-tag:hover {
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 5px 10px;
+.lrg-tag, .lrg-tag:hover {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 4px 10px;
   border-radius: 6px;
+  border-width: 2px;
 }
 
 /*-------------- DEFAULT BADGE STYLING --------------*/
@@ -333,11 +356,12 @@ tag:focus {
 badge {
   display: inline;
   text-align: center;
-  font-size: 0.8em;
+  margin: 0 0.5%;
+  font-size: 0.75em;
   font-weight: 600;
-  padding: 3px 7px;
-  border: 2px solid rgba(83,109,254,1);
-  border-radius: 24px;
+  padding: 1px 6px;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px rgba(83,109,254,1);
   background-color: rgba(83,109,254,1);
   color: white;
   cursor: default;
@@ -345,16 +369,61 @@ badge {
 
 /*-------------- DEFAULT BADGE STYLING --------------*/
 
-.big-bdg, .big-bdg:hover {
-  font-size: 1em;
+.med-bdg, .med-bdg:hover {
+  font-size: 0.95em;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 24px;
+  padding: 2px 8px;
 }
 
-.huge-bdg, .huge-bdg:hover {
-  font-size: 1.25em;
+.lrg-bdg, .lrg-bdg:hover {
+  font-size: 1.15em;
   font-weight: 600;
-  padding: 5px 13px;
-  border-radius: 24px;
+  padding: 3px 10px;
+}
+
+/*-------------- DEFAULT BADGE COLORS --------------*/
+
+.bdg-blue, .bdg-blue:hover {
+  box-shadow: 0 0 0 4px rgba(0,176,255,1);
+  background-color: rgba(0,176,255,1);
+}
+
+.bdg-grey, .bdg-grey:hover {
+  box-shadow: 0 0 0 4px rgba(119,136,153,1);
+  background-color: rgba(119,136,153,1);
+}
+
+.bdg-green, .bdg-green:hover {
+  box-shadow: 0 0 0 4px rgba(2,184,117,1);
+  background-color: rgba(2,184,117,1);
+}
+
+.bdg-gold, .bdg-gold:hover {
+  box-shadow: 0 0 0 4px rgba(255,160,0,1);
+  background-color: rgba(255,160,0,1);
+}
+
+.bdg-orange, .bdg-orange:hover {
+  box-shadow: 0 0 0 4px rgba(255,109,0,1);
+  background-color: rgba(255,109,0,1);
+}
+
+.bdg-red, .bdg-red:hover {
+  box-shadow: 0 0 0 4px rgba(255,23,68,1);
+  background-color: rgba(255,23,68,1);
+}
+
+.bdg-black, .bdg-black:hover {
+  box-shadow: 0 0 0 4px rgba(38,50,56,1);
+  background-color: rgba(38,50,56,1);
+}
+
+.bdg-purple, .bdg-purple:hover {
+  box-shadow: 0 0 0 4px rgba(170,0,255,1);
+  background-color: rgba(170,0,255,1);
+}
+
+.bdg-pink, .bdg-pink:hover {
+  box-shadow: 0 0 0 4px rgba(240,98,146,1);
+  background-color: rgba(240,98,146,1);
 }

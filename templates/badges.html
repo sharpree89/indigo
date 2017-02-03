@@ -86,13 +86,13 @@
         <p>The default <code2>&lt;badge&gt;</code2> is indigo with white text and rounded edges.</p>
 
         <div id="example">
-          <badge>default badge</badge>
+          <badge>123</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;badge&gt;default badge&lt;/badge&gt;
+        &lt;badge&gt;123&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>
@@ -102,243 +102,131 @@
         <p>Badges are not recommended for call-to-action items or for navigating a site or app. Instead, use <a href="/buttons">buttons</a> or <a href="/tags">tags</a>.</p>
 
         <div id="example">
-            <badge class="black">1</badge><b> New Message
+            <badge class="bdg-black">1</badge><b> New Message
         </div>
         <div id="example">
-            Special Promotion <badge class="purple">Limited Time Only!</badge>
+            Special Promotion <badge class="bdg-purple">Limited Time Only!</badge>
         </div>
         <div id="example">
-            <badge class="black">38</badge> Comments
+            <badge class="bdg-black">38</badge> Comments
         </div>
         <div id="example">
-            Pay Your Rent Online</b> <badge class="gold">3 Days Left</badge>
+            Pay Your Rent Online</b> <badge class="bdg-gold">3 Days Left</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;badge class="black"&gt;1&lt;/badge&gt; New Message
-        Special Promotion &lt;badge class="purple"&gt;Limited Time Only!&lt;/badge&gt;
-        &lt;badge class="black"&gt;38&lt;/badge&gt; Comments
-        Pay Your Rent Online &lt;badge class="gold"&gt;3 Days Left&lt;/badge&gt;
+        &lt;badge class="bdg-black"&gt;1&lt;/badge&gt; New Message
+        Special Promotion &lt;badge class="bdg-purple"&gt;Limited Time Only!&lt;/badge&gt;
+        &lt;badge class="bdg-black"&gt;38&lt;/badge&gt; Comments
+        Pay Your Rent Online &lt;badge class="bdg-gold"&gt;3 Days Left&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>
-
-        <p>Badges can be placed inside of <a href="/buttons">buttons</a>, <a href="/stickys">stickys</a>, tables, lists, or wherever you might use a <code2>span</code2> element.</p>
-
-        <div id="example">
-          <sticky class="black big-sti">
-            <badge class="green">New</badge> Arrivals
-          </sticky>
-        </div>
-        <div id="example">
-          <button class="purple-light pill">
-            Comments <badge class="purple">6</badge>
-          </button>
-        </div>
-        <div id="example">
-          <sticky class="black big-sti">
-            <badge class="gold big-bdg">5</badge> Days Left!
-          </sticky>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;sticky class="black big-sti"&gt;
-          &lt;badge class="green"&gt;New&lt;/badge&gt; Arrivals
-        &lt;/sticky&gt;
-
-        &lt;button class="purple-light pill"&gt;
-          Comments &lt;badge class="purple"&gt;6&lt;/badge&gt;
-        &lt;/button&gt;
-
-        &lt;sticky class="black big-sti"&gt;
-          &lt;badge class="gold big-bdg"&gt;5&lt;/badge&gt; Days Left!
-        &lt;/sticky&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
 
         <h4>Customizing Badges</h4>
         <hr>
         <a name="color">Anchor: Colors</a>
 
-        <p>Use the <code2>color</code2> class to change the background color of the badge.</p>
+        <p>Use the <code2>.bdg-color</code2> class to change the background color of the badge.</p>
 
         <div id="example">
-          <badge class="red">1</badge>
-          <badge class="orange">2</badge>
-          <badge class="gold">3</badge>
-          <badge class="green">4</badge>
-          <badge class="blue">5</badge>
+          <badge class="bdg-red">1</badge>
+          <badge class="bdg-orange">2</badge>
+          <badge class="bdg-gold">3</badge>
+          <badge class="bdg-green">4</badge>
+          <badge class="bdg-blue">5</badge>
           <badge>6</badge>
-          <badge class="purple">7</badge>
-          <badge class="pink">8</badge>
-          <badge class="grey">9</badge>
-          <badge class="black">10</badge>
+          <badge class="bdg-purple">7</badge>
+          <badge class="bdg-pink">8</badge>
+          <badge class="bdg-grey">9</badge>
+          <badge class="bdg-black">10</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;badge class="red"&gt;1&lt;/badge&gt;
-        &lt;badge class="orange"&gt;2&lt;/badge&gt;
-        &lt;badge class="gold"&gt;3&lt;/badge&gt;
-        &lt;badge class="green"&gt;4&lt;/badge&gt;
-        &lt;badge class="blue"&gt;5&lt;/badge&gt;
+        &lt;badge class="bdg-red"&gt;1&lt;/badge&gt;
+        &lt;badge class="bdg-orange"&gt;2&lt;/badge&gt;
+        &lt;badge class="bdg-gold"&gt;3&lt;/badge&gt;
+        &lt;badge class="bdg-green"&gt;4&lt;/badge&gt;
+        &lt;badge class="bdg-blue"&gt;5&lt;/badge&gt;
         &lt;badge&gt;6&lt;/badge&gt;
-        &lt;badge class="purple"&gt;7&lt;/badge&gt;
-        &lt;badge class="pink"&gt;8&lt;/badge&gt;
-        &lt;badge class="grey"&gt;9&lt;/badge&gt;
-        &lt;badge class="black"&gt;10&lt;/badge&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
-
-        <div id="example">
-          <badge class="red-light">1</badge>
-          <badge class="orange-light">2</badge>
-          <badge class="gold-light">3</badge>
-          <badge class="green-light">4</badge>
-          <badge class="blue-light">5</badge>
-          <badge class="indigo-light">6</badge>
-          <badge class="purple-light">7</badge>
-          <badge class="pink-light">8</badge>
-          <badge class="grey-light">9</badge>
-          <badge class="black-light">10</badge>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;badge class="red-light"&gt;1&lt;/badge&gt;
-        &lt;badge class="orange-light"&gt;2&lt;/badge&gt;
-        &lt;badge class="gold-light"&gt;3&lt;/badge&gt;
-        &lt;badge class="green-light"&gt;4&lt;/badge&gt;
-        &lt;badge class="blue-light"&gt;5&lt;/badge&gt;
-        &lt;badge class="indigo-light"&gt;6&lt;/badge&gt;
-        &lt;badge class="purple-light"&gt;7&lt;/badge&gt;
-        &lt;badge class="pink-light"&gt;8&lt;/badge&gt;
-        &lt;badge class="grey-light"&gt;9&lt;/badge&gt;
-        &lt;badge class="black-light"&gt;10&lt;/badge&gt;
+        &lt;badge class="bdg-purple"&gt;7&lt;/badge&gt;
+        &lt;badge class="bdg-pink"&gt;8&lt;/badge&gt;
+        &lt;badge class="bdg-grey"&gt;9&lt;/badge&gt;
+        &lt;badge class="bdg-black"&gt;10&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
         <a name="size">Anchor: Sizes</a>
 
-        <p>Badges have two additional size classes: <code2>big-bdg</code2> and <code2>huge-bdg</code2>.</p>
+        <p>Badges have two additional size classes: <code2>.med-bdg</code2> and <code2>.lrg-bdg</code2>.</p>
 
         <div id="example">
-          <badge class="purple">1</badge>
-          <badge class="purple big-bdg">2</badge>
-          <badge class="purple huge-bdg">3</badge>
+          <badge class="bdg-purple">1</badge>
+          <badge class="bdg-purple med-bdg">2</badge>
+          <badge class="bdg-purple lrg-bdg">3</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;badge class="purple"&gt;1&lt;/badge&gt;
-        &lt;badge class="purple big-bdg"&gt;2&lt;/badge&gt;
-        &lt;badge class="purple huge-bdg"&gt;3&lt;/badge&gt;
+        &lt;badge class="bdg-purple"&gt;1&lt;/badge&gt;
+        &lt;badge class="bdg-purple med-bdg"&gt;2&lt;/badge&gt;
+        &lt;badge class="bdg-purple lrg-bdg"&gt;3&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
         <a name="style">Anchor: Styles</a>
 
-        <p>Use the <code2>square</code2> class to give the badge squared, sharp edges.</p>
+        <p>Use the <code2>.square</code2> class to give the badge squared, sharp edges.</p>
 
         <div id="example">
-          <badge class="black-light square">1</badge>
-          <badge class="black square big-bdg">2</badge>
-          <badge class="black-light square huge-bdg">3</badge>
+          <badge class="bdg-black square">1</badge>
+          <badge class="bdg-black med-bdg square">2</badge>
+          <badge class="bdg-black lrg-bdg square">3</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;badge class="black-light square"&gt;1&lt;/badge&gt;
-        &lt;badge class="black square big-bdg"&gt;2&lt;/badge&gt;
-        &lt;badge class="black-light square huge-bdg"&gt;3&lt;/badge&gt;
+        &lt;badge class="bdg-black square"&gt;1&lt;/badge&gt;
+        &lt;badge class="bdg-black med-bdg square"&gt;2&lt;/badge&gt;
+        &lt;badge class="bdg-black lrg-bdg square"&gt;3&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use the <code2>raised</code2> class to give the badge shadows and a raised effect.</p>
-
-        <div id="example">
-          <badge class="indigo-light raised">7</badge>
-          <badge class="raised big-bdg">8</badge>
-          <badge class="indigo-light raised huge-bdg">9</badge>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;badge class="indigo-light raised"&gt;7&lt;/badge&gt;
-        &lt;badge class="raised big-bdg"&gt;8&lt;/badge&gt;
-        &lt;badge class="indigo-light raised huge-bdg"&gt;9&lt;/badge&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use the <code2>disabled</code2> class to indicate the badge is inactive.</p>
-
-        <div id="example">
-          <badge class="blue big-bdg disabled">Yesterday</badge>
-          <badge class="blue big-bdg">Today</badge>
-          <badge class="blue big-bdg disabled">Tomorrow</badge>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;badge class="blue big-bdg disabled"&gt;disabled&lt;/badge&gt;
-        &lt;badge class="blue big-bdg"&gt;enabled&lt;/badge&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use the <code2>ghost</code2> class to give the badge a transparent look.</p>
+        <p>Use the <code2>.ghost</code2> class to give the badge a transparent look.</p>
 
         <p>These are most effective when paired with high-contrast background colors or images that won't clash with the badge's text.</p>
-
-        <p>This is a ghost badge inside of a button.</p>
-
-        <div id="example">
-          <button class="red pill">
-            Errors <badge class="ghost big-bdg">11</badge>
-          </button>
-        </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="red pill"&gt;
-          Errors &lt;badge class="ghost big-bdg"&gt;11&lt;/badge&gt;
+          Errors &lt;badge class="ghost med-bdg"&gt;11&lt;/badge&gt;
         &lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
         <div id="example" class="backdrop">
-          <badge class="ghost">ghost badge</badge>
-          <badge class="ghost big-bdg">ghost badge</badge>
-          <badge class="ghost huge-bdg">ghost badge</badge>
+          <badge class="ghost">7</badge>
+          <badge class="ghost med-bdg">8</badge>
+          <badge class="ghost lrg-bdg">9</badge>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;badge class="ghost"&gt;ghost badge&lt;/badge&gt;
-        &lt;badge class="ghost big-bdg"&gt;ghost badge&lt;/badge&gt;
-        &lt;badge class="ghost huge-bdg"&gt;ghost badge&lt;/badge&gt;
+        &lt;badge class="ghost med-bdg"&gt;ghost badge&lt;/badge&gt;
+        &lt;badge class="ghost lrg-bdg"&gt;ghost badge&lt;/badge&gt;
       &lt;/div&gt;
           </code>
         </pre>

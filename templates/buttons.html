@@ -13,6 +13,11 @@
 
       /*BUTTONS-PAGE-ONLY STYLING*/
 
+      button {
+        margin: 1% 0.5%;
+        display: inline-block;
+      }
+
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
@@ -141,7 +146,7 @@
         <hr>
         <a name="color">Anchor: Colors</a>
 
-        <p>Use the <code2>color</code2> class to change the background color of the button.</p>
+        <p>Use the <code2>.color</code2> class to change the background color of the button.</p>
 
         <div id="example">
           <button class="red">red</button>
@@ -173,7 +178,7 @@
           </code>
         </pre>
 
-        <p>Use the <code2>color-light</code2> class for an inverted color scheme (secondary buttons).</p>
+        <p>Use the <code2>.color-light</code2> class for an inverted color scheme (secondary buttons).</p>
 
         <div id="example">
           <button class="red-light">red</button>
@@ -237,130 +242,96 @@
 
         <a name="size">Anchor: Sizes</a>
 
-        <p>Buttons have two additional size classes: <code2>big-btn</code2> and <code2>huge-btn</code2>.</p>
+        <p>Buttons have two additional size classes: <code2>.med-btn</code2> and <code2>.lrg-btn</code2>.</p>
 
         <div id="example">
           <button class="purple">default</button>
-          <button class="purple big-btn">large</button>
-          <button class="purple huge-btn">jumbo</button>
+          <button class="purple med-btn">medium</button>
+          <button class="purple lrg-btn">large</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="purple"&gt;default&lt;/button&gt;
-        &lt;button class="purple big-btn"&gt;large&lt;/button&gt;
-        &lt;button class="purple huge-btn"&gt;jumbo&lt;/button&gt;
+        &lt;button class="purple med-btn"&gt;medium&lt;/button&gt;
+        &lt;button class="purple lrg-btn"&gt;large&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
         <a name="style">Anchor: Styles</a>
 
-        <p>Use the <code2>square</code2> class to give the button squared, sharp edges.</p>
+        <p>Use the <code2>.square</code2> class to give the button squared, sharp edges.</p>
 
         <div id="example">
-          <button class="green-light square">squared</button>
-          <button class="blue square big-btn">squared</button>
-          <button class="indigo-light square huge-btn">squared</button>
+          <button class="green-light square">square</button>
+          <button class="blue square med-btn">square</button>
+          <button class="indigo-light square lrg-btn">square</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="green-light square"&gt;squared&lt;/button&gt;
-        &lt;button class="blue square big-btn"&gt;squared&lt;/button&gt;
-        &lt;button class="indigo-light square huge-btn"&gt;squared&lt;/button&gt;
+        &lt;button class="blue square med-btn"&gt;squared&lt;/button&gt;
+        &lt;button class="indigo-light square lrg-btn"&gt;squared&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use the <code2>pill</code2> class to give the button a pill shape with rounded edges.</p>
+        <p>Use the <code2>.pill</code2> class to give the button a pill shape with rounded edges.</p>
 
         <div id="example">
           <button class="red-light pill">rounded</button>
-          <button class="orange pill big-btn">rounded</button>
-          <button class="gold-light pill huge-btn">rounded</button>
+          <button class="orange pill med-btn">rounded</button>
+          <button class="gold-light pill lrg-btn">rounded</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="red-light pill"&gt;rounded&lt;/button&gt;
-        &lt;button class="orange pill big-btn"&gt;rounded&lt;/button&gt;
-        &lt;button class="gold-light pill huge-btn"&gt;rounded&lt;/button&gt;
+        &lt;button class="orange pill med-btn"&gt;rounded&lt;/button&gt;
+        &lt;button class="gold-light pill lrg-btn"&gt;rounded&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use the <code2>raised</code2> class to give the button shadows and a raised effect.</p>
+        <p>Use the <code2>.raised</code2> class to give the button shadows and a raised effect.</p>
 
         <div id="example">
           <button class="pink raised square">raised</button>
-          <button class="pink raised square big-btn">raised</button>
-          <button class="pink raised square huge-btn raise">raised</button>
+          <button class="pink raised square med-btn">raised</button>
+          <button class="pink raised square lrg-btn raise">raised</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="pink raised square"&gt;raised&lt;/button&gt;
-        &lt;button class="pink raised square big-btn"&gt;raised&lt;/button&gt;
-        &lt;button class="pink raised square huge-btn"&gt;raised&lt;/button&gt;
+        &lt;button class="pink raised square med-btn"&gt;raised&lt;/button&gt;
+        &lt;button class="pink raised square lrg-btn"&gt;raised&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use the <code2>disabled</code2> class to indicate the button is inactive...</p>
-
-        <div id="example">
-          <button class="blue pill disabled">yesterday</button>
-          <button class="blue pill">today</button>
-          <button class="blue pill disabled">tomorrow</button>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;button class="blue pill disabled"&gt;yesterday&lt;/button&gt;
-        &lt;button class="blue pill"&gt;today&lt;/button&gt;
-        &lt;button class="blue pill disabled"&gt;tomorrow&lt;/button&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>... or to put emphasis on a more preferred element.</p>
-
-        <div id="example">
-          <button class="grey disabled">Go Back</button>
-          <button class="green raised">Check Out</button>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;button class="grey disabled"&gt;Go Back&lt;/button&gt;
-        &lt;button class="green raised"&gt;Check Out&lt;/button&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use the <code2>ghost</code2> class to give the button a transparent look.</p>
+        <p>Use the <code2>.ghost</code2> class to give the button a transparent look.</p>
 
         <p>Ghost buttons are most effective when paired with high-contrast background colors or images that won't clash with the button's text.</p>
 
         <div class="backdrop" id="example">
           <button class="ghost">ghost</button>
-          <button class="ghost big-btn">ghost</button>
-          <button class="ghost huge-btn">ghost</button>
+          <button class="ghost med-btn">ghost</button>
+          <button class="ghost lrg-btn">ghost</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="ghost"&gt;ghost&lt;/button&gt;
-        &lt;button class="ghost big-btn"&gt;ghost&lt;/button&gt;
-        &lt;button class="ghost huge-btn"&gt;ghost&lt;/button&gt;
+        &lt;button class="ghost med-btn"&gt;ghost&lt;/button&gt;
+        &lt;button class="ghost lrg-btn"&gt;ghost&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>

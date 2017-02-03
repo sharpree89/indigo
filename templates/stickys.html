@@ -13,6 +13,11 @@
 
       /*STICKYS-PAGE-ONLY STYLING*/
 
+      sticky {
+        margin: 1% 0.5%;
+        display: inline-block;
+      }
+
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
@@ -22,7 +27,6 @@
           sticky {
             display: inline-block;
             margin: 1%;
-
           }
           #example {
             font-size: 0.8em;
@@ -134,7 +138,7 @@
       <hr>
       <a name="color">Anchor: Colors</a>
 
-      <p>Use the <code2>color</code2> class to change the background color of the sticky.</p>
+      <p>Use the <code2>.color</code2> class to change the background color of the sticky.</p>
 
       <div id="example">
         <sticky class="red">red</sticky>
@@ -166,7 +170,7 @@
         </code>
       </pre>
 
-      <p>Use the <code2>color-light</code2> class for an inverted color scheme.</p>
+      <p>Use the <code2>.color-light</code2> class for an inverted color scheme.</p>
 
       <div id="example">
         <sticky class="red-light">red</sticky>
@@ -200,114 +204,96 @@
 
       <a name="size">Anchor: Sizes</a>
 
-      <p>Stickys have two additional size classes: <code2>big-sti</code2> and <code2>huge-sti</code2>.</p>
+      <p>Stickys have two additional size classes: <code2>.med-sti</code2> and <code2>.lrg-sti</code2>.</p>
 
       <div id="example">
         <sticky class="purple">default</sticky>
-        <sticky class="purple big-sti">large</sticky>
-        <sticky class="purple huge-sti">jumbo</sticky>
+        <sticky class="purple med-sti">medium</sticky>
+        <sticky class="purple lrg-sti">large</sticky>
       </div>
 
       <pre>
         <code>
     &lt;div&gt;
       &lt;sticky class="purple"&gt;default&lt;/sticky&gt;
-      &lt;sticky class="purple big-sti"&gt;large&lt;/sticky&gt;
-      &lt;sticky class="purple huge-sti"&gt;jumbo&lt;/sticky&gt;
+      &lt;sticky class="purple med-sti"&gt;medium&lt;/sticky&gt;
+      &lt;sticky class="purple lrg-sti"&gt;large&lt;/sticky&gt;
     &lt;/div&gt;
         </code>
       </pre>
 
       <a name="style">Anchor: Styles</a>
 
-      <p>Use the <code2>square</code2> class to give the sticky squared, sharp edges.</p>
+      <p>Use the <code2>.square</code2> class to give the sticky squared, sharp edges.</p>
 
       <div id="example">
-        <sticky class="green-light square">squared</sticky>
-        <sticky class="blue square big-sti">squared</sticky>
-        <sticky class="indigo-light square huge-sti">squared</sticky>
+        <sticky class="green-light square">square</sticky>
+        <sticky class="blue square med-sti">square</sticky>
+        <sticky class="indigo-light square lrg-sti">square</sticky>
       </div>
 
       <pre>
         <code>
     &lt;div&gt;
       &lt;sticky class="green-light square"&gt;squared&lt;/sticky&gt;
-      &lt;sticky class="blue square big-sti"&gt;squared&lt;/sticky&gt;
-      &lt;sticky class="indigo-light square huge-sti"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="blue square med-sti"&gt;squared&lt;/sticky&gt;
+      &lt;sticky class="indigo-light square lrg-sti"&gt;squared&lt;/sticky&gt;
     &lt;/div&gt;
         </code>
       </pre>
 
-      <p>Use the <code2>pill</code2> class to give the sticky a pill shape with rounded edges.</p>
+      <p>Use the <code2>.pill</code2> class to give the sticky a pill shape with rounded edges.</p>
 
       <div id="example">
         <sticky class="red-light pill">rounded</sticky>
-        <sticky class="orange pill big-sti">rounded</sticky>
-        <sticky class="gold-light pill huge-sti">rounded</sticky>
+        <sticky class="orange pill med-sti">rounded</sticky>
+        <sticky class="gold-light pill lrg-sti">rounded</sticky>
       </div>
 
       <pre>
         <code>
     &lt;div&gt;
       &lt;sticky class="red-light pill"&gt;rounded&lt;/sticky&gt;
-      &lt;sticky class="orange pill big-sti"&gt;rounded&lt;/sticky&gt;
-      &lt;sticky class="gold-light pill huge-sti"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="orange pill med-sti"&gt;rounded&lt;/sticky&gt;
+      &lt;sticky class="gold-light pill lrg-sti"&gt;rounded&lt;/sticky&gt;
     &lt;/div&gt;
         </code>
       </pre>
 
-      <p>Use the <code2>raised</code2> class to give the sticky shadows and a raised effect.</p>
+      <p>Use the <code2>.raised</code2> class to give the sticky shadows and a raised effect.</p>
 
       <div id="example">
         <sticky class="pink raised square">raised</sticky>
-        <sticky class="pink raised square big-sti">raised</sticky>
-        <sticky class="pink raised square huge-sti">raised</sticky>
+        <sticky class="pink raised square med-sti">raised</sticky>
+        <sticky class="pink raised square lrg-sti">raised</sticky>
       </div>
 
       <pre>
         <code>
     &lt;div&gt;
       &lt;sticky class="pink raised square"&gt;raised&lt;/sticky&gt;
-      &lt;sticky class="pink raised square big-sti"&gt;raised&lt;/sticky&gt;
-      &lt;sticky class="pink raised square huge-sti"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square med-sti"&gt;raised&lt;/sticky&gt;
+      &lt;sticky class="pink raised square lrg-sti"&gt;raised&lt;/sticky&gt;
     &lt;/div&gt;
         </code>
       </pre>
 
-      <p>Use the <code2>disabled</code2> class to indicate the sticky is inactive.</p>
-
-      <div id="example">
-        <sticky class="blue pill disabled">yesterday</sticky>
-        <sticky class="blue pill">today</sticky>
-        <sticky class="blue pill disabled">tommorrow</sticky>
-      </div>
-
-      <pre>
-        <code>
-    &lt;div&gt;
-      &lt;sticky class="blue pill disabled"&gt;yesterday&lt;/sticky&gt;
-      &lt;sticky class="blue pill"&gt;today&lt;/sticky&gt;
-      &lt;sticky class="blue pill disabled"&gt;tomorrow&lt;/sticky&gt;
-    &lt;/div&gt;
-        </code>
-      </pre>
-
-      <p>Use the <code2>ghost</code2> class to give the sticky a transparent look.</p>
+      <p>Use the <code2>.ghost</code2> class to give the sticky a transparent look.</p>
 
       <p>These are most effective when paired with high-contrast background colors or images that won't clash with the sticky's text.</p>
 
       <div class="backdrop" id="example">
-        <sticky class="ghost">ghost sticky</sticky>
-        <sticky class="ghost big-sti">ghost sticky</sticky>
-        <sticky class="ghost huge-sti">ghost sticky</sticky>
+        <sticky class="ghost">ghost</sticky>
+        <sticky class="ghost med-sti">ghost</sticky>
+        <sticky class="ghost lrg-sti">ghost</sticky>
       </div>
 
       <pre>
         <code>
     &lt;div&gt;
-      &lt;sticky class="ghost"&gt;ghost sticky&lt;/sticky&gt;
-      &lt;sticky class="ghost big-sti"&gt;ghost sticky&lt;/sticky&gt;
-      &lt;sticky class="ghost huge-sti"&gt;ghost sticky&lt;/sticky&gt;
+      &lt;sticky class="ghost"&gt;ghost&lt;/sticky&gt;
+      &lt;sticky class="ghost med-sti"&gt;ghost&lt;/sticky&gt;
+      &lt;sticky class="ghost lrg-sti"&gt;ghost&lt;/sticky&gt;
     &lt;/div&gt;
         </code>
       </pre>
