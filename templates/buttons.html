@@ -13,60 +13,49 @@
 
       /*BUTTONS-PAGE-ONLY STYLING*/
 
-      button {
-        margin: 1% 0.5%;
-        display: inline-block;
-      }
+      h4 {color: rgba(83,109,254,1);}
 
+      .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+      .raised {margin: 1.5%;}
+      #container {margin-bottom: 5%;}
+
+      /*PHONES*/
       @media only screen
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
-          container {
-            width: 100%;
-          }
-          button {
-            display: inline-block;
-            margin: 1%;
-
-          }
-          #example {
-            font-size: 0.8em;
-          }
-          .raise {
-            margin-top: 2.5%;
-            margin-bottom: 1.5%;
-          }
+          h1 {font-size: 1.6em;}
+          h3 {font-size: 1.45em;}
+          h4 {font-size: 1.3em;}
+          h5 {font-size: 1.125em;}
+          button {display: inline-block; margin: 1%;}
+          .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+          .raised {margin-top: 2.5%;margin-bottom: 1.5%;}
         }
 
+      /*TABLETS*/
       @media only screen
         and (min-device-width: 768px)
         and (max-device-width: 1024px) {
-          container {
-            width: 100%;
-          }
-          button {
-            display: inline-block;
-            margin: 2.5% 1% 1% 1%;
-          }
-          #example {
-            padding: 0 0 2% 0;
-          }
-          .raise {
-            margin-top: 1.5%;
-          }
+          button {display: inline-block; margin: 2% 0.5%;}
+          .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+          #example {padding: 1% 0;}
+          .raised {margin: 2% 1%;}
         }
 
     </style>
   </head>
   <body>
-
     <!--- Animated Side Nav Styling --->
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#usage">Usage</a>
+      <a href="#top">Top</a>
+      <a href="#primary">Primary</a>
+      <a href="#secondary">Secondary</a>
+      <a href="#input">Input</a>
+      <a href="#anchor">Anchor</a>
       <a href="#color">Colors</a>
-      <a href="#size">Sizing</a>
+      <a href="#size">Sizes</a>
       <a href="#style">Styles</a>
     </div>
 
@@ -87,162 +76,238 @@
 
       <div id="container">
 
-        <a name="usage">Anchor: Usage</a>
+        <a name="top"></a>
+        <h1>Standard Buttons</h1>
 
-        <h1>Buttons</h1>
-        <hr>
+        <p>This page contains all the information you need about <badge>indigo's</badge> standard button styling options. Use the side navigation to jump to different sections throughout the page.</p>
 
-        <p>The default primary <code2>&lt;button&gt;</code2> is indigo with white text and slightly rounded edges.</p>
+        <a name="primary"></a>
+        <h4>Primary Buttons</h4>
+
+        <p>The default <code2>&lt;button&gt;</code2> is indigo with white text and slightly rounded edges.</p>
 
         <div id="example">
-          <button>default button</button>
+          <button>primary button</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;button&gt;default button&lt;/button&gt;
+        &lt;button&gt;primary button&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use primary buttons to indicate a call-to-action.</p>
+        <p>Use primary buttons to indicate a clear call-to-action to the user.</p>
 
         <div id="example">
           <button class="orange">buy now</button>
-          <button class="black">submit</button>
-          <button class="blue">register</button>
+          <button class="black">sign up today</button>
+          <button class="green">download</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
         &lt;button class="orange"&gt;buy now&lt;/button&gt;
-        &lt;button class="black"&gt;submit&lt;/button&gt;
-        &lt;button class="blue"&gt;register&lt;/button&gt;
+        &lt;button class="black"&gt;sign up today&lt;/button&gt;
+        &lt;button class="green"&gt;download&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Buttons also help users navigate through a site or app.</p>
+        <a name="secondary"></a>
+        <h4>Secondary Buttons</h4>
+
+        <p>To use secondary buttons, add a <code2>.color-light</code2> class to a <code2>&lt;button&gt;</code2>.</p>
+
+        <a href="#color" class="text-link">Click here to view all colors.</a>
+
+        <p>Secondary buttons are recommended for call-to-action items of a lower priority.</p>
 
         <div id="example">
-          <button class="black">back</button>
-          <button class="pink">home</button>
-          <button class="black">next</button>
+          <button class="indigo-light">secondary button</button>
+        </div>
+
+        <p>Also, when used alongside primary buttons, they are useful for drawing the user's attention to a more preferred or recommended action.</p>
+
+        <div id="example">
+          <button class="green">get started</button>
+          <button class="green-light">go back</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;button class="black"&gt;back&lt;/button&gt;
-        &lt;button class="pink"&gt;home&lt;/button&gt;
-        &lt;button class="black"&gt;next&lt;/button&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <h4>Customizing Buttons</h4>
-        <hr>
-        <a name="color">Anchor: Colors</a>
-
-        <p>Use the <code2>.color</code2> class to change the background color of the button.</p>
-
-        <div id="example">
-          <button class="red">red</button>
-          <button class="orange">orange</button>
-          <button class="gold">gold</button>
-          <button class="green">green</button>
-          <button class="blue">blue</button>
-          <button>indigo</button>
-          <button class="purple">purple</button>
-          <button class="pink">pink</button>
-          <button class="grey">grey</button>
-          <button class="black">black</button>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;button class="red"&gt;red&lt;/button&gt;
-        &lt;button class="orange"&gt;orange&lt;/button&gt;
-        &lt;button class="gold"&gt;gold&lt;/button&gt;
-        &lt;button class="green"&gt;green&lt;/button&gt;
-        &lt;button class="blue"&gt;blue&lt;/button&gt;
-        &lt;button&gt;indigo&lt;/button&gt;
-        &lt;button class="purple"&gt;purple&lt;/button&gt;
-        &lt;button class="pink"&gt;pink&lt;/button&gt;
-        &lt;button class="grey"&gt;grey&lt;/button&gt;
-        &lt;button class="black"&gt;black&lt;/button&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use the <code2>.color-light</code2> class for an inverted color scheme (secondary buttons).</p>
-
-        <div id="example">
-          <button class="red-light">red</button>
-          <button class="orange-light">orange</button>
-          <button class="gold-light">gold</button>
-          <button class="green-light">green</button>
-          <button class="blue-light">blue</button>
-          <button class="indigo-light">indigo</button>
-          <button class="purple-light">purple</button>
-          <button class="pink-light">pink</button>
-          <button class="grey-light">grey</button>
-          <button class="black-light">black</button>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;button class="red-light"&gt;red&lt;/button&gt;
-        &lt;button class="orange-light"&gt;orange&lt;/button&gt;
-        &lt;button class="gold-light"&gt;gold&lt;/button&gt;
-        &lt;button class="green-light"&gt;green&lt;/button&gt;
-        &lt;button class="blue-light"&gt;blue&lt;/button&gt;
-        &lt;button class="indigo-light"&gt;indigo&lt;/button&gt;
-        &lt;button class="purple-light"&gt;purple&lt;/button&gt;
-        &lt;button class="pink-light"&gt;pink&lt;/button&gt;
-        &lt;button class="grey-light"&gt;grey&lt;/button&gt;
-        &lt;button class="black-light"&gt;black&lt;/button&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <p>Use secondary buttons alongside primary buttons to help emphasize a preferred action.</p>
-
-        <div id="example">
-          <button class="orange-light">go back</button>
-          <button class="orange">check out</button>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;button class="orange-light"&gt;go back&lt;/button&gt;
-        &lt;button class="orange"&gt;check out&lt;/button&gt;
+        &lt;button class="green"&gt;get started&lt;/button&gt;
+        &lt;button class="green-light"&gt;go back&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
         <div id="example">
+          <button class="indigo-light">not right now</button>
           <button>sign up today</button>
-          <button class="indigo-light">no thanks</button>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
+        &lt;button class="indigo-light"&gt;not right now&lt;/button&gt;
         &lt;button&gt;sign up today&lt;/button&gt;
-        &lt;button class="indigo-light"&gt;no thanks&lt;/button&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <a name="size">Anchor: Sizes</a>
+        <a name="input"></a>
+        <h4>Input Buttons</h4>
 
-        <p>Buttons have two additional size classes: <code2>.med-btn</code2> and <code2>.lrg-btn</code2>.</p>
+        <p>Use input buttons for form submission. The default <code2>&lt;input type="submit"&gt;</code2> is indigo with white text and slightly rounded edges.</p>
+
+        <div id="example">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="fozzy@bear.com">
+          <input type="submit" value="input button">
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;label for="email"&gt;Email Address&lt;/label&gt;
+        &lt;input type="text" id="email" placeholder="fozzy@bear.com"&gt;
+        &lt;input type="submit" value="input button"&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="anchor"></a>
+        <h4>Anchor Buttons</h4>
+
+        <p>Anchor buttons are simply anchor tags that have button styling applied to them. Use them for navigation.</p>
+
+        <p>Anchor buttons come in two styles: primary -  <code2>.btn-link</code2> and secondary - <code2>.btn-link-light</code2>.</p>
+
+        <p>Note that for the animation on hover to work, you must wrap the anchor text within a <code2>&lt;span&gt;</code2>.</p>
+
+        <div id="example">
+          <a href="#0" class="btn-link"><span>Primary Anchor </span></a>
+          <a href="#0" class="btn-link-light"><span>Secondary Anchor </span></a>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;a href="#0" class="btn-link"&gt;&lt;span&gt;primary anchor &lt;/span&gt;&lt;/a&gt;
+        &lt;a href="#0" class="btn-link-light"&gt;&lt;span&gt;secondary anchor &lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <h3>Customizing Buttons</h3>
+
+        <a name="color"></a>
+        <h4>Colors</h4>
+
+        <p>Use the <code2>.color</code2> class to change the background color of a primary button, input button, or anchor button.</p>
+
+        <div id="example">
+          <button class="red">button</button>
+          <button class="orange">button</button>
+          <button class="gold">button</button>
+          <button class="green">button</button>
+          <button class="blue">button</button>
+          <br>
+          <button>button</button>
+          <button class="purple">button</button>
+          <button class="pink">button</button>
+          <button class="grey">button</button>
+          <button class="black">button</button>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="red"&gt;button&lt;/button&gt;
+        &lt;button class="orange"&gt;button&lt;/button&gt;
+        &lt;button class="gold"&gt;button&lt;/button&gt;
+        &lt;button class="green"&gt;button&lt;/button&gt;
+        &lt;button class="blue"&gt;button&lt;/button&gt;
+        &lt;button&gt;button&lt;/button&gt;
+        &lt;button class="purple"&gt;button&lt;/button&gt;
+        &lt;button class="pink"&gt;button&lt;/button&gt;
+        &lt;button class="grey"&gt;button&lt;/button&gt;
+        &lt;button class="black"&gt;button&lt;/button&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <p>Colors can help convey different meanings depending on the context.</p>
+
+        <div id="example">
+          <button class="red">danger</button>
+          <button class="gold">Caution</button>
+          <button class="green">Success</button>
+          <br>
+          <button class="purple">click me!</button>
+          <button class="blue">questions?</button>
+          <button class="grey">inactive</button>
+        </div>
+
+        <p>Use the <code2>.color-light</code2> class to change the border color and text color of secondary buttons and secondary anchor buttons.</p>
+
+        <div id="example">
+          <button class="red-light">button</button>
+          <button class="orange-light">button</button>
+          <button class="gold-light">button</button>
+          <button class="green-light">button</button>
+          <button class="blue-light">button</button>
+          <br>
+          <a href="#0" class="btn-link-light indigo-light"><span>anchor </span></a>
+          <a href="#0" class="btn-link-light purple-light"><span>anchor </span></a>
+          <a href="#0" class="btn-link-light pink-light"><span>anchor </span></a>
+          <a href="#0" class="btn-link-light grey-light"><span>anchor </span></a>
+          <a href="#0" class="btn-link-light black-light"><span>anchor </span></a>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;button class="red-light"&gt;button&lt;/button&gt;
+        &lt;button class="orange-light"&gt;button&lt;/button&gt;
+        &lt;button class="gold-light"&gt;button&lt;/button&gt;
+        &lt;button class="green-light"&gt;button&lt;/button&gt;
+        &lt;button class="blue-light"&gt;button&lt;/button&gt;
+        &lt;a href="#0" class="btn-link-light indigo-light"&gt;
+          &lt;span&gt;anchor &lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#0" class="btn-link-light purple-light"&gt;
+          &lt;span&gt;anchor &lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#0" class="btn-link-light pink-light"&gt;
+          &lt;span&gt;anchor &lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#0" class="btn-link-light grey-light"&gt;
+          &lt;span&gt;anchor &lt;/span&gt;
+        &lt;/a&gt;
+        &lt;a href="#0" class="btn-link-light black-light"&gt;
+          &lt;span&gt;anchor &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="size"></a>
+        <h4>Sizes</h4>
+
+        <p>Primary buttons and secondary buttons come in three sizes: default, medium, and large.</p>
+
+        <p>Default - <code2>&lt;button&gt;</code2> - no additional class necessary.</p>
+
+        <p>Medium - <code2>.med-btn</code2></p>
+
+        <p>Large - <code2>.lrg-btn</code2></p>
+
+        <p>These classes currently do not work with anchor buttons or input buttons.</p>
 
         <div id="example">
           <button class="purple">default</button>
@@ -260,9 +325,12 @@
           </code>
         </pre>
 
-        <a name="style">Anchor: Styles</a>
+        <a name="style"></a>
+        <h4>Styles</h4>
 
-        <p>Use the <code2>.square</code2> class to give the button squared, sharp edges.</p>
+        <h5>Square Buttons</h5>
+
+        <p>Use the <code2>.square</code2> class to give buttons squared, sharp edges.</p>
 
         <div id="example">
           <button class="green-light square">square</button>
@@ -280,7 +348,9 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.pill</code2> class to give the button a pill shape with rounded edges.</p>
+        <h5>Pill Buttons</h5>
+
+        <p>Use the <code2>.pill</code2> class for a pill-shaped button with rounded edges.</p>
 
         <div id="example">
           <button class="red-light pill">rounded</button>
@@ -298,7 +368,9 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.raised</code2> class to give the button shadows and a raised effect.</p>
+        <h5>Raised Buttons</h5>
+
+        <p>Use the <code2>.raised</code2> class to give buttons shadows and a raised, 3-dimensional effect.</p>
 
         <div id="example">
           <button class="pink raised square">raised</button>
@@ -316,7 +388,9 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.ghost</code2> class to give the button a transparent look.</p>
+        <h5>Ghost Buttons</h5>
+
+        <p>Use the <code2>.ghost</code2> class to give buttons a transparent background with a white border and white text.</p>
 
         <p>Ghost buttons are most effective when paired with high-contrast background colors or images that won't clash with the button's text.</p>
 
@@ -335,7 +409,11 @@
       &lt;/div&gt;
           </code>
         </pre>
+
+        <a href="#top" class="btn-link-light"><span>Back To Top </span></a>
+
       </div>
+
 
     </div>
   </body>

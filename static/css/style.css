@@ -1,87 +1,52 @@
 
 /*GENERAL PAGE STYLING*/
 
-* {
-  font-family: 'Muli', sans-serif;
-  line-height: 150%;
-}
+* {font-family: 'Muli', sans-serif; line-height: 150%;}
 
-body {
-  padding: 0;
-  margin: 0;
-}
+body {padding: 0;margin: 0;}
 
-ul {
-  list-style-type: circle;
-  line-height: 200%;
-}
+ul {list-style-type: circle; line-height: 200%;}
 
-p {
-  font-size: 1em;
-  font-weight: 400;
-}
+p {font-size: 1em; font-weight: 400;}
 
-hr {
-  border: 1px solid rgba(119,136,153, 0.15);
-  margin: 3% 0;
-}
+hr {border: 1px solid rgba(119,136,153, 0.15); margin: 2.5% 0;}
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
-  line-height: 200%;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0px;
   padding: 0px;
 }
 
-h1 {
-  font-size: 2.5em;
+h1 {font-size: 2.6em;}
+h2 {font-size: 2.25em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.75em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1.25em;}
+
+
+/*---------- INPUT STYLING ----------*/
+
+
+input[type=text] {
+  height: 40px;
+  width: 280px;
+  border: 1px solid rgba(83,109,254,0.5);
+  border-radius: 0;
+  padding: 0 1%;
+  font-size: 0.8em;
 }
+input[type=text]:focus {outline: none; border: 1px solid rgba(83,109,254,1);}
 
-h2 {
-  font-size: 2.25em;
-}
 
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1.75em;
-}
-
-h5 {
-  font-size: 1.5em;
-}
-
-h6 {
-  font-size: 1.25em;
-}
-
-a.link {
-  font-weight: 700;
-  text-decoration: none;
-  color: rgba(83,109,254,1);
-}
-
-a.link:hover {
-  border-bottom: 1px dashed rgba(83,109,254,1);
-  cursor: pointer;
-}
-
-a.link:focus {
-  border: 1px dashed rgba(83,109,254,1);
-  padding: 2px 4px;
-}
-
-/*-------------- DEFAULT BUTTON STYLING --------------*/
-
-button {
+input[type=submit] {
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 1%;
   padding: 10px 16px;
   text-align: center;
   /*padding: 1% 2%;*/
@@ -93,6 +58,224 @@ button {
   border-radius: 8px;
   text-decoration: none;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+input[type=submit]:hover {opacity: 0.75;}
+input[type=submit]:active {opacity: 0.5; outline: none;}
+input[type=submit]:focus {outline: none;}
+
+
+/*---------- ANCHOR TAG STYLING ----------*/
+/*---------- PLAIN TEXT ANCHOR TAG ----------*/
+
+/*example:
+
+<a class="text-link" href="/buttons/buttons">buttons</a>*/
+
+
+a.text-link {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgba(83,109,254,1);
+}
+a.text-link:hover {
+  border-width: 0 0 1px 0;
+  border-style: dashed;
+  border-color: rgba(83,109,254,1);
+}
+
+
+/*---------- BUTON STYLE ANCHOR TAG ----------*/
+/*---------- DARK BUTTON-STYLE ANCHOR TAG ----------*/
+
+/*example:
+
+<a href="/buttons/buttons" class="red btn-link">
+  <span>Hover Me </span>
+</a>*/
+
+a.btn-link {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1%;
+  padding: 10px 16px;
+  text-align: center;
+  /*padding: 1% 2%;*/
+  background-color: rgba(83,109,254,1);
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+a.btn-link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+a.btn-link span:after {
+  content: '\00bb';
+  font-size: 1.25em;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+a.btn-link:hover span {padding-right: 25px;}
+a.btn-link:hover span:after {opacity: 1; right: 0;}
+a.btn-link:active {opacity: 0.5; outline: none;}
+a.btn-link:focus {outline: none;}
+
+
+/*---------- INVERTED BUTTON-STYLE ANCHOR TAG ----------*/
+
+/*example:
+
+<a href="/buttons/buttons" class="btn-link-light blue-light">
+  <span>Hover Me </span>
+</a>*/
+
+
+a.btn-link-light {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1%;
+  padding: 10px 16px;
+  text-align: center;
+  /*padding: 1% 2%;*/
+  background-color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
+  color: rgba(83,109,254,1);
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+a.btn-link-light span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+a.btn-link-light span:after {
+  content: '\00bb';
+  font-size: 1.25em;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+a.btn-link-light:hover span {padding-right: 25px;}
+a.btn-link-light:hover span:after {opacity: 1; right: 0;}
+a.btn-link-light:active {opacity: 0.5; outline: none;}
+a.btn-link-light:focus {outline: none;}
+
+
+/*-------------- ADDITIONAL TEXT COLORS --------------*/
+
+
+.indigo-text, .indigo-text:hover {
+  color: rgba(83,109,254,1) !important;
+  border-color: rgba(83,109,254,1) !important;
+}
+
+.blue-text, .blue-text:hover {
+  color: rgba(0,176,255,1) !important;
+  border-color: rgba(0,176,255,1) !important;
+}
+
+.grey-text, .grey-text:hover {
+  color: rgba(119,136,153,1) !important;
+  border-color: rgba(119,136,153,1) !important;
+}
+
+.green-text, .green-text:hover {
+  color: rgba(2,184,117,1) !important;
+  border-color: rgba(2,184,117,1) !important;
+}
+
+.gold-text, .gold-text:hover {
+  color: rgba(255,160,0,1) !important;
+  border-color: rgba(255,160,0,1) !important;
+}
+
+.red-text, .red-text:hover {
+  color: rgba(255,23,68,1) !important;
+  border-color: rgba(255,23,68,1) !important;
+}
+
+.orange-text, .orange-text:hover {
+  color: rgba(255,109,0,1) !important;
+  border-color: rgba(255,109,0,1) !important;
+}
+
+.black-text, .black-text:hover {
+  color: rgba(38,50,56,1) !important;
+  border-color: rgba(38,50,56,1) !important;
+}
+
+.purple-text, .purple-text:hover {
+  color: rgba(170,0,255,1) !important;
+  border-color: rgba(170,0,255,1) !important;
+}
+
+.pink-text, .pink-text:hover {
+  color: rgba(240,98,146,1) !important;
+  border-color: rgba(240,98,146,1) !important;
+}
+
+.white-text, .white-text:hover {
+  color: white !important;
+  border-color: white !important;
+}
+
+
+/*-------------- DEFAULT BUTTON STYLING --------------*/
+
+
+button {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1%;
+  padding: 10px 16px;
+  text-align: center;
+  /*padding: 1% 2%;*/
+  background-color: rgba(83,109,254,1);
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -100,10 +283,10 @@ button {
 }
 
 button:hover {opacity: 0.75;}
-button:active {opacity: 0.3; outline: none;}
+button:active {opacity: 0.5; outline: none;}
 button:focus {outline: none;}
 
-/*---------- ADDITIONAL BUTTON SIZING ----------*/
+/*---------- ADDITIONAL BUTTON SIZES ----------*/
 
 .med-btn, .med-btn:hover {
   font-size: 1.3em;
@@ -124,157 +307,139 @@ button:focus {outline: none;}
   border-width: 4px;
 }
 
-/*-------------- DEFAULT BUTTON COLORS --------------*/
+
+/*-------------- ADDITIONAL BUTTON COLORS --------------*/
+
 
 .blue, .blue:hover {
-  border-color: rgba(0,176,255,1);
-  border-style: solid;
-  background-color: rgba(0,176,255,1);
+  border-color: rgba(0,176,255,1) !important;
+  background-color: rgba(0,176,255,1) !important;
 }
 
 .grey, .grey:hover {
-  border-color: rgba(119,136,153,1);
-  border-style: solid;
-  background-color: rgba(119,136,153,1);
+  border-color: rgba(119,136,153,1) !important;
+  background-color: rgba(119,136,153,1) !important;
 }
 
 .green, .green:hover {
-  border-color: rgba(2,184,117,1);
-  border-style: solid;
-  background-color: rgba(2,184,117,1);
+  border-color: rgba(2,184,117,1) !important;
+  background-color: rgba(2,184,117,1) !important;
 }
 
 .gold, .gold:hover {
-  border-color: rgba(255,160,0,1);
-  border-style: solid;
-  background-color: rgba(255,160,0,1);
+  border-color: rgba(255,160,0,1) !important;
+  background-color: rgba(255,160,0,1) !important;
 }
 
 .orange, .orange:hover {
-  border-color: rgba(255,109,0,1);
-  border-style: solid;
-  background-color: rgba(255,109,0,1);
+  border-color: rgba(255,109,0,1) !important;
+  background-color: rgba(255,109,0,1) !important;
 }
 
 .red, .red:hover {
-  border-color: rgba(255,23,68,1);
-  border-style: solid;
-  background-color: rgba(255,23,68,1);
+  border-color: rgba(255,23,68,1) !important;
+  background-color: rgba(255,23,68,1) !important;
 }
 
 .black, .black:hover {
-  border-color: rgba(38,50,56,1);
-  border-style: solid;
-  background-color: rgba(38,50,56,1);
+  border-color: rgba(38,50,56,1) !important;
+  background-color: rgba(38,50,56,1) !important;
 }
 
 .purple, .purple:hover {
-  border-color: rgba(170,0,255,1);
-  border-style: solid;
-  background-color: rgba(170,0,255,1);
+  border-color: rgba(170,0,255,1) !important;
+  background-color: rgba(170,0,255,1) !important;
 }
 
 .pink, .pink:hover {
-  border-color: rgba(240,98,146,1);
-  border-style: solid;
-  background-color: rgba(240,98,146,1);
+  border-color: rgba(240,98,146,1) !important;
+  background-color: rgba(240,98,146,1) !important;
 }
 
-/*-------------- LIGHT BUTTON COLORS --------------*/
+
+/*-------------- INVERTED BUTTON COLORS --------------*/
+
 
 .indigo-light, .indigo-light:hover {
-  border-color: rgba(83,109,254,1);
-  border-style: solid;
+  border-color: rgba(83,109,254,1) !important;
   background-color: white;
-  color: rgba(83,109,254,1);
+  color: rgba(83,109,254,1) !important;
 }
 
 .blue-light, .blue-light:hover {
-  border-color: rgba(0,176,255,1);
-  border-style: solid;
+  border-color: rgba(0,176,255,1) !important;
   background-color: white;
-  color: rgba(0,176,255,1);
+  color: rgba(0,176,255,1) !important;
 }
 
 .grey-light, .grey-light:hover {
-  border-color: rgba(119,136,153,1);
-  border-style: solid;
+  border-color: rgba(119,136,153,1) !important;
   background-color: white;
-  color: rgba(119,136,153,1);
+  color: rgba(119,136,153,1) !important;
 }
 
 .green-light, .green-light:hover {
-  border-color: rgba(2,184,117,1);
-  border-style: solid;
+  border-color: rgba(2,184,117,1) !important;
   background-color: white;
-  color: rgba(2,184,117,1);
+  color: rgba(2,184,117,1) !important;
 }
 
 .gold-light, .gold-light:hover {
-  border-color: rgba(255,160,0,1);
-  border-style: solid;
+  border-color: rgba(255,160,0,1) !important;
   background-color: white;
-  color: rgba(255,160,0,1);
+  color: rgba(255,160,0,1) !important;
 }
 
 .red-light, .red-light:hover {
-  border-color: rgba(255,23,68,1);
-  border-style: solid;
+  border-color: rgba(255,23,68,1) !important;
   background-color: white;
-  color: rgba(255,23,68,1);
+  color: rgba(255,23,68,1) !important;
 }
 
 .orange-light, .orange-light:hover {
-  border-color: rgba(255,109,0,1);
-  border-style: solid;
+  border-color: rgba(255,109,0,1) !important;
   background-color: white;
-  color: rgba(255,109,0,1);
+  color: rgba(255,109,0,1) !important;
 }
 
 .black-light, .black-light:hover {
-  border-color: rgba(38,50,56,1);
-  border-style: solid;
+  border-color: rgba(38,50,56,1) !important;
   background-color: white;
-  color: rgba(38,50,56,1);
+  color: rgba(38,50,56,1) !important;
 }
 
 .purple-light, .purple-light:hover {
-  border-color: rgba(170,0,255,1);
-  border-style: solid;
+  border-color: rgba(170,0,255,1) !important;
   background-color: white;
-  color: rgba(170,0,255,1);
+  color: rgba(170,0,255,1) !important;
 }
 
 .pink-light, .pink-light:hover {
-  border-color: rgba(240,98,146,1);
-  border-style: solid;
+  border-color: rgba(240,98,146,1) !important;
   background-color: white;
-  color: rgba(240,98,146,1);
+  color: rgba(240,98,146,1) !important;
 }
 
-/*-------------- ADDITIONAL BUTTON STYLING --------------*/
-
-.raised, .raised:hover {
-  box-shadow: 3px 3px 3px rgba(119,136,153,1);
-  margin: 0 2px;
-}
-
-.pill {border-radius: 60px !important;}
-
-.square {border-radius: 0 !important;}
-
-.ghost, .ghost-hover {
+.ghost, .ghost:hover {
   border-color: white;
   border-style: solid;
   background-color: rgba(255,255,255,0);
   color: white;
 }
 
-/*-------------- STICKIES, TAGS, BADGES --------------*/
 
+/*-------------- ADDITIONAL BUTTON STYLES --------------*/
+
+
+.raised {box-shadow: 3px 3px 3px rgba(119,136,153,1); margin: 0 2px;}
+
+.pill {border-radius: 60px !important;}
+
+.square {border-radius: 0 !important;}
 
 
 /*-------------- DEFAULT STICKY STYLING --------------*/
+
 
 sticky {
   display: inline;
@@ -291,7 +456,7 @@ sticky {
   border-radius: 6px;
 }
 
-/*-------------- ADDITIONAL STICKY STYLING --------------*/
+/*-------------- ADDITIONAL STICKY SIZES --------------*/
 
 
 .med-sti, .med-sti:hover {
@@ -308,7 +473,9 @@ sticky {
   border-radius: 10px;
 }
 
+
 /*-------------- DEFAULT TAG STYLING --------------*/
+
 
 tag {
   display: inline;
@@ -332,7 +499,8 @@ tag {
 tag:hover {opacity: 0.75;}
 tag:active {opacity: 0.3;}
 
-/*-------------- ADDITIONAL TAG STYLING --------------*/
+
+/*-------------- ADDITIONAL TAG SIZES --------------*/
 
 
 .med-tag, .med-tag:hover {
@@ -351,7 +519,9 @@ tag:active {opacity: 0.3;}
   border-width: 2px;
 }
 
+
 /*-------------- DEFAULT BADGE STYLING --------------*/
+
 
 badge {
   display: inline;
@@ -367,7 +537,9 @@ badge {
   cursor: default;
 }
 
-/*-------------- DEFAULT BADGE STYLING --------------*/
+
+/*-------------- DEFAULT BADGE SIZES --------------*/
+
 
 .med-bdg, .med-bdg:hover {
   font-size: 0.95em;
@@ -381,7 +553,9 @@ badge {
   padding: 3px 10px;
 }
 
-/*-------------- DEFAULT BADGE COLORS --------------*/
+
+/*-------------- ADDITIONAL BADGE COLORS --------------*/
+
 
 .bdg-blue, .bdg-blue:hover {
   box-shadow: 0 0 0 4px rgba(0,176,255,1);

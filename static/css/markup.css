@@ -7,17 +7,17 @@
     word-wrap: normal;
   }
 
-  hr {
-    margin: 3% 0;
+  hr {margin: 3% 0;}
+
+  ul li {list-style-type: none;}
+
+  p {font-size: 1.1em !important; line-height: 200%;
   }
 
-  ul li {
-    list-style-type: none;
-  }
-
-  p {
-    font-size: 1.1em !important;
-    line-height: 200%;
+  h1, h2, h3, h4, h5 {
+    margin: 2.5% 0;
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgba(83,109,254,0.5);
   }
 
   #container {
@@ -39,9 +39,7 @@
     margin-bottom: 1%;
   }
 
-  .backdrop {
-    background-color: rgba(83,109,254,1);
-  }
+  .backdrop {background-color: rgba(83,109,254,1);}
 
   pre {
     background-color: #dbe0fc;
@@ -57,6 +55,7 @@
     font-family: "Courier", monospace;
     font-size: 1em;
     float: left;
+    line-height: 150%;
   }
 
   code2 {
@@ -120,14 +119,8 @@
         right: 0;
         top: 0;
       }
-      ul.topnav.responsive li {
-        float: none;
-        display: inline;
-      }
-      ul.topnav.responsive li a {
-        display: block;
-        text-align: left;
-      }
+      ul.topnav.responsive li {float: none; display: inline;}
+      ul.topnav.responsive li a {display: block; text-align: left;}
     }
 
 
@@ -175,10 +168,7 @@
     }
 
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-        transition: margin-left .5s;
-        /*padding: 20px;*/
-    }
+    #main {transition: margin-left .5s;}
 
     /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
