@@ -15,11 +15,11 @@
 
       h4 {color: rgba(83,109,254,1);}
 
-      #example {padding: 1% 0;}
+      #example {padding: 3% 0; margin-bottom: 5%;}
 
       div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
+        margin: 0 1%;
         vertical-align: top;
-        margin: 1% 0.25%;
         display: inline-block;
       }
 
@@ -28,16 +28,15 @@
         and (min-device-width: 320px)
         and (max-device-width: 480px) {
 
-          h1 {font-size: 1.6em;}
-          h3 {font-size: 1.45em;}
-          h4 {font-size: 1.3em;}
-          h5 {font-size: 1.125em;}
+          h1 {font-size: 2em;}
 
-          button {display: inline-block; margin: 1%;}
-
-          .btn-link {display: inline-block; margin: 2%;}
-
+          div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
+            margin: 3% 1%;
+            vertical-align: top;
+            display: inline-block;
           }
+
+          #example {margin-bottom: 10%;}
         }
 
       /*TABLET*/
@@ -70,7 +69,7 @@
       <h1>components</h1>
 
       <div id="buttons">
-        <h3>Buttons</h3>
+        <h4>Buttons</h4>
         <p>
           Buttons are a primary component in making a project more interactive and engaging. Use buttons in form submissions, dialogs, navigation, toolbars, and much more.
         </p>
@@ -78,8 +77,6 @@
           Buttons are offered in two main styles - <a class="text-link" href="/components/tags">Tag Buttons</a> and <a class="text-link" href="/components/buttons">Standard Buttons</a>. Click each link to see examples, usage, and customizing options.
         </p>
         <div id="example">
-
-          <br>
 
           <tag>tag button</tag>
           <tag class="indigo-light">tag button</tag>
@@ -91,19 +88,20 @@
 
           <hr>
 
-          <button>default button</button>
-          <button class="indigo-light">default button</button>
-
-          <hr>
 
           <a href="#0" class="btn-link"><span>anchor button </span></a>
           <a href="#0" class="btn-link indigo-light"><span>anchor button </span></a>
+
+          <hr>
+
+          <button>default button</button>
+          <button class="indigo-light">default button</button>
 
         </div>
       </div>
 
       <div id="labels">
-        <h3>Labels</h3>
+        <h4>Labels</h4>
         <p>
           Labels are highly versatile. Use labels to alert users with a short message, highlight new information, offer additional context, emphasize a block of text, or simply to make an item "pop".
         </p>
@@ -122,10 +120,6 @@
           <sticky class="indigo-light">sticky</sticky>
         </div>
       </div>
-
-      <br>
-      <br>
-      <br>
 
       <a href="/" class="btn-link"><span>home </span></a>
 
