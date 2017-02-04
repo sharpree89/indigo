@@ -15,19 +15,11 @@
 
       h4 {color: rgba(83,109,254,1);}
 
-      #example {
-        padding: 1% 0;
-      }
+      #example {padding: 1% 0;}
 
-      div#example sticky, div#example button, div#example tag {
+      div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
         vertical-align: top;
         margin: 1% 0.25%;
-        display: inline-block;
-      }
-
-      div#example badge {
-        vertical-align: top;
-        margin: 1.5% 0.5%;
         display: inline-block;
       }
 
@@ -80,68 +72,54 @@
       <div id="buttons">
         <h3>Buttons</h3>
         <p>
-          Use <badge>indigo</badge> buttons in form submissions, dialogs, navigation, toolbars, and to make your project more interactive.
+          Buttons are a primary component in making a project more interactive and engaging. Use buttons in form submissions, dialogs, navigation, toolbars, and much more.
         </p>
         <p>
-          Buttons come in two main styles - <a class="text-link" href="/components/buttons">Standard Buttons</a> and <a class="text-link" href="/components/tags">Tag Buttons</a>.
+          Buttons are offered in two main styles - <a class="text-link" href="/components/tags">Tag Buttons</a> and <a class="text-link" href="/components/buttons">Standard Buttons</a>. Click each link to see examples, usage, and customizing options.
         </p>
         <div id="example">
-          <tag>tag</tag>
-          <tag class="med-tag">tag</tag>
-          <tag class="lrg-tag">tag</tag>
-          <button>button</button>
-          <button class="med-btn">button</button>
-          <button class="lrg-btn">button</button>
+
           <br>
-          <br>
-          <tag class="pill">tag</tag>
-          <tag class="pill med-tag">tag</tag>
-          <tag class="pill lrg-tag">tag</tag>
-          <button class="pill">button</button>
-          <button class="pill med-btn">button</button>
-          <button class="pill lrg-btn">button</button>
-          <br>
-          <br>
-          <tag class="square">tag</tag>
-          <tag class="square med-tag">tag</tag>
-          <tag class="square lrg-tag">tag</tag>
-          <button class="square">button</button>
-          <button class="square med-btn">button</button>
-          <button class="square lrg-btn">button</button>
+
+          <tag>tag button</tag>
+          <tag class="indigo-light">tag button</tag>
+
+          <hr>
+
+          <input type="submit" value="submit button">
+          <input type="submit" value="submit button" class="indigo-light">
+
+          <hr>
+
+          <button>default button</button>
+          <button class="indigo-light">default button</button>
+
+          <hr>
+
+          <a href="#0" class="btn-link"><span>anchor button </span></a>
+          <a href="#0" class="btn-link indigo-light"><span>anchor button </span></a>
+
         </div>
       </div>
 
       <div id="labels">
         <h3>Labels</h3>
         <p>
-          Use <badge>indigo</badge> labels to alert users with a message, display new information, offer additional context, emphasize a specific block of text, or to make certain elements "pop".
+          Labels are highly versatile. Use labels to alert users with a short message, highlight new information, offer additional context, emphasize a block of text, or simply to make an item "pop".
         </p>
         <p>
-          Labels come in two main styles - <a class="text-link" href="/components/stickys">Stickys</a> and <a class="text-link" href="/components/badges">Badges</a>.
+          Labels come in two styles -  <a class="text-link" href="/components/badges">Badges</a> and <a class="text-link" href="/components/stickys">Stickys</a>. Click each link to see examples, usage, and customizing options.
         </p>
         <div id="example">
-          <badge>1</badge>
-          <badge class="med-bdg">2</badge>
-          <badge class="lrg-bdg">3</badge>
+
+          <badge>7</badge>
+          <badge class="indigo-light">7</badge>
+          <hr>
+          <badge>badge</badge>
+          <badge class="indigo-light">badge</badge>
+          <hr>
           <sticky>sticky</sticky>
-          <sticky class="med-sti">sticky</sticky>
-          <sticky class="lrg-sti">sticky</sticky>
-          <br>
-          <br>
-          <badge class="pill">1</badge>
-          <badge class="pill med-bdg">2</badge>
-          <badge class="pill lrg-bdg">3</badge>
-          <sticky class="pill">sticky</sticky>
-          <sticky class="pill med-sti">sticky</sticky>
-          <sticky class="pill lrg-sti">sticky</sticky>
-          <br>
-          <br>
-          <badge class="square">1</badge>
-          <badge class="square med-bdg">2</badge>
-          <badge class="square lrg-bdg">3</badge>
-          <sticky class="square">sticky</sticky>
-          <sticky class="square med-sti">sticky</sticky>
-          <sticky class="square lrg-sti">sticky</sticky>
+          <sticky class="indigo-light">sticky</sticky>
         </div>
       </div>
 
@@ -149,7 +127,7 @@
       <br>
       <br>
 
-      <a href="/" class="btn-link-light"><span>home </span></a>
+      <a href="/" class="btn-link"><span>home </span></a>
 
     </div>
 

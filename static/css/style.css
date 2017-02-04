@@ -1,22 +1,30 @@
 
 /*GENERAL PAGE STYLING*/
 
-* {font-family: 'Muli', sans-serif; line-height: 150%;}
+* {font-family: 'Muli', sans-serif;}
 
-body {padding: 0;margin: 0;}
+body {padding: 0; margin: 0; word-wrap: normal;}
 
-ul {list-style-type: circle; line-height: 200%;}
+p {line-height: 2;}
 
-p {font-size: 1em; font-weight: 400;}
+ul {list-style-type: circle;}
 
-hr {border: 1px solid rgba(119,136,153, 0.15); margin: 2.5% 0;}
+hr {
+  margin: 2.5% 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(83,109,254,0.5);
+}
 
 h1, h2, h3, h4, h5, h6 {
+  color: rgba(38,50,56,1);
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0px;
-  padding: 0px;
+  margin: 2.5% 0;
+  padding-bottom: 1%;
+  border-bottom: 1px solid rgba(83,109,254,0.5);
 }
 
 h1 {font-size: 2.6em;}
@@ -31,7 +39,7 @@ h6 {font-size: 1.25em;}
 
 
 input[type=text] {
-  height: 40px;
+  height: 34px;
   width: 280px;
   border: 1px solid rgba(83,109,254,0.5);
   border-radius: 0;
@@ -42,20 +50,19 @@ input[type=text]:focus {outline: none; border: 1px solid rgba(83,109,254,1);}
 
 
 input[type=submit] {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 1%;
-  padding: 10px 16px;
+  padding: 6px 26px;
   text-align: center;
-  /*padding: 1% 2%;*/
-  background-color: rgba(83,109,254,1);
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(83,109,254,1);
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
+  background-color: rgba(83,109,254,1);
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -79,7 +86,7 @@ input[type=submit]:focus {outline: none;}
 
 
 a.text-link {
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: rgba(83,109,254,1);
 }
@@ -93,35 +100,31 @@ a.text-link:hover {
 /*---------- BUTON STYLE ANCHOR TAG ----------*/
 /*---------- DARK BUTTON-STYLE ANCHOR TAG ----------*/
 
-/*example:
-
-<a href="/buttons/buttons" class="red btn-link">
-  <span>Hover Me </span>
-</a>*/
 
 a.btn-link {
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 1%;
-  padding: 10px 16px;
+  padding: 6px 26px;
   text-align: center;
-  /*padding: 1% 2%;*/
-  background-color: rgba(83,109,254,1);
-  border-width: 3px;
+  vertical-align: middle;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(83,109,254,1);
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
+  background-color: rgba(83,109,254,1);
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
+
 a.btn-link span {
   cursor: pointer;
   display: inline-block;
@@ -130,69 +133,80 @@ a.btn-link span {
 }
 a.btn-link span:after {
   content: '\00bb';
-  font-size: 1.25em;
+  font-size: inherit;
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
 }
-a.btn-link:hover span {padding-right: 25px;}
+a.btn-link:hover span {padding-right: 20px;}
 a.btn-link:hover span:after {opacity: 1; right: 0;}
 a.btn-link:active {opacity: 0.5; outline: none;}
 a.btn-link:focus {outline: none;}
 
 
-/*---------- INVERTED BUTTON-STYLE ANCHOR TAG ----------*/
+/*---------- ADDITIONAL ANCHOR BUTTON SIZES ----------*/
 
-/*example:
+/*MEDIUM*/
 
-<a href="/buttons/buttons" class="btn-link-light blue-light">
-  <span>Hover Me </span>
-</a>*/
-
-
-a.btn-link-light {
+a.med-btn-link {
   font-size: 1em;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin: 1%;
-  padding: 10px 16px;
-  text-align: center;
-  /*padding: 1% 2%;*/
-  background-color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgba(83,109,254,1);
-  color: rgba(83,109,254,1);
+  font-weight: 400;
+  padding: 7px 34px;
   border-radius: 8px;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  border-width: 2px;
 }
-a.btn-link-light span {
+
+a.med-btn-link span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-a.btn-link-light span:after {
+a.med-btn-link span:after {
   content: '\00bb';
-  font-size: 1.25em;
+  font-size: inherit;
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
+  right: -25px;
   transition: 0.5s;
 }
-a.btn-link-light:hover span {padding-right: 25px;}
-a.btn-link-light:hover span:after {opacity: 1; right: 0;}
-a.btn-link-light:active {opacity: 0.5; outline: none;}
-a.btn-link-light:focus {outline: none;}
+a.med-btn-link:hover span {padding-right: 25px;}
+a.med-btn-link:hover span:after {opacity: 1; right: 0;}
+a.med-btn-link:active {opacity: 0.5; outline: none;}
+a.med-btn-link:focus {outline: none;}
+
+/*LARGE*/
+
+a.lrg-btn-link {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 9px 46px;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
+a.lrg-btn-link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+a.lrg-btn-link span:after {
+  content: '\00bb';
+  font-size: inherit;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+a.lrg-btn-link:hover span {padding-right: 30px;}
+a.lrg-btn-link:hover span:after {opacity: 1; right: 0;}
+a.lrg-btn-link:active {opacity: 0.5; outline: none;}
+a.lrg-btn-link:focus {outline: none;}
 
 
 /*-------------- ADDITIONAL TEXT COLORS --------------*/
@@ -258,20 +272,19 @@ a.btn-link-light:focus {outline: none;}
 
 
 button {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 1%;
-  padding: 10px 16px;
+  padding: 6px 26px;
   text-align: center;
-  /*padding: 1% 2%;*/
-  background-color: rgba(83,109,254,1);
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(83,109,254,1);
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
+  background-color: rgba(83,109,254,1);
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -285,154 +298,170 @@ button:hover {opacity: 0.75;}
 button:active {opacity: 0.5; outline: none;}
 button:focus {outline: none;}
 
+
 /*---------- ADDITIONAL BUTTON SIZES ----------*/
 
-.med-btn, .med-btn:hover {
-  font-size: 1.3em;
-  font-weight: 700;
-  padding: 15px 24px;
-  /*padding: 1.25% 2.25%;*/
+
+button.med-btn, button.med-btn:hover, input[type=submit].med-btn, input[type=submit].med-btn:hover {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 7px 34px;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+button.lrg-btn, button.lrg-btn:hover, input[type=submit].lrg-btn, input[type=submit].lrg-btn:hover {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 9px 46px;
   border-radius: 10px;
-  border-width: 3px;
-}
-
-.lrg-btn, .lrg-btn:hover {
-  letter-spacing: 2px !important;
-  font-size: 1.6em;
-  font-weight: 700;
-  padding: 20px 32px;
-  /*padding: 1.5% 2.5%;*/
-  border-radius: 12px;
-  border-width: 4px;
+  border-width: 2px;
 }
 
 
-/*-------------- ADDITIONAL BUTTON COLORS --------------*/
+/*-------------- ADDITIONAL COLORS --------------*/
 
 
 .blue, .blue:hover {
   border-color: rgba(0,176,255,1) !important;
   background-color: rgba(0,176,255,1) !important;
+  box-shadow: 0 0 0 2px rgba(0,176,255,1) !important;
 }
 
 .grey, .grey:hover {
   border-color: rgba(119,136,153,1) !important;
   background-color: rgba(119,136,153,1) !important;
+  box-shadow: 0 0 0 2px rgba(119,136,153,1) !important;
 }
 
 .green, .green:hover {
   border-color: rgba(2,184,117,1) !important;
   background-color: rgba(2,184,117,1) !important;
+  box-shadow: 0 0 0 2px rgba(2,184,117,1) !important;
 }
 
 .gold, .gold:hover {
   border-color: rgba(255,160,0,1) !important;
   background-color: rgba(255,160,0,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,160,0,1) !important;
 }
 
 .orange, .orange:hover {
   border-color: rgba(255,109,0,1) !important;
   background-color: rgba(255,109,0,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,109,0,1) !important;
 }
 
 .red, .red:hover {
   border-color: rgba(255,23,68,1) !important;
   background-color: rgba(255,23,68,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,23,68,1) !important;
 }
 
 .black, .black:hover {
   border-color: rgba(38,50,56,1) !important;
   background-color: rgba(38,50,56,1) !important;
+  box-shadow: 0 0 0 2px rgba(38,50,56,1) !important;
 }
 
 .purple, .purple:hover {
   border-color: rgba(170,0,255,1) !important;
   background-color: rgba(170,0,255,1) !important;
+  box-shadow: 0 0 0 2px rgba(170,0,255,1) !important;
 }
 
 .pink, .pink:hover {
   border-color: rgba(240,98,146,1) !important;
   background-color: rgba(240,98,146,1) !important;
+  box-shadow: 0 0 0 2px rgba(240,98,146,1) !important;
 }
 
 
-/*-------------- INVERTED BUTTON COLORS --------------*/
+/*-------------- INVERTED COLORS --------------*/
 
 
 .indigo-light, .indigo-light:hover {
-  border-color: rgba(83,109,254,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(83,109,254,1) !important;
+  box-shadow: 0 0 0 2px rgba(83,109,254,1) !important;
 }
 
 .blue-light, .blue-light:hover {
-  border-color: rgba(0,176,255,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(0,176,255,1) !important;
+  box-shadow: 0 0 0 2px rgba(0,176,255,1) !important;
 }
 
 .grey-light, .grey-light:hover {
-  border-color: rgba(119,136,153,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(119,136,153,1) !important;
+  box-shadow: 0 0 0 2px rgba(119,136,153,1) !important;
 }
 
 .green-light, .green-light:hover {
-  border-color: rgba(2,184,117,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(2,184,117,1) !important;
+  box-shadow: 0 0 0 2px rgba(2,184,117,1) !important;
 }
 
 .gold-light, .gold-light:hover {
-  border-color: rgba(255,160,0,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(255,160,0,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,160,0,1) !important;
 }
 
 .red-light, .red-light:hover {
-  border-color: rgba(255,23,68,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(255,23,68,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,23,68,1) !important;
 }
 
 .orange-light, .orange-light:hover {
-  border-color: rgba(255,109,0,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(255,109,0,1) !important;
+  box-shadow: 0 0 0 2px rgba(255,109,0,1) !important;
 }
 
 .black-light, .black-light:hover {
-  border-color: rgba(38,50,56,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(38,50,56,1) !important;
+  box-shadow: 0 0 0 2px rgba(38,50,56,1) !important;
 }
 
 .purple-light, .purple-light:hover {
-  border-color: rgba(170,0,255,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(170,0,255,1) !important;
+  box-shadow: 0 0 0 2px rgba(170,0,255,1) !important;
 }
 
 .pink-light, .pink-light:hover {
-  border-color: rgba(240,98,146,1) !important;
-  background-color: white;
+  border-color: white !important;
+  background-color: white !important;
   color: rgba(240,98,146,1) !important;
+  box-shadow: 0 0 0 2px rgba(240,98,146,1) !important;
 }
 
 .ghost, .ghost:hover {
-  border-color: white;
-  border-style: solid;
+  border-color: rgba(255,255,255,0);
   background-color: rgba(255,255,255,0);
   color: white;
+  box-shadow: 0 0 0 2px white !important;
 }
 
 
 /*-------------- ADDITIONAL BUTTON STYLES --------------*/
 
 
-.raised {box-shadow: 3px 3px 3px rgba(119,136,153,1); margin: 0 2px;}
-
-.pill {border-radius: 60px !important;}
+.pill {border-radius: 36px !important;}
 
 .square {border-radius: 0 !important;}
 
@@ -445,31 +474,32 @@ sticky {
   letter-spacing: 1px;
   text-align: center;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  padding: 5px 8px;
+  padding: 0px 5px;
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
   background-color: rgba(83,109,254,1);
   border: 2px solid rgba(83,109,254,1);
   color: white;
   cursor: default;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /*-------------- ADDITIONAL STICKY SIZES --------------*/
 
 
-.med-sti, .med-sti:hover {
-  font-size: 1.1em;
-  font-weight: 600;
-  padding: 8px 11px;
-  border-radius: 8px;
+sticky.med-sti, sticky.med-sti:hover {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1px 6px;
+  border-radius: 6px;
 }
 
-.lrg-sti, .lrg-sti:hover {
-  font-size: 1.4em;
-  font-weight: 600;
-  padding: 10px 14px;
-  border-radius: 10px;
+sticky.lrg-sti, sticky.lrg-sti:hover {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 2px 7px;
+  border-radius: 8px;
 }
 
 
@@ -479,15 +509,17 @@ sticky {
 tag {
   display: inline;
   letter-spacing: 1px;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 0.65em;
+  font-size: 0.6em;
   font-weight: 400;
-  padding: 2px 6px;
+  padding: 0px 5px;
   background-color: rgba(83,109,254,1);
   color: white;
   border-width: 1px;
   border-style: solid;
   border-color: rgba(83,109,254,1);
+  box-shadow: 0 0 0 1px rgba(83,109,254,1);
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -502,18 +534,18 @@ tag:active {opacity: 0.3;}
 /*-------------- ADDITIONAL TAG SIZES --------------*/
 
 
-.med-tag, .med-tag:hover {
-  font-size: 0.85em;
+tag.med-tag, tag.med-tag:hover {
+  font-size: 0.7em;
   font-weight: 400;
-  padding: 3px 8px;
+  padding: 1px 6px;
   border-radius: 5px;
   border-width: 2px;
 }
 
-.lrg-tag, .lrg-tag:hover {
-  font-size: 1em;
+tag.lrg-tag, tag.lrg-tag:hover {
+  font-size: 0.85em;
   font-weight: 400;
-  padding: 4px 10px;
+  padding: 2px 7px;
   border-radius: 6px;
   border-width: 2px;
 }
@@ -524,14 +556,20 @@ tag:active {opacity: 0.3;}
 
 badge {
   display: inline;
-  text-align: center;
-  font-size: 0.75em;
-  font-weight: 600;
-  padding: 1px 6px;
-  border-radius: 20px;
-  box-shadow: 0 0 0 4px rgba(83,109,254,1);
+  letter-spacing: 1px;
   background-color: rgba(83,109,254,1);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(83,109,254,1);
+  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
   color: white;
+  font: 14px/13px "Muli", Verdana, sans-serif;
+  font-weight: 400;
+  height: 16px;
+  min-width: 14px;
+  padding: 5px 4px 1px 4px;
+  text-align: center;
   cursor: default;
 }
 
@@ -540,62 +578,17 @@ badge {
 
 
 .med-bdg, .med-bdg:hover {
-  font-size: 0.95em;
-  font-weight: 600;
-  padding: 2px 8px;
+  border-radius: 16px;
+  font: 18px/17px "Muli", Verdana, sans-serif;
+  height: 20px;
+  min-width: 18px;
+  padding: 6px 5px 1px 5px;
 }
 
 .lrg-bdg, .lrg-bdg:hover {
-  font-size: 1.15em;
-  font-weight: 600;
-  padding: 3px 10px;
-}
-
-
-/*-------------- ADDITIONAL BADGE COLORS --------------*/
-
-
-.bdg-blue, .bdg-blue:hover {
-  box-shadow: 0 0 0 4px rgba(0,176,255,1);
-  background-color: rgba(0,176,255,1);
-}
-
-.bdg-grey, .bdg-grey:hover {
-  box-shadow: 0 0 0 4px rgba(119,136,153,1);
-  background-color: rgba(119,136,153,1);
-}
-
-.bdg-green, .bdg-green:hover {
-  box-shadow: 0 0 0 4px rgba(2,184,117,1);
-  background-color: rgba(2,184,117,1);
-}
-
-.bdg-gold, .bdg-gold:hover {
-  box-shadow: 0 0 0 4px rgba(255,160,0,1);
-  background-color: rgba(255,160,0,1);
-}
-
-.bdg-orange, .bdg-orange:hover {
-  box-shadow: 0 0 0 4px rgba(255,109,0,1);
-  background-color: rgba(255,109,0,1);
-}
-
-.bdg-red, .bdg-red:hover {
-  box-shadow: 0 0 0 4px rgba(255,23,68,1);
-  background-color: rgba(255,23,68,1);
-}
-
-.bdg-black, .bdg-black:hover {
-  box-shadow: 0 0 0 4px rgba(38,50,56,1);
-  background-color: rgba(38,50,56,1);
-}
-
-.bdg-purple, .bdg-purple:hover {
-  box-shadow: 0 0 0 4px rgba(170,0,255,1);
-  background-color: rgba(170,0,255,1);
-}
-
-.bdg-pink, .bdg-pink:hover {
-  box-shadow: 0 0 0 4px rgba(240,98,146,1);
-  background-color: rgba(240,98,146,1);
+  border-radius: 18px;
+  font: 22px/21px "Muli", Verdana, sans-serif;
+  height: 24px;
+  min-width: 22px;
+  padding: 7px 6px 2px 6px;
 }
