@@ -36,7 +36,8 @@
     background-color: #dbe0fc;
     display: inline-block;
     font-family: "Courier", monospace;
-    font-size: 0.8em;
+    font-size: 1em;
+    line-height: 1.5;
     float: left;
   }
 
@@ -45,7 +46,9 @@
     border: 1px solid #8698f9;
     display: inline-block;
     font-family: "Courier", monospace;
-    padding: 0.5%;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 1%;
     margin: 0.5%;
   }
 

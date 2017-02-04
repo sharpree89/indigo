@@ -17,7 +17,15 @@
 
       #container {margin-bottom: 5%;}
 
-      .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
+      #example {padding: 1% 0;}
+
+      div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
+        margin: 1% 0.25%;
+        vertical-align: top;
+        display: inline-block;
+      }
+
+      i.fa-pinterest, i.fa-twitter, i.fa-reddit, i.fa-facebook, i.fa-github {vertical-align: middle; font-size: 14px; margin-right: 5px; margin-bottom: 1px;}
 
       /*PHONES*/
       @media only screen
@@ -42,9 +50,6 @@
           .btn-link, .btn-link-light {display: inline-block; margin: 2%;}
           #example {padding: 1% 0;}
           .raised {margin: 2% 1%;}
-        }
-
-
         }
 
     </style>
@@ -81,25 +86,50 @@
 
       <div id="container">
 
-        <a class="btn-link-light" href="/components"><span>components </span></a>
+        <a class="btn-link indigo-light" href="/components"><span>components </span></a>
 
         <h1>Tag Buttons</h1>
 
-        <p>This page contains all the information you need about <badge>indigo's</badge> tag button styling options. Use the side navigation to jump to different sections throughout the page.</p>
+        <p>This page contains everything you need to know about indigo's tag buttons. Use the side navigation to skip to different sections.</p>
+
+        <div id="example">
+          <tag class="square">tag</tag>
+          <tag class="square med-tag">tag</tag>
+          <tag class="square lrg-tag">tag</tag>
+          <tag class="square lrg-tag indigo-light">tag</tag>
+          <tag class="square med-tag indigo-light">tag</tag>
+          <tag class="square indigo-light">tag</tag>
+          <br>
+          <tag class="pill">tag</tag>
+          <tag class="pill med-tag">tag</tag>
+          <tag class="pill lrg-tag">tag</tag>
+          <tag class="pill lrg-tag indigo-light">tag</tag>
+          <tag class="pill med-tag indigo-light">tag</tag>
+          <tag class="pill indigo-light">tag</tag>
+          <br>
+          <tag>tag</tag>
+          <tag class="med-tag">tag</tag>
+          <tag class="lrg-tag">tag</tag>
+          <tag class="indigo-light lrg-tag">tag</tag>
+          <tag class="indigo-light med-tag">tag</tag>
+          <tag class="indigo-light">tag</tag>
+        </div>
 
         <a name="usage"></a>
         <h4>Usage</h4>
 
-        <p>The default <code2>&lt;tag&gt;</code2> is indigo with white text and slightly rounded edges.</p>
+        <p>The default <code2>&lt;tag&gt;</code2> has an indigo <code2>background-color</code2>, white font <code2>color</code2>, and a subtle <code2>border-radius</code2>.</p>
+
+        <p>Tags have the exact same functionality as normal buttons, the major difference that tags are smaller and thus better suited for specific scenarios.</p>
 
         <div id="example">
-          <tag>default tag</tag>
+          <tag>default</tag>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag&gt;default tag&lt;/tag&gt;
+        &lt;tag&gt;default&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
@@ -134,52 +164,27 @@
           <tag class="pink">dessert</tag>
         </div>
 
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;p&gt;Strawberry Cupcakes Recipe&lt;/p&gt;
-        &lt;tag class="pink"&gt;baking&lt;/tag&gt;
-        &lt;tag class="pink"&gt;recipe&lt;/tag&gt;
-        &lt;tag class="pink"&gt;cupcakes&lt;/tag&gt;
-        &lt;tag class="pink"&gt;frosting&lt;/tag&gt;
-        &lt;tag class="pink"&gt;strawberry&lt;/tag&gt;
-        &lt;tag class="pink"&gt;vegan&lt;/tag&gt;
-        &lt;tag class="pink"&gt;dessert&lt;/tag&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
         <p>Tags also work well as miniature buttons for tiny user interfaces...</p>
 
         <div id="example">
           <b>Get Started Today!</b>
           <br>
-          <tag>Sign Me Up</tag>
+          <tag class="green">Sign Me Up</tag>
           <tag class="grey">Read Reviews</tag>
         </div>
 
-        <pre>
-          <code>
-      &lt;div&gt;
-        Get Started Today!
-        &lt;tag&gt;Sign Me Up&lt;/tag&gt;
-        &lt;tag class="grey"&gt;Read Reviews&lt;/tag&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
+        <p>...and their small size is well-suited for social media buttons.</p>
 
-        <p>...and their small size is well-suited for subtle social media buttons.</p>
-
-        <p><a href="http://fontawesome.io/" class="text-link">Font Awesome Icons</a> work beautifully with <badge>indigo's</badge> CSS components.</p>
+        <p><a href="http://fontawesome.io/" class="text-link">Font Awesome Icons</a> work beautifully with indigo's CSS components. However, you may need to manually adjust <code2>margin</code2> and/or <code2>padding</code2> to perfectly align icons with tag text due to the small size.</p>
 
         <div id="example">
           <b>Follow Me!</b>
           <br>
-          <tag class="red"><i class="fa fa-pinterest"></i> Pinterest</tag>
-          <tag class="blue"><i class="fa fa-twitter"></i> Twitter</tag>
-          <tag class="black"><i class="fa fa-github"></i> GitHub</tag>
-          <tag><i class="fa fa-facebook"></i> Facebook</tag>
-          <tag class="orange"><i class="fa fa-reddit"></i> Reddit</tag>
+          <tag class="red" style="padding-top: 1px;"><i class="fa fa-pinterest"></i> Pinterest</tag>
+          <tag class="blue" style="padding-top: 1px;"><i class="fa fa-twitter"></i> Twitter</tag>
+          <tag class="black" style="padding-top: 1px;"><i class="fa fa-github"></i> GitHub</tag>
+          <tag style="padding-top: 1px;"><i class="fa fa-facebook"></i> Facebook</tag>
+          <tag class="orange" style="padding-top: 1px;"><i class="fa fa-reddit"></i> Reddit</tag>
         </div>
 
         <pre>
@@ -200,7 +205,11 @@
         <a name="color"></a>
         <h4>Colors</h4>
 
-        <p>Use the <code2>.color</code2> class to change the background color of the tag.</p>
+        <p>Use the <code2>.color</code2> class to change a tag's <code2>background-color</code2>. indigo offers 11 different colors and 21 different color styles.</p>
+
+        <p>If you choose to manually adjust the color, most components not only have <code2>background-color</code2>, they also have <code2>box-shadow</code2> and <code2>border-color</code2> properties that will need to be adjusted.</p>
+
+        <p>More custom colors are being added soon, so stay tuned!</p>
 
         <div id="example">
           <tag class="red">red</tag>
@@ -232,7 +241,7 @@
           </code>
         </pre>
 
-        <p>Use the <code2>.color-light</code2> class for an inverted color scheme that is consistent with the style of <a href="/components/buttons#secondary" class="text-link">Secondary Buttons</a>.</p>
+        <p>Use the <code2>.color-light</code2> class to change a tag's <code2>background-color</code2>, font <code2>color</code2>, and <code2>border-color</code2>.</p>
 
         <div id="example">
           <tag class="red-light">red</tag>
@@ -264,19 +273,37 @@
           </code>
         </pre>
 
+        <h5>Ghost Tags</h5>
+
+        <p>Use the <code2>.ghost</code2> class for a transparent <code2>background-color</code2>, white font <code2>color</code2>, and white <code2>border-color</code2>.</p>
+
+        <p>Transparent tags are most effective when paired with high-contrast background colors or images that won't clash with the tag's text.</p>
+
+        <div class="backdrop" id="example">
+          <tag class="ghost">ghost</tag>
+          <tag class="ghost med-tag">ghost</tag>
+          <tag class="ghost lrg-tag">ghost</tag>
+        </div>
+
+        <pre>
+          <code>
+      &lt;div&gt;
+        &lt;tag class="ghost"&gt;ghost&lt;/tag&gt;
+        &lt;tag class="ghost med-tag"&gt;ghost&lt;/tag&gt;
+        &lt;tag class="ghost lrg-tag"&gt;ghost&lt;/tag&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+
         <a name="size"></a>
         <h4>Sizes</h4>
 
-        <p>Tags come in three sizes: default, medium, and large.</p>
+        <p>Tags come in three sizes: small (default), medium, and large.</p>
 
-        <p>Default - <code2>&lt;tag&gt;</code2> - no additional class necessary.</p>
-
-        <p>Medium - <code2>.med-tag</code2></p>
-
-        <p>Large - <code2>.lrg-tag</code2></p>
+        <p>Small: <code2>&lt;tag&gt;</code2>, Medium: <code2>.med-tag</code2>, Large: <code2>.lrg-tag</code2></p>
 
         <div id="example">
-          <tag class="purple">default</tag>
+          <tag class="purple">small</tag>
           <tag class="purple med-tag">medium</tag>
           <tag class="purple lrg-tag">large</tag>
         </div>
@@ -284,7 +311,7 @@
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag class="purple"&gt;default&lt;/tag&gt;
+        &lt;tag class="purple"&gt;small&lt;/tag&gt;
         &lt;tag class="purple med-tag"&gt;medium&lt;/tag&gt;
         &lt;tag class="purple lrg-tag"&gt;large&lt;/tag&gt;
       &lt;/div&gt;
@@ -307,9 +334,9 @@
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag class="green-light square"&gt;squared&lt;/tag&gt;
-        &lt;tag class="blue square med-tag"&gt;squared&lt;/tag&gt;
-        &lt;tag class="indigo-light square lrg-tag"&gt;squared&lt;/tag&gt;
+        &lt;tag class="green-light square"&gt;square&lt;/tag&gt;
+        &lt;tag class="blue square med-tag"&gt;square&lt;/tag&gt;
+        &lt;tag class="indigo-light square lrg-tag"&gt;square&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
@@ -319,62 +346,24 @@
         <p>Use the <code2>.pill</code2> class for a pill-shaped tag with rounded edges.</p>
 
         <div id="example">
-          <tag class="red-light pill">rounded</tag>
-          <tag class="orange pill med-tag">rounded</tag>
-          <tag class="gold-light pill lrg-tag">rounded</tag>
+          <tag class="red-light pill">round</tag>
+          <tag class="orange pill med-tag">round</tag>
+          <tag class="gold-light pill lrg-tag">round</tag>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        &lt;tag class="red-light pill"&gt;rounded&lt;/tag&gt;
-        &lt;tag class="orange pill med-tag"&gt;rounded&lt;/tag&gt;
-        &lt;tag class="gold-light pill lrg-tag"&gt;rounded&lt;/tag&gt;
+        &lt;tag class="red-light pill"&gt;round&lt;/tag&gt;
+        &lt;tag class="orange pill med-tag"&gt;round&lt;/tag&gt;
+        &lt;tag class="gold-light pill lrg-tag"&gt;round&lt;/tag&gt;
       &lt;/div&gt;
           </code>
         </pre>
 
-        <p>Use the <code2>.raised</code2> class to give tags shadows and a raised, 3-dimensional effect.</p>
+        <hr>
 
-        <div id="example">
-          <tag class="pink raised square">raised</tag>
-          <tag class="pink raised square med-tag">raised</tag>
-          <tag class="pink raised square lrg-tag">raised</tag>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;tag class="pink raised square"&gt;raised&lt;/tag&gt;
-        &lt;tag class="pink raised square med-tag"&gt;raised&lt;/tag&gt;
-        &lt;tag class="pink raised square lrg-tag"&gt;raised&lt;/tag&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <h5>Ghost Buttons</h5>
-
-        <p>Use the <code2>.ghost</code2> class to give tags a transparent background with a white border and white text.</p>
-
-        <p>These are most effective when paired with high-contrast background colors or images that won't clash with the tag's text.</p>
-
-        <div class="backdrop" id="example">
-          <tag class="ghost">ghost</tag>
-          <tag class="ghost med-tag">ghost</tag>
-          <tag class="ghost lrg-tag">ghost</tag>
-        </div>
-
-        <pre>
-          <code>
-      &lt;div&gt;
-        &lt;tag class="ghost"&gt;ghost&lt;/tag&gt;
-        &lt;tag class="ghost med-tag"&gt;ghost&lt;/tag&gt;
-        &lt;tag class="ghost lrg-tag"&gt;ghost&lt;/tag&gt;
-      &lt;/div&gt;
-          </code>
-        </pre>
-
-        <a href="#top" class="btn-link-light"><span>Back To Top </span></a>
+        <a href="#top" class="btn-link indigo-light"><span>Back To Top </span></a>
 
       </div>
 
