@@ -25,7 +25,9 @@
         display: inline-block;
       }
 
-      i.fa-pinterest, i.fa-twitter, i.fa-reddit, i.fa-facebook, i.fa-github {vertical-align: middle; font-size: 14px; margin-right: 5px; margin-bottom: 1px;}
+      i.fa-pinterest, i.fa-twitter, i.fa-reddit, i.fa-facebook, i.fa-github {
+        font-size: inherit;
+      }
 
       /*PHONES*/
       @media only screen
@@ -175,22 +177,29 @@
 
         <p>...and their small size is well-suited for social media buttons.</p>
 
-        <p><a href="http://fontawesome.io/" class="text-link">Font Awesome Icons</a> work beautifully with indigo's CSS components. However, you may need to manually adjust <code2>margin</code2> and/or <code2>padding</code2> to perfectly align icons with tag text due to the small size.</p>
+        <p><a href="http://fontawesome.io/" class="text-link">Font Awesome Icons</a> work great with indigo's CSS components. You may need to manually adjust <code2>margin</code2> for the icons to align properly.</p>
 
         <div id="example">
           <b>Follow Me!</b>
           <br>
-          <tag class="red" style="padding-top: 1px;"><i class="fa fa-pinterest"></i> Pinterest</tag>
-          <tag class="blue" style="padding-top: 1px;"><i class="fa fa-twitter"></i> Twitter</tag>
-          <tag class="black" style="padding-top: 1px;"><i class="fa fa-github"></i> GitHub</tag>
-          <tag style="padding-top: 1px;"><i class="fa fa-facebook"></i> Facebook</tag>
-          <tag class="orange" style="padding-top: 1px;"><i class="fa fa-reddit"></i> Reddit</tag>
+          <tag class="red"><i class="fa fa-pinterest"></i> Pinterest</tag>
+          <tag class="blue"><i class="fa fa-twitter"></i> Twitter</tag>
+          <tag class="black"><i class="fa fa-github"></i> GitHub</tag>
+          <tag><i class="fa fa-facebook"></i> Facebook</tag>
+          <tag class="orange"><i class="fa fa-reddit"></i> Reddit</tag>
+        </div>
+
+        <div id="example">
+          <b>Follow Me!</b>
+          <br>
+          <tag class="black lrg-tag"><i class="fa fa-instagram" style="font-size: 18px; margin: 1px 0 0 1px;"></i></tag>
+          <tag class="black lrg-tag"><i class="fa fa-twitter" style="font-size: 18px; margin: 1px 0 0 1px;"></i></tag>
+          <tag class="black lrg-tag"><i class="fa fa-github" style="font-size: 18px; margin: 1px 0 0 1px;"></i></tag>
         </div>
 
         <pre>
           <code>
       &lt;div&gt;
-        Follow Me
         &lt;tag class="red"&gt;&lt;i class="fa fa-pinterest"&gt;&lt;/i&gt; Pinterest&lt;/tag&gt;
         &lt;tag class="blue"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt; Twitter&lt;/tag&gt;
         &lt;tag class="black"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt; GitHub&lt;/tag&gt;

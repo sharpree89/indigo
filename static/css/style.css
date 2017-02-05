@@ -9,6 +9,8 @@ p {line-height: 2;}
 
 ul {list-style-type: circle;}
 
+ol {list-style-type: decimal;}
+
 hr {
   margin: 2.5% 0;
   display: block;
@@ -18,9 +20,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba(38,50,56,1);
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-weight: 700;
   margin: 2.5% 0;
   padding-bottom: 1%;
@@ -49,7 +49,10 @@ input[type=text] {
 input[type=text]:focus {outline: none; border: 1px solid rgba(83,109,254,1);}
 
 
-input[type=submit] {
+input[type=button], input[type=reset], input[type=submit] {
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
   font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -64,7 +67,6 @@ input[type=submit] {
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  overflow: hidden;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -72,17 +74,13 @@ input[type=submit] {
   -o-transition: all 0.3s ease-in-out;
 }
 
-input[type=submit]:hover {opacity: 0.75;}
-input[type=submit]:active {opacity: 0.5; outline: none;}
-input[type=submit]:focus {outline: none;}
+input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {opacity: 0.75;}
+input[type=button]:active, input[type=reset]:active, input[type=submit]:active {opacity: 0.5; outline: none;}
+input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus {outline: none;}
 
 
 /*---------- ANCHOR TAG STYLING ----------*/
 /*---------- PLAIN TEXT ANCHOR TAG ----------*/
-
-/*example:
-
-<a class="text-link" href="/buttons/buttons">buttons</a>*/
 
 
 a.text-link {
@@ -102,13 +100,15 @@ a.text-link:hover {
 
 
 a.btn-link {
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
   font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 6px 26px;
   text-align: center;
-  vertical-align: middle;
   border-width: 2px;
   border-style: solid;
   border-color: rgba(83,109,254,1);
@@ -117,7 +117,6 @@ a.btn-link {
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  overflow: hidden;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -272,6 +271,9 @@ a.lrg-btn-link:focus {outline: none;}
 
 
 button {
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
   font-size: 0.8em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -286,7 +288,6 @@ button {
   color: white;
   border-radius: 6px;
   text-decoration: none;
-  overflow: hidden;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -470,7 +471,9 @@ button.lrg-btn, button.lrg-btn:hover, input[type=submit].lrg-btn, input[type=sub
 
 
 sticky {
-  display: inline;
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
   letter-spacing: 1px;
   text-align: center;
   font-size: 0.8em;
@@ -507,13 +510,14 @@ sticky.lrg-sti, sticky.lrg-sti:hover {
 
 
 tag {
-  display: inline;
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
   letter-spacing: 1px;
-  text-transform: uppercase;
   text-align: center;
   font-size: 0.6em;
   font-weight: 400;
-  padding: 0px 5px;
+  padding: 0px 5px 1px 5px;
   background-color: rgba(83,109,254,1);
   color: white;
   border-width: 1px;
@@ -537,7 +541,7 @@ tag:active {opacity: 0.3;}
 tag.med-tag, tag.med-tag:hover {
   font-size: 0.7em;
   font-weight: 400;
-  padding: 1px 6px;
+  padding: 1px 6px 2px 6px;
   border-radius: 5px;
   border-width: 2px;
 }
@@ -545,7 +549,7 @@ tag.med-tag, tag.med-tag:hover {
 tag.lrg-tag, tag.lrg-tag:hover {
   font-size: 0.85em;
   font-weight: 400;
-  padding: 2px 7px;
+  padding: 2px 7px 3px 7px;
   border-radius: 6px;
   border-width: 2px;
 }
@@ -555,7 +559,8 @@ tag.lrg-tag, tag.lrg-tag:hover {
 
 
 badge {
-  display: inline;
+  white-space: nowrap;
+  display: inline-block;
   letter-spacing: 1px;
   background-color: rgba(83,109,254,1);
   border-width: 2px;
