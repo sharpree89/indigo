@@ -1,0 +1,190 @@
+/*
+
+Responsive, Mobile-First Fluid Grid System
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+/*====== 12-column grid system ======*/
+
+.row {width: 100%;}
+
+/*
+
+Each row should be wrapped in a div, and each row should include a separate div for each column in the row.
+
+Make sure all of the columns in a row add up to 12!
+
+Below: optional classes if you want to set mobile columns to be anything but the default 100% width.
+
+*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  /*Comment out the line below if using any of the above classes*/
+  /*width: 100%;*/
+  float: left;
+  text-align: center;
+  border: 5px solid white;
+  background-color: lightgrey;
+}
+
+
+/*====== Media Queries ======*/
+
+/*
+
+Mobile: 400px (default)
+Phablet: 550px
+Tablet: 750px
+Desktop: 1025px
+Desktop HD: 1200px
+
+*/
+
+/*====== Phablets ======*/
+
+@media (min-width: 550px) {
+
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    text-align: center;
+    border: 5px solid white;
+    background-color: lightgrey;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/*====== Tablets ======*/
+
+@media only screen and (min-width: 750px) {
+
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    text-align: center;
+    border: 5px solid white;
+    background-color: lightgrey;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/*====== Desktop ======*/
+
+@media only screen and (min-width: 1025px) {
+
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    text-align: center;
+    border: 5px solid white;
+    background-color: lightgrey;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/*====== Desktop HD ======*/
+
+@media (min-width: 1200px) {
+
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    text-align: center;
+    border: 5px solid white;
+    background-color: lightgrey;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
