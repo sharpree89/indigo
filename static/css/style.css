@@ -1,11 +1,7 @@
 
-/*GENERAL PAGE STYLING*/
+/*====== GENERAL PAGE STYLING ======*/
 
-* {font-family: 'Muli', sans-serif;}
-
-body {padding: 0; margin: 0; word-wrap: normal;}
-
-p {line-height: 2;}
+* {font-family: 'Muli', sans-serif; box-sizing: border-box;}
 
 ul {list-style-type: circle;}
 
@@ -16,26 +12,13 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgba(83,109,254,0.5);
+  border-top: 1px solid rgba(83,109,254,0.3);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 2.5% 0;
-  padding-bottom: 1%;
-  border-bottom: 1px solid rgba(83,109,254,0.5);
-}
-
-h1 {font-size: 2.6em;}
-h2 {font-size: 2.25em;}
-h3 {font-size: 2em;}
-h4 {font-size: 1.75em;}
-h5 {font-size: 1.5em;}
-h6 {font-size: 1.25em;}
+h1, h2, h3, h4, h5, h6 {letter-spacing: 1px; font-weight: 600; margin-bottom: 2.5%;}
 
 
-/*---------- INPUT STYLING ----------*/
+/*========== FORM INPUT STYLING ==========*/
 
 
 input[type=text] {
@@ -49,37 +32,8 @@ input[type=text] {
 input[type=text]:focus {outline: none; border: 1px solid rgba(83,109,254,1);}
 
 
-input[type=button], input[type=reset], input[type=submit] {
-  white-space: nowrap;
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 0.8em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 6px 26px;
-  text-align: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgba(83,109,254,1);
-  box-shadow: 0 0 0 2px rgba(83,109,254,1);
-  background-color: rgba(83,109,254,1);
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
+/*========== ANCHOR TAG STYLING ==========*/
 
-input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {opacity: 0.75;}
-input[type=button]:active, input[type=reset]:active, input[type=submit]:active {opacity: 0.5; outline: none;}
-input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus {outline: none;}
-
-
-/*---------- ANCHOR TAG STYLING ----------*/
 /*---------- PLAIN TEXT ANCHOR TAG ----------*/
 
 
@@ -95,19 +49,18 @@ a.text-link:hover {
 }
 
 
-/*---------- BUTON STYLE ANCHOR TAG ----------*/
-/*---------- DARK BUTTON-STYLE ANCHOR TAG ----------*/
+/*---------- ANCHOR BUTTON STYLING ----------*/
 
 
 a.btn-link {
+  margin: 1% 0.5% !important;
   white-space: nowrap;
   display: inline-block;
   box-sizing: border-box;
   font-size: 0.8em;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 6px 26px;
   text-align: center;
   border-width: 2px;
   border-style: solid;
@@ -122,6 +75,7 @@ a.btn-link {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  padding: 7px 24px;
 }
 
 a.btn-link span {
@@ -147,44 +101,17 @@ a.btn-link:focus {outline: none;}
 
 /*---------- ADDITIONAL ANCHOR BUTTON SIZES ----------*/
 
-/*MEDIUM*/
-
-a.med-btn-link {
-  font-size: 1em;
-  font-weight: 400;
-  padding: 7px 34px;
-  border-radius: 8px;
-  border-width: 2px;
-}
-
-a.med-btn-link span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-a.med-btn-link span:after {
-  content: '\00bb';
-  font-size: inherit;
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -25px;
-  transition: 0.5s;
-}
-a.med-btn-link:hover span {padding-right: 25px;}
-a.med-btn-link:hover span:after {opacity: 1; right: 0;}
-a.med-btn-link:active {opacity: 0.5; outline: none;}
-a.med-btn-link:focus {outline: none;}
-
-/*LARGE*/
+/*
+LARGE
+*/
 
 a.lrg-btn-link {
-  font-size: 1.2em;
+  font-size: 0.95em;
   font-weight: 400;
-  padding: 9px 46px;
-  border-radius: 10px;
+  border-radius: 8px;
   border-width: 2px;
+  letter-spacing: 2px;
+  padding: 9px 32px;
 }
 
 a.lrg-btn-link span {
@@ -199,16 +126,48 @@ a.lrg-btn-link span:after {
   position: absolute;
   opacity: 0;
   top: 0;
-  right: -30px;
+  right: -25px;
   transition: 0.5s;
 }
-a.lrg-btn-link:hover span {padding-right: 30px;}
+a.lrg-btn-link:hover span {padding-right: 25px;}
 a.lrg-btn-link:hover span:after {opacity: 1; right: 0;}
 a.lrg-btn-link:active {opacity: 0.5; outline: none;}
 a.lrg-btn-link:focus {outline: none;}
 
+/*
+HUGE
+*/
 
-/*-------------- ADDITIONAL TEXT COLORS --------------*/
+a.huge-btn-link {
+  font-size: 1.2em;
+  font-weight: 400;
+  border-radius: 10px;
+  border-width: 2px;
+  letter-spacing: 2px;
+  padding: 11px 40px;
+}
+a.huge-btn-link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+a.huge-btn-link span:after {
+  content: '\00bb';
+  font-size: inherit;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+a.huge-btn-link:hover span {padding-right: 30px;}
+a.huge-btn-link:hover span:after {opacity: 1; right: 0;}
+a.huge-btn-link:active {opacity: 0.5; outline: none;}
+a.huge-btn-link:focus {outline: none;}
+
+
+/*========== TEXT COLORS ==========*/
 
 
 .indigo-text, .indigo-text:hover {
@@ -267,18 +226,21 @@ a.lrg-btn-link:focus {outline: none;}
 }
 
 
-/*-------------- DEFAULT BUTTON STYLING --------------*/
+/*========== BUTTON STYLING ==========*/
 
 
-button {
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  margin: 1% 0.5% !important;
   white-space: nowrap;
   display: inline-block;
   box-sizing: border-box;
   font-size: 0.8em;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 6px 26px;
   text-align: center;
   border-width: 2px;
   border-style: solid;
@@ -293,34 +255,95 @@ button {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  padding: 7px 24px;
 }
 
-button:hover {opacity: 0.75;}
-button:active {opacity: 0.5; outline: none;}
-button:focus {outline: none;}
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {opacity: 0.8;}
+
+button:active,
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active {opacity: 0.6; outline: none;}
+
+button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus {outline: none;}
 
 
 /*---------- ADDITIONAL BUTTON SIZES ----------*/
 
-
-button.med-btn, button.med-btn:hover, input[type=submit].med-btn, input[type=submit].med-btn:hover {
-  font-size: 1em;
+button.micro-btn,
+input[type=submit].micro-btn,
+input[type=reset].micro-btn,
+input[type=button].micro-btn {
+  font-size: 0.5em;
   font-weight: 400;
-  padding: 7px 34px;
+  border-width: 1px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  padding: 2px 7px 2px 8px;
+}
+
+button.tiny-btn,
+input[type=submit].tiny-btn,
+input[type=reset].tiny-btn,
+input[type=button].tiny-btn {
+  font-size: 0.65em;
+  font-weight: 400;
+  border-radius: 4px;
+  border-width: 2px;
+  letter-spacing: 1px;
+  padding: 3px 12px 2px 12px;
+}
+
+button.small-btn,
+input[type=submit].small-btn,
+input[type=reset].small-btn,
+input[type=button].small-btn {
+  font-size: 0.75em;
+  font-weight: 400;
+  border-radius: 5px;
+  border-width: 2px;
+  letter-spacing: 1px;
+  padding: 5px 18px;
+}
+
+/*
+
+DEFAULT BUTTON GOES HERE
+
+*/
+
+button.lrg-btn,
+input[type=submit].lrg-btn,
+input[type=reset].lrg-btn,
+input[type=button].lrg-btn {
+  font-size: 0.95em;
+  font-weight: 400;
   border-radius: 8px;
   border-width: 2px;
+  letter-spacing: 2px;
+  padding: 9px 32px;
 }
 
-button.lrg-btn, button.lrg-btn:hover, input[type=submit].lrg-btn, input[type=submit].lrg-btn:hover {
+button.huge-btn,
+input[type=submit].huge-btn,
+input[type=reset].huge-btn,
+input[type=button].huge-btn {
   font-size: 1.2em;
   font-weight: 400;
-  padding: 9px 46px;
   border-radius: 10px;
   border-width: 2px;
+  letter-spacing: 2px;
+  padding: 11px 40px;
 }
 
 
-/*-------------- ADDITIONAL COLORS --------------*/
+/*========== ADDITIONAL COLORS ==========*/
 
 
 .blue, .blue:hover {
@@ -459,7 +482,7 @@ button.lrg-btn, button.lrg-btn:hover, input[type=submit].lrg-btn, input[type=sub
 }
 
 
-/*-------------- ADDITIONAL BUTTON STYLES --------------*/
+/*========== ADDITIONAL BUTTON STYLES ==========*/
 
 
 .pill {border-radius: 36px !important;}
@@ -467,10 +490,11 @@ button.lrg-btn, button.lrg-btn:hover, input[type=submit].lrg-btn, input[type=sub
 .square {border-radius: 0 !important;}
 
 
-/*-------------- DEFAULT STICKY STYLING --------------*/
+/*========== DEFAULT STICKY STYLING ==========*/
 
 
 sticky {
+  margin: 1% 0.5% !important;
   display: inline-block;
   white-space: nowrap;
   box-sizing: border-box;
@@ -478,8 +502,7 @@ sticky {
   text-align: center;
   font-size: 0.8em;
   font-weight: 400;
-  text-transform: uppercase;
-  padding: 0px 5px;
+  padding: 3px 6px;
   box-shadow: 0 0 0 2px rgba(83,109,254,1);
   background-color: rgba(83,109,254,1);
   border: 2px solid rgba(83,109,254,1);
@@ -490,68 +513,49 @@ sticky {
 
 /*-------------- ADDITIONAL STICKY SIZES --------------*/
 
-
-sticky.med-sti, sticky.med-sti:hover {
-  font-size: 1em;
+sticky.micro-sti, sticky.micro-sti:hover {
+  font-size: 0.3em;
   font-weight: 400;
-  padding: 1px 6px;
-  border-radius: 6px;
+  padding: 0px 2px;
+  border-radius: 2px;
 }
 
-sticky.lrg-sti, sticky.lrg-sti:hover {
-  font-size: 1.2em;
-  font-weight: 400;
-  padding: 2px 7px;
-  border-radius: 8px;
-}
-
-
-/*-------------- DEFAULT TAG STYLING --------------*/
-
-
-tag {
-  white-space: nowrap;
-  display: inline-block;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  text-align: center;
+sticky.tiny-sti, sticky.tiny-sti:hover {
   font-size: 0.6em;
   font-weight: 400;
-  padding: 0px 5px 1px 5px;
-  background-color: rgba(83,109,254,1);
-  color: white;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(83,109,254,1);
-  box-shadow: 0 0 0 1px rgba(83,109,254,1);
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  padding: 1px 4px;
+  border-radius: 3px;
 }
-tag:hover {opacity: 0.75;}
-tag:active {opacity: 0.3;}
 
-
-/*-------------- ADDITIONAL TAG SIZES --------------*/
-
-
-tag.med-tag, tag.med-tag:hover {
+sticky.small-sti, sticky.small-sti:hover {
   font-size: 0.7em;
   font-weight: 400;
-  padding: 1px 6px 2px 6px;
-  border-radius: 5px;
-  border-width: 2px;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
-tag.lrg-tag, tag.lrg-tag:hover {
-  font-size: 0.85em;
+/*
+DEFAULT STICKY GOES HERE
+font-size: 0.8em;
+font-weight: 400;
+text-transform: uppercase;
+padding: 0px 8px;
+*/
+
+sticky.lrg-sti, sticky.lrg-sti:hover {
+  font-size: 1em;
   font-weight: 400;
-  padding: 2px 7px 3px 7px;
-  border-radius: 6px;
-  border-width: 2px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+sticky.huge-sti, sticky.huge-sti:hover {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
 }
 
 

@@ -3,124 +3,1045 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>indigo.css - buttons</title>
+    <title>indigo.css</title>
+
+    <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/markup.css">
+    <link rel="stylesheet" href="/static/css/grid.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+
+    <!-- Javascripts -->
     <script type="text/javascript" src="/static/js/app.js"></script>
-    <style>
-
-      /*BUTTONS-PAGE-ONLY STYLING*/
-
-      h4 {color: rgba(83,109,254,1);}
-
-      #example {padding: 3% 0; margin-bottom: 5%;}
-
-      div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
-        margin: 1%;
-        vertical-align: top;
-        display: inline-block;
-      }
-
-      /*PHONE*/
-      @media only screen
-        and (min-device-width: 320px)
-        and (max-device-width: 480px) {
-
-          h1 {font-size: 2em;}
-
-          div#example sticky, div#example button, div#example input[type=submit], div#example a.btn-link, div#example tag, div#example badge {
-            margin: 3% 1%;
-            vertical-align: top;
-            display: inline-block;
-          }
-
-          #example {margin-bottom: 10%;}
-        }
-
-      /*TABLET*/
-      @media only screen
-        and (min-device-width: 768px)
-        and (max-device-width: 1024px) {
-
-          button {display: inline-block; margin: 1%;}
-
-          .btn-link {display: inline-block !important;}
-
-        }
-
-    </style>
   </head>
   <body>
 
-  <!--- Top Navbar --->
+    <!--- BEGINNING OF SIDE NAVBAR --->
 
-    <ul class="topnav" id="myTopnav">
-      <li class="brand"><a href="/">indigo.css</a></li>
-      <li><a href="/components">components</a></li>
-      <li><a href="/about">about</a></li>
-      <li class="icon">
-        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-      </li>
-    </ul>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#/">Home</a>
+      <a href="#top">Top</a>
+      <a href="#grid">Fluid Grid</a>
+      <a href="#type">Typography</a>
+      <a href="#forms">Forms</a>
+      <a href="#lists">Lists</a>
+      <a href="#nav">Navigation</a>
+      <a href="#buttons">Buttons</a>
+      <a href="#labels">Labels</a>
+      <a href="#stickys">Stickys</a>
+      <a href="#badges">Badges</a>
+      <a href="#0" style="background-color: white; cursor: default"></a>
+      <a href="#0" style="color: rgba(83,109,254,1); font-weight: 600; background-color: white; cursor: default;">Coming Soon!</a>
+      <a href="#0" style="background-color: white; cursor: default"></a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Tables</a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Dropdowns</a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Alerts</a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Modals</a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Tooltips</a>
+      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Cards</a>
+    </div>
 
-    <div id="container">
-      <h1>components</h1>
+    <!--- END OF SIDE NAVBAR --->
 
-      <div id="buttons">
-        <h4>Buttons</h4>
-        <p>
-          Buttons are a primary component in making a project more interactive and engaging. Use buttons in form submissions, dialogs, navigation, toolbars, and much more.
-        </p>
-        <p>
-          Buttons are offered in two main styles - <a class="text-link" href="/components/tags">Tag Buttons</a> and <a class="text-link" href="/components/buttons">Standard Buttons</a>. Click each link to see examples, usage, and customizing options.
-        </p>
+    <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+    <div id="main">
+
+      <!--- Top Navbar --->
+
+      <ul class="topnav" id="myTopnav">
+        <li><span onclick="openNav()">&#9776;</span></li>
+        <li class="brand"><a href="/">indigo.css</a></li>
+        <li><a href="/components">components</a></li>
+        <li><a href="/about">about</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+
+      <!--- End of Top Navbar --->
+
+      <a name="top"></a>
+
+      <div id="container">
+
+        <h1>Components</h1>
+        <hr>
+
+        <!--========== BEGINNING OF GRID SECTION ==========-->
+
+        <div id="grid">
+
+          <a name="grid"></a>
+
+          <h2>The 12 Column Fluid Grid</h2>
+
+          <div class="row">
+            <div class="col-12" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>twelve</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>one</p>
+            </div>
+            <div class="col-11" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>eleven</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>two</p>
+            </div>
+            <div class="col-10" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>ten</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>three</p>
+            </div>
+            <div class="col-9" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>nine</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>four</p>
+            </div>
+            <div class="col-8" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>eight</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>five</p>
+            </div>
+            <div class="col-7" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>seven</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>six</p>
+            </div>
+            <div class="col-6" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>six</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-7" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>seven</p>
+            </div>
+            <div class="col-5" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>five</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>eight</p>
+            </div>
+            <div class="col-4" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>four</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-9" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>nine</p>
+            </div>
+            <div class="col-3" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>three</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-10" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>ten</p>
+            </div>
+            <div class="col-2" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>two</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-11" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>eleven</p>
+            </div>
+            <div class="col-1" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>one</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+              <p>twelve</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!--========== END OF GRID SECTION ==========-->
+
+        <!--========== BEGINNING OF BUTTONS SECTION ==========-->
+
+        <a name="buttons"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h2>Buttons</h2>
+            <hr>
+            <p>Buttons are one of the key components to making a site or app more interactive. Styling a great button is crucial to user engagement.</p>
+            <p>Read on to learn everything you need to know about Indigo's button styles.</p>
+          </div>
+        </div>
+
+        <a name="primarybuttons"></a>
+        <div class="row">
+          <div class="col-12">
+            <h3>Primary Buttons</h3>
+            <hr>
+            <p>The default primary <code>&lt;button&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
+          </div>
+        </div>
+
         <div id="example">
+          <button>primary</button>
+        </div>
 
-          <tag>tag</tag>
-          <tag class="indigo-light">tag</tag>
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button&gt;primary&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
 
+        <div class="row">
+          <div class="col-12">
+            <p>Use primary buttons to clearly and prominently indicate a call-to-action.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="green">buy now</button>
+          <button>register</button>
+          <button class="blue">download</button>
+        </div>
+
+        <a name="secondarybuttons"></a>
+        <div class="row">
+          <div class="col-12">
+            <h3>Secondary Buttons</h3>
+            <hr>
+            <p>Secondary buttons are useful for call-to-actions of a lower priority.</p>
+            <p>To use a secondary button, just add the class <code>.color-light</code> to a <code>&lt;button&gt;</code>.</p>
+            <p><a href="#buttoncolors" class="text-link">View all color classes</a></p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="indigo-light">secondary</button>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="indigo-light"&gt;secondary&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>When used alongside primary buttons, they are useful for drawing the user's attention to a more preferred or recommended action.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="green">get started</button>
+          <button class="green-light">go back</button>
           <hr>
+          <button class="blue-light">no thanks</button>
+          <button class="blue">sign up today</button>
+        </div>
 
-          <input type="submit" value="input">
-          <input type="submit" value="input" class="indigo-light">
+        <a name="inputbuttons"></a>
 
-          <hr>
+        <div class="row">
+          <div class="col-12">
+            <h3>Input Buttons</h3>
+            <hr>
+            <p>Use input buttons in HTML forms or for activating JS scripts. The default <code>&lt;input type="submit"&gt;</code>, <code>&lt;input type="reset"&gt;</code>, and <code>&lt;input type="button"&gt;</code> all have an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
+          </div>
+        </div>
 
-          <button>default</button>
-          <button class="indigo-light">default</button>
+        <div id="example">
+          <input type="submit" value="submit">
+          <input type="reset" value="reset">
+          <input type="button" value="button">
+        </div>
 
-          <hr>
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;input type="submit" value="submit"&gt;
+  &lt;input type="reset" value="reset"&gt;
+  &lt;input type="button" value="button"&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
 
-          <a href="#0" class="btn-link"><span>anchor </span></a>
+        <div class="row">
+          <div class="col-12">
+            The <code>.color-light</code> class can be used with any <code>&lt;input&gt;</code> button to create a secondary <code>&lt;input&gt;</code> button.
+          </div>
+        </div>
+
+        <div id="example">
+          <input type="submit" value="submit" class="indigo-light">
+          <input type="reset" value="reset" class="indigo-light">
+          <input type="button" value="button" class="indigo-light">
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;input type="submit" value="submit" class="indigo-light"&gt;
+  &lt;input type="reset" value="reset" class="indigo-light"&gt;
+  &lt;input type="button" value="button" class="indigo-light"&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="anchorbuttons"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Anchor Buttons</h3>
+            <hr>
+            <p>Anchor buttons are simply anchors that have <code>&lt;button&gt;</code> styling applied to them, and an arrow animation on hover.</p>
+            <p>To use an anchor button, add the class <code>.btn-link</code> to an anchor.</p>
+            <p>Note that for the hover animation to work, you must wrap the text within a <code>&lt;span&gt;</code>.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <a href="#0" class="btn-link"><span>Anchor </span></a>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;a href="#0" class="btn-link"&gt;&lt;span&gt;anchor &lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            The <code>.btn-link</code> class can also be used with the <code>.color-light</code> class to create a secondary anchor button.
+          </div>
+        </div>
+
+        <div id="example">
           <a href="#0" class="btn-link indigo-light"><span>anchor </span></a>
-
         </div>
-      </div>
 
-      <div id="labels">
-        <h4>Labels</h4>
-        <p>
-          Labels are highly versatile. Use labels to alert users with a short message, highlight new information, offer additional context, emphasize a block of text, or simply to make an item "pop".
-        </p>
-        <p>
-          Labels come in two styles -  <a class="text-link" href="/components/badges">Badges</a> and <a class="text-link" href="/components/stickys">Stickys</a>. Click each link to see examples, usage, and customizing options.
-        </p>
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;a href="#0" class="btn-link indigo-light"&gt;&lt;span&gt;anchor &lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="customizebuttons"></a>
+
+        <a name="buttoncolors"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Button Color Classes</h3>
+            <hr>
+            <p>Use the <code>.color</code> class to change a button's <code>background-color</code>.</p>
+            <p>The <code>.color</code> class can be used with all of Indigo's button types.</p>
+          </div>
+        </div>
+
         <div id="example">
-
-          <badge>3</badge>
-          <badge class="indigo-light">3</badge>
-          <hr>
-          <badge>1234</badge>
-          <badge class="indigo-light">1234</badge>
-          <hr>
-          <sticky>sticky</sticky>
-          <sticky class="indigo-light">sticky</sticky>
+          <button class="red">red</button>
+          <button class="orange">orange</button>
+          <button class="gold">gold</button>
+          <button class="green">green</button>
+          <button class="blue">blue</button>
+          <br>
+          <input type="submit" value="indigo">
+          <input type="submit" class="purple" value="purple">
+          <input type="submit" class="pink" value="pink">
+          <input type="submit" class="grey" value="grey">
+          <input type="submit" class="black" value="black">
         </div>
-      </div>
 
-      <a href="/" class="btn-link"><span>home </span></a>
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="red"&gt;red&lt;/button&gt;
+  &lt;button class="orange"&gt;orange&lt;/button&gt;
+  &lt;button class="gold"&gt;gold&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Colors can help convey different meanings and priority levels, depending on the context.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="red">danger</button>
+          <button class="gold">Caution</button>
+          <button class="green">Success</button>
+          <hr>
+          <button class="purple">click me!</button>
+          <button class="blue">questions?</button>
+          <button class="grey">inactive</button>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.color-light</code> class to change a button's <code>background-color</code>, font <code>color</code>, and <code>border-color</code> for a secondary button color scheme.</p>
+            <p>The <code>.color-light</code> class can be used with all of Indigo's button types.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="red-light">red</button>
+          <button class="orange-light">orange</button>
+          <button class="gold-light">gold</button>
+          <button class="green-light">green</button>
+          <button class="blue-light">blue</button>
+          <br>
+          <a href="#0" class="btn-link indigo-light"><span>indigo </span></a>
+          <a href="#0" class="btn-link purple-light"><span>purple </span></a>
+          <a href="#0" class="btn-link pink-light"><span>pink </span></a>
+          <a href="#0" class="btn-link grey-light"><span>grey </span></a>
+          <a href="#0" class="btn-link black-light"><span>black </span></a>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="red-light"&gt;red&lt;/button&gt;
+  &lt;button class="orange-light"&gt;orange&lt;/button&gt;
+  &lt;button class="gold-light"&gt;gold&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.ghost</code> class for a transparent <code>background-color</code>, white font <code>color</code>, and white <code>border-color</code>.</p>
+            <p>Ghost buttons are most effective when paired with high-contrast background colors or images that won't clash with the button's text.</p>
+            <p>The <code>.ghost</code> class can be used with all of Indigo's button types.</p>
+          </div>
+        </div>
+
+        <div class="backdrop" id="example">
+          <button class="ghost">these</button>
+          <button class="ghost">are</button>
+          <button class="ghost">ghost</button>
+          <button class="ghost">buttons</button>
+
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="ghost"&gt;these&lt;/button&gt;
+  &lt;button class="ghost"&gt;are&lt;/button&gt;
+  &lt;button class="ghost"&gt;ghost&lt;/button&gt;
+  &lt;button class="ghost"&gt;buttons&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="buttonsizes"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Button Size Classes</h3>
+            <hr>
+            <p>Indigo buttons are available in 6 sizes.</p>
+            <ol>
+              <li>Micro: <code>.micro-btn</code></li>
+              <li>Tiny: <code>.tiny-btn</code></li>
+              <li>Small: <code>.small-btn</code></li>
+              <li>Medium: <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code></li>
+              <li>Large: <code>.lrg-btn</code></li>
+              <li>Huge: <code>.huge-btn</code></li>
+            </ol>
+            <p>Anchor buttons are currently available in 3 sizes.</p>
+            <ol>
+              <li>Medium: <code>&lt;a class="btn-link"&gt;</code></li>
+              <li>Large: <code>.lrg-btn</code></li>
+              <li>Huge: <code>.huge-btn</code></li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="micro-btn">micro</button>
+          <button class="tiny-btn">tiny</button>
+          <button class="small-btn">small</button>
+          <button>medium</button>
+          <button class="lrg-btn">large</button>
+          <button class="huge-btn">huge</button>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="micro-btn"&gt;micro&lt;/button&gt;
+  &lt;button class="tiny-btn"&gt;tiny&lt;/button&gt;
+  &lt;button class="small-btn"&gt;small&lt;/button&gt;
+  &lt;button&gt;medium&lt;/button&gt;
+  &lt;button class="lrg-btn"&gt;large&lt;/button&gt;
+  &lt;button class="huge-btn"&gt;huge&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="buttonstyles"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Button Style Classes</h3>
+            <hr>
+            <p>Use the <code>.square</code> class or <code>.pill</code> class to change a button's <code>border-radius</code> for either a square-shaped button or a pill-shaped button.</p>
+            <p>Both of these classes can be used with all of Indigo's button types.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <button class="blue-light square micro-btn">square</button>
+          <button class="blue square tiny-btn">square</button>
+          <button class="blue-light square small-btn">square</button>
+          <button class="blue square">square</button>
+          <button class="blue-light square lrg-btn">square</button>
+          <button class="blue square huge-btn">square</button>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="green-light square"&gt;square&lt;/button&gt;
+  &lt;button class="blue square med-btn"&gt;square&lt;/button&gt;
+  &lt;button class="indigo-light square lrg-btn"&gt;square&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div id="example">
+          <button class="purple pill micro-btn">pill</button>
+          <button class="purple-light pill tiny-btn">pill</button>
+          <button class="purple pill small-btn">pill</button>
+          <button class="purple-light pill">pill</button>
+          <button class="purple pill lrg-btn">pill</button>
+          <button class="purple-light pill huge-btn">pill</button>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;button class="purple-light pill micro-btn"&gt;pill&lt;/button&gt;
+  &lt;button class="purple pill tiny-btn"&gt;pill&lt;/button&gt;
+  &lt;button class="purple-light pill small-btn"&gt;pill&lt;/button&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <!--========== END OF BUTTONS SECTION ==========-->
+
+
+
+        <!--========== BEGINNING OF LABELS SECTION ==========-->
+
+        <a name="labels"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h2>Labels</h2>
+            <hr>
+            <p>Labels are highly versatile components and are useful for adding additional context, highlighting new or important information, alerting users with a message, and much more.</p>
+            <p>Indigo Labels come in two types: <code>&lt;sticky&gt;</code> and <code>&lt;badge&gt;</code>. In general, stickys are better suited for textual information, and badges are better suited for numerical information.</p>
+            <p>Read on to learn everything you need to know about Indigo's label styles.</p>
+          </div>
+        </div>
+
+        <a name="stickys"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Stickys</h3>
+            <hr>
+            <p>The default <code>&lt;sticky&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky>sticky</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky&gt;sticky&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="customizestickys"></a>
+
+        <a name="stickycolors"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Sticky Color Classes</h3>
+            <hr>
+            <p>Use the <code>.color</code> class to change a sticky's <code>background-color</code>.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky class="red">red</sticky>
+          <sticky class="orange">orange</sticky>
+          <sticky class="gold">gold</sticky>
+          <sticky class="green">green</sticky>
+          <sticky class="blue">blue</sticky>
+          <sticky>indigo</sticky>
+          <sticky class="purple">purple</sticky>
+          <sticky class="pink">pink</sticky>
+          <sticky class="grey">grey</sticky>
+          <sticky class="black">black</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="red"&gt;red&lt;/sticky&gt;
+  &lt;sticky class="orange"&gt;orange&lt;/sticky&gt;
+  &lt;sticky class="gold"&gt;gold&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Colors can help convey different meanings and priority levels, depending on the context.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky class="gold">WARNING</sticky> Your account is expiring soon.
+          <hr>
+          Your download is <sticky class="green">Done</sticky>. Enjoy!
+          <hr>
+          Check out this cool <sticky class="purple">NEW</sticky> feature
+          <hr>
+          <sticky class="red">Error</sticky> Please try again.
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.color-light</code> class to change a sticky's <code>background-color</code>, font <code>color</code>, and <code>border-color</code> for a secondary sticky color scheme.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky class="red-light">red</sticky>
+          <sticky class="orange-light">orange</sticky>
+          <sticky class="gold-light">gold</sticky>
+          <sticky class="green-light">green</sticky>
+          <sticky class="blue-light">blue</sticky>
+          <sticky class="indigo-light">indigo</sticky>
+          <sticky class="purple-light">purple</sticky>
+          <sticky class="pink-light">pink</sticky>
+          <sticky class="grey-light">grey</sticky>
+          <sticky class="black-light">black</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="red-light"&gt;red&lt;/sticky&gt;
+  &lt;sticky class="orange-light"&gt;orange&lt;/sticky&gt;
+  &lt;sticky class="gold-light"&gt;gold&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.ghost</code> class for a transparent <code>background-color</code>, white font <code>color</code>, and white <code>border-color</code>.</p>
+            <p>This style is most effective when paired with high-contrast background colors or images that won't clash with the sticky's text.</p>
+          </div>
+        </div>
+
+        <div class="backdrop" id="example">
+          <sticky class="ghost">these</sticky>
+          <sticky class="ghost">are</sticky>
+          <sticky class="ghost">ghost</sticky>
+          <sticky class="ghost">stickys</sticky>
+
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="ghost"&gt;these&lt;/sticky&gt;
+  &lt;sticky class="ghost"&gt;are&lt;/sticky&gt;
+  &lt;sticky class="ghost"&gt;ghost&lt;/sticky&gt;
+  &lt;sticky class="ghost"&gt;stickys&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="stickysizes"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Sticky Size Classes</h3>
+            <hr>
+            <p>Indigo stickys are available in 6 sizes.</p>
+            <ol>
+              <li>Micro: <code>.micro-sti</code></li>
+              <li>Tiny: <code>.tiny-sti</code></li>
+              <li>Small: <code>.small-sti</code></li>
+              <li>Medium: <code>&lt;sticky&gt;</code></li>
+              <li>Large: <code>.lrg-sti</code></li>
+              <li>Huge: <code>.huge-sti</code></li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky class="micro-sti">Micro</sticky>
+          <sticky class="tiny-sti">Tiny</sticky>
+          <sticky class="small-sti">Small</sticky>
+          <sticky>Medium</sticky>
+          <sticky class="lrg-sti">Large</sticky>
+          <sticky class="huge-sti">Huge</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="micro-sti"&gt;micro&lt;/sticky&gt;
+  &lt;sticky class="tiny-sti"&gt;tiny&lt;/sticky&gt;
+  &lt;sticky class="small-sti"&gt;small&lt;/sticky&gt;
+  &lt;sticky&gt;medium&lt;/sticky&gt;
+  &lt;sticky class="lrg-sti"&gt;large&lt;/sticky&gt;
+  &lt;sticky class="huge-sti"&gt;huge&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="stickystyles"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Sticky Style Classes</h3>
+            <hr>
+            <p>Use the <code>.square</code> class or <code>.pill</code> class to change a sticky's <code>border-radius</code> for either a square-shaped sticky or a pill-shaped sticky.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <sticky class="blue-light square micro-sti">square</sticky>
+          <sticky class="blue square tiny-sti">square</sticky>
+          <sticky class="blue-light square small-sti">square</sticky>
+          <sticky class="blue square">square</sticky>
+          <sticky class="blue-light square lrg-sti">square</sticky>
+          <sticky class="blue square huge-sti">square</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="green-light square"&gt;square&lt;/sticky&gt;
+  &lt;sticky class="blue square med-sti"&gt;square&lt;/sticky&gt;
+  &lt;sticky class="indigo-light square lrg-sti"&gt;square&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div id="example">
+          <sticky class="purple pill micro-sti">pill</sticky>
+          <sticky class="purple-light pill tiny-sti">pill</sticky>
+          <sticky class="purple pill small-sti">pill</sticky>
+          <sticky class="purple-light pill">pill</sticky>
+          <sticky class="purple pill lrg-sti">pill</sticky>
+          <sticky class="purple-light pill huge-sti">pill</sticky>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;sticky class="purple-light pill micro-sti"&gt;pill&lt;/sticky&gt;
+  &lt;sticky class="purple pill tiny-sti"&gt;pill&lt;/sticky&gt;
+  &lt;sticky class="purple-light pill small-sti"&gt;pill&lt;/sticky&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <hr>
+
+        <!--========== END OF LABELS SECTION ==========-->
+
+        <!--========== BEGINNING OF BADGES SECTION ==========-->
+
+        <a name="badges"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Badges</h3>
+            <hr>
+            <p>The default <code>&lt;badge&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge>3</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge&gt;badge&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="customizebadges"></a>
+
+        <a name="badgecolors"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Badge Color Classes</h3>
+            <hr>
+            <p>Use the <code>.color</code> class to change a badge's <code>background-color</code>.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge class="red">red</badge>
+          <badge class="orange">orange</badge>
+          <badge class="gold">gold</badge>
+          <badge class="green">green</badge>
+          <badge class="blue">blue</badge>
+          <badge>indigo</badge>
+          <badge class="purple">purple</badge>
+          <badge class="pink">pink</badge>
+          <badge class="grey">grey</badge>
+          <badge class="black">black</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="red"&gt;red&lt;/badge&gt;
+  &lt;badge class="orange"&gt;orange&lt;/badge&gt;
+  &lt;badge class="gold"&gt;gold&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Colors can help convey different meanings and priority levels, depending on the context.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge class="gold">WARNING</badge> Your account is expiring soon.
+          <hr>
+          Your download is <badge class="green">Done</badge>. Enjoy!
+          <hr>
+          Check out this cool <badge class="purple">NEW</badge> feature
+          <hr>
+          <badge class="red">Error</badge> Please try again.
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.color-light</code> class to change a badge's <code>background-color</code>, font <code>color</code>, and <code>border-color</code> for a secondary badge color scheme.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge class="red-light">red</badge>
+          <badge class="orange-light">orange</badge>
+          <badge class="gold-light">gold</badge>
+          <badge class="green-light">green</badge>
+          <badge class="blue-light">blue</badge>
+          <badge class="indigo-light">indigo</badge>
+          <badge class="purple-light">purple</badge>
+          <badge class="pink-light">pink</badge>
+          <badge class="grey-light">grey</badge>
+          <badge class="black-light">black</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="red-light"&gt;red&lt;/badge&gt;
+  &lt;badge class="orange-light"&gt;orange&lt;/badge&gt;
+  &lt;badge class="gold-light"&gt;gold&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Use the <code>.ghost</code> class for a transparent <code>background-color</code>, white font <code>color</code>, and white <code>border-color</code>.</p>
+            <p>This style is most effective when paired with high-contrast background colors or images that won't clash with the badge's text.</p>
+          </div>
+        </div>
+
+        <div class="backdrop" id="example">
+          <badge class="ghost">these</badge>
+          <badge class="ghost">are</badge>
+          <badge class="ghost">ghost</badge>
+          <badge class="ghost">badges</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="ghost"&gt;these&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;are&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;ghost&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;badges&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="badgesizes"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Badge Size Classes</h3>
+            <hr>
+            <p>Indigo badges are available in 6 sizes.</p>
+            <ol>
+              <li>Micro: <code>.micro-sti</code></li>
+              <li>Tiny: <code>.tiny-sti</code></li>
+              <li>Small: <code>.small-sti</code></li>
+              <li>Medium: <code>&lt;badge&gt;</code></li>
+              <li>Large: <code>.lrg-sti</code></li>
+              <li>Huge: <code>.huge-sti</code></li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge class="micro-sti">Micro</badge>
+          <badge class="tiny-sti">Tiny</badge>
+          <badge class="small-sti">Small</badge>
+          <badge>Medium</badge>
+          <badge class="lrg-sti">Large</badge>
+          <badge class="huge-sti">Huge</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="micro-bdg"&gt;micro&lt;/badge&gt;
+  &lt;badge class="tiny-bdg"&gt;tiny&lt;/badge&gt;
+  &lt;badge class="small-bdg"&gt;small&lt;/badge&gt;
+  &lt;badge&gt;medium&lt;/badge&gt;
+  &lt;badge class="lrg-bdg"&gt;large&lt;/badge&gt;
+  &lt;badge class="huge-bdg"&gt;huge&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <a name="badgestyles"></a>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Badge Style Classes</h3>
+            <hr>
+            <p>Use the <code>.square</code> class or <code>.pill</code> class to change a badge's <code>border-radius</code> for either a square-shaped badge or a pill-shaped badge.</p>
+          </div>
+        </div>
+
+        <div id="example">
+          <badge class="blue-light square micro-bdg">square</badge>
+          <badge class="blue square tiny-bdg">square</badge>
+          <badge class="blue-light square small-bdg">square</badge>
+          <badge class="blue square">square</badge>
+          <badge class="blue-light square lrg-bdg">square</badge>
+          <badge class="blue square huge-bdg">square</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="green-light square"&gt;square&lt;/badge&gt;
+  &lt;badge class="blue square med-bdg"&gt;square&lt;/badge&gt;
+  &lt;badge class="indigo-light square lrg-bdg"&gt;square&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <div id="example">
+          <badge class="purple pill micro-bdg">pill</badge>
+          <badge class="purple-light pill tiny-bdg">pill</badge>
+          <badge class="purple pill small-bdg">pill</badge>
+          <badge class="purple-light pill">pill</badge>
+          <badge class="purple pill lrg-bdg">pill</badge>
+          <badge class="purple-light pill huge-bdg">pill</badge>
+        </div>
+
+        <pre>
+          <code>
+&lt;div&gt;
+  &lt;badge class="purple-light pill micro-bdg"&gt;pill&lt;/badge&gt;
+  &lt;badge class="purple pill tiny-bdg"&gt;pill&lt;/badge&gt;
+  &lt;badge class="purple-light pill small-btn"&gt;pill&lt;/badge&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+
+        <hr>
+
+
+
+
+        <!--========== END OF BADGES SECTION ==========-->
+
+
+
+
+
+
+
+      </div>
 
     </div>
 

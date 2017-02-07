@@ -4,14 +4,6 @@ Responsive, Mobile-First Fluid Grid System
 
 */
 
-* {
-  box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 12px;
-}
-
-
 /*====== 12-column grid system ======*/
 
 .row {width: 100%;}
@@ -43,9 +35,6 @@ Below: optional classes if you want to set mobile columns to be anything but the
   /*Comment out the line below if using any of the above classes*/
   /*width: 100%;*/
   float: left;
-  text-align: center;
-  border: 5px solid white;
-  background-color: lightgrey;
 }
 
 
@@ -80,9 +69,6 @@ Desktop HD: 1200px
 
   [class*="col-"] {
     float: left;
-    text-align: center;
-    border: 5px solid white;
-    background-color: lightgrey;
   }
 
   .row::after {
@@ -112,9 +98,6 @@ Desktop HD: 1200px
 
   [class*="col-"] {
     float: left;
-    text-align: center;
-    border: 5px solid white;
-    background-color: lightgrey;
   }
 
   .row::after {
@@ -144,9 +127,6 @@ Desktop HD: 1200px
 
   [class*="col-"] {
     float: left;
-    text-align: center;
-    border: 5px solid white;
-    background-color: lightgrey;
   }
 
   .row::after {
@@ -176,9 +156,6 @@ Desktop HD: 1200px
 
   [class*="col-"] {
     float: left;
-    text-align: center;
-    border: 5px solid white;
-    background-color: lightgrey;
   }
 
   .row::after {
