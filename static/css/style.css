@@ -266,7 +266,7 @@ input[type=button]:hover {opacity: 0.8;}
 button:active,
 input[type=submit]:active,
 input[type=reset]:active,
-input[type=button]:active {opacity: 0.6; outline: none;}
+input[type=button]:active {opacity: 1; outline: none;}
 
 button:focus,
 input[type=submit]:focus,
@@ -404,81 +404,158 @@ input[type=button].huge-btn {
 /*-------------- INVERTED COLORS --------------*/
 
 
-.indigo-light, .indigo-light:hover {
+.indigo-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(83,109,254,1) !important;
   box-shadow: 0 0 0 2px rgba(83,109,254,1) !important;
 }
 
-.blue-light, .blue-light:hover {
+.indigo-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(83,109,254,1) !important;
+  background-color: rgba(83,109,254,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(83,109,254,1) !important;
+}
+
+.blue-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(0,176,255,1) !important;
   box-shadow: 0 0 0 2px rgba(0,176,255,1) !important;
 }
 
-.grey-light, .grey-light:hover {
+.blue-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(0,176,255,1) !important;
+  background-color: rgba(0,176,255,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(0,176,255,1) !important;
+}
+
+.grey-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(119,136,153,1) !important;
   box-shadow: 0 0 0 2px rgba(119,136,153,1) !important;
 }
 
-.green-light, .green-light:hover {
+.grey-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(119,136,153,1) !important;
+  background-color: rgba(119,136,153,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(119,136,153,1) !important;
+}
+
+.green-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(2,184,117,1) !important;
   box-shadow: 0 0 0 2px rgba(2,184,117,1) !important;
 }
 
-.gold-light, .gold-light:hover {
+.green-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(2,184,117,1) !important;
+  background-color: rgba(2,184,117,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(2,184,117,1) !important;
+}
+
+.gold-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(255,160,0,1) !important;
   box-shadow: 0 0 0 2px rgba(255,160,0,1) !important;
 }
 
-.red-light, .red-light:hover {
+.gold-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(255,160,0,1) !important;
+  background-color: rgba(255,160,0,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(255,160,0,1) !important;
+}
+
+.red-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(255,23,68,1) !important;
   box-shadow: 0 0 0 2px rgba(255,23,68,1) !important;
 }
 
-.orange-light, .orange-light:hover {
+.red-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(255,23,68,1) !important;
+  background-color: rgba(255,23,68,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(255,23,68,1) !important;
+}
+
+.orange-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(255,109,0,1) !important;
   box-shadow: 0 0 0 2px rgba(255,109,0,1) !important;
 }
 
-.black-light, .black-light:hover {
+.orange-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(255,109,0,1) !important;
+  background-color: rgba(255,109,0,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(255,109,0,1) !important;
+}
+
+.black-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(38,50,56,1) !important;
   box-shadow: 0 0 0 2px rgba(38,50,56,1) !important;
 }
 
-.purple-light, .purple-light:hover {
+.black-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(38,50,56,1) !important;
+  background-color: rgba(38,50,56,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(38,50,56,1) !important;
+}
+
+.purple-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(170,0,255,1) !important;
   box-shadow: 0 0 0 2px rgba(170,0,255,1) !important;
 }
 
-.pink-light, .pink-light:hover {
+.purple-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(170,0,255,1) !important;
+  background-color: rgba(170,0,255,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(170,0,255,1) !important;
+}
+
+.pink-light {
   border-color: white !important;
   background-color: white !important;
   color: rgba(240,98,146,1) !important;
   box-shadow: 0 0 0 2px rgba(240,98,146,1) !important;
 }
 
-.ghost, .ghost:hover {
+.pink-light:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(240,98,146,1) !important;
+  background-color: rgba(240,98,146,1) !important;
+  color: white !important;
+  box-shadow: 0 0 0 2px rgba(240,98,146,1) !important;
+}
+
+.ghost {
   border-color: rgba(255,255,255,0);
   background-color: rgba(255,255,255,0);
   color: white;
   box-shadow: 0 0 0 2px white !important;
+}
+
+.ghost:hover:not(.btn-link, sticky, badge) {
+  border-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  box-shadow: 0 0 0 2px rgba(255,255,255,1); !important;
 }
 
 
