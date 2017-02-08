@@ -22,26 +22,34 @@
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#/">Home</a>
-      <a href="#top">Top</a>
-      <a href="#grid">Fluid Grid</a>
-      <a href="#type">Typography</a>
-      <a href="#forms">Forms</a>
-      <a href="#lists">Lists</a>
-      <a href="#nav">Navigation</a>
-      <a href="#buttons">Buttons</a>
-      <a href="#labels">Labels</a>
-      <a href="#stickys">Stickys</a>
-      <a href="#badges">Badges</a>
-      <a href="#0" style="background-color: white; cursor: default"></a>
-      <a href="#0" style="color: rgba(83,109,254,1); font-weight: 600; background-color: white; cursor: default;">Coming Soon!</a>
-      <a href="#0" style="background-color: white; cursor: default"></a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Tables</a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Dropdowns</a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Alerts</a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Modals</a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Tooltips</a>
-      <a href="#0" style="color: rgba(83,109,254,0.5); background-color: white; cursor: default;">Cards</a>
+      <a href="#grid" style="font-weight: 700;">Fluid Grid</a>
+      <hr>
+      <a href="#buttons" style="font-weight: 700;">Buttons</a>
+        <ul>
+          <li><a href="#buttons">Usage</a></li>
+          <li><a href="#buttontypes">Types</a></li>
+          <li><a href="#buttoncolors">Colors</a></li>
+          <li><a href="#buttonsizes">Sizes</a></li>
+          <li><a href="#buttonstyles">Styles</a></li>
+        </ul>
+      <hr>
+      <a href="#stickys" style="font-weight: 700;">Stickys</a>
+      <ul>
+        <li><a href="#stickys">Usage</a></li>
+        <li><a href="#stickycolors">Colors</a></li>
+        <li><a href="#stickysizes">Sizes</a></li>
+        <li><a href="#stickystyles">Styles</a></li>
+      </ul>
+      <hr>
+      <a href="#badges" style="font-weight: 700;">Badges</a>
+      <ul>
+        <li><a href="#badges">Usage</a></li>
+        <li><a href="#badgecolors">Colors</a></li>
+        <li><a href="#badgesizes">Sizes</a></li>
+        <li><a href="#badgestyles">Styles</a></li>
+      </ul>
+      <hr>
+      <a href="#comingsoon" style="font-weight: 700;">Coming Soon!</a>
     </div>
 
     <!--- END OF SIDE NAVBAR --->
@@ -77,116 +85,268 @@
 
           <a name="grid"></a>
 
-          <h2>The 12 Column Fluid Grid</h2>
+          <div class="row">
+            <div class="col-m-12">
+              <h2>The 12 Column Fluid Grid</h2>
+              <hr>
+              <p>Indigo is based on a custom-built, fully responsive fluid grid. Each row contains 12 columns that resize with the device. Go ahead - resize the browser window!</p>
+            </div>
+          </div>
 
           <div class="row">
-            <div class="col-12" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-12" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>twelve</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-1" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-1" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>one</p>
             </div>
-            <div class="col-11" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-11" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>eleven</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-2" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-2" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>two</p>
             </div>
-            <div class="col-10" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-10" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>ten</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-3" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-3" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>three</p>
             </div>
-            <div class="col-9" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-9" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>nine</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-4" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-4" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>four</p>
             </div>
-            <div class="col-8" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-8" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>eight</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-5" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-5" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>five</p>
             </div>
-            <div class="col-7" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-7" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>seven</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-6" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-6" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>six</p>
             </div>
-            <div class="col-6" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-6" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>six</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-7" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-7" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>seven</p>
             </div>
-            <div class="col-5" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-5" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>five</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-8" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-8" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>eight</p>
             </div>
-            <div class="col-4" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-4" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>four</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-9" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-9" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>nine</p>
             </div>
-            <div class="col-3" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-3" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>three</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-10" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-10" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>ten</p>
             </div>
-            <div class="col-2" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-2" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>two</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-11" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-11" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>eleven</p>
             </div>
-            <div class="col-1" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-1" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>one</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12" style="background-color: lightgrey; border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-12" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
               <p>twelve</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-m-12">
+              <hr>
+              <p>The columns shrink and grow until the browser window becomes less than 550 pixels wide. At that point, the columns all assume a width of 100%. In general, this looks best on mobile devices, but just in case you want more control on mobile, Indigo comes with a full set of mobile column classes that can be used by commenting out one line of code in the stylesheet. </p>
+              <p>Having separate classes for different devices makes it simple to design a site or app that looks great on all devices.</p>
+              <p>Check out the code example to see how the above grid was made.</p>
+            </div>
+          </div>
+
+          <pre>
+            <code>
+&lt;div class="row"&gt;
+  &lt;div class="col-m-12"&gt;
+    &lt;p&gt;twelve&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-1"&gt;
+    &lt;p&gt;one&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-11"&gt;
+    &lt;p&gt;eleven&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-2"&gt;
+    &lt;p&gt;two&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-10"&gt;
+    &lt;p&gt;ten&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-3"&gt;
+    &lt;p&gt;three&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-9"&gt;
+    &lt;p&gt;nine&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-4"&gt;
+    &lt;p&gt;four&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-8"&gt;
+    &lt;p&gt;eight&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-5"&gt;
+    &lt;p&gt;five&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-7"&gt;
+    &lt;p&gt;seven&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-m-6"&gt;
+    &lt;p&gt;six&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-m-6"&gt;
+    &lt;p&gt;six&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+
+          <div class="row">
+            <div class="col-m-12">
+              <h3>Small Devices</h3>
+              <hr>
+              <p>This class covers devices that are between 400 and 550 pixels wide (mobile devices).</p>
+              <p>Mobile columns are set to 100% width by default. If you don't plan on changing mobile column width, then you don't need to worry about mobile column classes. However, Indigo includes a set of optional mobile column classes, giving you greater control over your CSS. Continue reading for more information on mobile column classes.</p>
+              <ul>
+                <li><code>.col-1</code></li>
+                <li><code>.col-2</code></li>
+                <li><code>.col-3</code></li>
+                <li><code>.col-4</code></li>
+                <li><code>.col-5</code></li>
+                <li><code>.col-6</code></li>
+                <li><code>.col-7</code></li>
+                <li><code>.col-8</code></li>
+                <li><code>.col-9</code></li>
+                <li><code>.col-10</code></li>
+                <li><code>.col-11</code></li>
+                <li><code>.col-12</code></li>
+              </ul>
+              <h3>Medium Devices</h3>
+              <hr>
+              <p>This class covers devices that are between 550 and 1024 pixels wide (phablets and tablets).</p>
+
+              <ul>
+                <li><code>.col-m-1</code></li>
+                <li><code>.col-m-2</code></li>
+                <li><code>.col-m-3</code></li>
+                <li><code>.col-m-4</code></li>
+                <li><code>.col-m-5</code></li>
+                <li><code>.col-m-6</code></li>
+                <li><code>.col-m-7</code></li>
+                <li><code>.col-m-8</code></li>
+                <li><code>.col-m-9</code></li>
+                <li><code>.col-m-10</code></li>
+                <li><code>.col-m-11</code></li>
+                <li><code>.col-m-12</code></li>
+              </ul>
+              <h3>Large Devices</h3>
+              <hr>
+              <p>This class covers devices that are wider than 1024 pixels (laptops and larger).</p>
+
+              <ul>
+                <li><code>.col-l-1</code></li>
+                <li><code>.col-l-2</code></li>
+                <li><code>.col-l-3</code></li>
+                <li><code>.col-l-4</code></li>
+                <li><code>.col-l-5</code></li>
+                <li><code>.col-l-6</code></li>
+                <li><code>.col-l-7</code></li>
+                <li><code>.col-l-8</code></li>
+                <li><code>.col-l-9</code></li>
+                <li><code>.col-l-10</code></li>
+                <li><code>.col-l-11</code></li>
+                <li><code>.col-l-12</code></li>
+              </ul>
+
+              <ul><h3>Important Things To Remember:</h3>
+                <li>
+                  Mobile columns are set to 100% width by default. This can easily be changed by commenting out the following line found in the stylesheet:
+        <pre>
+          <code>
+[class*="col-"] {
+  width: 100%; /* Comment out this line to use mobile column classes! */
+  float: left;
+}
+          </code>
+        </pre>
+                </li>
+                <li>Remember to wrap your column divs in a row div.</li>
+                <li>A row can contain as many columns as you like, but the number of columns should always add up to 12.</li>
+                <li>e.g. 3+6+3 / 3+9 / 2+2+2+2+2+2 / 4+8, etc.</li>
+                <li>If you want widths to be the same for every device mobile and up, and keep mobile at the default 100% width, you only need to specify medium device classes (refer to the grid and code example above).</li>
+                <li>If you want widths for small and medium devices to be the same, and you want widths for large and extra large devices to be the same, you only need to specify small and large device classes.</li>
+                <li>If you want widths to be the same on ALL devices, you only need to specify the small device class.</li>
+              </ul>
             </div>
           </div>
 
@@ -207,7 +367,7 @@
           </div>
         </div>
 
-        <a name="primarybuttons"></a>
+        <a name="buttontypes"></a>
         <div class="row">
           <div class="col-12">
             <h3>Primary Buttons</h3>
@@ -240,7 +400,6 @@
           <button class="blue">download</button>
         </div>
 
-        <a name="secondarybuttons"></a>
         <div class="row">
           <div class="col-12">
             <h3>Secondary Buttons</h3>
@@ -276,8 +435,6 @@
           <button class="blue-light">no thanks</button>
           <button class="blue">sign up today</button>
         </div>
-
-        <a name="inputbuttons"></a>
 
         <div class="row">
           <div class="col-12">
@@ -325,8 +482,6 @@
           </code>
         </pre>
 
-        <a name="anchorbuttons"></a>
-
         <div class="row">
           <div class="col-12">
             <h3>Anchor Buttons</h3>
@@ -366,8 +521,6 @@
 &lt;/div&gt;
           </code>
         </pre>
-
-        <a name="customizebuttons"></a>
 
         <a name="buttoncolors"></a>
 
@@ -577,26 +730,16 @@
 
 
 
-        <!--========== BEGINNING OF LABELS SECTION ==========-->
-
-        <a name="labels"></a>
-
-        <div class="row">
-          <div class="col-12">
-            <h2>Labels</h2>
-            <hr>
-            <p>Labels are highly versatile components and are useful for adding additional context, highlighting new or important information, alerting users with a message, and much more.</p>
-            <p>Indigo Labels come in two types: <code>&lt;sticky&gt;</code> and <code>&lt;badge&gt;</code>. In general, stickys are better suited for textual information, and badges are better suited for numerical information.</p>
-            <p>Read on to learn everything you need to know about Indigo's label styles.</p>
-          </div>
-        </div>
+        <!--========== BEGINNING OF STICKYS SECTION ==========-->
 
         <a name="stickys"></a>
 
         <div class="row">
           <div class="col-12">
-            <h3>Stickys</h3>
+            <h2>Stickys</h2>
             <hr>
+            <p>Stickys are a type of label. They're highly versatile components that are useful for adding additional context, highlighting new or important information, alerting users with a message, and much more.</p>
+            <p>In general, stickys are better suited for textual information, and badges are better suited for numerical information. <a href="#badges" class="text-link">Click here to learn about badges.</a></p>
             <p>The default <code>&lt;sticky&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
           </div>
         </div>
@@ -612,8 +755,6 @@
 &lt;/div&gt;
           </code>
         </pre>
-
-        <a name="customizestickys"></a>
 
         <a name="stickycolors"></a>
 
@@ -809,7 +950,8 @@
 
         <hr>
 
-        <!--========== END OF LABELS SECTION ==========-->
+        <!--========== END OF STICKY SECTION ==========-->
+
 
         <!--========== BEGINNING OF BADGES SECTION ==========-->
 
@@ -817,25 +959,25 @@
 
         <div class="row">
           <div class="col-12">
-            <h3>Badges</h3>
+            <h2>Badges</h2>
             <hr>
+            <p>A <code>&lt;badge&gt;</code> is a type of label that help provide additional context/numerical information in a compact and stylized way.</p>
+            <p>They are meant to be combined with links, buttons, alerts, tables, lists, and more. Use them wherever you might use a <code>&lt;span&gt;</code>.</p>
             <p>The default <code>&lt;badge&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
           </div>
         </div>
 
         <div id="example">
-          <badge>3</badge>
+          <badge>7</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge&gt;badge&lt;/badge&gt;
+  &lt;badge&gt;7&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
-
-        <a name="customizebadges"></a>
 
         <a name="badgecolors"></a>
 
@@ -848,43 +990,27 @@
         </div>
 
         <div id="example">
-          <badge class="red">red</badge>
-          <badge class="orange">orange</badge>
-          <badge class="gold">gold</badge>
-          <badge class="green">green</badge>
-          <badge class="blue">blue</badge>
-          <badge>indigo</badge>
-          <badge class="purple">purple</badge>
-          <badge class="pink">pink</badge>
-          <badge class="grey">grey</badge>
-          <badge class="black">black</badge>
+          <badge class="red">1</badge>
+          <badge class="orange">2</badge>
+          <badge class="gold">3</badge>
+          <badge class="green">4</badge>
+          <badge class="blue">5</badge>
+          <badge>6</badge>
+          <badge class="purple">7</badge>
+          <badge class="pink">8</badge>
+          <badge class="grey">9</badge>
+          <badge class="black">0</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="red"&gt;red&lt;/badge&gt;
-  &lt;badge class="orange"&gt;orange&lt;/badge&gt;
-  &lt;badge class="gold"&gt;gold&lt;/badge&gt;
+  &lt;badge class="red"&gt;1&lt;/badge&gt;
+  &lt;badge class="orange"&gt;2&lt;/badge&gt;
+  &lt;badge class="gold"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
-
-        <div class="row">
-          <div class="col-12">
-            <p>Colors can help convey different meanings and priority levels, depending on the context.</p>
-          </div>
-        </div>
-
-        <div id="example">
-          <badge class="gold">WARNING</badge> Your account is expiring soon.
-          <hr>
-          Your download is <badge class="green">Done</badge>. Enjoy!
-          <hr>
-          Check out this cool <badge class="purple">NEW</badge> feature
-          <hr>
-          <badge class="red">Error</badge> Please try again.
-        </div>
 
         <div class="row">
           <div class="col-12">
@@ -893,24 +1019,24 @@
         </div>
 
         <div id="example">
-          <badge class="red-light">red</badge>
-          <badge class="orange-light">orange</badge>
-          <badge class="gold-light">gold</badge>
-          <badge class="green-light">green</badge>
-          <badge class="blue-light">blue</badge>
-          <badge class="indigo-light">indigo</badge>
-          <badge class="purple-light">purple</badge>
-          <badge class="pink-light">pink</badge>
-          <badge class="grey-light">grey</badge>
-          <badge class="black-light">black</badge>
+          <badge class="red-light">1</badge>
+          <badge class="orange-light">2</badge>
+          <badge class="gold-light">3</badge>
+          <badge class="green-light">4</badge>
+          <badge class="blue-light">5</badge>
+          <badge class="indigo-light">6</badge>
+          <badge class="purple-light">7</badge>
+          <badge class="pink-light">8</badge>
+          <badge class="grey-light">9</badge>
+          <badge class="black-light">0</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="red-light"&gt;red&lt;/badge&gt;
-  &lt;badge class="orange-light"&gt;orange&lt;/badge&gt;
-  &lt;badge class="gold-light"&gt;gold&lt;/badge&gt;
+  &lt;badge class="red-light"&gt;1&lt;/badge&gt;
+  &lt;badge class="orange-light"&gt;2&lt;/badge&gt;
+  &lt;badge class="gold-light"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
@@ -923,19 +1049,17 @@
         </div>
 
         <div class="backdrop" id="example">
-          <badge class="ghost">these</badge>
-          <badge class="ghost">are</badge>
-          <badge class="ghost">ghost</badge>
-          <badge class="ghost">badges</badge>
+          <badge class="ghost">100</badge>
+          <badge class="ghost">200</badge>
+          <badge class="ghost">300</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="ghost"&gt;these&lt;/badge&gt;
-  &lt;badge class="ghost"&gt;are&lt;/badge&gt;
-  &lt;badge class="ghost"&gt;ghost&lt;/badge&gt;
-  &lt;badge class="ghost"&gt;badges&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;100&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;200&lt;/badge&gt;
+  &lt;badge class="ghost"&gt;300&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
@@ -959,23 +1083,23 @@
         </div>
 
         <div id="example">
-          <badge class="micro-sti">Micro</badge>
-          <badge class="tiny-sti">Tiny</badge>
-          <badge class="small-sti">Small</badge>
-          <badge>Medium</badge>
-          <badge class="lrg-sti">Large</badge>
-          <badge class="huge-sti">Huge</badge>
+          <badge class="micro-bdg">1</badge>
+          <badge class="tiny-bdg">2</badge>
+          <badge class="small-bdg">3</badge>
+          <badge>4</badge>
+          <badge class="lrg-bdg">5</badge>
+          <badge class="huge-bdg">6</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="micro-bdg"&gt;micro&lt;/badge&gt;
-  &lt;badge class="tiny-bdg"&gt;tiny&lt;/badge&gt;
-  &lt;badge class="small-bdg"&gt;small&lt;/badge&gt;
-  &lt;badge&gt;medium&lt;/badge&gt;
-  &lt;badge class="lrg-bdg"&gt;large&lt;/badge&gt;
-  &lt;badge class="huge-bdg"&gt;huge&lt;/badge&gt;
+  &lt;badge class="micro-bdg"&gt;1&lt;/badge&gt;
+  &lt;badge class="tiny-bdg"&gt;2&lt;/badge&gt;
+  &lt;badge class="small-bdg"&gt;3&lt;/badge&gt;
+  &lt;badge&gt;4&lt;/badge&gt;
+  &lt;badge class="lrg-bdg"&gt;5&lt;/badge&gt;
+  &lt;badge class="huge-bdg"&gt;6&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
@@ -986,54 +1110,84 @@
           <div class="col-12">
             <h3>Badge Style Classes</h3>
             <hr>
-            <p>Use the <code>.square</code> class or <code>.pill</code> class to change a badge's <code>border-radius</code> for either a square-shaped badge or a pill-shaped badge.</p>
+            <p>Use the <code>.square</code> class or <code>.pill</code> class to change a badge's <code>border-radius</code> for either a square-shaped badge or a circular/pill-shaped badge.</p>
           </div>
         </div>
 
         <div id="example">
-          <badge class="blue-light square micro-bdg">square</badge>
-          <badge class="blue square tiny-bdg">square</badge>
-          <badge class="blue-light square small-bdg">square</badge>
-          <badge class="blue square">square</badge>
-          <badge class="blue-light square lrg-bdg">square</badge>
-          <badge class="blue square huge-bdg">square</badge>
+          <badge class="blue-light square micro-bdg">9</badge>
+          <badge class="blue square tiny-bdg">9</badge>
+          <badge class="blue-light square small-bdg">9</badge>
+          <badge class="blue square">9</badge>
+          <badge class="blue-light square lrg-bdg">9</badge>
+          <badge class="blue square huge-bdg">9</badge>
+          <hr>
+          <badge class="green-light square micro-bdg">100</badge>
+          <badge class="green square tiny-bdg">100</badge>
+          <badge class="green-light square small-bdg">100</badge>
+          <badge class="green square">100</badge>
+          <badge class="green-light square lrg-bdg">100</badge>
+          <badge class="green square huge-bdg">100</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="green-light square"&gt;square&lt;/badge&gt;
-  &lt;badge class="blue square med-bdg"&gt;square&lt;/badge&gt;
-  &lt;badge class="indigo-light square lrg-bdg"&gt;square&lt;/badge&gt;
+  &lt;badge class="green-light square"&gt;9&lt;/badge&gt;
+  &lt;badge class="blue square med-bdg"&gt;9&lt;/badge&gt;
+  &lt;badge class="indigo-light square lrg-bdg"&gt;9&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
 
         <div id="example">
-          <badge class="purple pill micro-bdg">pill</badge>
-          <badge class="purple-light pill tiny-bdg">pill</badge>
-          <badge class="purple pill small-bdg">pill</badge>
-          <badge class="purple-light pill">pill</badge>
-          <badge class="purple pill lrg-bdg">pill</badge>
-          <badge class="purple-light pill huge-bdg">pill</badge>
+          <badge class="purple pill micro-bdg">3</badge>
+          <badge class="purple-light pill tiny-bdg">3</badge>
+          <badge class="purple pill small-bdg">3</badge>
+          <badge class="purple-light pill">3</badge>
+          <badge class="purple pill lrg-bdg">3</badge>
+          <badge class="purple-light pill huge-bdg">3</badge>
+          <hr>
+          <badge class="red pill micro-bdg">500</badge>
+          <badge class="red-light pill tiny-bdg">500</badge>
+          <badge class="red pill small-bdg">500</badge>
+          <badge class="red-light pill">500</badge>
+          <badge class="red pill lrg-bdg">500</badge>
+          <badge class="red-light pill huge-bdg">500</badge>
         </div>
 
         <pre>
           <code>
 &lt;div&gt;
-  &lt;badge class="purple-light pill micro-bdg"&gt;pill&lt;/badge&gt;
-  &lt;badge class="purple pill tiny-bdg"&gt;pill&lt;/badge&gt;
-  &lt;badge class="purple-light pill small-btn"&gt;pill&lt;/badge&gt;
+  &lt;badge class="purple-light pill micro-bdg"&gt;3&lt;/badge&gt;
+  &lt;badge class="purple pill tiny-bdg"&gt;3&lt;/badge&gt;
+  &lt;badge class="purple-light pill small-btn"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
           </code>
         </pre>
 
         <hr>
 
-
-
-
         <!--========== END OF BADGES SECTION ==========-->
+
+        <a name="comingsoon"></a>
+
+        <h2>More Components Are Coming Soon!</h2>
+        <hr>
+        <ul>
+          <li>Forms</li>
+          <li>Typography</li>
+          <li>Lists</li>
+          <li>Tables</li>
+          <li>Nav Bars</li>
+          <li>Cards</li>
+          <li>Modals</li>
+          <li>Dropdowns</li>
+          <li>Tooltips</li>
+        </ul>
+
+        <a href="#top" class="btn-link"><span>Top </span></a>
+        <a href="/" class="btn-link indigo-light"><span>Home </span></a>
 
 
 

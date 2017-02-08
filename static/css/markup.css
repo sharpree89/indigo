@@ -8,6 +8,8 @@
     width: 80%;
   }
 
+  ul li {list-style-type: none !important;}
+
   #example {
     border-width: 1px 1px 1px 15px;
     border-color: #8698f9;
@@ -117,19 +119,21 @@
         left: 0;
         background-color: white;
         border-right: 1px solid rgba(83,109,254,0.3);
+        text-align: justify;
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
+        padding: 60px 0px; /* Place content 60px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     }
 
     /* The navigation menu links */
-    .sidenav a {
+    .sidenav a  {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 1em;
+        font-size: 0.8em;
         letter-spacing: 1px;
         font-weight: 400;
         color: rgba(83,109,254,1);
+        text-transform: uppercase;
         display: block;
         transition: 0.3s;
     }
@@ -148,7 +152,7 @@
         font-size: 1.5em;
         display: inline-block;
         text-align: center;
-        padding: 15px 22px;
+        padding: 13px 25px;
         margin-left: 74%;
         /*width: 25%;*/
     }

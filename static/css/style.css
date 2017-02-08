@@ -281,7 +281,7 @@ input[type=submit].micro-btn,
 input[type=reset].micro-btn,
 input[type=button].micro-btn {
   font-size: 0.5em;
-  font-weight: 400;
+  font-weight: 600;
   border-width: 1px;
   border-radius: 3px;
   letter-spacing: 1px;
@@ -293,7 +293,7 @@ input[type=submit].tiny-btn,
 input[type=reset].tiny-btn,
 input[type=button].tiny-btn {
   font-size: 0.65em;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 4px;
   border-width: 2px;
   letter-spacing: 1px;
@@ -485,7 +485,7 @@ input[type=button].huge-btn {
 /*========== ADDITIONAL BUTTON STYLES ==========*/
 
 
-.pill {border-radius: 36px !important;}
+.pill {border-radius: 999px !important;}
 
 .square {border-radius: 0 !important;}
 
@@ -515,14 +515,14 @@ sticky {
 
 sticky.micro-sti, sticky.micro-sti:hover {
   font-size: 0.3em;
-  font-weight: 400;
+  font-weight: 600;
   padding: 0px 2px;
   border-radius: 2px;
 }
 
 sticky.tiny-sti, sticky.tiny-sti:hover {
   font-size: 0.6em;
-  font-weight: 400;
+  font-weight: 600;
   padding: 1px 4px;
   border-radius: 3px;
 }
@@ -558,46 +558,62 @@ sticky.huge-sti, sticky.huge-sti:hover {
   letter-spacing: 1px;
 }
 
-
-/*-------------- DEFAULT BADGE STYLING --------------*/
+/*========== DEFAULT BADGE STYLING ==========*/
 
 
 badge {
-  white-space: nowrap;
+  margin: 1% 0.5% !important;
   display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
   letter-spacing: 1px;
-  background-color: rgba(83,109,254,1);
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgba(83,109,254,1);
-  border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
-  box-shadow: 0 0 0 2px rgba(83,109,254,1);
-  color: white;
-  font: 14px/13px "Muli", Verdana, sans-serif;
-  font-weight: 400;
-  height: 16px;
-  min-width: 14px;
-  padding: 5px 4px 1px 4px;
   text-align: center;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 3px 8px 1px 8px;
+  box-shadow: 0 0 0 2px rgba(83,109,254,1);
+  background-color: rgba(83,109,254,1);
+  border: 2px solid rgba(83,109,254,1);
+  color: white;
   cursor: default;
+  border-radius: 4px;
 }
 
+/*-------------- ADDITIONAL BADGE SIZES --------------*/
 
-/*-------------- DEFAULT BADGE SIZES --------------*/
-
-
-.med-bdg, .med-bdg:hover {
-  border-radius: 16px;
-  font: 18px/17px "Muli", Verdana, sans-serif;
-  height: 20px;
-  min-width: 18px;
-  padding: 6px 5px 1px 5px;
+badge.micro-bdg, badge.micro-bdg:hover {
+  font-size: 0.4em;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 0px 3px;
 }
 
-.lrg-bdg, .lrg-bdg:hover {
-  border-radius: 18px;
-  font: 22px/21px "Muli", Verdana, sans-serif;
-  height: 24px;
-  min-width: 22px;
-  padding: 7px 6px 2px 6px;
+badge.tiny-bdg, badge.tiny-bdg:hover {
+  font-size: 0.7em;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 0px 4px 0px 5px;
+}
+
+badge.small-bdg, badge.small-bdg:hover {
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1px 6px 1px 7px;
+}
+
+badge.lrg-bdg, badge.lrg-bdg:hover {
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  padding: 2px 9px 2px 10px;
+}
+
+badge.huge-bdg, badge.huge-bdg:hover {
+  font-size: 1.3em;
+  font-weight: 400;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  padding: 3px 11px 2px 13px;
 }

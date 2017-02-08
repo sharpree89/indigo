@@ -32,8 +32,7 @@ Below: optional classes if you want to set mobile columns to be anything but the
 .col-12 {width: 100%;}
 
 [class*="col-"] {
-  /*Comment out the line below if using any of the above classes*/
-  /*width: 100%;*/
+  width: 100%; /* Comment out this line if using any of the above mobile classes! */
   float: left;
 }
 
