@@ -1,11 +1,7 @@
 
-/*====== GENERAL PAGE STYLING ======*/
+/*====== GENERAL STYLING ======*/
 
-* {font-family: 'Muli', sans-serif; box-sizing: border-box;}
-
-ul {list-style-type: circle;}
-
-ol {list-style-type: decimal;}
+* {font-family: 'Muli', Helvetica, Verdana, sans-serif; box-sizing: border-box;}
 
 hr {
   margin: 2.5% 0;
@@ -15,7 +11,33 @@ hr {
   border-top: 1px solid rgba(83,109,254,0.3);
 }
 
-h1, h2, h3, h4, h5, h6 {letter-spacing: 1px; font-weight: 600; margin-bottom: 2.5%;}
+h1, h2, h3, h4, h5, h6 {letter-spacing: 1px; font-weight: 600; margin-bottom: 2.5%; text-transform: uppercase;}
+
+
+/*========== LIST STYLING ==========*/
+
+
+ul li, ol li {text-align: left;}
+ul {list-style-type: circle;}
+ol {list-style-type: decimal;}
+ul.no-bullet {list-style-type: none;}
+ol.no-bullet {list-style-type: none;}
+
+ul.underline li, ol.underline li {border-bottom: 1px solid rgba(83,109,254,0.3);}
+
+ul.highlight li:nth-child(even), ol.highlight li:nth-child(even) {background-color: rgba(83,109,254,0.15);}
+
+
+/*========== TABLE STYLING ==========*/
+
+
+th, td {padding: 1.5%; text-align: left;}
+
+table.highlight tr:nth-child(even) {background-color: rgba(83,109,254,0.15);}
+
+table.underline th, table.underline td {border-bottom: 1px solid rgba(83,109,254,0.3);}
+
+table.border {border: 1px solid rgba(83,109,254,0.3);}
 
 
 /*========== FORM INPUT STYLING ==========*/
@@ -411,7 +433,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(83,109,254,1) !important;
 }
 
-.indigo-light:hover:not(.btn-link, sticky, badge) {
+button.indigo-light:hover, input.indigo-light:hover {
   border-color: rgba(83,109,254,1) !important;
   background-color: rgba(83,109,254,1) !important;
   color: white !important;
@@ -425,7 +447,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(0,176,255,1) !important;
 }
 
-.blue-light:hover:not(.btn-link, sticky, badge) {
+button.blue-light:hover, input.blue-light:hover {
   border-color: rgba(0,176,255,1) !important;
   background-color: rgba(0,176,255,1) !important;
   color: white !important;
@@ -439,7 +461,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(119,136,153,1) !important;
 }
 
-.grey-light:hover:not(.btn-link, sticky, badge) {
+button.grey-light:hover, input.grey-light:hover {
   border-color: rgba(119,136,153,1) !important;
   background-color: rgba(119,136,153,1) !important;
   color: white !important;
@@ -453,7 +475,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(2,184,117,1) !important;
 }
 
-.green-light:hover:not(.btn-link, sticky, badge) {
+button.green-light:hover, input.green-light:hover {
   border-color: rgba(2,184,117,1) !important;
   background-color: rgba(2,184,117,1) !important;
   color: white !important;
@@ -467,7 +489,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(255,160,0,1) !important;
 }
 
-.gold-light:hover:not(.btn-link, sticky, badge) {
+button.gold-light:hover, input.gold-light:hover {
   border-color: rgba(255,160,0,1) !important;
   background-color: rgba(255,160,0,1) !important;
   color: white !important;
@@ -481,7 +503,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(255,23,68,1) !important;
 }
 
-.red-light:hover:not(.btn-link, sticky, badge) {
+button.red-light:hover, input.red-light:hover {
   border-color: rgba(255,23,68,1) !important;
   background-color: rgba(255,23,68,1) !important;
   color: white !important;
@@ -495,7 +517,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(255,109,0,1) !important;
 }
 
-.orange-light:hover:not(.btn-link, sticky, badge) {
+button.orange-light:hover, input.orange-light:hover {
   border-color: rgba(255,109,0,1) !important;
   background-color: rgba(255,109,0,1) !important;
   color: white !important;
@@ -509,7 +531,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(38,50,56,1) !important;
 }
 
-.black-light:hover:not(.btn-link, sticky, badge) {
+button.black-light:hover, input.black-light:hover {
   border-color: rgba(38,50,56,1) !important;
   background-color: rgba(38,50,56,1) !important;
   color: white !important;
@@ -523,7 +545,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(170,0,255,1) !important;
 }
 
-.purple-light:hover:not(.btn-link, sticky, badge) {
+button.purple-light:hover, input.purple-light:hover {
   border-color: rgba(170,0,255,1) !important;
   background-color: rgba(170,0,255,1) !important;
   color: white !important;
@@ -537,7 +559,7 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px rgba(240,98,146,1) !important;
 }
 
-.pink-light:hover:not(.btn-link, sticky, badge) {
+button.pink-light:hover, input.pink-light:hover {
   border-color: rgba(240,98,146,1) !important;
   background-color: rgba(240,98,146,1) !important;
   color: white !important;
@@ -551,11 +573,11 @@ input[type=button].huge-btn {
   box-shadow: 0 0 0 2px white !important;
 }
 
-.ghost:hover:not(.btn-link, sticky, badge) {
+button.ghost:hover, input.ghost:hover {
   border-color: rgba(255,255,255,0);
   background-color: rgba(255,255,255,0.2);
   color: white;
-  box-shadow: 0 0 0 2px rgba(255,255,255,1); !important;
+  box-shadow: 0 0 0 2px rgba(255,255,255,1) !important;
 }
 
 

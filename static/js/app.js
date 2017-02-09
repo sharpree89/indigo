@@ -16,7 +16,7 @@
 
   /* Set the width of the side navigation to 250px */
   function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "225px";
   }
 
   /* Set the width of the side navigation to 0 */
@@ -26,8 +26,8 @@
 
   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
   function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("mySidenav").style.width = "225px";
+      document.getElementById("main").style.marginLeft = "225px";
   }
 
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */

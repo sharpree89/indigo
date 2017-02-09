@@ -22,34 +22,13 @@
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#grid" style="font-weight: 700;">Fluid Grid</a>
-      <hr>
-      <a href="#buttons" style="font-weight: 700;">Buttons</a>
-        <ul>
-          <li><a href="#buttons">Usage</a></li>
-          <li><a href="#buttontypes">Types</a></li>
-          <li><a href="#buttoncolors">Colors</a></li>
-          <li><a href="#buttonsizes">Sizes</a></li>
-          <li><a href="#buttonstyles">Styles</a></li>
-        </ul>
-      <hr>
-      <a href="#stickys" style="font-weight: 700;">Stickys</a>
-      <ul>
-        <li><a href="#stickys">Usage</a></li>
-        <li><a href="#stickycolors">Colors</a></li>
-        <li><a href="#stickysizes">Sizes</a></li>
-        <li><a href="#stickystyles">Styles</a></li>
-      </ul>
-      <hr>
-      <a href="#badges" style="font-weight: 700;">Badges</a>
-      <ul>
-        <li><a href="#badges">Usage</a></li>
-        <li><a href="#badgecolors">Colors</a></li>
-        <li><a href="#badgesizes">Sizes</a></li>
-        <li><a href="#badgestyles">Styles</a></li>
-      </ul>
-      <hr>
-      <a href="#comingsoon" style="font-weight: 700;">Coming Soon!</a>
+      <a href="#grid">Fluid Grid</a>
+      <a href="#buttons">Buttons</a>
+      <a href="#stickys">Stickys</a>
+      <a href="#badges">Badges</a>
+      <a href="#lists">Lists</a>
+      <a href="#tables">Tables</a>
+      <a href="#comingsoon">Coming Soon!</a>
     </div>
 
     <!--- END OF SIDE NAVBAR --->
@@ -77,7 +56,6 @@
       <div id="container">
 
         <h1>Components</h1>
-        <hr>
 
         <!--========== BEGINNING OF GRID SECTION ==========-->
 
@@ -87,9 +65,9 @@
 
           <div class="row">
             <div class="col-m-12">
-              <h2>The 12 Column Fluid Grid</h2>
+              <h2>The Fluid Grid</h2>
               <hr>
-              <p>Indigo is based on a custom-built, fully responsive fluid grid. Each row contains 12 columns that resize with the device. Go ahead - resize the browser window!</p>
+              <p>Indigo is based on a fully responsive fluid grid. Each row contains 12 columns that resize with the device. Go ahead - resize the browser window!</p>
             </div>
           </div>
 
@@ -203,18 +181,18 @@
               <p>twelve</p>
             </div>
           </div>
+        </div>
 
           <div class="row">
             <div class="col-m-12">
-              <hr>
-              <p>The columns shrink and grow until the browser window becomes less than 550 pixels wide. At that point, the columns all assume a width of 100%. In general, this looks best on mobile devices, but just in case you want more control on mobile, Indigo comes with a full set of mobile column classes that can be used by commenting out one line of code in the stylesheet. </p>
-              <p>Having separate classes for different devices makes it simple to design a site or app that looks great on all devices.</p>
-              <p>Check out the code example to see how the above grid was made.</p>
+              <p>The columns shrink and stretch until the browser window becomes less than 550 pixels wide. At that point, the columns all assume a width of 100%. In general, this looks best on mobile devices, but just in case you want more control on mobile, Indigo comes with a full set of mobile column classes that can be used by commenting out one line of code in the stylesheet. </p>
+              <p>Having separate classes for different devices makes it simple to customize your design and ensure it looks perfect on all devices.</p>
+              <p>Check out the code example to see how the above grid was made:</p>
             </div>
           </div>
 
-          <pre>
-            <code>
+<pre class="col-m-8">
+  <code>
 &lt;div class="row"&gt;
   &lt;div class="col-m-12"&gt;
     &lt;p&gt;twelve&lt;/p&gt;
@@ -268,89 +246,88 @@
     &lt;p&gt;six&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-            </code>
-          </pre>
+  </code>
+</pre>
 
           <div class="row">
             <div class="col-m-12">
-              <h3>Small Devices</h3>
+              <h3>Small Devices (Mobile)</h3>
               <hr>
-              <p>This class covers devices that are between 400 and 550 pixels wide (mobile devices).</p>
-              <p>Mobile columns are set to 100% width by default. If you don't plan on changing mobile column width, then you don't need to worry about mobile column classes. However, Indigo includes a set of optional mobile column classes, giving you greater control over your CSS. Continue reading for more information on mobile column classes.</p>
-              <ul>
-                <li><code>.col-1</code></li>
-                <li><code>.col-2</code></li>
-                <li><code>.col-3</code></li>
-                <li><code>.col-4</code></li>
-                <li><code>.col-5</code></li>
-                <li><code>.col-6</code></li>
-                <li><code>.col-7</code></li>
-                <li><code>.col-8</code></li>
-                <li><code>.col-9</code></li>
-                <li><code>.col-10</code></li>
-                <li><code>.col-11</code></li>
-                <li><code>.col-12</code></li>
-              </ul>
-              <h3>Medium Devices</h3>
+              <p>These classes cover devices that are between 400 and 550 pixels wide.</p>
+              <p>Mobile columns are set to 100% width by default. If you don't plan on changing mobile column width, then you don't need to worry about mobile column classes.</p>
+              <p>However, Indigo includes a set of optional mobile column classes, giving you greater control over your CSS.</p>
+              <p>Use the base class <code>.col-</code> followed by desired number of columns (up to 12).</p>
+            </div>
+          </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;&lt;/div&gt;
+  &lt;div class="col-6"&gt;&lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+          <div class="row">
+            <div class="col-m-12">
+              <h3>Medium Devices (Phablets & Tablets)</h3>
               <hr>
-              <p>This class covers devices that are between 550 and 1024 pixels wide (phablets and tablets).</p>
+              <p>These classes covers devices that are between 550 and 1024 pixels wide.</p>
+              <p>Use the base class <code>.col-m-</code> followed by desired number of columns (up to 12).</p>
+            </div>
+          </div>
 
-              <ul>
-                <li><code>.col-m-1</code></li>
-                <li><code>.col-m-2</code></li>
-                <li><code>.col-m-3</code></li>
-                <li><code>.col-m-4</code></li>
-                <li><code>.col-m-5</code></li>
-                <li><code>.col-m-6</code></li>
-                <li><code>.col-m-7</code></li>
-                <li><code>.col-m-8</code></li>
-                <li><code>.col-m-9</code></li>
-                <li><code>.col-m-10</code></li>
-                <li><code>.col-m-11</code></li>
-                <li><code>.col-m-12</code></li>
-              </ul>
-              <h3>Large Devices</h3>
+<pre class="col-m-8">
+  <code>
+&lt;div class="row"&gt;
+  &lt;div class="col-m-4"&gt;&lt;/div&gt;
+  &lt;div class="col-m-4"&gt;&lt;/div&gt;
+  &lt;div class="col-m-4"&gt;&lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+          <div class="row">
+            <div class="col-m-12">
+              <h3>Large Devices (Laptops & Desktops)</h3>
               <hr>
-              <p>This class covers devices that are wider than 1024 pixels (laptops and larger).</p>
+              <p>These classes covers devices that are wider than 1024 pixels.</p>
+              <p>Use the base class <code>.col-l-</code> followed by desired number of columns (up to 12).</p>
+            </div>
+          </div>
 
+<pre class="col-m-8">
+  <code>
+&lt;div class="row"&gt;
+  &lt;div class="col-l-3"&gt;&lt;/div&gt;
+  &lt;div class="col-l-6"&gt;&lt;/div&gt;
+  &lt;div class="col-l-3"&gt;&lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+          <div class="row">
+            <div class="col-m-12">
+              <sticky class="lrg-sti square">FLUID GRID TIPS</sticky>
               <ul>
-                <li><code>.col-l-1</code></li>
-                <li><code>.col-l-2</code></li>
-                <li><code>.col-l-3</code></li>
-                <li><code>.col-l-4</code></li>
-                <li><code>.col-l-5</code></li>
-                <li><code>.col-l-6</code></li>
-                <li><code>.col-l-7</code></li>
-                <li><code>.col-l-8</code></li>
-                <li><code>.col-l-9</code></li>
-                <li><code>.col-l-10</code></li>
-                <li><code>.col-l-11</code></li>
-                <li><code>.col-l-12</code></li>
-              </ul>
-
-              <ul><h3>Important Things To Remember:</h3>
-                <li>
-                  Mobile columns are set to 100% width by default. This can easily be changed by commenting out the following line found in the stylesheet:
-        <pre>
-          <code>
-[class*="col-"] {
-  width: 100%; /* Comment out this line to use mobile column classes! */
-  float: left;
-}
-          </code>
-        </pre>
-                </li>
-                <li>Remember to wrap your column divs in a row div.</li>
-                <li>A row can contain as many columns as you like, but the number of columns should always add up to 12.</li>
-                <li>e.g. 3+6+3 / 3+9 / 2+2+2+2+2+2 / 4+8, etc.</li>
+                <li>Always wrap your column divs in a row div.</li>
+                <li>A single row can contain as many columns as you like, but the number of columns should always add up to 12.</li>
+                <li>3+6+3 / 3+9 / 4+8, etc.</li>
                 <li>If you want widths to be the same for every device mobile and up, and keep mobile at the default 100% width, you only need to specify medium device classes (refer to the grid and code example above).</li>
                 <li>If you want widths for small and medium devices to be the same, and you want widths for large and extra large devices to be the same, you only need to specify small and large device classes.</li>
                 <li>If you want widths to be the same on ALL devices, you only need to specify the small device class.</li>
+                <li>Mobile columns are set to 100% width by default. This can easily be changed by commenting out the following line found in the stylesheet:</li>
               </ul>
             </div>
           </div>
 
-        </div>
+<pre class="col-m-8">
+  <code>
+[class*="col-"] {
+  width: 100%; /* Comment out this line to use mobile column classes! */
+  float: left;
+}
+  </code>
+</pre>
 
         <!--========== END OF GRID SECTION ==========-->
 
@@ -361,13 +338,22 @@
         <div class="row">
           <div class="col-12">
             <h2>Buttons</h2>
+            <ul>
+              <li><a href="#primarybuttons" class="text-link">Primary Buttons</a></li>
+              <li><a href="#secondarybuttons" class="text-link">Secondary Buttons</a></li>
+              <li><a href="#inputbuttons" class="text-link">Input Buttons</a></li>
+              <li><a href="#anchorbuttons" class="text-link">Anchor Buttons</a></li>
+              <li><a href="#buttoncolors" class="text-link">Button Colors</a></li>
+              <li><a href="#buttonsizes" class="text-link">Button Sizes</a></li>
+              <li><a href="#buttonstyles" class="text-link">Button Styles</a></li>
+            </ul>
             <hr>
             <p>Buttons are one of the key components to making a site or app more interactive. Styling a great button is crucial to user engagement.</p>
             <p>Read on to learn everything you need to know about Indigo's button styles.</p>
           </div>
         </div>
 
-        <a name="buttontypes"></a>
+        <a name="primarybuttons"></a>
         <div class="row">
           <div class="col-12">
             <h3>Primary Buttons</h3>
@@ -380,13 +366,13 @@
           <button>primary</button>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button&gt;primary&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -399,6 +385,8 @@
           <button>register</button>
           <button class="blue">download</button>
         </div>
+
+        <a name="secondarybuttons"></a>
 
         <div class="row">
           <div class="col-12">
@@ -414,13 +402,13 @@
           <button class="indigo-light">secondary</button>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="indigo-light"&gt;secondary&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -436,6 +424,8 @@
           <button class="blue">sign up today</button>
         </div>
 
+        <a name="inputbuttons"></a>
+
         <div class="row">
           <div class="col-12">
             <h3>Input Buttons</h3>
@@ -450,15 +440,15 @@
           <input type="button" value="button">
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;input type="submit" value="submit"&gt;
   &lt;input type="reset" value="reset"&gt;
   &lt;input type="button" value="button"&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -472,15 +462,17 @@
           <input type="button" value="button" class="indigo-light">
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;input type="submit" value="submit" class="indigo-light"&gt;
   &lt;input type="reset" value="reset" class="indigo-light"&gt;
   &lt;input type="button" value="button" class="indigo-light"&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
+
+        <a name="anchorbuttons"></a>
 
         <div class="row">
           <div class="col-12">
@@ -496,13 +488,13 @@
           <a href="#0" class="btn-link"><span>Anchor </span></a>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;a href="#0" class="btn-link"&gt;&lt;span&gt;anchor &lt;/span&gt;&lt;/a&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -514,13 +506,13 @@
           <a href="#0" class="btn-link indigo-light"><span>anchor </span></a>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;a href="#0" class="btn-link indigo-light"&gt;&lt;span&gt;anchor &lt;/span&gt;&lt;/a&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="buttoncolors"></a>
 
@@ -547,15 +539,15 @@
           <input type="submit" class="black" value="black">
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="red"&gt;red&lt;/button&gt;
   &lt;button class="orange"&gt;orange&lt;/button&gt;
   &lt;button class="gold"&gt;gold&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -594,15 +586,15 @@
           <a href="#0" class="btn-link black-light"><span>black </span></a>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="red-light"&gt;red&lt;/button&gt;
   &lt;button class="orange-light"&gt;orange&lt;/button&gt;
   &lt;button class="gold-light"&gt;gold&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -620,16 +612,16 @@
 
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="ghost"&gt;these&lt;/button&gt;
   &lt;button class="ghost"&gt;are&lt;/button&gt;
   &lt;button class="ghost"&gt;ghost&lt;/button&gt;
   &lt;button class="ghost"&gt;buttons&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="buttonsizes"></a>
 
@@ -664,8 +656,8 @@
           <button class="huge-btn">huge</button>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="micro-btn"&gt;micro&lt;/button&gt;
   &lt;button class="tiny-btn"&gt;tiny&lt;/button&gt;
@@ -674,8 +666,8 @@
   &lt;button class="lrg-btn"&gt;large&lt;/button&gt;
   &lt;button class="huge-btn"&gt;huge&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="buttonstyles"></a>
 
@@ -697,15 +689,15 @@
           <button class="blue square huge-btn">square</button>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="green-light square"&gt;square&lt;/button&gt;
   &lt;button class="blue square med-btn"&gt;square&lt;/button&gt;
   &lt;button class="indigo-light square lrg-btn"&gt;square&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div id="example">
           <button class="purple pill micro-btn">pill</button>
@@ -716,15 +708,15 @@
           <button class="purple-light pill huge-btn">pill</button>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;button class="purple-light pill micro-btn"&gt;pill&lt;/button&gt;
   &lt;button class="purple pill tiny-btn"&gt;pill&lt;/button&gt;
   &lt;button class="purple-light pill small-btn"&gt;pill&lt;/button&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <!--========== END OF BUTTONS SECTION ==========-->
 
@@ -737,9 +729,15 @@
         <div class="row">
           <div class="col-12">
             <h2>Stickys</h2>
+            <ul>
+              <li><a href="#stickycolors" class="text-link">Sticky Colors</a></li>
+              <li><a href="#stickysizes" class="text-link">Sticky Sizes</a></li>
+              <li><a href="#stickystyles" class="text-link">Sticky Styles</a></li>
+            </ul>
             <hr>
             <p>Stickys are a type of label. They're highly versatile components that are useful for adding additional context, highlighting new or important information, alerting users with a message, and much more.</p>
-            <p>In general, stickys are better suited for textual information, and badges are better suited for numerical information. <a href="#badges" class="text-link">Click here to learn about badges.</a></p>
+            <p>In general, stickys are better suited for textual information, and badges are better suited for numerical information.</p>
+            <p><a href="#badges" class="text-link">Click here to learn about badges.</a></p>
             <p>The default <code>&lt;sticky&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
           </div>
         </div>
@@ -748,8 +746,8 @@
           <sticky>sticky</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky&gt;sticky&lt;/sticky&gt;
 &lt;/div&gt;
@@ -779,8 +777,8 @@
           <sticky class="black">black</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="red"&gt;red&lt;/sticky&gt;
   &lt;sticky class="orange"&gt;orange&lt;/sticky&gt;
@@ -824,8 +822,8 @@
           <sticky class="black-light">black</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="red-light"&gt;red&lt;/sticky&gt;
   &lt;sticky class="orange-light"&gt;orange&lt;/sticky&gt;
@@ -849,8 +847,8 @@
 
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="ghost"&gt;these&lt;/sticky&gt;
   &lt;sticky class="ghost"&gt;are&lt;/sticky&gt;
@@ -887,8 +885,8 @@
           <sticky class="huge-sti">Huge</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="micro-sti"&gt;micro&lt;/sticky&gt;
   &lt;sticky class="tiny-sti"&gt;tiny&lt;/sticky&gt;
@@ -919,8 +917,8 @@
           <sticky class="blue square huge-sti">square</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="green-light square"&gt;square&lt;/sticky&gt;
   &lt;sticky class="blue square med-sti"&gt;square&lt;/sticky&gt;
@@ -938,15 +936,15 @@
           <sticky class="purple-light pill huge-sti">pill</sticky>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;sticky class="purple-light pill micro-sti"&gt;pill&lt;/sticky&gt;
   &lt;sticky class="purple pill tiny-sti"&gt;pill&lt;/sticky&gt;
   &lt;sticky class="purple-light pill small-sti"&gt;pill&lt;/sticky&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <hr>
 
@@ -960,6 +958,11 @@
         <div class="row">
           <div class="col-12">
             <h2>Badges</h2>
+            <ul>
+              <li><a href="#badgecolors" class="text-link">Badge Colors</a></li>
+              <li><a href="#badgesizes" class="text-link">Badge Sizes</a></li>
+              <li><a href="#badgestyles" class="text-link">Badge Styles</a></li>
+            </ul>
             <hr>
             <p>A <code>&lt;badge&gt;</code> is a type of label that help provide additional context/numerical information in a compact and stylized way.</p>
             <p>They are meant to be combined with links, buttons, alerts, tables, lists, and more. Use them wherever you might use a <code>&lt;span&gt;</code>.</p>
@@ -971,13 +974,13 @@
           <badge>7</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge&gt;7&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="badgecolors"></a>
 
@@ -1002,15 +1005,15 @@
           <badge class="black">0</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="red"&gt;1&lt;/badge&gt;
   &lt;badge class="orange"&gt;2&lt;/badge&gt;
   &lt;badge class="gold"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -1031,15 +1034,15 @@
           <badge class="black-light">0</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="red-light"&gt;1&lt;/badge&gt;
   &lt;badge class="orange-light"&gt;2&lt;/badge&gt;
   &lt;badge class="gold-light"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div class="row">
           <div class="col-12">
@@ -1054,15 +1057,15 @@
           <badge class="ghost">300</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="ghost"&gt;100&lt;/badge&gt;
   &lt;badge class="ghost"&gt;200&lt;/badge&gt;
   &lt;badge class="ghost"&gt;300&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="badgesizes"></a>
 
@@ -1072,12 +1075,12 @@
             <hr>
             <p>Indigo badges are available in 6 sizes.</p>
             <ol>
-              <li>Micro: <code>.micro-sti</code></li>
-              <li>Tiny: <code>.tiny-sti</code></li>
-              <li>Small: <code>.small-sti</code></li>
+              <li>Micro: <code>.micro-bdg</code></li>
+              <li>Tiny: <code>.tiny-bdg</code></li>
+              <li>Small: <code>.small-bdg</code></li>
               <li>Medium: <code>&lt;badge&gt;</code></li>
-              <li>Large: <code>.lrg-sti</code></li>
-              <li>Huge: <code>.huge-sti</code></li>
+              <li>Large: <code>.lrg-bdg</code></li>
+              <li>Huge: <code>.huge-bdg</code></li>
             </ol>
           </div>
         </div>
@@ -1091,8 +1094,8 @@
           <badge class="huge-bdg">6</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="micro-bdg"&gt;1&lt;/badge&gt;
   &lt;badge class="tiny-bdg"&gt;2&lt;/badge&gt;
@@ -1101,8 +1104,8 @@
   &lt;badge class="lrg-bdg"&gt;5&lt;/badge&gt;
   &lt;badge class="huge-bdg"&gt;6&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <a name="badgestyles"></a>
 
@@ -1130,15 +1133,15 @@
           <badge class="green square huge-bdg">100</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="green-light square"&gt;9&lt;/badge&gt;
   &lt;badge class="blue square med-bdg"&gt;9&lt;/badge&gt;
   &lt;badge class="indigo-light square lrg-bdg"&gt;9&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
+  </code>
+</pre>
 
         <div id="example">
           <badge class="purple pill micro-bdg">3</badge>
@@ -1156,48 +1159,425 @@
           <badge class="red-light pill huge-bdg">500</badge>
         </div>
 
-        <pre>
-          <code>
+<pre class="col-m-8">
+  <code>
 &lt;div&gt;
   &lt;badge class="purple-light pill micro-bdg"&gt;3&lt;/badge&gt;
   &lt;badge class="purple pill tiny-bdg"&gt;3&lt;/badge&gt;
   &lt;badge class="purple-light pill small-bdg"&gt;3&lt;/badge&gt;
 &lt;/div&gt;
-          </code>
-        </pre>
-
-        <hr>
+  </code>
+</pre>
 
         <!--========== END OF BADGES SECTION ==========-->
 
-        <a name="comingsoon"></a>
-
-        <h2>More Components Are Coming Soon!</h2>
-        <hr>
-        <ul>
-          <li>Forms</li>
-          <li>Typography</li>
-          <li>Lists</li>
-          <li>Tables</li>
-          <li>Nav Bars</li>
-          <li>Cards</li>
-          <li>Modals</li>
-          <li>Dropdowns</li>
-          <li>Tooltips</li>
-        </ul>
-
-        <a href="#top" class="btn-link"><span>Top </span></a>
-        <a href="/" class="btn-link indigo-light"><span>Home </span></a>
+        <!--========== BEGINNING OF TABLE SECTION ==========-->
 
 
+        <a name="tables"></a>
 
+        <div class="row">
+          <div class="col-m-12">
+            <h2>Tables</h2>
+            <hr>
+            <p>Indigo tables have a clean and simple design by default, with a white <code>background-color</code> and black font <code>color</code>. You can customize tables with the following classes:</p>
+            <ul>
+              <li><code>.highlight</code> will change the <code>background-color</code> of every other <code>&lt;tr&gt;</code>.</li>
+              <li><code>.underline</code> will add a subtle <code>border-bottom</code> to every <code>&lt;th&gt;</code> and <code>&lt;tr&gt;</code>.</li>
+              <li><code>.border</code> will add a subtle <code>border</code> around the entire <code>&lt;table&gt;</code>.</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="row" id="example">
+          <table class="col-m-6">
+            <tr>
+              <th>Cuisine</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Gyōza</td>
+              <td>Japan</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <td>Poutine</td>
+              <td>Canada</td>
+              <td>4.2</td>
+            </tr>
+            <tr>
+              <td>Spaghetti alla Pesto</td>
+              <td>Italy</td>
+              <td>4.9</td>
+            </tr>
+            <tr>
+              <td>Philly Cheese Steak</td>
+              <td>United States</td>
+              <td>4.4</td>
+            </tr>
+            <tr>
+              <td>Falafel</td>
+              <td>Egypt</td>
+              <td>4.8</td>
+            </tr>
+          </table>
+        </div>
 
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cuisine&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Gyōza&lt;/td&gt;
+      &lt;td&gt;Japan&lt;/td&gt;
+      &lt;td&gt;4.7&lt;/td&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <table class="highlight col-m-6">
+            <tr>
+              <th>Cuisine</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Spätzle</td>
+              <td>Germany</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <td>Blåbärssoppa</td>
+              <td>Sweden</td>
+              <td>4.6</td>
+            </tr>
+            <tr>
+              <td>Mole Poblano</td>
+              <td>Mexico</td>
+              <td>4.8</td>
+            </tr>
+            <tr>
+              <td>Channa Masala</td>
+              <td>India</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <td>Bibimbap</td>
+              <td>Korea</td>
+              <td>4.3</td>
+            </tr>
+          </table>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;table class="highlight"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cuisine&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <table class="underline col-m-6">
+            <tr>
+              <th>Cuisine</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Gyōza</td>
+              <td>Japan</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <td>Poutine</td>
+              <td>Canada</td>
+              <td>4.2</td>
+            </tr>
+            <tr>
+              <td>Spaghetti alla Pesto</td>
+              <td>Italy</td>
+              <td>4.9</td>
+            </tr>
+            <tr>
+              <td>Philly Cheese Steak</td>
+              <td>United States</td>
+              <td>4.4</td>
+            </tr>
+            <tr>
+              <td>Falafel</td>
+              <td>Egypt</td>
+              <td>4.8</td>
+            </tr>
+          </table>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;table class="underline"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cuisine&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <table class="border col-m-6">
+            <tr>
+              <th>Cuisine</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Spätzle</td>
+              <td>Germany</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <td>Blåbärssoppa</td>
+              <td>Sweden</td>
+              <td>4.6</td>
+            </tr>
+            <tr>
+              <td>Mole Poblano</td>
+              <td>Mexico</td>
+              <td>4.8</td>
+            </tr>
+            <tr>
+              <td>Channa Masala</td>
+              <td>India</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <td>Bibimbap</td>
+              <td>Korea</td>
+              <td>4.3</td>
+            </tr>
+          </table>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;table class="border"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cuisine&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <table class="border highlight col-m-6">
+            <tr>
+              <th>Cuisine</th>
+              <th>Country</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Spätzle</td>
+              <td>Germany</td>
+              <td>4.7</td>
+            </tr>
+            <tr>
+              <td>Blåbärssoppa</td>
+              <td>Sweden</td>
+              <td>4.6</td>
+            </tr>
+            <tr>
+              <td>Mole Poblano</td>
+              <td>Mexico</td>
+              <td>4.8</td>
+            </tr>
+            <tr>
+              <td>Channa Masala</td>
+              <td>India</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <td>Bibimbap</td>
+              <td>Korea</td>
+              <td>4.3</td>
+            </tr>
+          </table>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;table class="border highlight"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Cuisine&lt;/th&gt;
+      &lt;th&gt;Country&lt;/th&gt;
+      &lt;th&gt;Rating&lt;/th&gt;
+    &lt;/tr&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <!--========== END OF TABLE SECTION ==========-->
+
+        <!--========== BEGINNING OF LIST SECTION ==========-->
+
+        <a name="lists"></a>
+
+        <div class="row">
+          <div class="col-m-12">
+            <h2>Lists</h2>
+            <hr>
+            <p>Indigo lists have a clean and simple design by default, with a white <code>background-color</code> and black font <code>color</code>. You can customize both unordered lists and ordered lists with the following classes:</p>
+            <ul>
+              <li><code>.highlight</code> will change the <code>background-color</code> of every other <code>&lt;li&gt;</code>.</li>
+              <li><code>.underline</code> will add a subtle <code>border-bottom</code> to every <code>&lt;li&gt;</code>.</li>
+              <li><code>.no-bullet</code> will remove the <code>list-style-type</code> from the list.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="example">
+          <ul class="col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ul>
+
+          <ol class="col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ol>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <ul class="highlight col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ul>
+
+          <ol class="highlight col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ol>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;ul class="highlight"&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ol class="highlight"&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+        <div class="row" id="example">
+          <ul class="underline col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ul>
+
+          <ol class="underline col-m-2">
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+            <li>Nectarine</li>
+            <li>Clementine</li>
+            <li>Kiwi</li>
+          </ol>
+        </div>
+
+<pre class="col-m-8">
+  <code>
+&lt;div&gt;
+  &lt;ul class="underline"&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ol class="underline"&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    ...
+    &lt;li&gt;Kiwi&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+      <!--========== END OF LIST SECTION ==========-->
 
 
       </div>
-
     </div>
-
   </body>
 </html>
