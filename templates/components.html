@@ -19,7 +19,6 @@
   <body>
 
     <!--- BEGINNING OF SIDE NAVBAR --->
-
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#grid">Fluid Grid</a>
@@ -30,7 +29,6 @@
       <a href="#tables">Tables</a>
       <a href="#comingsoon">Coming Soon!</a>
     </div>
-
     <!--- END OF SIDE NAVBAR --->
 
     <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
@@ -38,7 +36,6 @@
     <div id="main">
 
       <!--- Top Navbar --->
-
       <ul class="topnav" id="myTopnav">
         <li><span onclick="openNav()">&#9776;</span></li>
         <li class="brand"><a href="/">indigo.css</a></li>
@@ -48,7 +45,6 @@
           <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>
       </ul>
-
       <!--- End of Top Navbar --->
 
       <a name="top"></a>
@@ -57,8 +53,9 @@
 
         <h1>Components</h1>
 
-        <!--========== BEGINNING OF GRID SECTION ==========-->
+        <p>Learn everything you need to know about all of indigo.css's components so you can <b>get your project up off of the ground</b>. Scroll on to read the documentation, or use the side navigation to skip to different sections.</p>
 
+        <!--========== BEGINNING OF GRID SECTION ==========-->
         <div id="grid">
 
           <a name="grid"></a>
@@ -67,7 +64,7 @@
             <div class="col-m-12">
               <h2>The Fluid Grid</h2>
               <hr>
-              <p>Indigo is based on a fully responsive fluid grid. Each row contains 12 columns that resize with the device. Go ahead - resize the browser window!</p>
+              <p>indigo.css is based on a <b>fully responsive, mobile first</b> grid system. Each row contains twelve columns that resize with the device and/or browser window. Go ahead - try resizing the window!</p>
             </div>
           </div>
 
@@ -185,9 +182,13 @@
 
           <div class="row">
             <div class="col-m-12">
-              <p>The columns shrink and stretch until the browser window becomes less than 550 pixels wide. At that point, the columns all assume a width of 100%. In general, this looks best on mobile devices, but just in case you want more control on mobile, Indigo comes with a full set of mobile column classes that can be used by commenting out one line of code in the stylesheet. </p>
-              <p>Having separate classes for different devices makes it simple to customize your design and ensure it looks perfect on all devices.</p>
-              <p>Check out the code example to see how the above grid was made:</p>
+              <p>indigo.css comes equipped with a full set of column classes for different devices. Having separate classes for different devices simplifies responsive web design.</p>
+
+              <p>The columns shrink and stretch dynamically with the device/window. When the width of the device/window is less than 550 pixels, each column's width is set to 100%, fitting the full width of the device/window.</p>
+
+              <p><i>Mobile column width is set to 100% by default. For more control on mobile views, a full set of mobile column classes is also available.</p></i>
+
+              <p>Check out the following code example to see how the above grid was created.</p>
             </div>
           </div>
 
@@ -253,13 +254,10 @@
             <div class="col-m-12">
               <h3>Small Devices (Mobile)</h3>
               <hr>
-              <p>These classes cover devices that are between 400 and 550 pixels wide.</p>
-              <p>Mobile columns are set to 100% width by default. If you don't plan on changing mobile column width, then you don't need to worry about mobile column classes.</p>
-              <p>However, Indigo includes a set of optional mobile column classes, giving you greater control over your CSS.</p>
-              <p>Use the base class <code>.col-</code> followed by desired number of columns (up to 12).</p>
-            </div>
-          </div>
-
+              <p>The small device class covers devices that are between 400 and 550 pixels wide.</p>
+              <p>Mobile columns are set to 100% width by default. If you don't plan on changing that, then you don't need to worry about this class.</p>
+              <p>However, if you would like greater control over your mobile views, use the base class <code>.col-</code> followed by the desired number of columns. If using more than one column in a single row, the amount of columns must add up to exactly twelve (referencing the example below, 6+6=12).</p>
+<div class="row">
 <pre class="col-m-8">
   <code>
 &lt;div class="row"&gt;
@@ -268,12 +266,26 @@
 &lt;/div&gt;
   </code>
 </pre>
+<div class="col-m-4"></div>
+</div>
+              <p>Note that in order for the small device class to work, you will need to comment out line 35 in grid.css.</p>
+<pre class="col-m-8">
+  <code>
+[class*="col-"] {
+  width: 100%; /* Comment out this line to use mobile column classes! */
+  float: left;
+}
+  </code>
+</pre>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-m-12">
               <h3>Medium Devices (Phablets & Tablets)</h3>
               <hr>
-              <p>These classes covers devices that are between 550 and 1024 pixels wide.</p>
-              <p>Use the base class <code>.col-m-</code> followed by desired number of columns (up to 12).</p>
+              <p>The medium device class covers devices that are between 550 and 1024 pixels wide.</p>
+              <p>Use the base class <code>.col-m-</code> followed by the desired number of columns (up to 12). If using more than one column in a single row, the amount of columns must add up to exactly twelve (referencing the example below, 4+4+4=12).</p>
             </div>
           </div>
 
@@ -291,8 +303,8 @@
             <div class="col-m-12">
               <h3>Large Devices (Laptops & Desktops)</h3>
               <hr>
-              <p>These classes covers devices that are wider than 1024 pixels.</p>
-              <p>Use the base class <code>.col-l-</code> followed by desired number of columns (up to 12).</p>
+              <p>The large device class covers devices that are wider than 1024 pixels.</p>
+              <p>Use the base class <code>.col-l-</code> followed by the desired number of columns (up to 12). If using more than one column in a single row, the amount of columns must add up to exactly twelve (referencing the example below, 3+6+3=12).</p>
             </div>
           </div>
 
@@ -307,32 +319,20 @@
 </pre>
           <div class="row">
             <div class="col-m-12">
-              <sticky class="lrg-sti square">FLUID GRID TIPS</sticky>
+              <sticky class="huge-sti square">MORE GRID TIPS</sticky>
               <ul>
-                <li>Always wrap your column divs in a row div.</li>
-                <li>A single row can contain as many columns as you like, but the number of columns should always add up to 12.</li>
-                <li>3+6+3 / 3+9 / 4+8, etc.</li>
-                <li>If you want widths to be the same for every device mobile and up, and keep mobile at the default 100% width, you only need to specify medium device classes (refer to the grid and code example above).</li>
-                <li>If you want widths for small and medium devices to be the same, and you want widths for large and extra large devices to be the same, you only need to specify small and large device classes.</li>
-                <li>If you want widths to be the same on ALL devices, you only need to specify the small device class.</li>
-                <li>Mobile columns are set to 100% width by default. This can easily be changed by commenting out the following line found in the stylesheet:</li>
+                <li>Column div(s) must be wrapped in a row div.</li>
+                <li>A single row can contain one column or many columns, but the number of columns should always add up to exactly twelve (3+9 / 4+8 / 12).</li>
+                <li>If you want equal column width for all devices larger than mobile, while keeping mobile at the default 100% width, you only need to specify the medium device class <code>.col-m-</code> (refer to the fluid grid and code example).</li>
+                <li>If you want equal column width on all devices, you only need to specify the small device class <code>.col-</code>.</li>
+                <li>Mix and match different device classes to get the perfect responsive design for your project.</li>
               </ul>
             </div>
           </div>
 
-<pre class="col-m-8">
-  <code>
-[class*="col-"] {
-  width: 100%; /* Comment out this line to use mobile column classes! */
-  float: left;
-}
-  </code>
-</pre>
-
         <!--========== END OF GRID SECTION ==========-->
 
         <!--========== BEGINNING OF BUTTONS SECTION ==========-->
-
         <a name="buttons"></a>
 
         <div class="row">
@@ -717,13 +717,9 @@
 &lt;/div&gt;
   </code>
 </pre>
-
         <!--========== END OF BUTTONS SECTION ==========-->
 
-
-
         <!--========== BEGINNING OF STICKYS SECTION ==========-->
-
         <a name="stickys"></a>
 
         <div class="row">
@@ -947,12 +943,9 @@
 </pre>
 
         <hr>
-
         <!--========== END OF STICKY SECTION ==========-->
 
-
         <!--========== BEGINNING OF BADGES SECTION ==========-->
-
         <a name="badges"></a>
 
         <div class="row">
@@ -1168,12 +1161,9 @@
 &lt;/div&gt;
   </code>
 </pre>
-
         <!--========== END OF BADGES SECTION ==========-->
 
         <!--========== BEGINNING OF TABLE SECTION ==========-->
-
-
         <a name="tables"></a>
 
         <div class="row">
@@ -1443,11 +1433,9 @@
 &lt;/div&gt;
   </code>
 </pre>
-
         <!--========== END OF TABLE SECTION ==========-->
 
         <!--========== BEGINNING OF LIST SECTION ==========-->
-
         <a name="lists"></a>
 
         <div class="row">
@@ -1573,7 +1561,6 @@
 &lt;/div&gt;
   </code>
 </pre>
-
       <!--========== END OF LIST SECTION ==========-->
 
 
