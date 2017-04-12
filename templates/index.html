@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="/static/css/markup.css">
     <link rel="stylesheet" href="/static/css/grid.css">
     <link rel="stylesheet" href="/static/css/normalize.css">
+    <style>
+      h1 {text-transform: none; font-weight: 400; margin-bottom: 5%;}
+      body {text-align: center;}
+      .fa {font-size: 14px; text-align: center;}
+      #home-top {margin-top: 15%;}
+      #social {margin-top: 20%;}
+    </style>
 
     <!-- Javascripts -->
     <script type="text/javascript" src="/static/js/app.js"></script>
@@ -23,20 +30,33 @@
     <ul class="topnav" id="myTopnav">
       <li class="brand"><a href="/">indigo.css</a></li>
       <li><a href="/components">components</a></li>
-      <li><a href="/about">about</a></li>
+      <li><a href="/">examples</a></li>
+      <li><a href="/">about</a></li>
       <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
       </li>
     </ul>
 
-    <center><div id="container">
+    <!-- Main Content -->
 
-      <h1 style="text-transform: none;">Lightweight. Adaptive. Mobile First.</h1>
+    <div id="container">
+      <div id="home-top">
+        <h1>A lightweight, adaptive, mobile-first UI framework.</h1>
+        <a href="/components" class="btn-link indigo-light"><span>learn more</span></a>
+        <a href="/" class="btn-link"><span>download</span></a>
+        <a href="/" class="btn-link indigo-light"><span>examples</span></a>
+      </div>
 
-      <h2 style="text-transform: none;">Is indigo.css right for your project?</h2>
+      <!-- Social Media Links -->
 
-      <a href="/components" class="btn-link"><span>view all components</span></a>
+      <div id="social">
+        <hr>
+        <button class="tiny-btn blue"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</button>
+        <button class="tiny-btn blue"><i class="fa fa-twitter" aria-hidden="true"></i> Follow</button>
+        <button class="tiny-btn black"><i class="fa fa-star" aria-hidden="true"></i> Star</button>
+        <button class="tiny-btn black"><i class="fa fa-github" aria-hidden="true"></i> Fork</button>
+      </div>
 
-    </div></center>
+    </div>
   </body>
 </html>

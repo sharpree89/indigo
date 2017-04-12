@@ -314,7 +314,7 @@ input[type=button].micro-btn {
   border-width: 1px;
   border-radius: 3px;
   letter-spacing: 1px;
-  padding: 2px 7px 2px 8px;
+  padding: 2px 6px 2px 7px;
 }
 
 button.tiny-btn,
@@ -326,7 +326,7 @@ input[type=button].tiny-btn {
   border-radius: 4px;
   border-width: 2px;
   letter-spacing: 1px;
-  padding: 3px 12px 2px 12px;
+  padding: 3px 8px 2px 8px;
 }
 
 button.small-btn,
@@ -338,7 +338,7 @@ input[type=button].small-btn {
   border-radius: 5px;
   border-width: 2px;
   letter-spacing: 1px;
-  padding: 5px 18px;
+  padding: 5px 12px;
 }
 
 /*
