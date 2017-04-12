@@ -24,6 +24,8 @@ ul {list-style-type: circle;}
 ol {list-style-type: decimal;}
 ul.no-bullet {list-style-type: none;}
 ol.no-bullet {list-style-type: none;}
+ul.border {border: 1px solid rgba(83,109,254,0.3);}
+ol.border {border: 1px solid rgba(83,109,254,0.3);}
 
 ul.underline li, ol.underline li {border-bottom: 1px solid rgba(83,109,254,0.3);}
 

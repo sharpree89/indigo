@@ -30,6 +30,7 @@
     background-color: #dbe0fc;
     border: 1px solid #8698f9;
     display: inline-block;
+    width: 100%;
     overflow: scroll;
     padding-right: 10%;
   }
