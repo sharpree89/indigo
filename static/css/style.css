@@ -3,6 +3,8 @@
 
 * {font-family: 'Muli', Helvetica, Verdana, sans-serif; box-sizing: border-box;}
 
+html {font-size: 10px;}
+
 hr {
   margin: 2.5% 0;
   display: block;
@@ -11,38 +13,67 @@ hr {
   border-top: 1px solid rgba(83,109,254,0.3);
 }
 
-h1, h2, h3, h4, h5, h6 {letter-spacing: 1px; font-weight: 600; margin-bottom: 2.5%; color: #333;}
+/*========== TYPE STYLING ==========*/
 
-p {color: #333;}
+h1, h2, h3, h4, h5, h6 {text-transform: uppercase;}
+
+h1 {font-size: 4.6rem; letter-spacing: 2px; font-weight: 600; color: #333; }
+h2 {font-size: 4.0rem; letter-spacing: 2px; font-weight: 600; color: #333;}
+h3 {font-size: 3.4rem; letter-spacing: 1px; font-weight: 600; color: #333;}
+h4 {font-size: 2.8rem; letter-spacing: 1px; font-weight: 600; color: #333;}
+h5 {font-size: 2.2rem; letter-spacing: 1px; font-weight: 600; color: #333;}
+h6 {font-size: 1.6rem; letter-spacing: 1px; font-weight: 600; color: #333;}
+
+p {font-size: 1.4rem; color: #333;}
 
 
 /*========== LIST STYLING ==========*/
 
 
-ul li, ol li {text-align: left; color: #333;}
+ul li, ol li {text-align: left; font-size: 1.4rem; color: #333; padding: 0.5%;}
 ul {list-style-type: circle;}
 ol {list-style-type: decimal;}
 ul.no-bullet {list-style-type: none;}
 ol.no-bullet {list-style-type: none;}
-ul.border {border: 1px solid rgba(83,109,254,0.3);}
-ol.border {border: 1px solid rgba(83,109,254,0.3);}
+ul.border {border: 1px solid rgba(119,136,153,0.3);}
+ol.border {border: 1px solid rgba(119,136,153,0.3);}
 
-ul.underline li, ol.underline li {border-bottom: 1px solid rgba(83,109,254,0.3);}
+ul.underline li, ol.underline li {border-bottom: 1px solid rgba(119,136,153,0.3);}
 
-ul.highlight li:nth-child(even), ol.highlight li:nth-child(even) {background-color: rgba(83,109,254,0.15);}
+ul.highlight li:nth-child(even), ol.highlight li:nth-child(even) {background-color: rgba(119,136,153,0.15);}
 
 
 /*========== TABLE STYLING ==========*/
 
+table {border-collapse: collapse; display: table; border-spacing: 2px;}
 
-th, td {padding: 1.5%; text-align: left; color: #333;}
 
-table.highlight tr:nth-child(even) {background-color: rgba(83,109,254,0.15);}
+th, td {padding: 1.5%; text-align: left; display: table-cell; font-size: 1.4rem; color: #333;}
 
-table.underline th, table.underline td {border-bottom: 1px solid rgba(83,109,254,0.3);}
+table.highlight tr:nth-child(even) {background-color: rgba(119,136,153,0.15);}
 
-table.border {border: 1px solid rgba(83,109,254,0.3);}
+table.underline th, table.underline td {border-bottom: 1px solid rgba(119,136,153,0.3);}
 
+table.border {border: 1px solid rgba(119,136,153,0.3);}
+
+/*========== CODE STYLING ==========*/
+
+pre {
+  background-color: #dbe0fc;
+  border: 1px solid #8698f9;
+  display: inline-block;
+  width: 100%;
+  overflow: scroll;
+  padding-right: 10%;
+}
+
+code {
+  background-color: #dbe0fc;
+  display: inline-block;
+  font-family: "Courier", monospace;
+  font-size: 1.4rem;
+  padding: 0 0.5%;
+}
 
 /*========== FORM INPUT STYLING ==========*/
 
@@ -62,13 +93,13 @@ input[type=text]:focus {outline: none; border: 1px solid rgba(83,109,254,1);}
 
 /*---------- PLAIN TEXT ANCHOR TAG ----------*/
 
-
-a.text-link {
+a {
+  font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
   color: rgba(83,109,254,1);
 }
-a.text-link:hover {
+a:hover {
   border-width: 0 0 1px 0;
   border-style: dashed;
   border-color: rgba(83,109,254,1);
@@ -286,7 +317,7 @@ input[type=button] {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  padding: 7px 24px;
+  padding: 7px 22px;
 }
 
 button:hover,
@@ -328,7 +359,7 @@ input[type=button].tiny-btn {
   border-radius: 4px;
   border-width: 2px;
   letter-spacing: 1px;
-  padding: 3px 8px 2px 8px;
+  padding: 3px 10px 2px 10px;
 }
 
 button.small-btn,
@@ -340,7 +371,7 @@ input[type=button].small-btn {
   border-radius: 5px;
   border-width: 2px;
   letter-spacing: 1px;
-  padding: 5px 12px;
+  padding: 5px 16px;
 }
 
 /*
@@ -358,21 +389,20 @@ input[type=button].lrg-btn {
   border-radius: 8px;
   border-width: 2px;
   letter-spacing: 2px;
-  padding: 9px 32px;
+  padding: 8px 28px;
 }
 
 button.huge-btn,
 input[type=submit].huge-btn,
 input[type=reset].huge-btn,
 input[type=button].huge-btn {
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: 400;
   border-radius: 10px;
   border-width: 2px;
   letter-spacing: 2px;
-  padding: 11px 40px;
+  padding: 9px 32px;
 }
-
 
 /*========== ADDITIONAL COLORS ==========*/
 

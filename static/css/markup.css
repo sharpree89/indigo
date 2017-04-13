@@ -22,27 +22,8 @@
     margin: 2% 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {text-transform: uppercase;}
-
+  /*to display "ghost" buttons*/
   .backdrop {background-color: rgba(83,109,254,1);}
-
-  pre {
-    background-color: #dbe0fc;
-    border: 1px solid #8698f9;
-    display: inline-block;
-    width: 100%;
-    overflow: scroll;
-    padding-right: 10%;
-  }
-
-  code {
-    background-color: #dbe0fc;
-    display: inline-block;
-    font-family: "Courier", monospace;
-    font-size: 1em;
-    padding: 0 0.5%;
-
-  }
 
 
     /*---------- TOP NAVBAR STYLING ----------*/
@@ -62,7 +43,7 @@
     }
 
     /* Float the list items side by side */
-    ul.topnav li {float: left;}
+    ul.topnav li {float: left; padding: 0% !important}
 
     /* Style the links inside the list items */
     ul.topnav li a, ul.topnav li span {
@@ -72,7 +53,7 @@
         text-decoration: none;
         transition: 0.3s;
         color: rgba(83,109,254,1);
-        font-size: 1em;
+        font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 400;
@@ -81,7 +62,7 @@
     }
 
     /* Change background color of links on hover */
-    ul.topnav li a:hover, ul.topnav li span:hover {background-color: rgba(83,109,254,0.5); color: white;}
+    ul.topnav li a:hover, ul.topnav li span:hover {background-color: rgba(83,109,254,0.5); color: white; border-bottom: none !important;}
 
     /* Hide the list item that contains the link that should open and close the topnav on small screens */
     ul.topnav li.icon {display: none;}
@@ -131,7 +112,7 @@
     .sidenav a  {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 1.2rem;
         letter-spacing: 1px;
         font-weight: 400;
         color: rgba(83,109,254,1);
@@ -145,6 +126,7 @@
     /* When you mouse over the navigation links, change their color */
     .sidenav a:hover, .offcanvas a:focus{
         background-color: rgba(83,109,254,0.5);
+        border-bottom: none !important;
         color: white;
         cursor: pointer;
     }
@@ -153,10 +135,10 @@
     .sidenav .closebtn {
         position: absolute;
         top: 0;
-        font-size: 1.5em;
+        font-size: 1.8rem;
         display: inline-block;
         text-align: center;
-        padding: 13px 25px 12px 25px;
+        padding: 15px 25px;
         margin-left: 74%;
         /*width: 25%;*/
     }

@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="/static/css/markup.css">
     <link rel="stylesheet" href="/static/css/grid.css">
     <link rel="stylesheet" href="/static/css/normalize.css">
+    <style>
+      .grid {background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;}
+      .anchor {margin-bottom: 7%; display: block;}
+      .mini-anchor {margin-bottom: 7%; display: block;}
+    </style>
 
     <!-- Javascripts -->
     <script type="text/javascript" src="/static/js/app.js"></script>
@@ -19,49 +24,53 @@
   <body>
 
     <!--- BEGINNING OF SIDE NAVBAR --->
+
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#grid">Fluid Grid</a>
+      <a href="#grid">Grid</a>
+      <a href="#type">Typography</a>
+      <a href="#forms">Forms <sticky class="small-sti pill">Coming Soon!</sticky></a>
       <a href="#buttons">Buttons</a>
       <a href="#stickys">Stickys</a>
       <a href="#badges">Badges</a>
+      <a href="#nav">Navigation</a>
       <a href="#lists">Lists</a>
       <a href="#tables">Tables</a>
-      <a href="#comingsoon">Coming Soon!</a>
     </div>
+
     <!--- END OF SIDE NAVBAR --->
 
     <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 
     <div id="main">
 
-      <!--- Top Navbar --->
+      <!--- BEGINNING OF TOP NAVBAR --->
+
       <ul class="topnav" id="myTopnav">
         <li><span onclick="openNav()">&#9776;</span></li>
         <li class="brand"><a href="/">indigo.css</a></li>
         <li><a href="/components">components</a></li>
-        <li><a href="/about">about</a></li>
+        <li><a href="/components">examples</a></li>
         <li class="icon">
           <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
         </li>
       </ul>
-      <!--- End of Top Navbar --->
 
-      <a name="top"></a>
+      <!--- END OF TOP NAVBAR --->
 
       <div id="container">
 
         <h1>Components</h1>
-
+        <hr>
         <p>Learn everything you need to know about all of indigo.css's components so you can get your project up off of the ground. Scroll on to read the documentation, or use the side navigation to skip to different sections.</p>
 
         <!--========== BEGINNING OF GRID SECTION ==========-->
-        <div id="grid">
 
-          <a name="grid"></a>
+        <div id="grid">
 
           <div class="row">
             <div class="col-m-12">
+              <a name="grid" class="anchor"></a>
               <h2>The Fluid Grid</h2>
               <hr>
               <p>indigo.css is based on a fully responsive, mobile-first grid system. Each row contains twelve columns that resize with the device and/or browser window. Go ahead - try resizing the window!</p>
@@ -69,112 +78,112 @@
           </div>
 
           <div class="row">
-            <div class="col-m-12" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-12 grid">
               <p>12</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-1" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-1 grid">
               <p>1</p>
             </div>
-            <div class="col-m-11" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-11 grid">
               <p>11</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-2" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-2 grid">
               <p>2</p>
             </div>
-            <div class="col-m-10" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-10 grid">
               <p>10</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-3" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-3 grid">
               <p>3</p>
             </div>
-            <div class="col-m-9" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-9 grid">
               <p>9</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-4" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-4 grid">
               <p>4</p>
             </div>
-            <div class="col-m-8" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-8 grid">
               <p>8</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-5" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-5 grid">
               <p>5</p>
             </div>
-            <div class="col-m-7" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-7 grid">
               <p>7</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-6" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-6 grid">
               <p>6</p>
             </div>
-            <div class="col-m-6" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-6 grid">
               <p>6</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-7" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-7 grid">
               <p>7</p>
             </div>
-            <div class="col-m-5" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-5 grid">
               <p>5</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-8" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-8 grid">
               <p>8</p>
             </div>
-            <div class="col-m-4" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-4 grid">
               <p>4</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-9" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-9 grid">
               <p>9</p>
             </div>
-            <div class="col-m-3" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-3 grid">
               <p>3</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-10" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-10 grid">
               <p>10</p>
             </div>
-            <div class="col-m-2" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-2 grid">
               <p>2</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-11" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-11 grid">
               <p>11</p>
             </div>
-            <div class="col-m-1" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-1 grid">
               <p>1</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-m-12" style="background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;">
+            <div class="col-m-12 grid">
               <p>12</p>
             </div>
           </div>
@@ -192,7 +201,7 @@
             </div>
           </div>
 
-<pre class="col-m-8">
+<pre>
   <code>
 &lt;div class="row"&gt;
   &lt;div class="col-m-12"&gt;
@@ -313,15 +322,106 @@
 
         <!--========== END OF GRID SECTION ==========-->
 
+        <!--========== BEGINNING OF TYPOGRAPHY SECTION ==========-->
+
+        <div class="row">
+          <div class="col-m-12">
+            <a name="type" class="anchor"></a>
+            <h2>Typography</h2>
+            <hr>
+            <p>Typography is set with rems, so indigo.css <code>font-size</code> is responsive, based off of a single <code>&lt;html&gt;</code> <code>font-size</code> of 10 pixels.</p>
+
+            <p>Because all <code>font-size</code> is based off of 10, an <code>&lt;h1&gt;</code> with a <code>font-size</code> of 4.6rem equals 46 pixels.</p>
+
+            <p>The <code>@font-family</code> used by indigo.css is Muli served by Google Fonts, set at 1.4rem (14 pixels) with a <code>line-height</code> of 1.5 and a <code>font-weight</code> of 400.</p>
+
+            <a href="#text-color">Click here to view all color classes available for customizing text elements.</a>
+
+            <a name="buttons" class="anchor"></a>
+            <h3>Headings</h3>
+            <hr>
+
+            <p>Headings are styled with <code>letter-spacing</code> of 1 or 2 pixels, depending on the heading size. The default <code>font-weight</code> is 600.</p>
+
+            <p>By default, headings have an uppercase <code>text-transform</code> applied to them.</p>
+
+            <h1>Heading (h1)</h1>
+            <h2>Heading (h2)</h2>
+            <h3>Heading (h3)</h3>
+            <h4>Heading (h4)</h4>
+            <h5>Heading (h5)</h5>
+            <h6>Heading (h6)</h6>
+
+<pre>
+  <code>
+&lt;div&gt;
+  &lt;h1&gt;Heading (h1)&lt;/h1&gt;
+  &lt;h2&gt;Heading (h2)&lt;/h2&gt;
+  &lt;h3&gt;Heading (h3)&lt;/h3&gt;
+  &lt;h4&gt;Heading (h4)&lt;/h4&gt;
+  &lt;h5&gt;Heading (h5)&lt;/h5&gt;
+  &lt;h6&gt;Heading (h6)&lt;/h6&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+            <a name="buttons" class="anchor"></a>
+            <h3>Anchors</h3>
+            <hr>
+
+            <p>indigo.css anchors ( <code>&lt;a&gt;</code> ) have a default font <code>color</code> of indigo, a default <code>font-weight</code> of 600, and subtle styling on <code>hover</code>.</p>
+
+            <a href="#0">This is what a default anchor looks like.</a>
+
+            <a name="text-color" class="anchor"></a>
+            <h3>Text Color Classes</h3>
+            <hr>
+
+            <p>If you wish to change the font <code>color</code> of a text element, such as <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;li&gt;</code>, or a heading, simply add a <code>.color-text</code> class to the element.</p>
+
+            <p>Below are all of the <code>.color-text</code> classes that are currently available.</p>
+
+            <div id="example">
+              <ul class="no-bullet">
+                <li><a href="#0" class="red-text">Red Text</a></li>
+                <li><a href="#0" class="orange-text">Orange Text</a></li>
+                <li><a href="#0" class="gold-text">Gold Text</a></li>
+                <li><a href="#0" class="green-text">Green Text</a></li>
+                <li><a href="#0" class="teal-text">Teal Text</a></li>
+                <li><a href="#0" class="blue-text">Blue Text</a></li>
+                <li><a href="#0">Indigo Text</a></li>
+                <li><a href="#0" class="purple-text">Purple Text</a></li>
+                <li><a href="#0" class="pink-text">Pink Text</a></li>
+                <li><a href="#0" class="grey-text">Grey Text</a></li>
+                <li><a href="#0" class="black-text">Black Text</a></li>
+                <li><a href="#0" style="background-color: rgba(83,109,254,1); padding: 2px;" class="white-text">White Text</a></li>
+              </ul>
+            </div>
+
+<pre>
+  <code>
+&lt;div&gt;
+  &lt;a href="#0" class="red-text"&gt;Red Text&lt;/a&gt;
+  &lt;a href="#0" class="orange-text"&gt;Orange Text&lt;/a&gt;
+  &lt;a href="#0" class="gold-text"&gt;Gold Text&lt;/a&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+          </div>
+        </div>
+
+        <!--========== END OF TYPOGRAPHY SECTION ==========-->
+
         <!--========== BEGINNING OF BUTTONS SECTION ==========-->
-        <a name="buttons"></a>
 
         <div class="row">
           <div class="col-12">
+            <a name="buttons" class="anchor"></a>
             <h2>Buttons</h2>
             <hr>
             <p>Scroll on to learn everything you need to know about indigo.css buttons, or use the links below to skip to the section that you need.</p>
-            <ul>
+            <ul class="no-bullet">
               <li><a href="#primarybuttons" class="text-link">Primary Buttons</a></li>
               <li><a href="#secondarybuttons" class="text-link">Secondary Buttons</a></li>
               <li><a href="#inputbuttons" class="text-link">Input Buttons</a></li>
@@ -334,9 +434,9 @@
           </div>
         </div>
 
-        <a name="primarybuttons"></a>
         <div class="row">
           <div class="col-12">
+            <a name="primarybuttons" class="mini-anchor"></a>
             <h3>Primary Buttons</h3>
             <hr>
             <p>The default primary <code>&lt;button&gt;</code> has an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
@@ -367,10 +467,9 @@
           <button class="blue">download</button>
         </div>
 
-        <a name="secondarybuttons"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="secondarybuttons" class="mini-anchor"></a>
             <h3>Secondary Buttons</h3>
             <hr>
             <p>Secondary buttons are an inverted version of primary buttons, and are best reserved for a call-to-action of a lower priority.</p>
@@ -405,10 +504,9 @@
           <button class="blue">sign me up</button>
         </div>
 
-        <a name="inputbuttons"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="inputbuttons" class="mini-anchor"></a>
             <h3>Input Buttons</h3>
             <hr>
             <p>Use input buttons in HTML forms or for activating javascripts. The default <code>&lt;input type="submit"&gt;</code>, <code>&lt;input type="reset"&gt;</code>, and <code>&lt;input type="button"&gt;</code> all have an indigo <code>background-color</code>, white font <code>color</code>, and a subtle <code>border-radius</code>.</p>
@@ -453,10 +551,9 @@
   </code>
 </pre>
 
-        <a name="anchorbuttons"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="anchorbuttons" class="mini-anchor"></a>
             <h3>Anchor Buttons</h3>
             <hr>
             <p>Anchor buttons are anchors that have <code>&lt;button&gt;</code> styling applied to them, and a simple arrow animation on hover.</p>
@@ -479,7 +576,7 @@
 
         <div class="row">
           <div class="col-12">
-            The <code>.btn-link</code> class can also be used with the <code>.color-light</code> class to create a secondary anchor button.
+            <p>The <code>.btn-link</code> class can also be used with the <code>.color-light</code> class to create a secondary anchor button.</p>
           </div>
         </div>
 
@@ -495,10 +592,9 @@
   </code>
 </pre>
 
-        <a name="buttoncolors"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="buttoncolors" class="mini-anchor"></a>
             <h3>Button Color Classes</h3>
             <hr>
             <p>Use the <code>.color</code> class to change a button's <code>background-color</code>.</p>
@@ -610,27 +706,26 @@
   </code>
 </pre>
 
-        <a name="buttonsizes"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="buttonsizes" class="mini-anchor"></a>
             <h3>Button Size Classes</h3>
             <hr>
             <p>Most indigo.css buttons are available in 6 sizes.</p>
-            <ol>
+            <ul class="no-bullet">
               <li>Micro: <code>.micro-btn</code></li>
               <li>Tiny: <code>.tiny-btn</code></li>
               <li>Small: <code>.small-btn</code></li>
               <li>Medium: <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code></li>
               <li>Large: <code>.lrg-btn</code></li>
               <li>Huge: <code>.huge-btn</code></li>
-            </ol>
+            </ul>
             <p>Anchor buttons are currently available in 3 sizes.</p>
-            <ol>
+            <ul class="no-bullet">
               <li>Medium: <code>&lt;a class="btn-link"&gt;</code></li>
               <li>Large: <code>.lrg-btn</code></li>
               <li>Huge: <code>.huge-btn</code></li>
-            </ol>
+            </ul>
           </div>
         </div>
 
@@ -656,10 +751,9 @@
   </code>
 </pre>
 
-        <a name="buttonstyles"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="buttonstyles" class="mini-anchor"></a>
             <h3>Button Style Classes</h3>
             <hr>
             <p>Default indigo.css buttons have slightly rounded corners. Use the <code>.square</code> class or <code>.pill</code> class to change a button's <code>border-radius</code> for either a square-shaped button or a pill-shaped button.</p>
@@ -707,14 +801,14 @@
         <!--========== END OF BUTTONS SECTION ==========-->
 
         <!--========== BEGINNING OF STICKYS SECTION ==========-->
-        <a name="stickys"></a>
 
         <div class="row">
           <div class="col-12">
+            <a name="stickys" class="anchor"></a>
             <h2>Stickys</h2>
             <hr>
             <p>Scroll on to learn everything you need to know about indigo.css stickys, or use the links below to skip to the section that you need.</p>
-            <ul>
+            <ul class="no-bullet">
               <li><a href="#stickycolors" class="text-link">Sticky Colors</a></li>
               <li><a href="#stickysizes" class="text-link">Sticky Sizes</a></li>
               <li><a href="#stickystyles" class="text-link">Sticky Styles</a></li>
@@ -738,10 +832,9 @@
           </code>
         </pre>
 
-        <a name="stickycolors"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="stickycolors" class="mini-anchor"></a>
             <h3>Sticky Color Classes</h3>
             <hr>
             <p>Use the <code>.color</code> class to change a sticky's <code>background-color</code>.</p>
@@ -842,21 +935,20 @@
           </code>
         </pre>
 
-        <a name="stickysizes"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="stickysizes" class="mini-anchor"></a>
             <h3>Sticky Size Classes</h3>
             <hr>
             <p>Stickys are available in 6 sizes.</p>
-            <ol>
+            <ul class="no-bullet">
               <li>Micro: <code>.micro-sti</code></li>
               <li>Tiny: <code>.tiny-sti</code></li>
               <li>Small: <code>.small-sti</code></li>
               <li>Medium: <code>&lt;sticky&gt;</code></li>
               <li>Large: <code>.lrg-sti</code></li>
               <li>Huge: <code>.huge-sti</code></li>
-            </ol>
+            </ul>
           </div>
         </div>
 
@@ -882,10 +974,9 @@
           </code>
         </pre>
 
-        <a name="stickystyles"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="stickystyles" class="mini-anchor"></a>
             <h3>Sticky Style Classes</h3>
             <hr>
             <p>Default stickys have slightly rounded corners. Use the <code>.square</code> class or <code>.pill</code> class to change a sticky's <code>border-radius</code> for either a square-shaped sticky or a pill-shaped sticky.</p>
@@ -933,14 +1024,14 @@
         <!--========== END OF STICKY SECTION ==========-->
 
         <!--========== BEGINNING OF BADGES SECTION ==========-->
-        <a name="badges"></a>
 
         <div class="row">
           <div class="col-12">
+            <a name="badges" class="anchor"></a>
             <h2>Badges</h2>
             <hr>
             <p>Scroll on to learn everything you need to know about indigo.css badges, or use the links below to skip to the section that you need.</p>
-            <ul>
+            <ul class="no-bullet">
               <li><a href="#badgecolors" class="text-link">Badge Colors</a></li>
               <li><a href="#badgesizes" class="text-link">Badge Sizes</a></li>
               <li><a href="#badgestyles" class="text-link">Badge Styles</a></li>
@@ -963,10 +1054,9 @@
   </code>
 </pre>
 
-        <a name="badgecolors"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="badgecolors" class="mini-anchor"></a>
             <h3>Badge Color Classes</h3>
             <hr>
             <p>Use the <code>.color</code> class to change a badge's <code>background-color</code>.</p>
@@ -1048,21 +1138,20 @@
   </code>
 </pre>
 
-        <a name="badgesizes"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="badgesizes" class="mini-anchor"></a>
             <h3>Badge Size Classes</h3>
             <hr>
             <p>indigo.css badges are available in 6 sizes.</p>
-            <ol>
+            <ul class="no-bullet">
               <li>Micro: <code>.micro-bdg</code></li>
               <li>Tiny: <code>.tiny-bdg</code></li>
               <li>Small: <code>.small-bdg</code></li>
               <li>Medium: <code>&lt;badge&gt;</code></li>
               <li>Large: <code>.lrg-bdg</code></li>
               <li>Huge: <code>.huge-bdg</code></li>
-            </ol>
+            </ul>
           </div>
         </div>
 
@@ -1088,10 +1177,9 @@
   </code>
 </pre>
 
-        <a name="badgestyles"></a>
-
         <div class="row">
           <div class="col-12">
+            <a name="badgestyles" class="mini-anchor"></a>
             <h3>Badge Style Classes</h3>
             <hr>
             <p>Default badges have slightly rounded corners. Use the <code>.square</code> class or <code>.pill</code> class to change a badge's <code>border-radius</code> for either a square-shaped badge or a circular/pill-shaped badge.</p>
@@ -1152,10 +1240,10 @@
         <!--========== END OF BADGES SECTION ==========-->
 
         <!--========== BEGINNING OF TABLE SECTION ==========-->
-        <a name="tables"></a>
 
         <div class="row">
           <div class="col-m-12">
+            <a name="tables" class="anchor"></a>
             <h2>Tables</h2>
             <hr>
             <p>indigo.css tables have a clean and simple design by default, with a white <code>background-color</code> and black font <code>color</code>. Scroll on to see some additional table style classes.</p>
@@ -1197,7 +1285,7 @@
           </table>
         </div>
 
-<pre class="col-m-8">
+<pre>
   <code>
 &lt;div&gt;
   &lt;table&gt;
@@ -1221,7 +1309,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.highlight</code> class will change the <code>background-color</code> of every other <code>&lt;tr&gt;</code> to a light shade of indigo.</p>
+            <p>The <code>.highlight</code> class will change the <code>background-color</code> of every other <code>&lt;tr&gt;</code> to a light shade of grey.</p>
           </div>
         </div>
 
@@ -1279,7 +1367,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.underline</code> class will add a subtle indigo <code>border-bottom</code> to each <code>&lt;th&gt;</code> and <code>&lt;tr&gt;</code>.</p>
+            <p>The <code>.underline</code> class will add a subtle grey <code>border-bottom</code> to each <code>&lt;th&gt;</code> and <code>&lt;tr&gt;</code>.</p>
           </div>
         </div>
 
@@ -1337,7 +1425,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.border</code> class will add a subtle indigo <code>border</code> around the entire <code>&lt;table&gt;</code>.</p>
+            <p>The <code>.border</code> class will add a subtle grey <code>border</code> around the entire <code>&lt;table&gt;</code>.</p>
           </div>
         </div>
 
@@ -1453,10 +1541,10 @@
         <!--========== END OF TABLE SECTION ==========-->
 
         <!--========== BEGINNING OF LIST SECTION ==========-->
-        <a name="lists"></a>
 
         <div class="row">
           <div class="col-m-12">
+            <a name="lists" class="anchor"></a>
             <h2>Lists</h2>
             <hr>
             <p>indigo.css lists have a clean and simple design by default, with a white <code>background-color</code> and black font <code>color</code>. Scroll on to see some additional list style classes.</p>
@@ -1507,7 +1595,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.highlight</code> class will change the <code>background-color</code> of every other <code>&lt;li&gt;</code>.</p>
+            <p>The <code>.highlight</code> class will change the <code>background-color</code> of every other <code>&lt;li&gt;</code> to a light shade of grey.</p>
           </div>
         </div>
 
@@ -1555,7 +1643,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.underline</code> class will add a subtle <code>border-bottom</code> to every <code>&lt;li&gt;</code>.</p>
+            <p>The <code>.underline</code> class will add a subtle grey <code>border-bottom</code> to every <code>&lt;li&gt;</code>.</p>
           </div>
         </div>
 
@@ -1603,7 +1691,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <p>The <code>.border</code> class will add a subtle indigo <code>border</code> around the entire list.</p>
+            <p>The <code>.border</code> class will add a subtle grey <code>border</code> around the entire list.</p>
           </div>
         </div>
 
@@ -1616,15 +1704,6 @@
             <li>Clementine</li>
             <li>Kiwi</li>
           </ul>
-
-          <ol class="border col-m-2">
-            <li>Mango</li>
-            <li>Pineapple</li>
-            <li>Strawberry</li>
-            <li>Nectarine</li>
-            <li>Clementine</li>
-            <li>Kiwi</li>
-          </ol>
         </div>
 
 <pre>
@@ -1637,14 +1716,6 @@
 
     &lt;li&gt;Kiwi&lt;/li&gt;
   &lt;/ul&gt;
-
-  &lt;ol class="border"&gt;
-    &lt;li&gt;Mango&lt;/li&gt;
-
-    ...
-
-    &lt;li&gt;Kiwi&lt;/li&gt;
-  &lt;/ol&gt;
 &lt;/div&gt;
   </code>
 </pre>
@@ -1728,7 +1799,6 @@
   </code>
 </pre>
       <!--========== END OF LIST SECTION ==========-->
-
 
       </div>
     </div>
