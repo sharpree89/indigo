@@ -27,6 +27,10 @@ h6 {font-size: 1.6rem; letter-spacing: 1px; font-weight: 600; color: #333;}
 p {font-size: 1.4rem; color: #333;}
 
 
+/*========== NAVIGATION STYLING ==========*/
+
+
+
 /*========== LIST STYLING ==========*/
 
 
@@ -400,7 +404,7 @@ input[type=button].huge-btn {
 
 .white {
   color: rgba(38,50,56,0.75) !important;
-  border-width: 1px !important;
+  /*border-width: 1px !important;*/
   border-color: white !important;
   background-color: white !important;
   box-shadow: 0 0 0 2px rgba(38,50,56,0.15) !important;
@@ -603,7 +607,7 @@ sticky {
   box-sizing: border-box;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.3rem;
   font-weight: 400;
   padding: 3px 6px;
   box-shadow: 0 0 0 2px rgba(83,109,254,1);
@@ -617,21 +621,21 @@ sticky {
 /*-------------- ADDITIONAL STICKY SIZES --------------*/
 
 sticky.micro-sti, sticky.micro-sti:hover {
-  font-size: 0.3em;
+  font-size: 0.8rem;
   font-weight: 600;
   padding: 0px 2px;
   border-radius: 2px;
 }
 
 sticky.tiny-sti, sticky.tiny-sti:hover {
-  font-size: 0.6em;
+  font-size: 1.0rem;
   font-weight: 600;
   padding: 1px 4px;
   border-radius: 3px;
 }
 
 sticky.small-sti, sticky.small-sti:hover {
-  font-size: 0.7em;
+  font-size: 1.2rem;
   font-weight: 400;
   padding: 2px 4px;
   border-radius: 4px;
@@ -639,14 +643,14 @@ sticky.small-sti, sticky.small-sti:hover {
 
 /*
 DEFAULT STICKY GOES HERE
-font-size: 0.8em;
+font-size: 1.3rem;
 font-weight: 400;
 text-transform: uppercase;
 padding: 0px 8px;
 */
 
 sticky.lrg-sti, sticky.lrg-sti:hover {
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: 400;
   padding: 4px 8px;
   border-radius: 5px;
@@ -654,7 +658,7 @@ sticky.lrg-sti, sticky.lrg-sti:hover {
 }
 
 sticky.huge-sti, sticky.huge-sti:hover {
-  font-size: 1.1em;
+  font-size: 1.7rem;
   font-weight: 400;
   padding: 5px 10px;
   border-radius: 5px;
@@ -671,7 +675,7 @@ badge {
   box-sizing: border-box;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 0.95em;
+  font-size: 1.3rem;
   font-weight: 600;
   padding: 3px 8px 1px 8px;
   box-shadow: 0 0 0 2px rgba(83,109,254,1);
@@ -685,28 +689,28 @@ badge {
 /*-------------- ADDITIONAL BADGE SIZES --------------*/
 
 badge.micro-bdg, badge.micro-bdg:hover {
-  font-size: 0.4em;
+  font-size: 0.85rem;
   font-weight: 700;
   border-radius: 3px;
   padding: 0px 3px;
 }
 
 badge.tiny-bdg, badge.tiny-bdg:hover {
-  font-size: 0.7em;
+  font-size: 1.0rem;
   font-weight: 700;
   border-radius: 3px;
   padding: 0px 4px 0px 5px;
 }
 
 badge.small-bdg, badge.small-bdg:hover {
-  font-size: 0.85em;
+  font-size: 1.2rem;
   font-weight: 600;
   border-radius: 4px;
   padding: 1px 6px 1px 7px;
 }
 
 badge.lrg-bdg, badge.lrg-bdg:hover {
-  font-size: 1.1em;
+  font-size: 1.55rem;
   font-weight: 600;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -714,9 +718,9 @@ badge.lrg-bdg, badge.lrg-bdg:hover {
 }
 
 badge.huge-bdg, badge.huge-bdg:hover {
-  font-size: 1.3em;
+  font-size: 1.7rem;
   font-weight: 400;
   border-radius: 5px;
   letter-spacing: 1px;
-  padding: 3px 11px 2px 13px;
+  padding: 3px 11px 3px 12px;
 }
