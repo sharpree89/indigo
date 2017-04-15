@@ -104,9 +104,7 @@ a {
   color: rgba(83,109,254,1);
 }
 a:hover {
-  border-width: 0 0 1px 0;
-  border-style: dashed;
-  border-color: rgba(83,109,254,1);
+  cursor: pointer;
 }
 
 

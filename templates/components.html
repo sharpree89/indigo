@@ -16,10 +16,51 @@
       .grid {background-color: rgba(83,109,254,0.3); border: 5px solid white; text-align: center; font-size: 12px;}
       .anchor {margin-bottom: 7%; display: block;}
       .mini-anchor {margin-bottom: 7%; display: block;}
+
+      /* DROPDOWN MENU */
+
+      .dropdown {display: inline-block;}
+
+      .dropdown div.content {
+        position: absolute;
+        display: none;
+        background-color: white;
+        box-shadow: 2px 2px 8px slategrey;
+      }
+
+      .dropdown div.border {border: 1px solid rgba(119,136,153,0.5); box-shadow: none;}
+
+      .dropdown div.underline a {border-bottom: 1px solid rgba(119,136,153,0.3);}
+
+      div.content a {
+        display: block;
+        padding: 10px;
+        min-width: 160px;
+        overflow: auto;
+        color: #333;
+        font-weight: 400;
+      }
+
+      div.content a:hover {background-color: rgba(119,136,153,0.5); color: white !important;
+      }
+
+      div.content a.divide {border-top: 1px solid rgba(119,136,153,0.3);}
+
+      div.content a.highlight {background-color: rgba(119,136,153,0.5); color: white !important;}
+
     </style>
 
     <!-- Javascripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/app.js"></script>
+    <script>
+    //=========== DROPDOWN MENU SCRIPTS ===========//
+    $(document).ready(function() {
+      $(".dropdown").click( function () {
+        $(".content", this).toggle();
+      });
+    });
+    </script>
   </head>
   <body>
 
@@ -30,6 +71,7 @@
       <a href="#grid">Grid</a>
       <a href="#type">Typography</a>
       <a href="#nav">Navigation</a>
+      <a href="#dropdown">Dropdowns</a>
       <a href="#forms">Forms <sticky class="tiny-sti pill">Coming Soon!</sticky></a>
       <a href="#buttons">Buttons</a>
       <a href="#stickys">Stickys</a>
@@ -495,6 +537,64 @@
         </div>
 
         <!--========== END OF NAVIGATION SECTION ==========-->
+
+        <!--========== BEGINNING OF DROPDOWN SECTION ==========-->
+
+        <div class="row">
+          <div class="col-12">
+            <a name="dropdown" class="anchor"></a>
+            <h2>Dropdowns</h2>
+            <hr>
+            <p>Dropdowns are initially hidden from view. They are activated and displayed by a javascript when you click on the dropdown button.</p>
+            <p>The default dropdown has a clean and simple design, and can be used with any indigo.css button types.</p>
+            <p>Keep in mind that if you use a very small or very large button, the dropdown will stretch to fit the width of the button. For this reason it is recommended you use one of the following buttons for dropdowns: <code>.small-btn</code>, <code>&lt;button&gt;</code>, or <code>.lrg-btn</code>. <a href="#buttons">Click here to learn more about buttons.</a></p>
+
+            <sticky>CUSTOMIZE</sticky>
+
+            <p>Changing the color scheme of a dropdown is as easy as adding a <a href="#buttoncolors">button color class</a> to the dropdown button, and a <a href="#text-color">text color class</a> to the dropdown link(s). NEED EXAMPLE!</p>
+
+            <p>To create sections or divides within a dropdown, add the <code>.divide</code> class to the link that you want to divide from the other links. NEED EXAMPLE!</p>
+
+            <p>If you want your dropdown to have a simple <code>border</code> rather than the default <code>box-shadow</code>, add the <code>.border</code> class to the inner div with the <code>.dropdown-content</code> class. NEED EXAMPLE!</p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button>DropDown A</button>
+          <div class="content border underline">
+            <a href="#0">Drop Down Item</a>
+            <a href="#0">Drop Down Item</a>
+            <a href="#0">Drop Down Item</a>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="dropdown">
+          <button>DropDown B</button>
+          <div class="content">
+            <a href="#0">Drop Down Item</a>
+            <a href="#0">Drop Down Item</a>
+            <a href="#0" class="divide">Drop Down Item</a>
+          </div>
+        </div>
+
+<!-- <pre>
+  <code>
+&lt;div class="dropdown"&gt;
+  &lt;button onclick="myFunction()" class="dropbtn">Click Me!&lt;/button&gt;
+  &lt;div id="myDropdown" class="dropdown-content"&gt;
+    &lt;a href="#0"&gt;Link A&lt;/a&gt;
+    &lt;a href="#0"&gt;Link B&lt;/a&gt;
+    &lt;a href="#0"&gt;Link C&lt;/a&gt;
+    &lt;a href="#0" class="divide"&gt;Link D&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre> -->
+
+        <!--========== END OF DROPDOWN SECTION ==========-->
 
         <!--========== BEGINNING OF BUTTONS SECTION ==========-->
 
