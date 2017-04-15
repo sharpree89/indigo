@@ -20,6 +20,7 @@
     </style>
 
     <!-- Javascripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/app.js"></script>
   </head>
   <body>
@@ -28,8 +29,24 @@
 
     <ul class="topnav" id="myTopnav">
       <li class="brand"><a href="/">indigo.css</a></li>
-      <li><a href="/components">components</a></li>
-      <li><a href="/">examples</a></li>
+      <li>
+        <div class="dropdown">
+          <a href="#0">Code</a>
+          <div class="content border">
+            <a href="/components#top">All</a>
+            <a href="/components#grid">Fluid Grid</a>
+            <a href="/components#type">Typography</a>
+            <a href="/components#nav">Navigation</a>
+            <a href="/components#dropdown">Dropdowns</a>
+            <a href="/components#forms">Forms</a>
+            <a href="/components#buttons">Buttons</a>
+            <a href="/components#stickys">Stickys</a>
+            <a href="/components#badges">Badges</a>
+            <a href="/components#lists">Lists</a>
+            <a href="/components#tables">Tables</a>
+          </div>
+        </div>
+      </li>
       <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
       </li>
