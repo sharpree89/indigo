@@ -17,6 +17,74 @@
       .grid p {font-size: 1.2rem;}
       .anchor {margin-bottom: 7%; display: block;}
       .mini-anchor {margin-bottom: 7%; display: block;}
+
+      /* TOP NAVBAR STYLING */
+
+      /*----- Toggle Button -----*/
+      a.toggle-nav {display: none;}
+
+      /*----- Menu -----*/
+      @media screen and (min-width: 860px) {
+          nav.menu {
+              width: 100%;
+              background: white;
+              box-shadow: 1px 1px 4px slategrey;
+              overflow: visible;
+          }
+
+          nav.fixed {position: fixed; top: 0; overflow: visible;}
+      }
+
+      a.nav-link {
+          float: left;
+          padding: 16px 24px;
+          color: #333;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 400;
+      }
+
+      a.nav-link:hover {color: white; background-color: rgba(119,136,153,0.5);}
+
+      /*----- Responsive -----*/
+      @media screen and (max-width: 1150px) {
+          .wrap {width: 100%;}
+      }
+
+      @media screen and (max-width: 860px) {
+          nav.menu {
+              position: relative;
+              display: inline-block;
+          }
+
+          .menu div.active {display: none;}
+
+          .menu div {
+              min-width: 250px;
+              height: auto;
+              box-shadow: 1px 1px 4px slategrey;
+          }
+
+          a.nav-link {display: block; float: none;}
+
+          a.nav-link:first-child {margin-top: 60px;}
+
+          a.toggle-nav {
+              position: fixed;
+              top: 0;
+              left: 0;
+              padding: 16px 20px;
+              float: left;
+              display: block;
+              background: white;
+              color: #333;
+              font-size: 1.6rem;
+          }
+
+          a.toggle-nav:hover {text-decoration: none; color: rgba(83,109,254,1);
+          }
+      }
     </style>
 
     <!-- Javascripts -->
@@ -25,18 +93,15 @@
   </head>
   <body>
 
-    <!-- Add all page content inside "main" div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-
-    <div id="main">
-
       <!--- BEGINNING OF TOP NAVBAR --->
 
-      <ul class="topnav" id="myTopnav">
-        <li class="brand"><a href="/">indigo.css</a></li>
-        <li>
+      <nav class="menu fixed">
+        <div class="active">
+          <a href="#0" class="nav-link">Home</a>
+          <a href="#0" class="nav-link">Blog</a>
           <div class="dropdown">
-            <a href="#0">Code</a>
-            <div class="content border">
+            <a href="#0" class="nav-link">Components</a>
+            <div class="content">
               <a href="#top">All</a>
               <a href="#grid">Fluid Grid</a>
               <a href="#type">Typography</a>
@@ -50,11 +115,9 @@
               <a href="#tables">Tables</a>
             </div>
           </div>
-        </li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-      </ul>
+        </div>
+        <a class="toggle-nav" href="#0">&#9776;</a>
+      </nav>
 
       <!--- END OF TOP NAVBAR --->
 
@@ -2008,6 +2071,5 @@
       <a href="#top">Back To Top</a>
 
       </div>
-    </div>
   </body>
 </html>
