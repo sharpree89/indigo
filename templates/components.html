@@ -25,30 +25,29 @@
         <div class="active-mobile">
           <a href="#0" class="mobile-link">Home</a>
           <a href="#0" class="mobile-link">Blog</a>
-          <!-- <ul>
-            <li class="trigger">
-              <a href="#0" class="mobile-link">Click Me</a>
-              <ul class="content">
-                <li><a>Drop Down Item</a></li>
-                <li><a>Drop Down Item</a></li>
-                <li><a>Drop Down Item</a></li>
-              </ul>
-            </li>
-          </ul> -->
-          <!-- <a href="#top">All</a>
-          <a href="#grid">Fluid Grid</a>
-          <a href="#type">Typography</a>
-          <a href="#nav">Navigation</a>
-          <a href="#dropdown">Dropdowns</a>
-          <a href="#forms">Forms</a>
-          <a href="#buttons">Buttons</a>
-          <a href="#stickys">Stickys</a>
-          <a href="#badges">Badges</a>
-          <a href="#lists">Lists</a>
-          <a href="#tables">Tables</a> -->
         </div>
         <a class="toggle-nav" href="#0">&#9776;</a>
       </nav>
+
+      <ul id="dropdown">
+        <li class="trigger">
+          <a href="#0" class="dropdown-link">Components <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <ul class="content">
+            <li><a href="#top">All</a></li>
+            <li><a href="#grid">Fluid Grid</a></li>
+            <li><a href="#type">Typography</a></li>
+            <li><a href="#nav">Navigation</a></li>
+            <li><a href="#dropdowns">Dropdowns</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#stickys">Stickys</a></li>
+            <li><a href="#badges">Badges</a></li>
+            <li><a href="#list">Lists</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#tooltip">Tooltips</a></li>
+          </ul>
+        </li>
+      </ul>
 
       <!--- END OF TOP NAVBAR --->
 
@@ -56,7 +55,7 @@
         <a name="top" class="anchor"></a>
         <h1>Components</h1>
         <hr>
-        <p>Learn everything you need to know about all of indigo.css's components so you can get your project up off of the ground. Scroll on to read the documentation, or use the side navigation to skip to different sections.</p>
+        <p>Learn everything you need to know about all of indigo.css's components so you can get your project up off of the ground. Scroll on to read the documentation, or use the dropdown menu in the navbar to skip to the section that you need.</p>
 
         <!--========== BEGINNING OF GRID SECTION ==========-->
 
@@ -595,36 +594,6 @@
 
         <div class="row">
           <div class="col-m-12">
-            <h4>Navbar + Dropdown</h4>
-            <p>You can even place dropdown menus inside of your navbar! The "Components" link in this website's navbar features a dropdown menu - check it out!</p>
-            <p><sticky>NOTE</sticky> The dropdown feature is not currently compatible with mobile navbars. <a href="#dropdown">Click here to learn more about dropdown menus.</a></p>
-          </div>
-        </div>
-
-<pre>
-  <code>
-&lt;nav class="menu"&gt;
-  &lt;div class="active"&gt;
-    &lt;a href="#0" class="logo"&gt;Your Logo Here&lt;/a&gt;
-    &lt;a href="#0" class="nav-link"&gt;Home&lt;/a&gt;
-    &lt;a href="#0" class="nav-link"&gt;Contact&lt;/a&gt;
-    &lt;div class="dropdown"&gt;
-      &lt;a href="#0" class="nav-link"&gt;Products&lt;/a&gt;
-      &lt;div class="content"&gt;
-        &lt;a href="#0"&gt;Monitors&lt;/a&gt;
-        &lt;a href="#0"&gt;Keyboards&lt;/a&gt;
-        &lt;a href="#0"&gt;Mice&lt;/a&gt;
-        &lt;a href="#0"&gt;Printers&lt;/a&gt;
-        &lt;a href="#0n"&gt;Speakers&lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
-  </code>
-</pre>
-
-        <div class="row">
-          <div class="col-m-12">
             <h4>Mobile Navbar</h4>
             <p>We've also got you covered with a responsive, mobile navbar that is compact enough for small devices.</p>
             <p>This website's navbar is an example of a responsive, mobile navbar. When the viewport reaches a specific size, the navbar collapses into a "hamburger" icon. The user can then click on this icon to expand the navbar's links.</p>
@@ -654,7 +623,7 @@
 
         <div class="row">
           <div class="col-12">
-            <a name="dropdown" class="anchor"></a>
+            <a name="dropdowns" class="anchor"></a>
             <h2>Dropdowns</h2>
             <hr>
             <p>Dropdowns are menus of links that are initially hidden from view. The menu is displayed when you click on its corresponding <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code>, and the menu is hidden when the <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> is clicked again.</p>
@@ -681,11 +650,14 @@
         <div id="example">
           <ul>
             <li class="trigger">
-              <button>Click Me</button>
+              <button>Click Me <i class="fa fa-caret-down" aria-hidden="true"></i></button>
               <ul class="content">
-                <li><a>Drop Down Item</a></li>
-                <li><a>Drop Down Item</a></li>
-                <li><a>Drop Down Item</a></li>
+                <li>Mango</li>
+                <li>Pineapple</li>
+                <li>Strawberry</li>
+                <li>Nectarine</li>
+                <li>Clementine</li>
+                <li>Kiwi</li>
               </ul>
             </li>
           </ul>
@@ -1901,7 +1873,7 @@
 
         <div class="row">
           <div class="col-m-12">
-            <a name="lists" class="anchor"></a>
+            <a name="list" class="anchor"></a>
             <h2>Lists</h2>
             <hr>
             <p>indigo.css ordered and unordered lists have a clean and simple design, with a white <code>background-color</code> and black font <code>color</code>. Scroll on to see some additional list styling options.</p>
@@ -2139,9 +2111,67 @@
   </code>
 </pre>
 
-      <hr>
-
       <!--========== END OF LIST SECTION ==========-->
+
+      <!--========== BEGINNING OF TOOLTIP SECTION ==========-->
+
+      <div class="row">
+        <div class="col-m-12">
+          <a name="tooltip" class="anchor"></a>
+          <h2>Tooltips</h2>
+          <hr>
+          <p>Tooltips are small, compact popups that are displayed when an element is hovered over. They're useful for providing helpful information or hints to the user without cluttering up the page. They also help make your site or app easier to navigate and can increase user experience.</p>
+          <p>Choose one of four position classes to place your tooltip to the <code>.top</code>, <code>.bottom</code>, <code>.left</code>, or <code>.right</code> of its parent element, and add it to the <code>&lt;span&gt;</code>.</p>
+          <p>indigo.css tooltips are styled with html5 and css3 only, so there's no need to enable javascript. Just grab the 4 lines of code below to use!</p>
+        </div>
+      </div>
+
+      <div id="example">
+        <div class="tooltip">
+          <button>Top</button>
+          <span class="tooltiptext top">
+            Tooltip on top
+          </span>
+        </div>
+      </div>
+
+      <div id="example">
+        <div class="tooltip">
+          <button>Bottom</button>
+          <span class="tooltiptext bottom">
+            Tooltip on bottom
+          </span>
+        </div>
+      </div>
+
+      <div id="example">
+        <div class="tooltip">
+          <button>Left</button>
+          <span class="tooltiptext left">
+            Tooltip on left
+          </span>
+        </div>
+      </div>
+
+      <div id="example">
+        <div class="tooltip">
+          <button>Right</button>
+          <span class="tooltiptext right">
+            Tooltip on right
+          </span>
+        </div>
+      </div>
+
+<pre>
+  <code>
+&lt;div class="tooltip"&gt;
+  &lt;button>Top&lt;/button&gt;
+  &lt;span class="tooltiptext top"&gt;Tooltip on top&lt;/span&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+
+<!--========== END OF TOOLTIP SECTION ==========-->
 
       <a href="#top">Back To Top</a>
 

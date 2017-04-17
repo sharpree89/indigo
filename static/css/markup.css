@@ -15,7 +15,7 @@
     padding: 2%;
     box-shadow: 1px 1px 8px slategrey;
     text-align: center;
-    overflow: scroll;
+    overflow: visible;
     display: inline-block;
     width: 100%;
     height: auto;
