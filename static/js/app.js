@@ -3,15 +3,15 @@
 
     //=========== DROPDOWN MENU SCRIPTS ===========//
 
-    $(".dropdown").click( function () {
-      $(".content", this).toggle();
+    $(".trigger").click( function () {
+      $("ul.content", this).toggle();
     });
 
     //=========== NAVIGATION SCRIPTS ===========//
 
     jQuery('.toggle-nav').click(function(e) {
-        jQuery(this).toggleClass('active');
-        jQuery('.menu div').toggleClass('active');
+        jQuery(this).toggleClass('active-mobile');
+        jQuery('.menu-mobile div').toggleClass('active-mobile');
 
         e.preventDefault();
     });

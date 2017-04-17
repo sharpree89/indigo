@@ -12,80 +12,6 @@
     <link rel="stylesheet" href="/static/css/markup.css">
     <link rel="stylesheet" href="/static/css/grid.css">
     <link rel="stylesheet" href="/static/css/normalize.css">
-    <style>
-      .grid {background-color: rgba(83,109,254,0.3); border: 3px solid white; text-align: center;}
-      .grid p {font-size: 1.2rem;}
-      .anchor {margin-bottom: 7%; display: block;}
-      .mini-anchor {margin-bottom: 7%; display: block;}
-
-      /* TOP NAVBAR STYLING */
-
-      /*----- Toggle Button -----*/
-      a.toggle-nav {display: none;}
-
-      /*----- Menu -----*/
-      @media screen and (min-width: 860px) {
-          nav.menu {
-              width: 100%;
-              background: white;
-              box-shadow: 1px 1px 4px slategrey;
-              overflow: visible;
-          }
-
-          nav.fixed {position: fixed; top: 0; overflow: visible;}
-      }
-
-      a.nav-link {
-          float: left;
-          padding: 16px 24px;
-          color: #333;
-          font-size: 1.6rem;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-weight: 400;
-      }
-
-      a.nav-link:hover {color: white; background-color: rgba(119,136,153,0.5);}
-
-      /*----- Responsive -----*/
-      @media screen and (max-width: 1150px) {
-          .wrap {width: 100%;}
-      }
-
-      @media screen and (max-width: 860px) {
-          nav.menu {
-              position: relative;
-              display: inline-block;
-          }
-
-          .menu div.active {display: none;}
-
-          .menu div {
-              min-width: 250px;
-              height: auto;
-              box-shadow: 1px 1px 4px slategrey;
-          }
-
-          a.nav-link {display: block; float: none;}
-
-          a.nav-link:first-child {margin-top: 60px;}
-
-          a.toggle-nav {
-              position: fixed;
-              top: 0;
-              left: 0;
-              padding: 16px 20px;
-              float: left;
-              display: block;
-              background: white;
-              color: #333;
-              font-size: 1.6rem;
-          }
-
-          a.toggle-nav:hover {text-decoration: none; color: rgba(83,109,254,1);
-          }
-      }
-    </style>
 
     <!-- Javascripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -95,26 +21,31 @@
 
       <!--- BEGINNING OF TOP NAVBAR --->
 
-      <nav class="menu fixed">
-        <div class="active">
-          <a href="#0" class="nav-link">Home</a>
-          <a href="#0" class="nav-link">Blog</a>
-          <div class="dropdown">
-            <a href="#0" class="nav-link">Components</a>
-            <div class="content">
-              <a href="#top">All</a>
-              <a href="#grid">Fluid Grid</a>
-              <a href="#type">Typography</a>
-              <a href="#nav">Navigation</a>
-              <a href="#dropdown">Dropdowns</a>
-              <a href="#forms">Forms</a>
-              <a href="#buttons">Buttons</a>
-              <a href="#stickys">Stickys</a>
-              <a href="#badges">Badges</a>
-              <a href="#lists">Lists</a>
-              <a href="#tables">Tables</a>
-            </div>
-          </div>
+      <nav class="menu-mobile fixed">
+        <div class="active-mobile">
+          <a href="#0" class="mobile-link">Home</a>
+          <a href="#0" class="mobile-link">Blog</a>
+          <!-- <ul>
+            <li class="trigger">
+              <a href="#0" class="mobile-link">Click Me</a>
+              <ul class="content">
+                <li><a>Drop Down Item</a></li>
+                <li><a>Drop Down Item</a></li>
+                <li><a>Drop Down Item</a></li>
+              </ul>
+            </li>
+          </ul> -->
+          <!-- <a href="#top">All</a>
+          <a href="#grid">Fluid Grid</a>
+          <a href="#type">Typography</a>
+          <a href="#nav">Navigation</a>
+          <a href="#dropdown">Dropdowns</a>
+          <a href="#forms">Forms</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#stickys">Stickys</a>
+          <a href="#badges">Badges</a>
+          <a href="#lists">Lists</a>
+          <a href="#tables">Tables</a> -->
         </div>
         <a class="toggle-nav" href="#0">&#9776;</a>
       </nav>
@@ -544,18 +475,178 @@
             <a name="nav" class="anchor"></a>
             <h2>Navigation</h2>
             <hr>
-            <p>Navigation can be tricky to get right, but it's one of the most important components of a user-friendly site or app.</p>
+            <p>Navigation is one of the most important components of a user-friendly site or app, but it can also be one of the most frustrating pieces to code!</p>
             <p>indigo.css offers several different options for simple and straightforward site navigation.</p>
-            <h3>Header Navbars</h3>
-            <hr>
-            <h3>Side Navbars</h3>
-            <hr>
-            <h3>Footer Navbars</h3>
-            <hr>
-            <h3>Mobile Navbars</h3>
-            <hr>
+
+            <h4>Basic Navbar</h4>
+            <p>Navbars house your site's main navigation menu, and they are typically found at the top of a page.</p>
+            <p>The default navbar has a clean and simple design with a black, white, and grey color scheme. Logo and links are aligned to the left of the navbar.</p>
           </div>
         </div>
+
+        <nav class="menu">
+          <div class="active">
+            <a href="#0" class="logo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <a href="#0" class="nav-link">Home</a>
+            <a href="#0" class="nav-link">Contact</a>
+            <a href="#0" class="nav-link">Blog</a>
+          </div>
+          <a class="toggle-nav" href="#0">&#9776;</a>
+        </nav>
+
+<pre>
+  <code>
+&lt;nav class="menu"&gt;
+  &lt;div class="active"&gt;
+    &lt;a href="#0" class="logo"&gt;Your Logo Here&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Home&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Contact&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Blog&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+  </code>
+</pre>
+
+          <div class="row">
+            <div class="col-m-12">
+              <h4>Fixed-To-Top Navbar</h4>
+              <p>For a navbar that "sticks" to the top of the page, simply add the <code>.fixed</code> class to <code>&lt;nav&gt;</code>.</p>
+              <p>The result is a navbar that is identical to the default, except it will always be positioned at the top of the page no matter how far down you scroll.</p>
+              <p>This website utilizes the <code>.fixed</code> class for its navbar.</p>
+            </div>
+          </div>
+
+          <nav class="menu">
+            <div class="active">
+              <a href="#0" class="logo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+              <a href="#0" class="nav-link">Home</a>
+              <a href="#0" class="nav-link">Contact</a>
+              <a href="#0" class="nav-link">Blog</a>
+            </div>
+            <a class="toggle-nav" href="#0">&#9776;</a>
+          </nav>
+
+<pre>
+  <code>
+&lt;nav class="menu fixed"&gt;
+
+  ...
+
+&lt;/nav&gt;
+  </code>
+</pre>
+
+          <div class="row">
+            <div class="col-m-12">
+              <h4>Right-Aligned Navbar</h4>
+              <p>For a navbar with links aligned to the right, simply add the <code>.right</code> class to <code>&lt;nav&gt;</code>. The links inside your navbar will all align to the right instead of the left.</p>
+            </div>
+          </div>
+
+          <nav class="menu right">
+            <div class="active">
+              <a href="#0" class="nav-link">Home</a>
+              <a href="#0" class="nav-link">Contact</a>
+              <a href="#0" class="nav-link">Blog</a>
+              <a href="#0" class="logo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </div>
+            <a class="toggle-nav" href="#0">&#9776;</a>
+          </nav>
+
+<pre>
+  <code>
+&lt;nav class="menu right"&gt;
+
+  ...
+
+&lt;/nav&gt;
+  </code>
+</pre>
+
+          <div class="row">
+            <div class="col-m-12">
+              <h4>Right-Aligned Links + Left-Aligned Logo</h4>
+              <p>If you want your links to be aligned to the right, but still want the logo aligned to the left, simply move the <code>.logo</code> <code>&lt;a&gt;</code> to outside of the <code>.active</code> <code>&lt;div&gt;</code>.</p>
+            </div>
+          </div>
+
+          <nav class="menu right">
+            <a href="#0" class="logo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <div class="active">
+              <a href="#0" class="nav-link">Home</a>
+              <a href="#0" class="nav-link">Contact</a>
+              <a href="#0" class="nav-link">Blog</a>
+            </div>
+            <a class="toggle-nav" href="#0">&#9776;</a>
+          </nav>
+
+<pre>
+  <code>
+&lt;nav class="menu right"&gt;
+  &lt;a href="#0" class="logo">Your Logo Here&lt;/a&gt;
+  &lt;div class="active"&gt;
+    &lt;a href="#0" class="nav-link"&gt;Home&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Contact&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Blog&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+  </code>
+</pre>
+
+        <div class="row">
+          <div class="col-m-12">
+            <h4>Navbar + Dropdown</h4>
+            <p>You can even place dropdown menus inside of your navbar! The "Components" link in this website's navbar features a dropdown menu - check it out!</p>
+            <p><sticky>NOTE</sticky> The dropdown feature is not currently compatible with mobile navbars. <a href="#dropdown">Click here to learn more about dropdown menus.</a></p>
+          </div>
+        </div>
+
+<pre>
+  <code>
+&lt;nav class="menu"&gt;
+  &lt;div class="active"&gt;
+    &lt;a href="#0" class="logo"&gt;Your Logo Here&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Home&lt;/a&gt;
+    &lt;a href="#0" class="nav-link"&gt;Contact&lt;/a&gt;
+    &lt;div class="dropdown"&gt;
+      &lt;a href="#0" class="nav-link"&gt;Products&lt;/a&gt;
+      &lt;div class="content"&gt;
+        &lt;a href="#0"&gt;Monitors&lt;/a&gt;
+        &lt;a href="#0"&gt;Keyboards&lt;/a&gt;
+        &lt;a href="#0"&gt;Mice&lt;/a&gt;
+        &lt;a href="#0"&gt;Printers&lt;/a&gt;
+        &lt;a href="#0n"&gt;Speakers&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+  </code>
+</pre>
+
+        <div class="row">
+          <div class="col-m-12">
+            <h4>Mobile Navbar</h4>
+            <p>We've also got you covered with a responsive, mobile navbar that is compact enough for small devices.</p>
+            <p>This website's navbar is an example of a responsive, mobile navbar. When the viewport reaches a specific size, the navbar collapses into a "hamburger" icon. The user can then click on this icon to expand the navbar's links.</p>
+            <p>If you're reading this on a laptop or desktop, go ahead and resize the window to see it in action.</p>
+          </div>
+        </div>
+
+<pre>
+  <code>
+&lt;nav class="menu-mobile"&gt;
+  &lt;div class="active-mobile"&gt;
+    &lt;a href="#0" class="mobile-logo"&gt;Your Logo Here&lt;/a&gt;
+    &lt;a href="#0" class="mobile-link"&gt;Home&lt;/a&gt;
+    &lt;a href="#0" class="mobile-link"&gt;Blog&lt;/a&gt;
+    &lt;a href="#0" class="mobile-link"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;a class="toggle-nav" href="#0"&gt;&amp;#9776;&lt;/a&gt;
+&lt;/nav&gt;
+  </code>
+</pre>
+
+
 
         <!--========== END OF NAVIGATION SECTION ==========-->
 
@@ -572,19 +663,6 @@
 
             <p>The default dropdown has a clean and simple design, and indigo.css offers several options for further styling.</p>
 
-            <div class="dropdown">
-              <button>Dropdown</button>
-              <div class="content">
-                <a href="#0">Drop Down Item</a>
-                <a href="#0">Drop Down Item</a>
-                <a href="#0">Drop Down Item</a>
-              </div>
-            </div>
-
-
-
-            <hr>
-
             <sticky>CUSTOMIZE</sticky>
 
             <ul>
@@ -596,25 +674,22 @@
 
               <li>To underline all links within a dropdown, add the <code>.underline</code> class to the inner div that has the <code>.content</code> class. NEED EXAMPLE!</li>
             </ul>
-
-
             <hr>
           </div>
         </div>
 
-<!-- <pre>
-  <code>
-&lt;div class="dropdown"&gt;
-  &lt;button onclick="myFunction()" class="dropbtn">Click Me!&lt;/button&gt;
-  &lt;div id="myDropdown" class="dropdown-content"&gt;
-    &lt;a href="#0"&gt;Link A&lt;/a&gt;
-    &lt;a href="#0"&gt;Link B&lt;/a&gt;
-    &lt;a href="#0"&gt;Link C&lt;/a&gt;
-    &lt;a href="#0" class="divide"&gt;Link D&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  </code>
-</pre> -->
+        <div id="example">
+          <ul>
+            <li class="trigger">
+              <button>Click Me</button>
+              <ul class="content">
+                <li><a>Drop Down Item</a></li>
+                <li><a>Drop Down Item</a></li>
+                <li><a>Drop Down Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
         <!--========== END OF DROPDOWN SECTION ==========-->
 
