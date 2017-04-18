@@ -1,0 +1,112 @@
+/* TOP NAVBAR STYLING (WITH DROPDOWN MENU OPTION) */
+
+
+/*----- Toggle Button -----*/
+a.toggle-nav {
+  display: none;
+}
+
+/*----- Main Menu Container -----*/
+nav#navbar {
+    width: 100%;
+    height: auto;
+}
+
+nav.fixed {position: fixed; top: 0;}
+
+/*------ Logo, Links ------*/
+a.nav-link, a.logo {
+    float: left;
+    padding: 16px 24px;
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+a.nav-link:hover, a.logo:hover {color: teal;}
+
+
+/*========== TOP NAVBAR WITH DROPDOWN STYLING ==========*/
+
+ul.navbar {
+  background-color: #333;
+  width: 100%;
+  height: 60px;
+  overflow: visible;
+  padding: 0 0 0 10px;
+  margin: 0;
+  position: absolute; /* Ensures that the menu doesn’t affect other elements */
+}
+ul.navbar li 	{
+  float: left;  /* This lines up the menu items horizontally */
+  text-align: center;  /* All text is placed in the center of the box */
+  list-style: none;  /* Removes the default styling (bullets) for the list */
+  padding: 0;
+  margin: 0;
+}
+ul.inner {
+  display: none;  /* Hides the drop-down menu initially */
+}
+ul.navbar li:hover ul.inner {
+  display: block; /* Displays the drop-down box when the menu item is hovered over */
+  min-width: 100px;
+  height: auto;
+  margin: 0; /* Aligns drop-down box underneath the menu item */
+  padding: 0; /* Aligns drop-down box underneath the menu item */
+}
+
+ul.navbar li:hover ul.inner {background-color: #333;}
+
+ul.navbar li:hover ul.inner li {float: none; display: block; padding: 10px 14px;}
+
+ul.inner li a {
+  color: white;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+ul.inner li a:hover {color: teal;}
+
+
+
+/*========== DROPDOWN MENU STYLING ==========*/
+
+
+#dropdown {position: fixed; top: 60px; margin-left: -25px;}
+
+.trigger {display: inline-block;}
+
+.trigger ul.content {
+  position: absolute;
+  min-width: 160px;
+  display: none;
+  background-color: white;
+  box-shadow: 1px 1px 4px slategrey;
+}
+
+ul.border {border: 1px solid rgba(119,136,153,0.5); box-shadow: none;}
+
+ul.underline li {border-bottom: 1px solid rgba(119,136,153,0.3);}
+
+li.divide {border-top: 1px solid rgba(119,136,153,0.3);}
+
+ul.content li {
+  margin-left: -40px;
+  padding: 10px;
+  display: block !important;
+  overflow: auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 400 !important;
+  list-style-type: none;
+}
+
+ul.content li a {font-size: 1.3rem; font-weight: 400 !important; text-decoration: none;}
+
+ul.content li:hover {cursor: pointer; color: white; background-color: rgba(119,136,153,0.5);}
+
+ul.content li:hover a {color: white;}

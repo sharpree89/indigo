@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/markup.css">
     <link rel="stylesheet" href="/static/css/grid.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
     <link rel="stylesheet" href="/static/css/normalize.css">
 
     <!-- Javascripts -->
@@ -21,15 +22,9 @@
 
       <!--- BEGINNING OF TOP NAVBAR --->
 
-      <nav class="menu-mobile fixed">
-        <div class="active-mobile">
-          <a href="#0" class="mobile-link">Home</a>
-          <a href="#0" class="mobile-link">Blog</a>
-        </div>
-        <a class="toggle-nav" href="#0">&#9776;</a>
-      </nav>
 
-      <ul id="dropdown">
+
+      <!-- <ul id="dropdown">
         <li class="trigger">
           <a href="#0" class="dropdown-link">Components <i class="fa fa-caret-down" aria-hidden="true"></i></a>
           <ul class="content">
@@ -47,9 +42,47 @@
             <li><a href="#tooltip">Tooltips</a></li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
 
       <!--- END OF TOP NAVBAR --->
+
+
+      <nav id="navbar fixed">
+        <div class="active">
+          <ul class="navbar">
+            <li><a href="#" class="logo">Logo</a></li>
+            <li>
+              <a href="#" class="nav-link">Kittens</a>
+              <ul class="inner">
+                <li><a href="#">Tabby</a></li>
+                <li><a href="#">Persian</a></li>
+                <li><a href="#">Bengal</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Puppies</a>
+              <ul class="inner">
+                <li><a href="#">Corgi</a></li>
+                <li><a href="#">Shiba</a></li>
+                <li><a href="#">Wiener</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Bunnies</a>
+              <ul class="inner">
+                <li><a href="#">Spotted</a></li>
+                <li><a href="#">Striped</a></li>
+                <li><a href="#">Sparkly</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a class="toggle-nav" href="#0">&#9776;</a>
+      </nav>
+
+      <br>
+      <br>
+      <br>
 
       <div id="container">
         <a name="top" class="anchor"></a>
