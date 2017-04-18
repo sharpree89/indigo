@@ -1,37 +1,45 @@
+/*
+Types of Navbars:
+
+1. Normal Header Navbar
+2. Header Navbar With Dropdown Menu - does not work with responsive! *
+3. Responsive Header Navbar - does not work with dropdown! *
+4. Header Navbar With Search Form - TO DO!
+5. Fixed To Top Header Navbar - works with responsive, dropdown, and normal
+*/
+
 /* TOP NAVBAR STYLING (WITH DROPDOWN MENU OPTION) */
 
-
-/*----- Toggle Button -----*/
-a.toggle-nav {
-  display: none;
-}
 
 /*----- Main Menu Container -----*/
 nav#navbar {
     width: 100%;
     height: auto;
+    z-index: 99;
 }
 
-nav.fixed {position: fixed; top: 0;}
+.fixed {
+  position: fixed;
+  top: 0;
+}
 
 /*------ Logo, Links ------*/
 a.nav-link, a.logo {
     float: left;
     padding: 16px 24px;
-    color: white;
+    color: #333;
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
+    background-color: white;
 }
 
-a.nav-link:hover, a.logo:hover {color: teal;}
-
-
-/*========== TOP NAVBAR WITH DROPDOWN STYLING ==========*/
+a.nav-link:hover, a.logo:hover {color: rgba(83,109,254,1);}
 
 ul.navbar {
-  background-color: #333;
+  background-color: white;
+  border-bottom: 1px solid rgba(119,136,153,0.5);
   width: 100%;
   height: 60px;
   overflow: visible;
@@ -53,23 +61,107 @@ ul.navbar li:hover ul.inner {
   display: block; /* Displays the drop-down box when the menu item is hovered over */
   min-width: 100px;
   height: auto;
+  background-color: white;
   margin: 0; /* Aligns drop-down box underneath the menu item */
   padding: 0; /* Aligns drop-down box underneath the menu item */
+  border: 1px solid rgba(119,136,153,0.5);
 }
 
-ul.navbar li:hover ul.inner {background-color: #333;}
+ul.navbar li:hover ul.inner {color: rgba(83,109,254,1);}
 
-ul.navbar li:hover ul.inner li {float: none; display: block; padding: 10px 14px;}
+ul.navbar li:hover ul.inner li {
+  float: none;
+  display: block;
+  padding: 10px 14px;
+}
 
 ul.inner li a {
-  color: white;
+  color: #333;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
 }
-ul.inner li a:hover {color: teal;}
+ul.inner li a:hover {color: rgba(83,109,254,1);}
 
+
+/*========== RESPONSIVE NAVBAR STYLING ==========*/
+
+/*------ MOBILE EXPAND BUTTON ------*/
+
+#nav-trigger {
+  display: none;
+  text-align: center;
+}
+#nav-trigger span {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 16px 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Show a down arrow */
+#nav-trigger span:after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f078";
+}
+#nav-trigger span:hover {
+  color: rgba(83,109,254,1);
+}
+
+/* Show an up arrow */
+#nav-trigger span.open:after {
+  font-family: "FontAwesome";
+  content: "\f077";
+}
+
+/*------ MOBILE VIEW OF NAVBAR ------*/
+
+nav#nav-mobile {
+  position: relative;
+  display: none;
+}
+nav#nav-mobile ul {
+  display: none;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid rgba(119,136,153,0.5);
+  margin-top: 55px;
+  min-width: 400px;
+  height: auto;
+}
+nav#nav-mobile li {
+  float: none;
+}
+nav#nav-mobile a {
+  display: block;
+  float: none;
+  color: #333;
+}
+nav#nav-mobile a:hover {
+  color: rgba(83,109,254,1);
+}
+
+/* Hide the site logo */
+nav#nav-mobile a.logo {
+  display: none;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 900px) {
+  #nav-trigger {
+    display: block; }
+
+  nav#navbar {
+    display: none; }
+
+  nav#nav-mobile {
+    display: block; }
+}
 
 
 /*========== DROPDOWN MENU STYLING ==========*/
