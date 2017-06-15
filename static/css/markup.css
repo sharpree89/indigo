@@ -32,3 +32,39 @@
   /* anchor-point styling */
   .anchor {margin-bottom: 7%; display: block;}
   .mini-anchor {margin-bottom: 7%; display: block;}
+
+
+  /* Corner Ribbon */
+
+  .corner-ribbon {
+    font-size: 13px;
+    font-weight: 700;
+    width: 200px;
+    background: #e43;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: rgba(83,109,254,1);
+    background-color: white;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .corner-ribbon a { color: rgba(83,109,254,1);}
+
+  /* Custom styles */
+
+  .corner-ribbon.stuck { position: fixed;}
+
+  .corner-ribbon.bottom-right{
+    top: auto;
+    right: -50px;
+    bottom: 25px;
+    left: auto;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  }

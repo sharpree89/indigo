@@ -24,7 +24,8 @@ nav#navbar {
 }
 
 /*------ Logo, Links ------*/
-a.nav-link, a.logo {
+
+a.nav-link, .logo {
     float: left;
     padding: 16px 24px;
     color: #333;
@@ -35,7 +36,7 @@ a.nav-link, a.logo {
     background-color: white;
 }
 
-a.nav-link:hover, a.logo:hover {color: rgba(83,109,254,1);}
+a.nav-link:hover, .logo:hover {color: rgba(83,109,254,1);}
 
 ul.navbar {
   background-color: white;
