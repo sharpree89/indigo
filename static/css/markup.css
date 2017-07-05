@@ -53,7 +53,7 @@
     -webkit-transform: rotate(-45deg);
   }
 
-  .corner-ribbon a { color: rgba(83,109,254,1);}
+  .corner-ribbon a { color: rgba(83,109,254,1); font-weight: bold; }
 
   /* Custom styles */
 
